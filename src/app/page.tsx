@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import ExpertCard from "./components/dashboard/ExpertCard";
 import InfoText from "./components/dashboard/InfoText";
-import JoinRaykaCard from "./components/dashboard/JoinRaykaCard";
 
 const expertiesData = [
   {
@@ -129,14 +128,6 @@ export default function Home() {
             <InfoText key={info.id} title={info.title} text={info.text} />
           ))}
         </div>
-      </div>
-
-      {/* Footer */}
-      <div className="w-full">
-        <div className="-mb-[5rem] ml-[10%] mt-[8rem]">
-          <JoinRaykaCard />
-        </div>
-        <div className="mr-auto h-[20rem] w-[90%] rounded-tr-md bg-gray-950"></div>
       </div>
     </div>
   );
