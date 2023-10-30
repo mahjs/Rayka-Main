@@ -6,7 +6,7 @@ import React from "react";
 const JoinRaykaCard = () => {
   const router = useRouter();
   return (
-    <div className="relative mr-auto flex h-[14rem] w-[60%] items-center gap-5 rounded-3xl bg-[#FEA918] px-10">
+    <div className="relative mr-auto flex w-[70%] items-center gap-5 rounded-3xl bg-[#FEA918] px-10 py-10 ">
       <div className="flex-col text-black">
         <p className="text-[3rem] font-bold">عضو خانواده ما شو!</p>
         <p className="text-[1.5rem]">اینجا برای همه جا هست!</p>
@@ -36,14 +36,14 @@ const JoinRaykaCard = () => {
               d="M6.29731 0.589831L6.29721 0.589739C6.1405 0.44229 5.92939 0.360513 5.71054 0.360513C5.49169 0.360513 5.28058 0.44229 5.12387 0.589739L5.12382 0.589785L1.2589 4.23088L1.25885 4.23093C1.10211 4.37877 1.01277 4.58061 1.01277 4.79253C1.01277 5.00445 1.10211 5.20629 1.25885 5.35413L1.2589 5.35418L5.12248 8.99401C5.19884 9.07083 5.29039 9.13212 5.39156 9.17459C5.49335 9.21732 5.60301 9.24021 5.71403 9.24206C5.82505 9.2439 5.93545 9.22467 6.03872 9.18538L6.00002 9.08367L6.03872 9.18538C6.142 9.14608 6.23624 9.08742 6.31566 9.01261C6.39509 8.93777 6.4581 8.84826 6.50056 8.74922C6.54303 8.65016 6.56399 8.54381 6.56198 8.43657C6.55997 8.32934 6.53505 8.22379 6.48893 8.12627C6.44309 8.02937 6.37735 7.94255 6.29592 7.87072L3.02851 4.79253L6.29726 1.71308L6.29731 1.71304C6.45405 1.56519 6.54339 1.36335 6.54339 1.15143C6.54339 0.939517 6.45405 0.737675 6.29731 0.589831Z"
               fill="#FEA918"
               stroke="#FEA918"
-              stroke-width="0.217633"
+              strokeWidth="0.217633"
             />
           </svg>
         </button>
       </div>
 
       <Image
-        className="absolute bottom-0 left-0"
+        className="absolute bottom-0 left-0 h-[240px] w-[180px]"
         src="/images/person.png"
         alt="A smiling person"
         width={220}

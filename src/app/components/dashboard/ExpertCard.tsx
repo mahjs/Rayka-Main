@@ -26,7 +26,7 @@ const ExpertCard: FC<Props> = ({
       onMouseOut={() => {
         setIconPath(orangeIconPath);
       }}
-      className="relative flex h-[300px] w-[300px] cursor-pointer flex-wrap overflow-hidden rounded-lg bg-[#3D3D3D] px-[1rem] py-[1.5rem] text-white transition-all duration-200 hover:scale-110 hover:bg-[#FEA918] hover:text-[#232323]"
+      className="relative flex h-[250px] w-[250px] cursor-pointer flex-wrap overflow-hidden rounded-lg bg-[#3D3D3D] px-[1rem] py-[1.5rem] text-white transition-all duration-200 hover:scale-110 hover:bg-[#FEA918] hover:text-[#232323]"
     >
       <span className="mt-8">
         <Image src={iconPath} alt={title + " icon"} width={50} height={50} />

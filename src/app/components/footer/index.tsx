@@ -1,14 +1,9 @@
-import React from "react";
-import JoinRaykaCard from "../dashboard/JoinRaykaCard";
 import Image from "next/image";
 import PageNavigation from "../dashboard/PageNavigation";
 
 const Footer = () => {
   return (
     <div className="w-full">
-      <div className="-mb-[5rem] ml-[10%] mt-[8rem]">
-        <JoinRaykaCard />
-      </div>
       <div className="mr-auto flex w-[90%] items-center justify-around rounded-tr-md bg-gray-950 pb-[5rem] pt-[8rem]">
         <div
           style={{
@@ -58,7 +53,7 @@ const Footer = () => {
               gap: "2rem",
             }}
           >
-            <div className="flex gap-3">
+            <div className="flex items-center gap-3">
               <Image
                 src="/images/call.svg"
                 alt="call icon"
@@ -67,7 +62,7 @@ const Footer = () => {
               />
               <p>+98 930 547 1279</p>
             </div>
-            <div className="flex gap-3">
+            <div className="flex items-center gap-3">
               <Image
                 src="/images/phone.svg"
                 alt="phone icon"
@@ -76,7 +71,7 @@ const Footer = () => {
               />
               <p>+21 374 54112</p>
             </div>
-            <div className="flex gap-3">
+            <div className="flex items-center gap-3">
               <Image
                 src="/images/letter.svg"
                 alt="letter icon"
@@ -85,14 +80,15 @@ const Footer = () => {
               />
               <p>Support@Raika.com</p>
             </div>
-            <div className="flex gap-3">
+            <div className="flex items-center gap-3">
               <Image
+                className="h-[25px] w-[25px]"
                 src="/images/location.svg"
                 alt="location icon"
                 width={25}
                 height={25}
               />
-              <p>
+              <p className="max-w-[20rem]">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Soluta, accusantium?
               </p>
