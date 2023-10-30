@@ -3,8 +3,8 @@ import PageNavigation from "../dashboard/PageNavigation";
 
 const Footer = () => {
   return (
-    <div className="w-full">
-      <div className="mr-auto flex w-[90%] items-center justify-around rounded-tr-md bg-gray-950 pb-[5rem] pt-[8rem]">
+    <div className="w-full ">
+      <div className="mr-auto flex w-[90%] items-center justify-around rounded-tr-md bg-black bg-gray-950 pb-[5rem] pt-[8rem]">
         <div
           style={{
             display: "flex",
