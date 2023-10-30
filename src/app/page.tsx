@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import ExpertCard from "./components/dashboard/ExpertCard";
-import InfoText from "./components/dashboard/InfoText";
+import ExpertCard from "../components/dashboard/ExpertCard";
+import InfoText from "../components/dashboard/InfoText";
 
 const expertiesData = [
   {
@@ -96,10 +96,10 @@ export default function Home() {
       {/* Experties Content */}
       <div className="relative mb-[10rem] mt-[5rem] flex justify-center">
         {/* Make the backgrounds */}
-        <div className="absolute  h-[15rem] w-[80.1%] -rotate-[2deg] rounded-3xl bg-[#FEA918]" />
+        <div className="absolute h-[15rem] w-[80.1%] -rotate-[2deg] rounded-3xl bg-[#FEA918]" />
         <div className="bg-main-image relative h-[18rem] w-[80%] flex-col items-center justify-center rounded-3xl">
           <div className="absolute bottom-0 left-0 right-0 top-0 z-10 h-full w-full rounded-3xl bg-black bg-opacity-30" />
-        </div>
+        </div> 
 
         {/* Content */}
         <div className="absolute z-20 h-[18rem] w-[80%] flex-col items-center justify-center rounded-3xl">

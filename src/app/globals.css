@@ -103,3 +103,11 @@ body {
   direction: rtl;
 }
 
+/* header-1 {
+  font-family: "KalamehBold";
+  font-size: large;
+  @media screen and (max-width: 768px) {
+    font-size: medium;
+    
+  }
+} */

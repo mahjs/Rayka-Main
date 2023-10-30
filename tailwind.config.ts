@@ -8,7 +8,9 @@ const config: Config = {
   ],
   theme: {
     colors: {
-      primary: "#FEA918"
+      primary: "#FEA918",
+      white: "#FFF",
+      black: "#040404"
     },
     extend: {
       backgroundImage: {
@@ -19,5 +21,8 @@ const config: Config = {
       },
     },
   },
+  plugins: [
+    require("flowbite/plugin")
+  ],
 }
 export default config
