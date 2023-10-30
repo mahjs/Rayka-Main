@@ -19,7 +19,7 @@ const Navbar = () => {
         } flex-col text-center text-[1.8rem]`}
       >
         <Link href={href}>{text}</Link>
-        {pathname === href && <p className="-mt-7 text-inherit">.</p>}
+        {pathname === href && <p className="text-inherit -mt-7">.</p>}
       </li>
     );
   };
@@ -47,9 +47,9 @@ const Navbar = () => {
     >
       <ul className="flex gap-16">
         <RenderNavItem href="/" text="خانه" />
-        <RenderNavItem href="/about" text="درباه‌ما" />
-        <RenderNavItem href="/contact" text="ارتباط با ما" />
-        <RenderNavItem href="/career" text="فرصت‌های شغلی" />
+        <RenderNavItem href="/about-us" text="درباه‌ما" />
+        <RenderNavItem href="/contact-us" text="ارتباط با ما" />
+        <RenderNavItem href="/jobs" text="فرصت‌های شغلی" />
       </ul>
       <Link href="/" className="mr-auto">
         <Image
