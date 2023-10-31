@@ -6,7 +6,7 @@ import React from "react";
 const JoinRaykaCard = () => {
   const router = useRouter();
   return (
-    <div className="relative mr-auto flex h-[14rem] w-[60%] items-center gap-5 rounded-3xl bg-[#FEA918] px-10">
+    <div className="relative mr-auto flex w-[70%] items-center gap-5 rounded-3xl bg-[#FEA918] px-10 py-10 ">
       <div className="flex-col text-black">
         <p className="text-[3rem] font-bold">عضو خانواده ما شو!</p>
         <p className="text-[1.5rem]">اینجا برای همه جا هست!</p>
@@ -43,7 +43,7 @@ const JoinRaykaCard = () => {
       </div>
 
       <Image
-        className="absolute bottom-0 left-0"
+        className="absolute bottom-0 left-0 h-[240px] w-[180px]"
         src="/images/person.png"
         alt="A smiling person"
         width={220}

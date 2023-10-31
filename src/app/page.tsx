@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ExpertCard from "../components/dashboard/ExpertCard";
 import InfoText from "../components/dashboard/InfoText";
+import JoinRaykaCard from "@/components/dashboard/JoinRaykaCard";
 
 const expertiesData = [
   {
@@ -61,9 +62,8 @@ export default function Home() {
         src="/images/bg-main.webp"
         alt="background image. show a bunch of people sitting around a table"
         layout="fill"
-        objectFit="cover"
         draggable="false"
-        className="-z-10 h-full w-full rounded-br-[40rem]"
+        className="-z-10 h-[100vh] w-[100vw] rounded-br-[40rem]"
       />
       <div className="absolute left-0 right-0 top-0 -z-30 h-full w-full bg-[#FEA918]" />
 
@@ -128,6 +128,9 @@ export default function Home() {
             <InfoText key={info.id} title={info.title} text={info.text} />
           ))}
         </div>
+      </div>
+      <div className="-mb-[5rem] ml-[10%] mt-[8rem] flex items-center justify-center ">
+        <JoinRaykaCard />
       </div>
     </div>
   );
