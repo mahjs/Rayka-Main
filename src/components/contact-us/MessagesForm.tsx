@@ -5,10 +5,10 @@ const MessagesForm: FC = () => {
   return (
     <div className="mt-5 grid grid-cols-2 place-content-evenly gap-4 p-[5em]">
       <div className="h-full ">
-        <h1 className="text-[4.75rem] font-semibold">
+        <p className="title text-semiBlack">
           دوست داریم صدای <br /> <span className="text-primary">شما</span> را
           بشنویم !
-        </h1>
+        </p>
         <p className="mr-1  text-[1.8125rem]">
           جهت ارتباط با تیم رایکا فرم زیر را تکمیل کنید. <br /> تیم پشتیبانی در
           اسروع وقت با شما تماس <br /> خواهند گرفت !
