@@ -1,35 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import ExpertCard from "../components/dashboard/ExpertCard";
 import InfoText from "../components/dashboard/InfoText";
 import JoinRaykaCard from "@/components/dashboard/JoinRaykaCard";
-
-const expertiesData = [
-  {
-    id: 1,
-    title: "توسعه ارتباطات اینترنتی",
-    orangeIconPath: "/images/glob-orange.svg",
-    darkIconPath: "/images/glob.svg",
-  },
-  {
-    id: 2,
-    title: "کلود کامپیوتینگ (پردازش ابری)",
-    orangeIconPath: "/images/cloud-orange.svg",
-    darkIconPath: "/images/cloud.svg",
-  },
-  {
-    id: 3,
-    title: "ساخت ابزارهای هوش مصنوعی",
-    orangeIconPath: "/images/ai-orange.svg",
-    darkIconPath: "/images/ai.svg",
-  },
-  {
-    id: 4,
-    title: "راه‌اندازی دیتاسنتر در پاپ‌های کل کشور",
-    orangeIconPath: "/images/data-orange.svg",
-    darkIconPath: "/images/data.svg",
-  },
-];
+import Experties from "@/components/dashboard/Experties";
 
 const informationData = [
   {
@@ -102,22 +75,7 @@ export default function Home() {
         </div>
 
         {/* Content */}
-        <div className="absolute z-20 h-[18rem] w-[80%] flex-col items-center justify-center rounded-3xl">
-          <p className="my-5 text-center text-[2.3rem] font-[790] text-white">
-            حوضه تخصصی رایکا
-          </p>
-          <div className="flex w-full justify-center gap-10">
-            {expertiesData.map((expert, index) => (
-              <ExpertCard
-                key={expert.id}
-                index={index + 1}
-                title={expert.title}
-                orangeIconPath={expert.orangeIconPath}
-                darkIconPath={expert.darkIconPath}
-              />
-            ))}
-          </div>
-        </div>
+        <Experties />
       </div>
 
       {/* Information Content */}

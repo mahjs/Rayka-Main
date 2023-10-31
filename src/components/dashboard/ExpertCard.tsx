@@ -8,6 +8,7 @@ interface Props {
   title: string;
   orangeIconPath: string;
   darkIconPath: string;
+  onClick: (index: number) => void;
 }
 
 const ExpertCard: FC<Props> = ({
@@ -15,11 +16,13 @@ const ExpertCard: FC<Props> = ({
   title,
   orangeIconPath,
   darkIconPath,
+  onClick,
 }) => {
   const [iconPath, setIconPath] = useState(orangeIconPath);
 
   return (
     <div
+      onClick={() => onClick(index - 1)}
       onMouseOver={() => {
         setIconPath(darkIconPath);
       }}
