@@ -1,4 +1,5 @@
 import React from "react";
+import CustomBtn from "./CustomBtn";
 
 interface FloatingInputProps {
   type: string;
@@ -21,7 +22,7 @@ const FloatingInput: React.FC<FloatingInputProps> = ({
     "transhtmlFor m absolute top-3 origin-[0] -translate-y-6 scale-75 pr-3 text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:-right-2 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:font-medium peer-focus:text-gray-900 dark:text-gray-400 peer-focus:dark:text-gray-900";
 
   return (
-    <div className="group relative z-0 mb-6 w-full">
+    <div className="group relative z-0 mb-6 w-full ">
       <input
         type={type}
         name={name}
@@ -73,18 +74,7 @@ const Form: React.FC = () => {
         className="row-span-4 block h-60 w-full rounded border-0 bg-[#f5f5f5] p-2.5 text-sm text-gray-900 focus:border-primary focus:ring-primary dark:border-primary dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-primary dark:focus:ring-primary"
         placeholder="پیام شما ..."
       ></textarea>
-      <button
-        type="submit"
-        className="mt-5 w-full rounded-lg bg-primary px-10 py-3.5 text-center text-sm font-medium text-black hover:bg-[#111111] hover:text-primary focus:outline-none focus:ring-4 focus:ring-primary dark:bg-primary dark:hover:bg-[#111111] dark:focus:ring-primary sm:w-auto"
-      >
-        ارسال پیام
-      </button>
-      <button
-        type="submit"
-        className="mr-4 mt-5 w-full rounded-lg bg-black px-10 py-3.5 text-center text-sm font-medium text-white hover:bg-primary focus:outline-none focus:ring-4 focus:ring-[#111111] dark:bg-[#111111] dark:hover:bg-primary dark:focus:ring-[[#111111]] sm:w-auto"
-      >
-        ارسال پیام
-      </button>
+      <CustomBtn sendText="ارسال پیام" cancelText="لغو پیام" />
     </form>
   );
 };

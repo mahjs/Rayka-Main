@@ -4,24 +4,30 @@ import MessagesForm from "@/components/contact-us/MessagesForm";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-
-const BG_IMAGE_PROPS = {
-  src: "/images/bg-main.webp",
-  alt: "contact-us-bg",
-  width: 1920,
-  height: 1080,
-  className: "relative h-[30rem] w-full object-cover object-top"
-};
+import BgImage from "../../../public/images/bg-main.webp";
 
 const ContactUsPage: React.FC = () => {
   return (
     <div className="flex-col">
-      <Image {...BG_IMAGE_PROPS} />
+      <Image
+        src={BgImage}
+        alt="contact-us-bg"
+        sizes="100vw"
+        style={{
+          width: "100%",
+          height: "30rem",
+          objectFit: "cover",
+        }}
+      />
       <div className="absolute top-40 w-full text-center text-white">
         <h1 className="text-[7.61406rem] font-[700]">ارتباط با ما</h1>
         <div className="flex justify-center text-[1.82563rem]">
-          <p><Link href="/">خانه-</Link></p>
-          <p className="text-primary"><Link href="/contact-us">ارتباط با ما</Link></p>
+          <p>
+            <Link href="/">خانه-</Link>
+          </p>
+          <p className="text-primary">
+            <Link href="/contact-us">ارتباط با ما</Link>
+          </p>
         </div>
       </div>
       <MessagesForm />
