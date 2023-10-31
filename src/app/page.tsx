@@ -43,14 +43,14 @@ export default function Home() {
       {/* Top content */}
       <div className="flex h-[100vh] w-[100vw] items-center justify-between">
         <div className="mr-[8rem] flex-col text-white">
-          <p className="text-[2.5rem] ">شرکت ماورای ابعاد رایکا</p>
-          <p className="text-[5.2rem]  font-bold">
+          <p className="header-3">شرکت ماورای ابعاد رایکا</p>
+          <p className="header-2">
             همگام با <span className="text-[#FEA918]">تکنولوژی</span>
           </p>
-          <p className="text-[5.2rem] font-bold">
+          <p className="header-2">
             برای <span className="text-[#FEA918]">آینده‌ای </span>هوشمندتر
           </p>
-          <p className="g max-w-[50%] text-right text-[1.5rem]">
+          <p className="g header-4 max-w-[50%] text-right">
             ما در شرکت ماورای ابعاد رایکا به بهبود سرویس‌های موجود در حوزه
             فناوری و ارتباطات اکتفا نمی‌کنیم؛ ما به رویاهای تحقق نیافته جامه‌ی
             عمل می‌پوشانیم و در کنار هم از خلق آینده‌ای هوشمندتر لذت می‌بریم.

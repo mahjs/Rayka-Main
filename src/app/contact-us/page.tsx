@@ -8,20 +8,15 @@ import BgImage from "../../../public/images/bg-main.webp";
 
 const ContactUsPage: React.FC = () => {
   return (
-    <div className="flex-col">
+    <div className="select-none flex-col">
       <Image
         src={BgImage}
         alt="contact-us-bg"
-        sizes="100vw"
-        style={{
-          width: "100%",
-          height: "30rem",
-          objectFit: "cover",
-        }}
+        className="h-[31.3rem] w-full  object-cover"
       />
       <div className="absolute top-40 w-full text-center text-white">
-        <h1 className="text-[7.61406rem] font-[700]">ارتباط با ما</h1>
-        <div className="flex justify-center text-[1.82563rem]">
+        <h1 className="header-1">ارتباط با ما</h1>
+        <div className="subtitle flex justify-center">
           <p>
             <Link href="/">خانه-</Link>
           </p>

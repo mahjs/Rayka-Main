@@ -34,11 +34,11 @@ const reverseString = (str: string) => {
 };
 
 const AddressItem: React.FC<AddressItemProps> = ({ src, alt, text, desc }) => (
-  <div className="flex w-52 flex-wrap items-center justify-center">
+  <div className="flex w-52 select-none flex-wrap items-center justify-center">
     <Image
       className="mx-6 object-cover"
-      width={90}
-      height={90}
+      width={100}
+      height={100}
       src={src}
       alt={alt}
     />
