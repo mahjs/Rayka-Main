@@ -37,7 +37,7 @@ const Persons: React.FC<Props> = ({}) => {
     {
       name: "نادری",
       surname: "مدیسر",
-      images: cert,
+      images: truePerson,
     },
     {
       name: "نادری",
@@ -72,7 +72,7 @@ const Persons: React.FC<Props> = ({}) => {
   );
 
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="mb-[6.69rem] flex flex-col items-center justify-center">
       <p className="mb-[4rem] text-7xl font-extrabold">خانواده ی رایکا</p>
       <div className="flex items-center justify-center gap-28">
         <div
@@ -81,7 +81,7 @@ const Persons: React.FC<Props> = ({}) => {
           data-carousel="static"
         >
           <div
-            className={`relative flex h-56 w-[78rem] max-w-7xl justify-center gap-9 overflow-hidden rounded-lg transition-all duration-300 md:h-[40rem] ${
+            className={`relative flex h-56  max-w-7xl justify-center gap-20 overflow-hidden rounded-lg transition-all duration-300 md:h-[40rem] ${
               isTransitioning ? "translate-x-[-100%] transform" : ""
             }`}
           >
@@ -106,7 +106,7 @@ const Persons: React.FC<Props> = ({}) => {
             className="group absolute left-0 top-6 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
             data-carousel-prev
           >
-            <span className="mb-[10rem] ml-8 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70">
+            <span className="mb-[10rem]  inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70">
               <svg
                 className="h-4 w-4 text-white dark:text-gray-800"
                 aria-hidden="true"
@@ -130,7 +130,7 @@ const Persons: React.FC<Props> = ({}) => {
             className="group absolute right-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
             onClick={nextImage} // Call the nextImage function on button click
           >
-            <span className="mb-[7rem] mr-8 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70">
+            <span className="mb-[7rem]  inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70">
               <svg
                 className="h-4 w-4 text-white dark:text-gray-800"
                 aria-hidden="true"
