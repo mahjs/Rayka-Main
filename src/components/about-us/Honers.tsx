@@ -50,7 +50,7 @@ const images = [
 ];
 const Honers: React.FC<Props> = ({}) => {
   return (
-    <div className="relative flex  items-start ">
+    <div className="relative mb-[6.63rem]  flex items-start ">
       <Image
         src={HonersBackground}
         alt="HonersBackground"

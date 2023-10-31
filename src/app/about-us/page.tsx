@@ -1,9 +1,9 @@
 import HeroSection from "@/components/HeroSection";
-import React from "react";
 import Image from "next/image";
 import AboutUs from "@/assets/images/about-us.svg";
 import Honers from "@/components/about-us/Honers";
-
+import React from "react";
+import Persons from "@/components/about-us/Persons";
 interface Props {}
 const page: React.FC<Props> = ({}) => {
   return (
@@ -43,6 +43,7 @@ const page: React.FC<Props> = ({}) => {
         </div>
       </div>
       <Honers />
+      <Persons />
     </div>
   );
 };
