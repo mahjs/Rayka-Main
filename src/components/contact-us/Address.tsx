@@ -19,7 +19,7 @@ const ADDRESS_ITEMS: AddressItemProps[] = [
     src: "/images/tell.svg",
     alt: "tell",
     text: "شماره تماس",
-    desc: "+98 939 804 1111",
+    desc: "+89 939 804 1111",
   },
   {
     src: "/images/map.svg",
@@ -28,6 +28,10 @@ const ADDRESS_ITEMS: AddressItemProps[] = [
     desc: "تهران، اینجا، اونجا، روبروی فلان پلاک 1، واحد فلان",
   },
 ];
+
+const reverseString = (str: string) => {
+  return str.split("").reverse().join("");
+};
 
 const AddressItem: React.FC<AddressItemProps> = ({ src, alt, text, desc }) => (
   <div className="flex w-52 flex-wrap items-center justify-center">
@@ -47,7 +51,11 @@ const Address = () => {
   return (
     <div className="mt-8 flex w-full items-center justify-around">
       {ADDRESS_ITEMS.map((item) => (
-        <AddressItem key={item.alt} {...item} />
+        <AddressItem
+          key={item.alt}
+          {...item}
+          desc={item.alt === "tell" ? reverseString(item.desc) : item.desc}
+        />
       ))}
     </div>
   );
