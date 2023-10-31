@@ -42,7 +42,7 @@ const AddressItem: React.FC<AddressItemProps> = ({ src, alt, text, desc }) => (
       src={src}
       alt={alt}
     />
-    <h2 className="mt-3 text-center text-[1.5rem] font-semibold">{text}</h2>
+    <h5 className="header-5 mt-3 text-center">{text}</h5>
     <p className="text-center">{desc}</p>
   </div>
 );

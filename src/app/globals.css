@@ -131,3 +131,9 @@ body {
 .btn-cancel {
   @apply rounded-lg px-16 py-3.5 text-center text-sm font-medium focus:outline-none focus:ring-4 bg-black text-white hover:bg-primary focus:ring-[#111111] dark:bg-[#111111] dark:hover:bg-primary dark:focus:ring-[#111111];
 }
+
+.header-5 {
+  font-family: "KalamehBold";
+  font-size: 1.5rem;
+  line-height: 140%;
+}
