@@ -81,7 +81,7 @@ export default function Home() {
       {/* Information Content */}
       <div className="justify-centerjjj relative mb-[5rem] flex h-[20rem] w-full items-center bg-main-image">
         <div className="absolute bottom-0 left-0 right-0 top-0 z-10 h-full w-full rounded-3xl bg-black bg-opacity-30" />
-        <div className="absolute  z-20 flex w-full justify-evenly">
+        <div className="absolute z-20 flex w-full justify-evenly ">
           {informationData.map((info) => (
             <InfoText key={info.id} title={info.title} text={info.text} />
           ))}
