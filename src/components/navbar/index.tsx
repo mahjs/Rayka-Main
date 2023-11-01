@@ -45,7 +45,7 @@ const Navbar = () => {
         isScrolled ? "bg-[#000000cc]" : ""
       }`}
     >
-      <ul className="flex gap-16">
+      <ul className="subtitle flex gap-16">
         <RenderNavItem href="/" text="خانه" />
         <RenderNavItem href="/about-us" text="درباه‌ما" />
         <RenderNavItem href="/contact-us" text="ارتباط با ما" />
