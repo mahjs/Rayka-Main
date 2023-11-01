@@ -11,7 +11,7 @@ const config: Config = {
       primary: "#FEA918",
       white: "#FFF",
       black: "#040404",
-      semiBlack: "#111"
+      semiBlack: "#111",
     },
     extend: {
       backgroundImage: {
