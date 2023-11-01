@@ -34,8 +34,8 @@ const ExpertCard: FC<Props> = ({
       <span className="mt-8">
         <Image src={iconPath} alt={title + " icon"} width={50} height={50} />
       </span>
-      <p className=" text-inherit text-[2rem] font-bold">{title}</p>
-      <span className="absolute  -top-32 text-[18rem] font-bold text-white opacity-5">
+      <p className=" text-inherit subtitle-3">{title}</p>
+      <span className="number-1  absolute -top-32 text-white opacity-5">
         {String(index).padStart(2, "0")}
       </span>
     </div>

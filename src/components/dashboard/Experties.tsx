@@ -61,9 +61,7 @@ const Experties = () => {
 
   return (
     <div className="absolute z-20 h-[18rem] w-[80%] flex-col items-center justify-center rounded-3xl">
-      <p className="my-5 text-center text-[2.3rem] font-[790] text-white">
-        حوضه تخصصی رایکا
-      </p>
+      <p className="title-2 my-5 text-center text-white">حوضه تخصصی رایکا</p>
       <Transition
         show={showExperties}
         enter="transition-all duration-500 "

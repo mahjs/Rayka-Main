@@ -3,19 +3,18 @@ import Form from "./Form";
 
 const MessagesForm: FC = () => {
   return (
-    <div className="mt-5 grid grid-cols-2 place-content-evenly gap-4 p-[5em]">
+    <div className="mt-5 grid select-none place-content-evenly place-items-center p-[5em] md:grid-cols-2">
       <div className="h-full ">
         <p className="title text-semiBlack">
           دوست داریم صدای <br /> <span className="text-primary">شما</span> را
           بشنویم !
         </p>
-        <p className="mr-1  text-[1.8125rem]">
+        <p className="subtitle  text-semiBlack mr-1 mt-3">
           جهت ارتباط با تیم رایکا فرم زیر را تکمیل کنید. <br /> تیم پشتیبانی در
           اسروع وقت با شما تماس <br /> خواهند گرفت !
         </p>
-        <div className="mt-14 flex items-center">
-          <p className="mb-1 ml-3 text-[1.8125rem] font-semibold">
-            {" "}
+        <div className="mt-[3em] flex items-center">
+          <p className="subtitle text-semiBlack ml-3">
             سوالی دارید؟ به ما پیام دهید
           </p>
           <svg

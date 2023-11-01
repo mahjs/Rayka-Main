@@ -15,12 +15,12 @@ const ExpertDetailsCard: FC<Props> = ({
   handleClickClose,
 }) => {
   return (
-    <div className="bg-primary relative mx-auto mt-10 flex h-[100%] w-[90%] items-center justify-center gap-10 rounded-xl px-10 py-5">
+    <div className="relative mx-auto mt-10 flex h-[100%] w-[90%] items-center justify-center gap-10 rounded-xl bg-primary px-10 py-5">
       <button
         onClick={handleClickClose}
         className="absolute -top-[2rem] right-5 flex items-center gap-3"
       >
-        <p className="text-white">بازگشت</p>
+        <p className="Btn text-white">بازگشت</p>
         <Image
           src="/images/arrow.svg"
           width={15}
@@ -28,7 +28,7 @@ const ExpertDetailsCard: FC<Props> = ({
           alt="arrow icon"
         />
       </button>
-      <div className="min-w-[10rem] flex-col">
+      <div className="min-w-[12rem] flex-col">
         <div>
           <Image
             src={iconPath}
@@ -38,12 +38,12 @@ const ExpertDetailsCard: FC<Props> = ({
             className="mb-3 h-[50px] w-[50px]"
           />
         </div>
-        <p className="text-[1.5rem] font-semibold">{title}</p>
+        <p className="subtitle">{title}</p>
       </div>
 
       <div className="flex-col">
-        <h3 className="mb-3 text-[2.5rem] font-semibold">{name}</h3>
-        <p className="max-w-[80%] text-[1.2rem] font-[500]">
+        <h3 className="subtitle-1 mb-3">{name}</h3>
+        <p className="Body max-w-[80%]">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
           beatae ipsum voluptatibus saepe id earum minima voluptatem est iusto,
           laborum aut. Repellat tenetur temporibus quod alias dolore assumenda
