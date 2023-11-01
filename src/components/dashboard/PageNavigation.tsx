@@ -17,13 +17,13 @@ const PageNavigation = () => {
         <Link href="/">خانه</Link>
       </p>
       <p className={pathname === "/about" ? "text-[#FEA918]" : ""}>
-        <Link href="/about">درباه‌ما</Link>
+        <Link href="/about-us">درباه‌ما</Link>
       </p>
       <p className={pathname === "/contact" ? "text-[#FEA918]" : ""}>
-        <Link href="/contact">ارتباط با ما</Link>
+        <Link href="/contact-us">ارتباط با ما</Link>
       </p>
       <p className={pathname === "/career" ? "text-[#FEA918]" : ""}>
-        <Link href="/career">فرصت‌های شغلی</Link>
+        <Link href="/jobs">فرصت‌های شغلی</Link>
       </p>
     </div>
   );

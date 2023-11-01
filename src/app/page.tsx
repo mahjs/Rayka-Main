@@ -1,34 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import ExpertCard from "../components/dashboard/ExpertCard";
 import InfoText from "../components/dashboard/InfoText";
-
-const expertiesData = [
-  {
-    id: 1,
-    title: "توسعه ارتباطات اینترنتی",
-    orangeIconPath: "/images/glob-orange.svg",
-    darkIconPath: "/images/glob.svg",
-  },
-  {
-    id: 2,
-    title: "کلود کامپیوتینگ (پردازش ابری)",
-    orangeIconPath: "/images/cloud-orange.svg",
-    darkIconPath: "/images/cloud.svg",
-  },
-  {
-    id: 3,
-    title: "ساخت ابزارهای هوش مصنوعی",
-    orangeIconPath: "/images/ai-orange.svg",
-    darkIconPath: "/images/ai.svg",
-  },
-  {
-    id: 4,
-    title: "راه‌اندازی دیتاسنتر در پاپ‌های کل کشور",
-    orangeIconPath: "/images/data-orange.svg",
-    darkIconPath: "/images/data.svg",
-  },
-];
+import JoinRaykaCard from "@/components/dashboard/JoinRaykaCard";
+import Experties from "@/components/dashboard/Experties";
 
 const informationData = [
   {
@@ -61,9 +35,8 @@ export default function Home() {
         src="/images/bg-main.webp"
         alt="background image. show a bunch of people sitting around a table"
         layout="fill"
-        objectFit="cover"
         draggable="false"
-        className="-z-10 h-full w-full rounded-br-[40rem]"
+        className="-z-10 h-[100vh] w-[100vw] rounded-br-[40rem]"
       />
       <div className="absolute left-0 right-0 top-0 -z-30 h-full w-full bg-[#FEA918]" />
 
@@ -102,22 +75,7 @@ export default function Home() {
         </div>
 
         {/* Content */}
-        <div className="absolute z-20 h-[18rem] w-[80%] flex-col items-center justify-center rounded-3xl">
-          <p className="my-5 text-center text-[2.3rem] font-[790] text-white">
-            حوضه تخصصی رایکا
-          </p>
-          <div className="flex w-full justify-center gap-10">
-            {expertiesData.map((expert, index) => (
-              <ExpertCard
-                key={expert.id}
-                index={index + 1}
-                title={expert.title}
-                orangeIconPath={expert.orangeIconPath}
-                darkIconPath={expert.darkIconPath}
-              />
-            ))}
-          </div>
-        </div>
+        <Experties />
       </div>
 
       {/* Information Content */}
@@ -128,6 +86,9 @@ export default function Home() {
             <InfoText key={info.id} title={info.title} text={info.text} />
           ))}
         </div>
+      </div>
+      <div className="-mb-[5rem] ml-[10%] mt-[8rem] flex items-center justify-center ">
+        <JoinRaykaCard />
       </div>
     </div>
   );
