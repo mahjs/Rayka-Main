@@ -50,7 +50,7 @@ const images = [
 ];
 const Honers: React.FC<Props> = ({}) => {
   return (
-    <div className="relative flex  items-start ">
+    <div className="relative mb-[6.63rem]  flex items-start ">
       <Image
         src={HonersBackground}
         alt="HonersBackground"
@@ -64,8 +64,8 @@ const Honers: React.FC<Props> = ({}) => {
           {images.map((image, index) => (
             <div className="group relative" key={index}>
               <Image src={image.src} alt={image.alt} />
-              <div className="absolute inset-0 mx-auto flex items-center hover:bg-primary hover:opacity-50">
-                <span className="mx-auto px-[1.8rem] text-center text-4xl font-semibold text-primary group-hover:text-black">
+              <div className="absolute inset-0 mx-auto flex items-center rounded-3xl transition-all duration-300 ease-in-out hover:bg-primary hover:opacity-50">
+                <span className="mx-auto px-[1.8rem] text-center text-4xl font-semibold text-primary transition-colors duration-300 ease-in-out group-hover:text-black">
                   {image.text}
                 </span>
               </div>
