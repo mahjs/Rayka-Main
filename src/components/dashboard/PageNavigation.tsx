@@ -7,11 +7,12 @@ const PageNavigation = () => {
   const pathname = usePathname();
   return (
     <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        gap: "2rem",
-      }}
+      // style={{
+      //   display: "flex",
+      //   flexDirection: "column",
+      //   gap: "2rem",
+      // }}
+      className="subtitle flex flex-col gap-4"
     >
       <p className={pathname === "/" ? "text-[#FEA918]" : ""}>
         <Link href="/">خانه</Link>

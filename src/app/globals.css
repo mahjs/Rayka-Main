@@ -121,25 +121,127 @@ body {
 } */
 
 .btn-send {
-  @apply relative  overflow-hidden rounded-lg px-14 ml-6 py-3.5 text-center text-sm font-medium focus:outline-none focus:ring-4 focus:ring-primary bg-primary text-black hover:bg-[#111111] hover:text-primary dark:bg-primary dark:hover:bg-[#111111] dark:focus:ring-primary;
+  @apply relative  overflow-hidden rounded-lg px-14 ml-6 py-3.5 text-center Btn focus:outline-none focus:ring-4 focus:ring-primary bg-primary text-black hover:bg-[#111111] hover:text-primary dark:bg-primary dark:hover:bg-[#111111] dark:focus:ring-primary duration-300;
 }
 
 .btn-shadow {
-  @apply absolute inset-0 -right-4 h-20 w-[2.3rem] rotate-[40deg] bg-yellow-500 opacity-30;
+  @apply absolute inset-0 -right-4 h-24 w-[2.3rem] rotate-[38deg] bg-yellow-500 opacity-30;
 }
 
 .btn-cancel {
-  @apply rounded-lg px-16 py-3.5 text-center text-sm font-medium focus:outline-none focus:ring-4 bg-black text-white hover:bg-primary focus:ring-[#111111] dark:bg-[#111111] dark:hover:bg-primary dark:focus:ring-[#111111];
+  @apply rounded-lg px-16 py-3.5 text-center Btn focus:outline-none focus:ring-4 bg-black text-white hover:bg-primary focus:ring-[#111111] dark:bg-[#111111] dark:hover:bg-primary dark:focus:ring-[#111111] duration-300;
 }
 
+.header-1 {
+  font-family: "KalamehBold";
+  font-size: 7.61406rem;
+}
+
+.header-2 {
+  font-family: "KalamehExtraBold";
+  font-size: 6.28713rem;
+  font-weight: 800;
+}
+
+.header-3 {
+  font-family: "KalamehRegular";
+  font-size: 2.61744rem;
+  font-weight: 500;
+  line-height: 150.5%;
+  color: #fff;
+}
+
+.header-4 {
+  font-family: "KalamehRegular";
+  font-size: 1.375rem;
+  font-weight: 500;
+  line-height: 150.5%;
+}
 .header-5 {
   font-family: "KalamehBold";
   font-size: 1.5rem;
   line-height: 140%;
 }
 
+.header-6 {
+  font-family: "KalamehBold";
+  font-size: 2.85375rem;
+  line-height: 150.5%;
+}
+
 .title {
   font-family: "KalamehExtraBold";
   font-size: 4.75rem;
+  line-height: 140%;
+}
+
+.title-2 {
+  font-family: "KalamehRegular";
+  font-size: 3.05663rem;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.subtitle {
+  font-family: "KalamehRegular";
+  font-size: 1.8125rem;
+  line-height: 150.5%;
+}
+
+.subtitle-1 {
+  font-family: "KalamehBold";
+  font-size: 2.5125rem;
+  line-height: 150.5%;
+}
+
+.subtitle-2 {
+  font-family: "KalamehBold";
+  font-size: 3.35906rem;
+  line-height: 140%;
+}
+
+.subtitle-3 {
+  font-family: "KalamehBold";
+  font-size: 1.9375rem;
+  line-height: 140%;
+}
+
+.Body {
+  font-family: "KalamehRegular";
+  font-size: 1.16663rem;
+  line-height: 140%;
+}
+.Body-2 {
+  font-family: "KalamehRegular";
+  font-size: 1.5625rem;
+  line-height: 150%;
+}
+
+.Body-3 {
+  font-family: "KalamehRegular";
+  font-size: 1.4375rem;
+  line-height: 140%;
+}
+
+.Btn {
+  font-family: "KalamehRegular";
+  font-size: 1.3rem;
+  line-height: 150.5%;
+}
+.Btn-2 {
+  font-family: "KalamehRegular";
+  font-size: 1.059rem;
+  line-height: 140%;
+}
+
+.number {
+  font-family: "KalamehBold";
+  font-size: 7.56819rem;
+  line-height: 140%;
+}
+
+.number-1 {
+  font-family: "KalamehBold";
+  font-size: 18.47456rem;
   line-height: 140%;
 }

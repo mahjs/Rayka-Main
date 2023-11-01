@@ -3,8 +3,8 @@ import PageNavigation from "../dashboard/PageNavigation";
 
 const Footer = () => {
   return (
-    <div className="w-full ">
-      <div className="mr-auto flex w-[90%] items-center justify-around rounded-tr-md bg-black bg-gray-950 pb-[5rem] pt-[8rem]">
+    <div className="w-full bg-black">
+      <div className="bg-gray-950 mr-auto flex w-[95%] items-center justify-around rounded-tr-md pb-[5rem] pt-[8rem]">
         <div
           style={{
             display: "flex",
@@ -18,10 +18,10 @@ const Footer = () => {
             width={50}
             height={50}
           />
-          <p className="max-w-[20rem] text-[1.5rem] text-white">
+          <p className="Body-2 max-w-[25rem] text-white">
             ما در خانواده ی سخت کوش و خستگی ناپذیر شرکت ماورای ابعاد رایکا ،
             برای تحقق رویاهایمان میجنگیم. در کنار هم میسازیم و از تماشای آنچه
-            روزی تصور کرده بودیم و حالا به آن تجسم بخشیده ایم لذت میبریم.{" "}
+            روزی تصور <br /> کرده بودیم و حالا به آن تجسم بخشیده ایم لذت میبریم.
           </p>
         </div>
 
@@ -30,10 +30,10 @@ const Footer = () => {
           style={{
             display: "flex",
             flexDirection: "column",
-            gap: "2rem",
+            gap: "3rem",
           }}
         >
-          <h3 className="text-[2.5rem] font-bold">صفحات</h3>
+          <h3 className="header-6">صفحات</h3>
           <PageNavigation />
         </div>
 
@@ -45,15 +45,16 @@ const Footer = () => {
             gap: "2rem",
           }}
         >
-          <h3 className="text-[2.5rem] font-bold">راه‌های ارتباطی</h3>
+          <h3 className="header-6">راه‌های ارتباطی</h3>
           <div
             style={{
               display: "flex",
               flexDirection: "column",
               gap: "2rem",
             }}
+            className="Body-3"
           >
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3 ">
               <Image
                 src="/images/call.svg"
                 alt="call icon"
@@ -88,7 +89,7 @@ const Footer = () => {
                 width={25}
                 height={25}
               />
-              <p className="max-w-[20rem]">
+              <p className="max-w-[28rem]">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Soluta, accusantium?
               </p>

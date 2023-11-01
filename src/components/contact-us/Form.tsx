@@ -17,12 +17,12 @@ const FloatingInput: React.FC<FloatingInputProps> = ({
   pattern,
 }) => {
   const commonInputClasses =
-    "peer block w-full appearance-none rounded border-0 bg-[#f5f5f5] px-2 py-5 text-sm text-gray-900 focus:border-primary focus:outline-none focus:ring-0 dark:border-primary dark:text-white dark:focus:border-primary";
+    "peer block w-full appearance-none rounded border-0 bg-[#f5f5f5] px-5 py-5 text-sm text-gray-900 focus:border-primary focus:outline-none focus:ring-0 dark:border-primary dark:text-white dark:focus:border-primary";
   const commonLabelClasses =
-    "transhtmlFor m absolute top-3 origin-[0] -translate-y-6 scale-75 pr-3 text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:-right-2 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:font-medium peer-focus:text-gray-900 dark:text-gray-400 peer-focus:dark:text-gray-900";
+    "absolute top-[1.4em] origin-[0] scale-75 pr-5 text-sm text-gray-500 peer-placeholder-shown:opacity-1 peer-placeholder-shown:scale-100 peer-focus:-right-2 peer-focus:-translate-y-1 peer-focus:scale-75 peer-focus:font-medium peer-focus:text-gray-900 dark:text-gray-400 peer-focus:dark:text-gray-900 peer-focus:opacity-0";
 
   return (
-    <div className="group relative z-0 mb-6 w-full ">
+    <div className="group relative z-0 w-full ">
       <input
         type={type}
         name={name}
@@ -42,7 +42,7 @@ const FloatingInput: React.FC<FloatingInputProps> = ({
 const Form: React.FC = () => {
   return (
     <form className="w-full">
-      <div className="grid md:grid-cols-2 md:gap-6">
+      <div className="grid select-none md:grid-cols-2 md:gap-7">
         <FloatingInput
           type="text"
           name="floating_first_name"
@@ -71,7 +71,7 @@ const Form: React.FC = () => {
       </div>
       <textarea
         id="message"
-        className="row-span-4 block h-60 w-full rounded border-0 bg-[#f5f5f5] p-2.5 text-sm text-gray-900 focus:border-primary focus:ring-primary dark:border-primary dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-primary dark:focus:ring-primary"
+        className="row-span-4 mt-7 block h-60 w-full rounded border-0 bg-[#f5f5f5] p-2.5 text-sm text-gray-900 focus:border-primary focus:ring-primary dark:border-primary dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-primary dark:focus:ring-primary"
         placeholder="پیام شما ..."
       ></textarea>
       <CustomBtn sendText="ارسال پیام" cancelText="لغو پیام" />
