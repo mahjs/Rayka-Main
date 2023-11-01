@@ -5,6 +5,7 @@ import Honers from "@/components/about-us/Honers";
 import React from "react";
 import Persons from "@/components/about-us/Persons";
 import Comments from "@/components/about-us/Comments";
+import Carousel from "./Carousel";
 interface Props {}
 const page: React.FC<Props> = ({}) => {
   return (
@@ -46,6 +47,7 @@ const page: React.FC<Props> = ({}) => {
       <Honers />
       <Persons />
       <Comments />
+      <Carousel />
     </div>
   );
 };
