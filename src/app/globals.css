@@ -121,7 +121,7 @@ body {
 } */
 
 .btn-send {
-  @apply relative  overflow-hidden rounded-lg px-9 md:px-12 lg:px-14 ml-6 py-3.5 text-center Btn focus:outline-none focus:ring-4 focus:ring-primary bg-primary text-black hover:bg-[#111111] hover:text-primary dark:bg-primary dark:hover:bg-[#111111] dark:focus:ring-primary duration-300;
+  @apply Btn  relative ml-6 overflow-hidden rounded-lg bg-primary px-14 py-3.5 text-center text-black duration-300 hover:bg-[#111111] hover:text-primary focus:outline-none focus:ring-4 focus:ring-primary dark:bg-primary dark:hover:bg-[#111111] dark:focus:ring-primary;
 }
 
 .btn-shadow {
@@ -129,7 +129,7 @@ body {
 }
 
 .btn-cancel {
-  @apply rounded-lg px-9 md:px-12 lg:px-16 py-3.5 text-center Btn focus:outline-none focus:ring-4 bg-black text-white hover:bg-primary focus:ring-[#111111] dark:bg-[#111111] dark:hover:bg-primary dark:focus:ring-[#111111] duration-300;
+  @apply Btn rounded-lg bg-black px-16 py-3.5 text-center text-white duration-300 hover:bg-primary focus:outline-none focus:ring-4 focus:ring-[#111111] dark:bg-[#111111] dark:hover:bg-primary dark:focus:ring-[#111111];
 }
 
 .header-1 {
