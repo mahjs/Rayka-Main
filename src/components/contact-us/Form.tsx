@@ -74,7 +74,7 @@ const Form: React.FC = () => {
         className="row-span-4 mt-4 md:mt-7 block h-40 w-full rounded border-0 bg-[#f5f5f5] p-2.5 text-sm text-gray-900 focus:border-primary focus:ring-primary dark:border-primary dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-primary dark:focus:ring-primary md:h-60"
         placeholder="پیام شما ..."
       ></textarea>
-      <CustomBtn sendText="ارسال پیام" cancelText="لغو پیام" />
+      <CustomBtn sendText="ارسال پیام" />
     </form>
   );
 };

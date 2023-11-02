@@ -18,6 +18,6 @@ var Form = function () {
             react_1["default"].createElement(FloatingInput, { type: "tel", pattern: "[0-9]{3}-[0-9]{3}-[0-9]{4}", name: "floating_phone", id: "floating_phone", label: "\u0634\u0645\u0627\u0631\u0647 \u062A\u0644\u0641\u0646" }),
             react_1["default"].createElement(FloatingInput, { type: "text", name: "floating_company", id: "floating_company", label: "\u0645\u0648\u0636\u0648\u0639 \u0645\u062A\u0646" })),
         react_1["default"].createElement("textarea", { id: "message", className: "row-span-4 mt-4 md:mt-7 block h-40 w-full rounded border-0 bg-[#f5f5f5] p-2.5 text-sm text-gray-900 focus:border-primary focus:ring-primary dark:border-primary dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-primary dark:focus:ring-primary md:h-60", placeholder: "\u067E\u06CC\u0627\u0645 \u0634\u0645\u0627 ..." }),
-        react_1["default"].createElement(CustomBtn_1["default"], { sendText: "\u0627\u0631\u0633\u0627\u0644 \u067E\u06CC\u0627\u0645", cancelText: "\u0644\u063A\u0648 \u067E\u06CC\u0627\u0645" })));
+        react_1["default"].createElement(CustomBtn_1["default"], { sendText: "\u0627\u0631\u0633\u0627\u0644 \u067E\u06CC\u0627\u0645" })));
 };
 exports["default"] = Form;
