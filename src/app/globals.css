@@ -121,7 +121,7 @@ body {
 } */
 
 .btn-send {
-  @apply relative  overflow-hidden rounded-lg px-14 ml-6 py-3.5 text-center Btn focus:outline-none focus:ring-4 focus:ring-primary bg-primary text-black hover:bg-[#111111] hover:text-primary dark:bg-primary dark:hover:bg-[#111111] dark:focus:ring-primary duration-300;
+  @apply relative  overflow-hidden rounded-lg px-9 md:px-12 lg:px-14 ml-6 py-3.5 text-center Btn focus:outline-none focus:ring-4 focus:ring-primary bg-primary text-black hover:bg-[#111111] hover:text-primary dark:bg-primary dark:hover:bg-[#111111] dark:focus:ring-primary duration-300;
 }
 
 .btn-shadow {
@@ -129,12 +129,18 @@ body {
 }
 
 .btn-cancel {
-  @apply rounded-lg px-16 py-3.5 text-center Btn focus:outline-none focus:ring-4 bg-black text-white hover:bg-primary focus:ring-[#111111] dark:bg-[#111111] dark:hover:bg-primary dark:focus:ring-[#111111] duration-300;
+  @apply rounded-lg px-9 md:px-12 lg:px-16 py-3.5 text-center Btn focus:outline-none focus:ring-4 bg-black text-white hover:bg-primary focus:ring-[#111111] dark:bg-[#111111] dark:hover:bg-primary dark:focus:ring-[#111111] duration-300;
 }
 
 .header-1 {
   font-family: "KalamehBold";
-  font-size: 7.61406rem;
+  font-size: 2.61406rem;
+}
+
+@media screen and (min-width: 768px) {
+  .header-1 {
+    font-size: 7.61406rem;
+  }
 }
 
 .header-2 {
@@ -157,10 +163,17 @@ body {
   font-weight: 500;
   line-height: 150.5%;
 }
+
 .header-5 {
   font-family: "KalamehBold";
-  font-size: 1.5rem;
   line-height: 140%;
+  font-size: 0.74588rem;
+}
+
+@media screen and (min-width: 768px) {
+  .header-5 {
+    font-size: 1.5rem;
+  }
 }
 
 .header-6 {
@@ -171,8 +184,14 @@ body {
 
 .title {
   font-family: "KalamehExtraBold";
-  font-size: 4.75rem;
+  font-size: 1.36719rem;
   line-height: 140%;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 4.75rem;
+  }
 }
 
 .title-2 {
@@ -184,8 +203,14 @@ body {
 
 .subtitle {
   font-family: "KalamehRegular";
-  font-size: 1.8125rem;
+  font-size: 0.737rem;
   line-height: 150.5%;
+}
+
+@media screen and (min-width: 768px) {
+  .subtitle {
+    font-size: 1.8125rem;
+  }
 }
 
 .subtitle-1 {
@@ -219,12 +244,18 @@ body {
 
 .Body-3 {
   font-family: "KalamehRegular";
-  font-size: 1.4375rem;
+  font-size: 0.7rem;
   line-height: 140%;
 }
 
+@media screen and (min-width: 768px) {
+  .Body-3 {
+    font-size: 1rem;
+  }
+}
+
 .Btn {
-  font-family: "KalamehRegular";
+  font-family: "KalamehBold";
   font-size: 1.3rem;
   line-height: 150.5%;
 }

@@ -7,12 +7,12 @@ interface CustomBtnProps {
 
 const CustomBtn: React.FC<CustomBtnProps> = ({ sendText, cancelText }) => {
   return (
-    <div className="mt-6">
+    <div className="mt-6 flex">
       <button type="submit" className="btn-send">
         {sendText}
         <span className="btn-shadow"></span>
       </button>
-      <button type="submit" className="btn-cancel">
+      <button type="submit" className="btn-cancel hidden lg:flex">
         {cancelText}
       </button>
     </div>
