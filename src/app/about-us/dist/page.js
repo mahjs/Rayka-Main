@@ -6,7 +6,34 @@ var Honers_1 = require("@/components/about-us/Honers");
 var react_1 = require("react");
 var Persons_1 = require("@/components/about-us/Persons");
 var Comments_1 = require("@/components/about-us/Comments");
-var Carousel_1 = require("./Carousel");
+var truePerson_svg_1 = require("@/assets/images/truePerson.svg");
+var CARDS = 10;
+var testimonials = [
+    {
+        text: "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد",
+        imageSrc: truePerson_svg_1["default"],
+        name: "محمدرضا علیمردانی",
+        title: "مدیریت لورم ایپسوم"
+    },
+    {
+        text: "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد",
+        imageSrc: truePerson_svg_1["default"],
+        name: "محمدرضا علیمردانی",
+        title: "مدیریت لورم "
+    },
+    {
+        text: "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد",
+        imageSrc: truePerson_svg_1["default"],
+        name: "محمدرضا علیمردانی",
+        title: "مدیریت لورم ایپسوم"
+    },
+];
+var Card = function (_a) {
+    var title = _a.title, content = _a.content;
+    return (react_1["default"].createElement("div", { className: "card" },
+        react_1["default"].createElement("h2", null, title),
+        react_1["default"].createElement("p", null, content)));
+};
 var page = function (_a) {
     return (react_1["default"].createElement("div", { className: "flex-col" },
         react_1["default"].createElement(HeroSection_1["default"], { heading: "\u062F\u0631\u0628\u0627\u0631\u0647 \u06CC \u0645\u0627", subHeading: "\u062E\u0627\u0646\u0647 -", childHeading: "\u062F\u0631\u0628\u0627\u0631\u0647 \u0645\u0627" }),
@@ -19,7 +46,6 @@ var page = function (_a) {
                 " ")),
         react_1["default"].createElement(Honers_1["default"], null),
         react_1["default"].createElement(Persons_1["default"], null),
-        react_1["default"].createElement(Comments_1["default"], null),
-        react_1["default"].createElement(Carousel_1["default"], null)));
+        react_1["default"].createElement(Comments_1["default"], null)));
 };
 exports["default"] = page;
