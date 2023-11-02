@@ -1,48 +1,50 @@
-"use client"
-import React, { useState, useEffect } from 'react';
-import styles from './Carousel.module.css'; // Import the CSS as a module
+"use client";
+import React, { useState, useEffect, ReactNode, ReactElement } from "react";
+import styles from "./Carousel.module.css";
+import arrowRight from "@/assets/images/arrow-right.svg";
+import arrowLeft from "@/assets/images/arrow-left.svg";
+import Image from "next/image";
 
-const Carousel = () => {
-  const itemCount = 7; // Assuming 7 items based on your HTML
-  const [positions, setPositions] = useState(Array(itemCount).fill('back-pos'));
+const MAX_VISIBILITY = 3;
 
-  useEffect(() => {
-    setPositions(['left-pos', 'main-pos', 'right-pos', ...Array(itemCount - 3).fill('back-pos')]);
-  }, []);
+interface CarouselProps {
+  children: ReactNode;
+}
 
-  const swap = (direction: string) => {
-    setPositions((prevPositions) => {
-      const newPositions = [...prevPositions];
-      if (direction === 'clockwise') {
-        newPositions.unshift(newPositions.pop()!); // Move last to first
-      } else {
-        newPositions.push(newPositions.shift()!); // Move first to last
-      }
-      return newPositions;
-    });
-  };
-
-  const handleClick = (pos: string) => {
-    if (pos === 'left-pos') {
-      swap('counter-clockwise');
-    } else {
-      swap('clockwise');
-    }
-  };
+const Carousel: React.FC<CarouselProps> = ({ children }) => {
+  const [active, setActive] = useState<number>(2);
+  const count = React.Children.count(children);
 
   return (
-    <div className={styles.carousel3dBlock}>
-      <ul className={styles.carousel3d}>
-        {positions.map((pos, index) => (
-          <li key={index} className={`${styles.carousel3dItem} ${styles[pos]}`} onClick={() => handleClick(pos)}>
-            <p>{`Item ${index + 1}`}</p>
-          </li>
-        ))}
-      </ul>
-      <span className={styles.controlSpan}>
-        <button onClick={() => swap('counter-clockwise')}>Prev</button>
-        <button onClick={() => swap('clockwise')}>Next</button>
-      </span>
+    <div className="carousel">
+      {active > 0 && (
+        <button className="nav left" onClick={() => setActive((i) => i - 1)}>
+          <Image src={arrowLeft} alt="arrow left" />
+        </button>
+      )}
+      {/* @ts-ignore */}
+      {React.Children.map(children, (child: ReactElement, i: number) => (
+        <div
+          className="card-container"
+          style={{
+            // @ts-ignore
+            "--active": i === active ? 1 : 0,
+            "--offset": (active - i) / 3,
+            "--direction": Math.sign(active - i),
+            "--abs-offset": Math.abs(active - i) / 3,
+            "pointer-events": active === i ? "auto" : "none",
+            opacity: Math.abs(active - i) >= MAX_VISIBILITY ? "0" : "1",
+            display: Math.abs(active - i) > MAX_VISIBILITY ? "none" : "block",
+          }}
+        >
+          {child}
+        </div>
+      ))}
+      {active < count - 1 && (
+        <button className="nav right" onClick={() => setActive((i) => i + 1)}>
+          <Image src={arrowRight} alt="arrow right" />
+        </button>
+      )}
     </div>
   );
 };
