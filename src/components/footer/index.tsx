@@ -33,7 +33,7 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col gap-5 text-white">
-          <h3 className="header-4">راه‌های ارتباطی</h3>
+          <h3 className="header-6">راه‌های ارتباطی</h3>
           <div className="Body-3 grid grid-cols-2 gap-2 md:flex md:flex-col md:gap-5">
             <div className="flex items-center gap-1 md:gap-3 ">
               <Image
