@@ -12,7 +12,7 @@ const ContactUsPage: React.FC = () => {
       <Image
         src={BgImage}
         alt="contact-us-bg"
-        className="absolute top-0 -z-10 h-[50%] w-full object-cover  pb-24"
+        className="absolute top-0 -z-10 h-[22%] w-full object-cover md:h-[48%] md:pb-24"
       />
       <div className="w-full text-center text-white">
         <h1 className="header-1">ارتباط با ما</h1>
