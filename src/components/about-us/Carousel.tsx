@@ -9,10 +9,11 @@ const MAX_VISIBILITY = 3;
 
 interface CarouselProps {
   children: ReactNode;
+  active: any;
+  setActive: any;
 }
 
-const Carousel: React.FC<CarouselProps> = ({ children }) => {
-  const [active, setActive] = useState<number>(2);
+const Carousel: React.FC<CarouselProps> = ({ children, active, setActive }) => {
   const count = React.Children.count(children);
 
   return (

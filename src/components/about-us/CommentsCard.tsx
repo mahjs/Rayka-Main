@@ -4,17 +4,29 @@ interface CardProps {
   text: string;
   name: string;
   job: string;
+  isActive: boolean;
 }
-export const CommentsCard: React.FC<CardProps> = ({ text, name, job }) => (
+export const CommentsCard: React.FC<CardProps> = ({
+  text,
+  name,
+  job,
+  isActive,
+}) => (
   <div className=" flex justify-center gap-8">
     <div className="  flex flex-row-reverse justify-center gap-8">
       <div
         className={`w-13rem relative mt-4 flex flex-col gap-12 md:w-[32rem] `}
       >
-        <div className={`rounded-2xl bg-primary p-[1.90rem] text-justify`}>
+        <div
+          className={`rounded-2xl  p-[1.90rem] text-justify ${
+            isActive ? "bg-primary" : "bg-white opacity-50"
+          }`}
+        >
           <p>{text}</p>
           <div
-            className={`absolute mt-6 h-0 w-0 border-l-[22px] border-r-[22px] border-t-[40px] border-primary border-l-transparent border-r-transparent `}
+            className={`absolute mt-6 h-0 w-0 border-l-[22px] border-r-[22px] border-t-[40px] ${
+              isActive ? "border-primary" : "border-white opacity-50"
+            }  border-l-transparent border-r-transparent `}
           ></div>
         </div>
         <div className="flex items-center justify-start gap-5">

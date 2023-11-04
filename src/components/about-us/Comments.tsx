@@ -9,6 +9,8 @@ import { CommentsCard } from "./CommentsCard";
 interface Props {}
 
 const Comments: React.FC<Props> = ({}) => {
+  const [active, setActive] = useState<number>(2);
+
   const cardsData = [
     {
       text: "dhsaskjli",
@@ -37,13 +39,14 @@ const Comments: React.FC<Props> = ({}) => {
       <div className="z-10 flex w-full flex-col items-center justify-start gap-10 py-5">
         <h1 className="title text-white">صحبت مدیران</h1>
 
-        <Carousel>
+        <Carousel active={active} setActive={setActive}>
           {cardsData.map((card, i) => (
             <CommentsCard
               key={i}
               text={card.text}
               name={card.name}
               job={card.job}
+              isActive={i === active} // Pass the isActive prop
             />
           ))}
         </Carousel>

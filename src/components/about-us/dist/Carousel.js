@@ -7,8 +7,7 @@ var arrow_left_svg_1 = require("@/assets/images/arrow-left.svg");
 var image_1 = require("next/image");
 var MAX_VISIBILITY = 3;
 var Carousel = function (_a) {
-    var children = _a.children;
-    var _b = react_1.useState(2), active = _b[0], setActive = _b[1];
+    var children = _a.children, active = _a.active, setActive = _a.setActive;
     var count = react_1["default"].Children.count(children);
     return (react_1["default"].createElement("div", { className: "carousel" },
         active > 0 && (react_1["default"].createElement("button", { type: "button", "aria-label": "Next", className: "nav left", onClick: function () { return setActive(function (i) { return i - 1; }); } },
