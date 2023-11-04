@@ -25,8 +25,8 @@ const page: React.FC<Props> = ({}) => {
             alt="rayka icon"
             className="w-12 md:w-16 "
           />
-          <p className="  text-5xl font-bold text-primary	">درباه‌ما </p>
-          <p className="  mt-3 text-justify	 text-[1rem] font-medium text-white	">
+          <p className="  title-2 text-5xl font-bold	text-primary">درباه‌ما </p>
+          <p className="  Body mt-3	 text-justify text-[1rem] font-medium	text-white">
             ما در خانواده ی سخت کوش و خستگی ناپذیر شرکت ماورای ابعاد رایکا ،
             برای تحقق رویاهایمان میجنگیم. در کنار هم میسازیم و از تماشای آنچه
             روزی تصور کرده بودیم و حالا به آن تجسم بخشیده ایم لذت میبریم. لورم
@@ -41,8 +41,8 @@ const page: React.FC<Props> = ({}) => {
         </div>
       </div>
       <Honers />
-      <Persons />
-      <Comments />
+      {/* <Persons /> */}
+      {/* <Comments /> */}
     </div>
   );
 };

@@ -21,10 +21,12 @@ const HeroSection: React.FC<Props> = ({
         className="absolute h-full w-full object-cover"
       />
       <div className="z-10 text-center">
-        <h1 className="mb-4 text-8xl font-extrabold		 text-white	">{heading}</h1>
-        <h2 className="text-3xl font-medium text-gray-400	">
+        <h1 className="subtitle-1 mb-4 text-8xl font-extrabold		 text-white	">
+          {heading}
+        </h1>
+        <h2 className="subtitle text-3xl font-medium	 text-gray-400">
           {subHeading}{" "}
-          <span className="text-3xl font-medium text-primary">
+          <span className="subtitle text-3xl font-medium text-primary">
             {childHeading}
           </span>
         </h2>

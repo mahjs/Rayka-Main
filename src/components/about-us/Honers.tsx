@@ -60,7 +60,7 @@ const Honers: React.FC<Props> = ({}) => {
         <p className="my-5 text-center text-6xl	 font-extrabold	 text-white">
           افتخارات ما
         </p>{" "}
-        <div className="mx-auto grid grid-cols-3 gap-12">
+        {/* <div className="mx-auto grid grid-cols-3 gap-12">
           {images.map((image, index) => (
             <div className="group relative" key={index}>
               <Image src={image.src} alt={image.alt} />
@@ -71,12 +71,12 @@ const Honers: React.FC<Props> = ({}) => {
               </div>
             </div>
           ))}
-        </div>
-        <div className="flex justify-evenly">
+        </div> */}
+        {/* <div className="flex justify-evenly">
           {informationData.map((info) => (
             <InfoText key={info.id} title={info.title} text={info.text} />
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );
