@@ -3,7 +3,7 @@ import Form from "./Form";
 
 const MessagesForm: FC = () => {
   return (
-    <div className="mt-5 grid select-none place-items-center p-[1em] md:p-[2.5em] lg:grid-cols-2 lg:p-[5em]">
+    <div className="mt-10 grid select-none place-items-center p-[1em] md:p-[2.5em] lg:grid-cols-2 lg:p-[5em]">
       <div className="h-full w-full">
         <p className="title text-center text-semiBlack md:text-right">
           دوست داریم صدای <span className="text-primary">شما</span> را بشنویم !
