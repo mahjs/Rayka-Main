@@ -1,49 +1,11 @@
 import HeroSection from "@/components/HeroSection";
 import Image from "next/image";
-import AboutUs from "@/assets/images/about-us.svg";
 import Honers from "@/components/about-us/Honers";
 import React from "react";
 import Persons from "@/components/about-us/Persons";
 import Comments from "@/components/about-us/Comments";
-import Carousel from "./Carousel";
-import heroImage from "@/assets/images/hero-image.webp";
-import truPerson from "@/assets/images/truePerson.svg";
 
 interface Props {}
-
-const CARDS = 10;
-interface CardProps {
-  title: string;
-  content: string;
-}
-
-const testimonials = [
-  {
-    text: "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد",
-    imageSrc: truPerson,
-    name: "محمدرضا علیمردانی",
-    title: "مدیریت لورم ایپسوم",
-  },
-  {
-    text: "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد",
-    imageSrc: truPerson,
-    name: "محمدرضا علیمردانی",
-    title: "مدیریت لورم ",
-  },
-  {
-    text: "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد",
-    imageSrc: truPerson,
-    name: "محمدرضا علیمردانی",
-    title: "مدیریت لورم ایپسوم",
-  },
-];
-
-const Card: React.FC<CardProps> = ({ title, content }) => (
-  <div className="card">
-    <h2>{title}</h2>
-    <p>{content}</p>
-  </div>
-);
 
 const page: React.FC<Props> = ({}) => {
   return (

@@ -18,7 +18,12 @@ const Carousel: React.FC<CarouselProps> = ({ children }) => {
   return (
     <div className="carousel">
       {active > 0 && (
-        <button className="nav left" onClick={() => setActive((i) => i - 1)}>
+        <button
+          type="button"
+          aria-label="Next"
+          className="nav left"
+          onClick={() => setActive((i) => i - 1)}
+        >
           <Image src={arrowLeft} alt="arrow left" />
         </button>
       )}
@@ -41,7 +46,12 @@ const Carousel: React.FC<CarouselProps> = ({ children }) => {
         </div>
       ))}
       {active < count - 1 && (
-        <button className="nav right" onClick={() => setActive((i) => i + 1)}>
+        <button
+          aria-label="Next"
+          type="button"
+          className="nav right"
+          onClick={() => setActive((i) => i + 1)}
+        >
           <Image src={arrowRight} alt="arrow right" />
         </button>
       )}
