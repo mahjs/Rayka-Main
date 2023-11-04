@@ -2,18 +2,14 @@ import React from "react";
 
 interface CustomBtnProps {
   sendText: string;
-  cancelText: string;
 }
 
-const CustomBtn: React.FC<CustomBtnProps> = ({ sendText, cancelText }) => {
+const CustomBtn: React.FC<CustomBtnProps> = ({ sendText }) => {
   return (
-    <div className="mt-6">
+    <div className="mt-6 flex">
       <button type="submit" className="btn-send">
         {sendText}
         <span className="btn-shadow"></span>
-      </button>
-      <button type="submit" className="btn-cancel">
-        {cancelText}
       </button>
     </div>
   );
