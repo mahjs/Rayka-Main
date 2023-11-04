@@ -36,7 +36,7 @@ const images = [
   {
     src: honers2,
     alt: "honers2",
-    text: "توسعه شبکه داخلی کشور با استفاده از سرویس‌های بین‌المللی",
+    text: "توسعه سرویس ها",
   },
   {
     src: honers1,
@@ -49,31 +49,31 @@ const images = [
 ];
 const Honers: React.FC<Props> = ({}) => {
   return (
-    <div className="relative mb-[6.63rem]  flex items-start ">
+    <div className="relative mb-[3.63rem] flex  items-start md:mb-[6.63rem] ">
       <Image
         src="/images/bg-main.webp"
         width={800}
         height={800}
         alt="HonersBackground"
-        className="  h-[94.75rem] w-full  object-cover"
+        className=" h-[90rem] w-full object-cover  md:h-[94.75rem]"
       />
       <div className="z-1 absolute flex w-full flex-col justify-center gap-y-12 py-24">
-        <p className="my-5 text-center text-6xl	 font-extrabold	 text-white">
+        <p className="title my-5 text-center text-6xl	 font-extrabold	 text-white">
           افتخارات ما
         </p>{" "}
-        <div className="mx-auto grid grid-cols-3 gap-12">
+        <div className="mx-auto grid grid-cols-2 gap-6 px-7 md:grid-cols-3 md:gap-12">
           {images.map((image, index) => (
             <div className="group relative" key={index}>
               <Image src={image.src} alt={image.alt} />
               <div className="absolute inset-0 mx-auto flex items-center rounded-3xl transition-all duration-300 ease-in-out hover:bg-primary hover:opacity-50">
-                <span className="mx-auto px-[1.8rem] text-center text-4xl font-semibold text-primary transition-colors duration-300 ease-in-out group-hover:text-black">
+                <span className="subtitle-1 mx-auto px-[1.8rem] text-center text-4xl font-semibold text-primary transition-colors duration-300 ease-in-out group-hover:text-black">
                   {image.text}
                 </span>
               </div>
             </div>
           ))}
         </div>
-        <div className="flex justify-evenly">
+        <div className=" grid w-full grid-cols-2 justify-evenly gap-5 md:flex ">
           {informationData.map((info) => (
             <InfoText key={info.id} title={info.title} text={info.text} />
           ))}

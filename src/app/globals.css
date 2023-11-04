@@ -112,6 +112,22 @@ body {
 }
 
 .btn-send {
+  @apply Btn  relative ml-6 overflow-hidden rounded-lg bg-primary px-14 py-3.5 text-center text-black duration-300 hover:bg-[#111111] hover:text-primary focus:outline-none focus:ring-4 focus:ring-primary dark:bg-primary dark:hover:bg-[#111111] dark:focus:ring-primary;
+}
+
+.btn-shadow {
+  @apply absolute inset-0 -right-4 h-24 w-[2.3rem] rotate-[38deg] bg-yellow-500 opacity-30;
+}
+
+.btn-cancel {
+  @apply Btn rounded-lg bg-black px-16 py-3.5 text-center text-white duration-300 hover:bg-primary focus:outline-none focus:ring-4 focus:ring-[#111111] dark:bg-[#111111] dark:hover:bg-primary dark:focus:ring-[#111111];
+}
+
+body {
+  direction: rtl;
+}
+
+.btn-send {
   @apply Btn  relative ml-6 overflow-hidden rounded-lg bg-primary px-14 py-3.5 text-center text-black duration-300 hover:bg-[#111111] hover:text-primary focus:outline-none focus:ring-4 focus:ring-[#111111] dark:bg-primary dark:hover:bg-[#111111] dark:focus:ring-primary;
 }
 
@@ -286,8 +302,15 @@ body {
     scaleY(calc(1 + var(--abs-offset) * -0.4))
     translateZ(calc(var(--abs-offset) * -30rem))
     translateX(calc(var(--direction) * -5rem));
+  transform: rotateY(calc(var(--offset) * 50deg))
+    scaleY(calc(1 + var(--abs-offset) * -0.4))
+    translateZ(calc(var(--abs-offset) * -30rem))
+    translateX(calc(var(--direction) * -5rem));
   filter: blur(calc(var(--abs-offset) * 1rem));
   transition: all 0.3s ease-out;
+  @media screen and (max-width: 500px) {
+    width: 15%;
+  }
 }
 .card {
   width: 100%;
@@ -311,6 +334,13 @@ body {
   transition: all 0.3s ease-out;
   opacity: var(--active);
 }
+.bg-primary {
+  background-color: #fea918;
+}
+
+.bg-gray {
+  background-color: gray; /* or your desired shade of gray */
+}
 .nav {
   color: white;
   font-size: 5rem;
@@ -321,11 +351,18 @@ body {
   top: 50%;
   z-index: 2;
   cursor: pointer;
-  user-select: none;
+  /* user-select: none; */
 }
 .nav.left {
-  transform: translateX(-100%) translatey(-50%);
+  transform: translateX(-36rem) translateY(-50%);
+  @media screen and (max-width: 500px) {
+    transform: translateX(-10rem) translateY(4rem);
+  }
 }
+
 .nav.right {
-  transform: translateX(100%) translatey(-50%);
+  transform: translateX(100%) translateY(-50%);
+  @media screen and (max-width: 500px) {
+    transform: translateX(100%) translateY(4rem);
+  }
 }

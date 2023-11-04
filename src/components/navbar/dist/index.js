@@ -26,10 +26,10 @@ var Navbar = function () {
         window.addEventListener("scroll", handleScroll);
         return function () { return window.removeEventListener("scroll", handleScroll); };
     }, []);
-    return (React.createElement("div", { className: "navbar fixed left-0 right-0  top-0 z-40 flex w-full px-20 py-5 backdrop-blur-sm transition-all  duration-300 " + (isScrolled ? "bg-[#000000cc]" : "") },
+    return (React.createElement("div", { className: "navbar fixed left-0 right-0 top-0 z-50 flex w-full justify-between px-5 py-5 transition-all  duration-500 \n       md:pr-20 " + (isScrolled ? "bg-[#00000099]" : "") },
         React.createElement("ul", { className: "subtitle flex gap-16" },
             React.createElement(RenderNavItem, { href: "/", text: "\u062E\u0627\u0646\u0647" }),
-            React.createElement(RenderNavItem, { href: "/about-us", text: "\u062F\u0631\u0628\u0627\u0631\u0647\u200C\u0645\u0627" }),
+            React.createElement(RenderNavItem, { href: "/about-us", text: "\u062F\u0631\u0628\u0627\u0647\u200C\u0645\u0627" }),
             React.createElement(RenderNavItem, { href: "/contact-us", text: "\u0627\u0631\u062A\u0628\u0627\u0637 \u0628\u0627 \u0645\u0627" }),
             React.createElement(RenderNavItem, { href: "/jobs", text: "\u0641\u0631\u0635\u062A\u200C\u0647\u0627\u06CC \u0634\u063A\u0644\u06CC" })),
         React.createElement(link_1["default"], { href: "/", className: "mr-auto" },
