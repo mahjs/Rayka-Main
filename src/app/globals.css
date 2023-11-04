@@ -254,12 +254,6 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .Body-3 {
-    font-size: 1rem;
-  }
-}
-
 .Btn {
   font-family: "KalamehBold";
   font-size: 1.3rem;
