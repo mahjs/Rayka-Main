@@ -30,7 +30,7 @@ const informationData = [
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-10">
+    <div className="flex flex-col gap-10 md:gap-20">
       {/* Background */}
       <Image
         src="/images/bg-main.webp"
@@ -80,7 +80,7 @@ export default function Home() {
       </div>
 
       {/* Experties Content */}
-      <div className="relative flex justify-center md:mb-[10rem]">
+      <div className="relative flex justify-center md:mb-5">
         {/* Make the backgrounds */}
         <div className="absolute h-[15rem] w-[90.1%] -rotate-[2deg] rounded-lg bg-[#FEA918] md:w-[80.1%] md:rounded-3xl" />
         <div
@@ -115,7 +115,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="-mb-[2rem] ml-[10%] flex items-center justify-center md:-mb-[5rem] md:mt-[8rem]">
+      <div className="-mb-[2rem] ml-[10%] flex items-center justify-center md:-mb-[5rem]">
         <JoinRaykaCard />
       </div>
     </div>
