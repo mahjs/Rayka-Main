@@ -26,7 +26,7 @@ const JobCard: React.FC<Job> = ({
   postedTime,
 }) => {
   return (
-    <div className="grid place-items-center justify-center overflow-hidden p-[6em]">
+    <div className="grid place-items-center justify-center overflow-hidden">
       <div
         style={cardStyle}
         className="w-[22rem] justify-between rounded-lg p-[2em] md:w-[36rem]"
@@ -101,12 +101,7 @@ const Jobs: React.FC = () => {
 
   return (
     <div className="select-none flex-col ">
-      <Image
-        src={BgImage}
-        alt="contact-us-bg"
-        className="absolute top-0 -z-10 h-[22%] w-full object-cover md:h-[70%]"
-      />
-      <div className="flex w-full flex-col justify-center text-center text-white md:h-[500px]">
+      <div className="flex w-full flex-col justify-center bg-main-image pb-5 pt-16 text-center text-white md:h-[500px] md:pt-0">
         <h1 className="header-1">فرصت های شغلی</h1>
         <div className="subtitle flex justify-center">
           <p>
@@ -117,7 +112,7 @@ const Jobs: React.FC = () => {
           </p>
         </div>
       </div>
-      <div className="flex flex-wrap justify-center">
+      <div className="my-5 flex flex-wrap justify-center gap-5 md:justify-around">
         {jobsData.map((job, index) => (
           <JobCard
             key={index}
