@@ -14,6 +14,9 @@ const config: Config = {
       semiBlack: "#111",
     },
     extend: {
+      fontFamily: {
+        'sans': ['KalamehSemiBold']
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
