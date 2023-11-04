@@ -43,14 +43,12 @@ export default function Home() {
       <div className="absolute left-0 right-0 top-0 -z-30 hidden h-full w-full bg-[#FEA918] md:block" />
 
       {/* Top content */}
-      <Image
-        src="/images/bg-main.webp"
-        width={500}
-        height={500}
-        alt="background"
-        className="absolute top-0 -z-10 min-h-[80vw] w-full  md:hidden"
-      />
-      <div className="flex items-center justify-between md:h-[100vh]">
+      <div
+        style={{
+          backgroundSize: "100%",
+        }}
+        className="flex items-center justify-between bg-main-image pt-16 md:h-[100vh] md:pt-0"
+      >
         <div className="flex-col px-5 pb-5 text-white md:mr-[8rem] md:py-10">
           <p className="header-a hidden md:block">شرکت ماورای ابعاد رایکا</p>
           <p className="header-2 hidden md:block">
