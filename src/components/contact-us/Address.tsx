@@ -19,14 +19,8 @@ const DEFAULT_MAP_URL =
   "https://map.ir/lat/35.803776/lng/51.472840/z/16/p/%D9%85%D8%A7%D9%8A%D9%86%D8%AC%D8%A7%DB%8C%DB%8C%D9%85";
 const MAP_URL: string = process.env.NEXT_PUBLIC_MAP_URL || DEFAULT_MAP_URL;
 
-interface UserLocation {
-  userLat: number;
-  userLng: number;
-}
-
 const Map: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
-  const [userLocation, setUserLocation] = useState<UserLocation | null>(null);
 
   const openNavigation = (service: NavigationService) => {
     const navigationLinks = {
@@ -42,21 +36,7 @@ const Map: React.FC = () => {
   };
 
   const handleMapClick = () => {
-    if ("geolocation" in navigator) {
-      navigator.geolocation.getCurrentPosition(
-        (position) => {
-          const userLat = position.coords.latitude;
-          const userLng = position.coords.longitude;
-          setUserLocation({ userLat, userLng });
-          setShowModal(true);
-        },
-        (error) => {
-          console.error("Error retrieving user location", error);
-        },
-      );
-    } else {
-      console.error("Geolocation is not supported by this browser.");
-    }
+    setShowModal(true);
   };
 
   return (
