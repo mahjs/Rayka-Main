@@ -41,8 +41,8 @@ const FloatingInput: React.FC<FloatingInputProps> = ({
 
 const Form: React.FC = () => {
   return (
-    <form className="mt-4 w-full md:mt-7">
-      <div className="grid select-none grid-cols-2 gap-4 md:gap-7">
+    <form className="w-full">
+      <div className="grid select-none md:grid-cols-2 md:gap-7">
         <FloatingInput
           type="text"
           name="floating_first_name"
@@ -71,10 +71,10 @@ const Form: React.FC = () => {
       </div>
       <textarea
         id="message"
-        className="row-span-4 mt-4 md:mt-7 block h-40 w-full rounded border-0 bg-[#f5f5f5] p-2.5 text-sm text-gray-900 focus:border-primary focus:ring-primary dark:border-primary dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-primary dark:focus:ring-primary md:h-60"
+        className="row-span-4 mt-7 block h-60 w-full rounded border-0 bg-[#f5f5f5] p-2.5 text-sm text-gray-900 focus:border-primary focus:ring-primary dark:border-primary dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-primary dark:focus:ring-primary"
         placeholder="پیام شما ..."
       ></textarea>
-      <CustomBtn sendText="ارسال پیام" />
+      <CustomBtn sendText="ارسال پیام" cancelText="لغو پیام" />
     </form>
   );
 };

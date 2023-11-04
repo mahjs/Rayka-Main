@@ -36,22 +36,20 @@ const reverseString = (str: string) => {
 const AddressItem: React.FC<AddressItemProps> = ({ src, alt, text, desc }) => (
   <div className="flex w-52 select-none flex-wrap items-center justify-center">
     <Image
-      className="mx-6 h-[40%] w-[40%] "
+      className="mx-6 object-cover"
       width={100}
       height={100}
       src={src}
       alt={alt}
     />
-    <div>
-      <h5 className="header-5 mt-3 text-center">{text}</h5>
-      <p className="Body-3 text-center">{desc}</p>
-    </div>
+    <h5 className="header-5 mt-3 text-center">{text}</h5>
+    <p className="text-center">{desc}</p>
   </div>
 );
 
 const Address = () => {
   return (
-    <div className="mt-8 flex w-full items-stretch justify-evenly">
+    <div className="mt-8 flex w-full items-center justify-around">
       {ADDRESS_ITEMS.map((item) => (
         <AddressItem
           key={item.alt}
