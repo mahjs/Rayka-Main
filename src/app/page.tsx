@@ -65,7 +65,7 @@ export default function Home() {
           <p className="text-[2rem] font-bold md:hidden">
             <span className="text-primary">هوشمندی</span> در کسب و کار
           </p>
-          <p className="md:header-4 mt-5 text-right text-white opacity-50 md:mt-0 md:max-w-[50%] md:opacity-100">
+          <p className="text-right text-white opacity-50 md:mt-0 md:max-w-[50%] md:text-[1.2rem] md:opacity-100">
             ما در شرکت ماورای ابعاد رایکا به بهبود سرویس‌های موجود در حوزه
             فناوری و ارتباطات اکتفا نمی‌کنیم؛ ما به رویاهای تحقق نیافته جامه‌ی
             عمل می‌پوشانیم و در کنار هم از خلق آینده‌ای هوشمندتر لذت می‌بریم.

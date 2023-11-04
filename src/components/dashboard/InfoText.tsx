@@ -17,7 +17,7 @@ const InfoText: FC<Props> = ({ title, text, unit }) => {
     if (!startAnimation || showValue === title) return;
     setTimeout(
       () => setShowValue((prevValue) => Math.min(prevValue + 1, title)),
-      25,
+      22,
     );
   }, [showValue, startAnimation, title]);
 
@@ -50,7 +50,7 @@ const InfoText: FC<Props> = ({ title, text, unit }) => {
 
   return (
     <div ref={numberRef} className="flex-col items-center justify-center gap-5">
-      <p className="text-center text-[3rem] font-bold text-[#FEA918] md:text-[6rem]">
+      <p className="header-6 text-center font-bold text-[#FEA918] md:text-[6rem]">
         {showValue}
         {unit ? unit : ""}+
       </p>
