@@ -1,6 +1,5 @@
 import HeroSection from "@/components/HeroSection";
 import Image from "next/image";
-import AboutUs from "@/assets/images/about-us.svg";
 import Honers from "@/components/about-us/Honers";
 import React from "react";
 import Persons from "@/components/about-us/Persons";
