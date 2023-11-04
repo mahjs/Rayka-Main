@@ -67,7 +67,7 @@ const page: React.FC<Props> = ({}) => {
             height="50"
             alt="rayka icon"
           />
-          <p className="  text-5xl font-bold text-primary	">درباه‌ما </p>
+          <p className="  text-5xl font-bold text-primary	">درباره‌ما </p>
           <p className="  text-[1rem] font-medium	 text-white">
             ما در خانواده ی سخت کوش و خستگی ناپذیر شرکت ماورای ابعاد رایکا ،
             برای تحقق رویاهایمان میجنگیم. در کنار هم میسازیم و از تماشای آنچه
