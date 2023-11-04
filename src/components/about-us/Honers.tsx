@@ -72,11 +72,11 @@ const Honers: React.FC<Props> = ({}) => {
             </div>
           ))}
         </div> */}
-        {/* <div className="flex justify-evenly">
+        <div className="absolute z-20 grid w-full grid-cols-2 justify-evenly gap-5 md:flex ">
           {informationData.map((info) => (
             <InfoText key={info.id} title={info.title} text={info.text} />
           ))}
-        </div> */}
+        </div>
       </div>
     </div>
   );

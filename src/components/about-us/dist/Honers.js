@@ -3,6 +3,7 @@ exports.__esModule = true;
 var react_1 = require("react");
 var image_1 = require("next/image");
 var honersBackground_svg_1 = require("@/assets/images/honersBackground.svg");
+var InfoText_1 = require("../dashboard/InfoText");
 var honers1_svg_1 = require("@/assets/images/honers1.svg");
 var honers2_svg_1 = require("@/assets/images/honers2.svg");
 var honers3_svg_1 = require("@/assets/images/honers3.svg");
@@ -52,6 +53,7 @@ var Honers = function (_a) {
         react_1["default"].createElement(image_1["default"], { src: honersBackground_svg_1["default"], alt: "HonersBackground", className: "  h-[94.75rem] w-full  object-cover" }),
         react_1["default"].createElement("div", { className: "z-1 absolute flex w-full flex-col justify-center gap-y-12 py-24" },
             react_1["default"].createElement("p", { className: "my-5 text-center text-6xl\t font-extrabold\t text-white" }, "\u0627\u0641\u062A\u062E\u0627\u0631\u0627\u062A \u0645\u0627"),
-            " ")));
+            " ",
+            react_1["default"].createElement("div", { className: "absolute z-20 grid w-full grid-cols-2 justify-evenly gap-5 md:flex " }, informationData.map(function (info) { return (react_1["default"].createElement(InfoText_1["default"], { key: info.id, title: info.title, text: info.text })); })))));
 };
 exports["default"] = Honers;
