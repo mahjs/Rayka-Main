@@ -29,7 +29,7 @@ const informationData = [
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-10">
+    <div className="overflow--hidden flex flex-col gap-10 md:overflow-hidden">
       {/* Background */}
       <Image
         src="/images/bg-main.webp"
