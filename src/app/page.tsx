@@ -32,20 +32,13 @@ export default function Home() {
   return (
     <div className="flex flex-col gap-10 md:gap-20">
       {/* Background */}
-      <Image
-        src="/images/bg-main.webp"
-        alt="background image. show a bunch of people sitting around a table"
-        layout="fill"
-        objectFit="cover"
-        draggable="false"
-        className="-z-10 hidden md:block md:rounded-br-[40rem]"
-      />
       <div className="absolute left-0 right-0 top-0 -z-30 hidden h-full w-full bg-[#FEA918] md:block" />
 
       {/* Top content */}
       <div
         style={{
           backgroundSize: "100%",
+          // backgroundPosition: "0% 105%",
         }}
         className="flex items-center justify-between bg-main-image pt-16 md:h-[100vh] md:pt-0"
       >
