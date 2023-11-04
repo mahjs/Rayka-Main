@@ -137,7 +137,6 @@ body {
   font-size: 7.61406rem;
   @media screen and (max-width: 768px) {
     font-size: 2.1875rem;
-  }
 }
 
 .header-2 {
