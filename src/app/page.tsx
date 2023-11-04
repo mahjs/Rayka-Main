@@ -7,22 +7,23 @@ import Experties from "@/components/dashboard/Experties";
 const informationData = [
   {
     id: 1,
-    title: "17",
+    title: 17,
     text: "پروژه موفقیت‌آمیر",
   },
   {
     id: 2,
-    title: "35+",
+    title: 35,
     text: "پرسنل مجرب",
   },
   {
     id: 3,
-    title: "7+",
+    title: 7,
     text: "همکای‌های بین‌المللی",
   },
   {
     id: 4,
-    title: "1M+",
+    title: 1,
+    unit: "M",
     text: "تعداد کاربران",
   },
 ];
@@ -106,7 +107,12 @@ export default function Home() {
         <div className="absolute bottom-0 left-0 right-0 top-0 z-10 h-full w-full rounded-3xl bg-black bg-opacity-30" />
         <div className="absolute z-20 grid w-full grid-cols-2 justify-evenly gap-5 md:flex ">
           {informationData.map((info) => (
-            <InfoText key={info.id} title={info.title} text={info.text} />
+            <InfoText
+              key={info.id}
+              unit={info.unit}
+              title={info.title}
+              text={info.text}
+            />
           ))}
         </div>
       </div>
