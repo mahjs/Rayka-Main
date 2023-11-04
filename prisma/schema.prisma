@@ -50,16 +50,27 @@ enum Role {
 }
 
 model Job {
+  id              Int      @id @default(autoincrement())
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  published       Boolean  @default(false)
+  author          User     @relation(fields: [authorId], references: [id])
+  authorId        Int
+  title           String
+  image           String
+  salary          Int?
+  description     String
+  tags            String[]
+  fullDescription String
+}
+
+model Form {
   id        Int      @id @default(autoincrement())
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
-  published Boolean  @default(false)
-  author    User     @relation(fields: [authorId], references: [id])
-  authorId  Int
+  name      String
+  email     String
+  phone     String
   title     String
-  image    String
-  salary    Int?
-  description String
-  tags      String[]
-  fullDescription String
+  message   String
 }
