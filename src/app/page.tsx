@@ -47,8 +47,8 @@ export default function Home() {
           <p className="header-2 hidden md:block">
             همگام با <span className="text-primary">تکنولوژی</span>
           </p>
-          <p className="header-2">
-            برای <span className="text-[#FEA918]">آینده‌ای </span>هوشمندتر
+          <p className="md:header-2 hidden md:block">
+            برای <span className="text-primary">آینده‌ای </span> هوشمندتر
           </p>
           <p className="text-[2rem] font-bold md:hidden">
             <span className="text-primary">نوآوری</span> در فناوری
@@ -62,7 +62,7 @@ export default function Home() {
             عمل می‌پوشانیم و در کنار هم از خلق آینده‌ای هوشمندتر لذت می‌بریم.
           </p>
         </div>
-        <div className="-ml-[3rem] flex -rotate-90 gap-10 text-white">
+        <div className="-ml-[3rem] hidden -rotate-90  gap-10 text-white md:flex">
           <div>
             <Link href="#">INSTAGRAM</Link>
           </div>
@@ -75,19 +75,28 @@ export default function Home() {
       {/* Experties Content */}
       <div className="relative flex justify-center md:mb-5">
         {/* Make the backgrounds */}
-        <div className="absolute h-[15rem] w-[80.1%] -rotate-[2deg] rounded-3xl bg-[#FEA918]" />
-        <div className="relative h-[18rem] w-[80%] flex-col items-center justify-center rounded-3xl bg-main-image">
+        <div className="absolute h-[15rem] w-[90.1%] -rotate-[2deg] rounded-lg bg-[#FEA918] md:w-[80.1%] md:rounded-3xl" />
+        <div
+          style={{
+            backgroundSize: "100%",
+          }}
+          className="relative h-[24rem] w-[90%] flex-col items-center justify-center rounded-lg bg-main-image md:h-[18rem] md:w-[80%] md:rounded-3xl"
+        >
           <div className="absolute bottom-0 left-0 right-0 top-0 z-10 h-full w-full rounded-3xl bg-black bg-opacity-30" />
         </div>
-
         {/* Content */}
         <Experties />
       </div>
 
       {/* Information Content */}
-      <div className="justify-centerjjj relative mb-[5rem] flex h-[20rem] w-full items-center bg-main-image">
+      <div
+        className="relative flex h-[20rem] w-full items-center justify-center  bg-main-image md:mb-[5rem]"
+        style={{
+          backgroundSize: "100%",
+        }}
+      >
         <div className="absolute bottom-0 left-0 right-0 top-0 z-10 h-full w-full rounded-3xl bg-black bg-opacity-30" />
-        <div className="absolute z-20 flex w-full justify-evenly ">
+        <div className="absolute z-20 grid w-full grid-cols-2 justify-evenly gap-5 md:flex ">
           {informationData.map((info) => (
             <InfoText
               key={info.id}

@@ -60,47 +60,68 @@ const Experties = () => {
   };
 
   return (
-    <div className="absolute z-20 h-[18rem] w-[80%] flex-col items-center justify-center rounded-3xl">
-      <p className="title-2 my-5 text-center text-white">حوضه تخصصی رایکا</p>
-      <Transition
-        show={showExperties}
-        enter="transition-all duration-500 "
-        enterFrom="opacity-0 translate-y-full"
-        enterTo="opacity-1 translate-y-0"
-        leave="transition-all duration-500"
-        leaveFrom="opacity-1 translate-y-0"
-        leaveTo="opacity-0 translate-y-full"
-      >
-        <div className="flex w-full justify-center gap-10">
-          {expertiesData.map((expert, index) => (
-            <ExpertCard
-              onClick={handleSelectedIndex}
-              key={expert.id}
-              index={index + 1}
-              title={expert.title}
-              orangeIconPath={expert.orangeIconPath}
-              darkIconPath={expert.darkIconPath}
-            />
-          ))}
-        </div>
-      </Transition>
-      <Transition
-        show={showDetails}
-        enter="transition-all duration-500 "
-        enterFrom="opacity-0 translate-y-full"
-        enterTo="opacity-1 translate-y-0"
-        leave="transition-all duration-500"
-        leaveFrom="opacity-1 translate-y-0"
-        leaveTo="opacity-0 translate-y-full"
-      >
-        <ExpertDetailsCard
-          handleClickClose={handleCloseButtonClick}
-          key={selectedIndex}
-          title={expertiesData[selectedIndex!].title}
-          name={expertiesData[selectedIndex!].name}
-          iconPath={expertiesData[selectedIndex!].darkIconPath}
-        />
-      </Transition>
+    <div className="absolute z-20 h-[18rem] w-[90%] flex-col items-center  justify-center md:w-[80%] md:rounded-3xl">
+      <p className="header-4 md:title-2 my-5 text-center text-white">
+        حوضه تخصصی رایکا
+      </p>
+
+      <div className="grid  grid-cols-2 gap-y-4 md:hidden">
+        {expertiesData.map((expert, index) => (
+          <ExpertCard
+            mobile
+            onClick={handleSelectedIndex}
+            key={expert.id}
+            index={index + 1}
+            title={expert.title}
+            orangeIconPath={expert.orangeIconPath}
+            darkIconPath={expert.darkIconPath}
+          />
+        ))}
+      </div>
+
+      <div className="hidden md:block">
+        <Transition
+          show={showExperties}
+          enter="transition-all duration-500 "
+          enterFrom="opacity-0 translate-y-full"
+          enterTo="opacity-1 translate-y-0"
+          leave="transition-all duration-500"
+          leaveFrom="opacity-1 translate-y-0"
+          leaveTo="opacity-0 translate-y-full"
+        >
+          <div className="flex w-full justify-center gap-10">
+            {expertiesData.map((expert, index) => (
+              <ExpertCard
+                onClick={handleSelectedIndex}
+                key={expert.id}
+                index={index + 1}
+                title={expert.title}
+                orangeIconPath={expert.orangeIconPath}
+                darkIconPath={expert.darkIconPath}
+              />
+            ))}
+          </div>
+        </Transition>
+      </div>
+      <div className="hidden md:block">
+        <Transition
+          show={showDetails}
+          enter="transition-all duration-500 "
+          enterFrom="opacity-0 translate-y-full"
+          enterTo="opacity-1 translate-y-0"
+          leave="transition-all duration-500"
+          leaveFrom="opacity-1 translate-y-0"
+          leaveTo="opacity-0 translate-y-full"
+        >
+          <ExpertDetailsCard
+            handleClickClose={handleCloseButtonClick}
+            key={selectedIndex}
+            title={expertiesData[selectedIndex!].title}
+            name={expertiesData[selectedIndex!].name}
+            iconPath={expertiesData[selectedIndex!].darkIconPath}
+          />
+        </Transition>
+      </div>
     </div>
   );
 };

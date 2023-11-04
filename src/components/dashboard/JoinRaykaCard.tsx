@@ -6,22 +6,23 @@ import React from "react";
 const JoinRaykaCard = () => {
   const router = useRouter();
   return (
-    <div className="relative mr-auto flex w-[90%] items-center gap-5 rounded-3xl bg-[#FEA918] px-10 py-10 ">
+    <div className="relative mr-auto flex w-[90%] flex-col gap-2 rounded-3xl bg-[#FEA918] p-3 md:flex-row  md:items-center md:gap-5 md:p-10 ">
       <div className="flex-col text-black">
         <p className="subtitle-2">عضو خانواده ما شو!</p>
-        <p className="subtitle">اینجا برای همه جا هست!</p>
+        <p className="subtitle hidden md:block">اینجا برای همه جا هست!</p>
       </div>
-      <div className="max-w-[42%] flex-col text-black">
+      <div className="max-w-[75%] flex-col text-black md:max-w-[42%]">
         <p className="Body">
           تیم رایکا همواره در حال تلاش برای پیدا کردن استعداد های این سرزمین و
-          بکارگیری آنها بصورت حضوری و دورکاری میباشد! <br /> حتما به صفحه فرصت
-          های شغلی سر بزنید تا از فرصت های شغلی شرکت مطلع شوید!
+          بکارگیری آنها بصورت حضوری و دورکاری میباشد!{" "}
+          <br className="hidden md:block" /> حتما به صفحه فرصت های شغلی سر بزنید
+          تا از فرصت های شغلی شرکت مطلع شوید!
         </p>
         <button
           onClick={() => {
             router.push("/career");
           }}
-          className="mt-5 flex items-center justify-start gap-3 rounded-2xl bg-black px-5 py-2.5"
+          className="mt-5 hidden items-center justify-start gap-3 rounded-2xl bg-black px-5 py-2.5 md:flex"
         >
           <p className="Btn-2 text-right text-[#FEA918]">
             مشاهده فرصت‌های شغلی
@@ -46,7 +47,7 @@ const JoinRaykaCard = () => {
       </div>
 
       <Image
-        className="absolute -left-4 bottom-0 h-[347px] w-[250px]"
+        className="absolute -left-4 bottom-0 h-[133px] w-[100px] md:h-[347px] md:w-[250px]"
         src="/images/person.png"
         alt="A smiling person"
         width={220}

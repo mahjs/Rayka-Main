@@ -19,7 +19,7 @@ const HeroSection: React.FC<Props> = ({
         <h1 className="header-1 mb-4 font-extrabold	text-white	">{heading}</h1>
         <h2 className="text-3xl font-medium text-gray-400	">
           {subHeading}{" "}
-          <span className="subtitle text-3xl font-medium text-primary">
+          <span className="text-3xl font-medium text-primary">
             {childHeading}
           </span>
         </h2>
