@@ -29,7 +29,7 @@ const informationData = [
 
 export default function Home() {
   return (
-    <div className="overflow--hidden flex flex-col gap-10 md:overflow-hidden">
+    <div className="flex flex-col gap-10">
       {/* Background */}
       <Image
         src="/images/bg-main.webp"
@@ -47,9 +47,9 @@ export default function Home() {
         width={500}
         height={500}
         alt="background"
-        className="absolute top-0 -z-10 min-h-[80vw] w-full md:hidden"
+        className="absolute top-0 -z-10 min-h-[80vw] w-full  md:hidden"
       />
-      <div className="flex items-center justify-between md:h-[100vh] md:w-[100vw]">
+      <div className="flex items-center justify-between md:h-[100vh]">
         <div className="flex-col px-5 pb-5 text-white md:mr-[8rem] md:py-10">
           <p className="header-a hidden md:block">شرکت ماورای ابعاد رایکا</p>
           <p className="header-2 hidden md:block">
@@ -98,7 +98,7 @@ export default function Home() {
 
       {/* Information Content */}
       <div
-        className="relative flex h-[20rem] w-full items-center justify-center bg-main-image md:mb-[5rem]"
+        className="relative flex h-[20rem] w-full items-center justify-center  bg-main-image md:mb-[5rem]"
         style={{
           backgroundSize: "100%",
         }}
@@ -111,7 +111,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="-mb-[5rem] ml-[10%] flex items-center justify-center md:mt-[8rem] ">
+      <div className="-mb-[2rem] ml-[10%] flex items-center justify-center md:-mb-[5rem] md:mt-[8rem]">
         <JoinRaykaCard />
       </div>
     </div>
