@@ -14,7 +14,7 @@ const MAP_URL: string = process.env.NEXT_PUBLIC_MAP_URL || DEFAULT_MAP_URL;
 
 const Map = () => {
   return (
-    <div className="mt-12 h-[400px] w-full mb-32">
+    <div className="relative mb-32 mt-12 h-[400px] w-full md:h-[350px]">
       <iframe
         src={MAP_URL}
         width="100%"

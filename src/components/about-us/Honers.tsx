@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import HonersBackground from "@/assets/images/honersBackground.svg";
 import InfoText from "../dashboard/InfoText";
 import honers1 from "@/assets/images/honers1.svg";
 import honers2 from "@/assets/images/honers2.svg";
@@ -52,7 +51,9 @@ const Honers: React.FC<Props> = ({}) => {
   return (
     <div className="relative mb-[3.63rem] flex  items-start md:mb-[6.63rem] ">
       <Image
-        src={HonersBackground}
+        src="/images/bg-main.webp"
+        width={800}
+        height={800}
         alt="HonersBackground"
         className=" h-[90rem] w-full object-cover  md:h-[94.75rem]"
       />

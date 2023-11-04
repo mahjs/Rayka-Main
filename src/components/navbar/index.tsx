@@ -41,9 +41,8 @@ const Navbar = () => {
 
   return (
     <div
-      className={`navbar fixed left-0 right-0  top-0 z-40 flex w-full px-20 py-5 backdrop-blur-sm transition-all  duration-300 ${
-        isScrolled ? "bg-[#000000cc]" : ""
-      }`}
+      className={`navbar fixed left-0 right-0 top-0 z-50 flex w-full justify-between px-5 py-5 transition-all  duration-500 
+       md:pr-20 ${isScrolled ? "bg-[#00000099]" : ""}`}
     >
       <ul className="subtitle flex gap-16">
         <RenderNavItem href="/" text="خانه" />

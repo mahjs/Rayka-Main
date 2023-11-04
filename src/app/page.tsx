@@ -7,50 +7,56 @@ import Experties from "@/components/dashboard/Experties";
 const informationData = [
   {
     id: 1,
-    title: "17",
+    title: 17,
     text: "پروژه موفقیت‌آمیر",
   },
   {
     id: 2,
-    title: "35+",
+    title: 35,
     text: "پرسنل مجرب",
   },
   {
     id: 3,
-    title: "7+",
+    title: 7,
     text: "همکای‌های بین‌المللی",
   },
   {
     id: 4,
-    title: "1M+",
+    title: 1,
+    unit: "M",
     text: "تعداد کاربران",
   },
 ];
 
 export default function Home() {
   return (
-    <div className="flex-col">
+    <div className="flex flex-col gap-10 md:gap-20">
       {/* Background */}
-      <Image
-        src="/images/bg-main.webp"
-        alt="background image. show a bunch of people sitting around a table"
-        layout="fill"
-        draggable="false"
-        className="-z-10 h-[100vh] w-[100vw] rounded-br-[40rem]"
-      />
-      <div className="absolute left-0 right-0 top-0 -z-30 h-full w-full bg-[#FEA918]" />
+      <div className="absolute left-0 right-0 top-0 -z-30 hidden h-full w-full bg-[#FEA918] md:block" />
 
       {/* Top content */}
-      <div className="flex h-[100vh] w-[100vw] items-center justify-between">
-        <div className="mr-[8rem] flex-col text-white">
-          <p className="header-3">شرکت ماورای ابعاد رایکا</p>
-          <p className="header-2">
-            همگام با <span className="text-[#FEA918]">تکنولوژی</span>
+      <div
+        style={{
+          backgroundSize: "100%",
+          // backgroundPosition: "0% 105%",
+        }}
+        className="flex items-center justify-between bg-main-image pt-16 md:h-[100vh] md:pt-0"
+      >
+        <div className="flex-col px-5 pb-5 text-white md:mr-[8rem] md:py-10">
+          <p className="header-a hidden md:block">شرکت ماورای ابعاد رایکا</p>
+          <p className="header-2 hidden md:block">
+            همگام با <span className="text-primary">تکنولوژی</span>
           </p>
           <p className="header-2">
             برای <span className="text-[#FEA918]">آینده‌ای </span>هوشمندتر
           </p>
-          <p className="g header-4 max-w-[50%] text-right">
+          <p className="text-[2rem] font-bold md:hidden">
+            <span className="text-primary">نوآوری</span> در فناوری
+          </p>
+          <p className="text-[2rem] font-bold md:hidden">
+            <span className="text-primary">هوشمندی</span> در کسب و کار
+          </p>
+          <p className="text-right text-white opacity-50 md:mt-0 md:max-w-[50%] md:text-[1.2rem] md:opacity-100">
             ما در شرکت ماورای ابعاد رایکا به بهبود سرویس‌های موجود در حوزه
             فناوری و ارتباطات اکتفا نمی‌کنیم؛ ما به رویاهای تحقق نیافته جامه‌ی
             عمل می‌پوشانیم و در کنار هم از خلق آینده‌ای هوشمندتر لذت می‌بریم.
@@ -67,7 +73,7 @@ export default function Home() {
       </div>
 
       {/* Experties Content */}
-      <div className="relative mb-[10rem] mt-[5rem] flex justify-center">
+      <div className="relative flex justify-center md:mb-5">
         {/* Make the backgrounds */}
         <div className="absolute h-[15rem] w-[80.1%] -rotate-[2deg] rounded-3xl bg-[#FEA918]" />
         <div className="relative h-[18rem] w-[80%] flex-col items-center justify-center rounded-3xl bg-main-image">
@@ -83,11 +89,17 @@ export default function Home() {
         <div className="absolute bottom-0 left-0 right-0 top-0 z-10 h-full w-full rounded-3xl bg-black bg-opacity-30" />
         <div className="absolute z-20 flex w-full justify-evenly ">
           {informationData.map((info) => (
-            <InfoText key={info.id} title={info.title} text={info.text} />
+            <InfoText
+              key={info.id}
+              unit={info.unit}
+              title={info.title}
+              text={info.text}
+            />
           ))}
         </div>
       </div>
-      <div className="-mb-[5rem] ml-[10%] mt-[8rem] flex items-center justify-center ">
+
+      <div className="-mb-[2rem] ml-[10%] flex items-center justify-center md:-mb-[5rem]">
         <JoinRaykaCard />
       </div>
     </div>

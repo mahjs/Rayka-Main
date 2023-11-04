@@ -14,17 +14,10 @@ const HeroSection: React.FC<Props> = ({
   childHeading,
 }) => {
   return (
-    <div className="relative flex h-[500px] items-center justify-center">
-      <Image
-        src={heroImage}
-        alt="Descriptive alt text"
-        className="absolute h-full w-full object-cover"
-      />
-      <div className="z-10  text-center">
-        <h1 className=" header-1 mb-10 text-8xl	font-extrabold text-white	">
-          {heading}
-        </h1>
-        <h2 className="subtitle subtitle text-3xl	font-medium text-gray-400">
+    <div className="flex h-[500px] items-center justify-center bg-main-image">
+      <div className="z-10 text-center">
+        <h1 className="mb-4 text-8xl font-extrabold		 text-white	">{heading}</h1>
+        <h2 className="text-3xl font-medium text-gray-400	">
           {subHeading}{" "}
           <span className="subtitle text-3xl font-medium text-primary">
             {childHeading}

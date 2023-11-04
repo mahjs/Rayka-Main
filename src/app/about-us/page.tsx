@@ -15,9 +15,20 @@ const page: React.FC<Props> = ({}) => {
         subHeading="خانه -"
         childHeading="درباره ما"
       />
-      <div className="relative mb-[6.69rem] mt-[6.69rem] flex justify-center  ">
-        <div className="absolute  h-8 w-11/12  -rotate-[2.5deg] rounded-3xl bg-[#FEA918] md:h-80 md:w-3/5" />
-        <div className="relative flex w-11/12 flex-col  gap-2 rounded-3xl bg-black px-[2.69rem] py-[2rem] md:h-[28rem] md:w-3/5 md:gap-2 md:px-[7.8rem]	 md:py-[3rem]">
+      <div className="relative flex md:m-[8rem]">
+        {/* Make the backgrounds */}
+        <div className="absolute h-[18rem] -rotate-[2deg] rounded-lg bg-[#FEA918] md:w-[100.2%] md:rounded-3xl" />
+        <div
+          style={{
+            backgroundSize: "100%",
+            flexGrow: "1",
+          }}
+          className="relative flex-col items-center justify-center rounded-lg bg-main-image md:h-[20rem] md:w-[80%] md:rounded-3xl"
+        >
+          <div className="absolute bottom-0 left-0 right-0 top-0 z-10 h-full w-full rounded-3xl bg-black bg-opacity-30" />
+        </div>
+        {/* Content */}
+        <div className="absolute z-20 flex w-full flex-col gap-y-4 rounded-3xl px-[7.8rem] py-[1rem]">
           <Image
             src="/images/rayka-icon.svg"
             width="50"
