@@ -12,9 +12,9 @@ const ContactUsPage: React.FC = () => {
       <Image
         src={BgImage}
         alt="contact-us-bg"
-        className="h-[31.3rem] w-full  object-cover"
+        className="absolute top-0 -z-10 h-[22%] w-full object-cover md:h-[70%]"
       />
-      <div className="absolute top-40 w-full text-center text-white">
+      <div className="flex w-full flex-col justify-center text-center text-white md:h-[500px]">
         <h1 className="header-1">ارتباط با ما</h1>
         <div className="subtitle flex justify-center">
           <p>

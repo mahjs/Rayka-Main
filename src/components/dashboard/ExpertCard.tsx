@@ -5,6 +5,7 @@ import React, { FC, useState } from "react";
 
 interface Props {
   index: number;
+  mobile?: boolean;
   title: string;
   orangeIconPath: string;
   darkIconPath: string;
@@ -14,6 +15,7 @@ interface Props {
 const ExpertCard: FC<Props> = ({
   index,
   title,
+  mobile = false,
   orangeIconPath,
   darkIconPath,
   onClick,
@@ -29,13 +31,24 @@ const ExpertCard: FC<Props> = ({
       onMouseOut={() => {
         setIconPath(orangeIconPath);
       }}
-      className="relative flex h-[250px] w-[250px] cursor-pointer flex-wrap overflow-hidden rounded-lg bg-[#3D3D3D] px-[1rem] py-[1.5rem] text-white transition-all duration-200 hover:scale-110 hover:bg-[#FEA918] hover:text-[#232323]"
+      className={`relative flex h-[l00px] w-[150px] cursor-pointer flex-col flex-wrap overflow-hidden rounded-lg ${
+        mobile ? "bg-[#FEA918]" : "bg-[#3D3D3D]"
+      }  px-[1rem] py-[1.5rem] text-${
+        mobile ? "#000" : "white"
+      } transition-all duration-200 hover:scale-110 hover:bg-primary hover:text-[#232323] md:h-[250px] md:w-[250px] md:gap-10 ${
+        mobile ? "justify-self-center" : ""
+      }`}
     >
-      <span className="mt-8">
-        <Image src={iconPath} alt={title + " icon"} width={50} height={50} />
+      <span className="md:mt-8">
+        <Image
+          src={mobile ? darkIconPath : iconPath}
+          alt={title + " icon"}
+          width={mobile ? 25 : 50}
+          height={mobile ? 25 : 50}
+        />
       </span>
-      <p className=" text-inherit subtitle-3">{title}</p>
-      <span className="number-1  absolute -top-32 text-white opacity-5">
+      <p className="body text-inherit md:text-[1.5rem] md:font-bold">{title}</p>
+      <span className="absolute -top-12 text-[7rem] font-bold text-white opacity-5  md:-left-20 md:-top-24 md:text-[15rem]">
         {String(index).padStart(2, "0")}
       </span>
     </div>
