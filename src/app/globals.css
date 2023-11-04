@@ -215,6 +215,9 @@ body {
   font-family: "KalamehBold";
   font-size: 2.5125rem;
   line-height: 150.5%;
+  @media screen and (max-width: 768px) {
+    font-size: 1.125rem;
+  }
 }
 
 .subtitle-2 {

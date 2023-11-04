@@ -12,22 +12,23 @@ interface Props {}
 const informationData = [
   {
     id: 1,
-    title: "17",
+    title: 17,
     text: "پروژه موفقیت‌آمیر",
   },
   {
     id: 2,
-    title: "35+",
+    title: 35,
     text: "پرسنل مجرب",
   },
   {
     id: 3,
-    title: "7+",
+    title: 7,
     text: "همکای‌های بین‌المللی",
   },
   {
     id: 4,
-    title: "1M+",
+    title: 1,
+    unit: "M",
     text: "تعداد کاربران",
   },
 ];
@@ -55,7 +56,7 @@ const Honers: React.FC<Props> = ({}) => {
         width={800}
         height={800}
         alt="HonersBackground"
-        className=" h-[90rem] w-full object-cover  md:h-[94.75rem]"
+        className=" h-[80rem] w-full object-cover  md:h-[94.75rem]"
       />
       <div className="z-1 absolute flex w-full flex-col justify-center gap-y-12 py-24">
         <p className="title my-5 text-center text-6xl	 font-extrabold	 text-white">
@@ -66,7 +67,7 @@ const Honers: React.FC<Props> = ({}) => {
             <div className="group relative" key={index}>
               <Image src={image.src} alt={image.alt} />
               <div className="absolute inset-0 mx-auto flex items-center rounded-3xl transition-all duration-300 ease-in-out hover:bg-primary hover:opacity-50">
-                <span className="subtitle-1 mx-auto px-[1.8rem] text-center text-4xl font-semibold text-primary transition-colors duration-300 ease-in-out group-hover:text-black">
+                <span className=" subtitle-1 mx-auto px-[1.8rem] text-center text-4xl font-semibold text-primary transition-colors duration-300 ease-in-out group-hover:text-black">
                   {image.text}
                 </span>
               </div>
