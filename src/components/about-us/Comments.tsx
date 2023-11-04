@@ -35,7 +35,7 @@ const Comments: React.FC<Props> = ({}) => {
         className="absolute h-full w-full object-cover"
       />
       <div className="z-10 flex w-full flex-col items-center justify-start gap-10 py-5">
-        <h1 className="text-6xl font-bold text-white">صحبت مدیران</h1>
+        <h1 className="title text-white">صحبت مدیران</h1>
 
         <Carousel>
           {cardsData.map((card, i) => (

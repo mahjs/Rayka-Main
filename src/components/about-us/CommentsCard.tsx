@@ -9,7 +9,7 @@ export const CommentsCard: React.FC<CardProps> = ({ text, name, job }) => (
   <div className=" flex justify-center gap-8">
     <div className="  flex flex-row-reverse justify-center gap-8">
       <div
-        className={`relative mt-4 flex w-[20rem] flex-col gap-12 md:w-[32rem] `}
+        className={`w-13rem relative mt-4 flex flex-col gap-12 md:w-[32rem] `}
       >
         <div className={`rounded-2xl bg-primary p-[1.90rem] text-justify`}>
           <p>{text}</p>

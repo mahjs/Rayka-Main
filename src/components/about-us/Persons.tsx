@@ -110,8 +110,8 @@ const Persons: React.FC<Props> = ({}) => {
                   alt="truePerson"
                   className="mb-9 scale-100 transform rounded-2xl grayscale transition-transform duration-500 group-hover:scale-110 group-hover:grayscale-0"
                 />
-                <p className="text-4xl font-bold">{item.name}</p>
-                <p className="text-base font-medium">{item.surname}</p>
+                <p className="subtitle-1">{item.name}</p>
+                <p className="subtitle-1">{item.surname}</p>
               </div>
             ))}
           </div>

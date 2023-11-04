@@ -50,7 +50,7 @@ var images = [
 ];
 var Honers = function (_a) {
     return (react_1["default"].createElement("div", { className: "relative mb-[3.63rem] flex  items-start md:mb-[6.63rem] " },
-        react_1["default"].createElement(image_1["default"], { src: honersBackground_svg_1["default"], alt: "HonersBackground", className: " h-[110rem] w-full object-cover  md:h-[94.75rem]" }),
+        react_1["default"].createElement(image_1["default"], { src: honersBackground_svg_1["default"], alt: "HonersBackground", className: " h-[90rem] w-full object-cover  md:h-[94.75rem]" }),
         react_1["default"].createElement("div", { className: "z-1 absolute flex w-full flex-col justify-center gap-y-12 py-24" },
             react_1["default"].createElement("p", { className: "title my-5 text-center text-6xl\t font-extrabold\t text-white" }, "\u0627\u0641\u062A\u062E\u0627\u0631\u0627\u062A \u0645\u0627"),
             " ",

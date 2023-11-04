@@ -54,7 +54,7 @@ const Honers: React.FC<Props> = ({}) => {
       <Image
         src={HonersBackground}
         alt="HonersBackground"
-        className=" h-[110rem] w-full object-cover  md:h-[94.75rem]"
+        className=" h-[90rem] w-full object-cover  md:h-[94.75rem]"
       />
       <div className="z-1 absolute flex w-full flex-col justify-center gap-y-12 py-24">
         <p className="title my-5 text-center text-6xl	 font-extrabold	 text-white">
