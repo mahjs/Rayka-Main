@@ -47,7 +47,7 @@ const Navbar = () => {
     >
       <ul className="subtitle flex gap-16">
         <RenderNavItem href="/" text="خانه" />
-        <RenderNavItem href="/about-us" text="درباه‌ما" />
+        <RenderNavItem href="/about-us" text="درباره‌ما" />
         <RenderNavItem href="/contact-us" text="ارتباط با ما" />
         <RenderNavItem href="/jobs" text="فرصت‌های شغلی" />
       </ul>
