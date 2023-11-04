@@ -1,10 +1,8 @@
 import Address from "@/components/contact-us/Address";
 import Map from "@/components/contact-us/Map";
 import MessagesForm from "@/components/contact-us/MessagesForm";
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import BgImage from "../../../public/images/bg-main.webp";
 
 const ContactUsPage: React.FC = () => {
   return (
