@@ -38,7 +38,7 @@ var Map = function () {
             console.error("Geolocation is not supported by this browser.");
         }
     };
-    return (react_1["default"].createElement("div", { className: "relative mb-32 mt-12 h-[100px] w-full md:h-[350px]" },
+    return (react_1["default"].createElement("div", { className: "relative mb-32 mt-12 h-[400px] w-full md:h-[350px]" },
         react_1["default"].createElement("iframe", { src: MAP_URL, width: "100%", height: "450", loading: "lazy", title: "\u0646\u0642\u0634\u0647 \u0645\u062D\u0644 \u0645\u0627" }),
         react_1["default"].createElement("div", { className: "absolute left-0 top-0 h-full w-full cursor-pointer", onClick: handleMapClick }),
         showModal && (react_1["default"].createElement("div", { className: "fixed left-0 top-0 flex h-full w-full items-center justify-center bg-black bg-opacity-50" },
