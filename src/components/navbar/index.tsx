@@ -44,9 +44,8 @@ const Navbar = () => {
   }, [pathname]);
   return (
     <div
-      className={`navbar sticky left-0 right-0 top-0 z-40 flex w-full justify-between px-5 py-5  transition-all  duration-500  md:pr-20 ${
-        isScrolled ? "bg-[#000000cc] backdrop-blur-sm" : ""
-      }`}
+      className={`navbar sticky left-0 right-0 top-0 z-40 flex w-full justify-between  px-5 py-5  transition-all  duration-500 
+       md:pr-20 ${isScrolled ? "bg-[#00000099]" : ""}`}
     >
       <ul className="hidden gap-16 md:flex">
         <RenderNavItem href="/" text="خانه" />
@@ -57,8 +56,20 @@ const Navbar = () => {
       <ul
         className={`fixed ${
           showNavbar ? "left-0" : "left-full"
-        } top-0 -z-10 flex h-full w-full flex-col justify-start gap-5 bg-[#000000cc] pt-10 backdrop-blur-md transition-all duration-500 md:hidden`}
+        }  top-0  flex h-full w-full flex-col justify-center gap-10 bg-[#000000cc] backdrop-blur-md transition-all duration-500 md:hidden`}
       >
+        <button
+          onClick={() => setShowNavbar(false)}
+          className="absolute left-5 top-2 flex items-center gap-3"
+        >
+          <p className="body-3 text-white">بازگشت</p>
+          <Image
+            src="/images/arrow.svg"
+            width={15}
+            height={15}
+            alt="arrow icon"
+          />
+        </button>
         <RenderNavItem href="/" text="خانه" />
         <RenderNavItem href="/about-us" text="درباره‌ما" />
         <RenderNavItem href="/contact-us" text="ارتباط با ما" />
