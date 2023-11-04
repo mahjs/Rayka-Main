@@ -121,22 +121,22 @@ body {
 } */
 
 .btn-send {
-  @apply Btn  relative ml-6 overflow-hidden rounded-lg bg-primary px-14 py-3.5 text-center text-black duration-300 hover:bg-[#111111] hover:text-primary focus:outline-none focus:ring-4 focus:ring-primary dark:bg-primary dark:hover:bg-[#111111] dark:focus:ring-primary;
+  @apply Btn  relative ml-6 overflow-hidden rounded-lg bg-primary px-14 py-3.5 text-center text-black duration-300 hover:bg-[#111111] hover:text-primary focus:outline-none focus:ring-4 focus:ring-[#111111] dark:bg-primary dark:hover:bg-[#111111] dark:focus:ring-primary;
 }
 
 .btn-shadow {
   @apply absolute inset-0 -right-4 h-24 w-[2.3rem] rotate-[38deg] bg-yellow-500 opacity-30;
 }
 
-.btn-cancel {
-  @apply Btn rounded-lg bg-black px-16 py-3.5 text-center text-white duration-300 hover:bg-primary focus:outline-none focus:ring-4 focus:ring-[#111111] dark:bg-[#111111] dark:hover:bg-primary dark:focus:ring-[#111111];
+.Custom-Toast {
+  @apply flex w-full max-w-xs items-center rounded-lg bg-white p-4 text-gray-500 shadow dark:bg-gray-800 dark:text-gray-400;
 }
 
 .header-1 {
   font-family: "KalamehBold";
-  font-size: 7.61406rem;
-  @media screen and (max-width: 768px) {
-    font-size: 2.1875rem;
+  font-size: 2.61406rem;
+  @media screen and (min-width: 768px) {
+    font-size: 7.61406rem;
   }
 }
 
@@ -164,6 +164,10 @@ body {
   font-family: "KalamehBold";
   font-size: 1.5rem;
   line-height: 140%;
+  font-size: 0.74588rem;
+  @media screen and (min-width: 768px) {
+    font-size: 1.5rem;
+  }
 }
 
 .header-6 {
@@ -176,6 +180,9 @@ body {
   font-family: "KalamehExtraBold";
   font-size: 4.75rem;
   line-height: 140%;
+  @media screen and (min-width: 768px) {
+    font-size: 4.75rem;
+  }
 }
 
 .title-2 {
@@ -189,6 +196,9 @@ body {
   font-family: "KalamehRegular";
   font-size: 1.8125rem;
   line-height: 150.5%;
+  @media screen and (min-width: 768px) {
+    font-size: 1.8125rem;
+  }
 }
 
 .subtitle-1 {
@@ -272,6 +282,7 @@ body {
   height: 100%;
   padding: 2rem;
   background-color: #fea918;
+  background-color: #fea918;
   border-radius: 1rem;
   color: #9ca3af;
   text-align: justify;
@@ -284,6 +295,8 @@ body {
   margin: 0 0 0.7em;
   color: #1f2937;
 }
+.card p,
+.card h2 {
 .card p,
 .card h2 {
   transition: all 0.3s ease-out;
