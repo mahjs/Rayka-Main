@@ -55,7 +55,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`navbar sticky left-0 right-0 top-0 z-50 flex w-full justify-between px-5 py-5  transition-all  duration-500 
+      className={`navbar fixed left-0 right-0 top-0 z-50 flex w-full justify-between px-5 py-5 transition-all  duration-500 
        md:pr-20 ${isScrolled ? "bg-[#00000099]" : ""}`}
     >
       <ul className="hidden gap-16 md:flex">

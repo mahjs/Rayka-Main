@@ -1,6 +1,5 @@
 import HeroSection from "@/components/HeroSection";
 import Image from "next/image";
-import AboutUs from "@/assets/images/about-us.svg";
 import Honers from "@/components/about-us/Honers";
 import React from "react";
 import Persons from "@/components/about-us/Persons";
@@ -53,22 +52,28 @@ const page: React.FC<Props> = ({}) => {
         subHeading="خانه -"
         childHeading="درباره ما"
       />
-      <div className="relative mb-[10rem] mt-[6.69rem] flex justify-center  ">
-        <div className="absolute h-[80%] w-[70.3%] -rotate-[2.5deg]  rounded-3xl bg-[#FEA918]" />
-        <Image
-          src={AboutUs}
-          alt="About us"
-          className="relative h-[80%] w-[70%]  rounded-3xl"
-        />
-        <div className="absolute z-20 flex  h-[80%] w-[70%] flex-col	 gap-y-4	 rounded-3xl px-[7.8rem] pt-[2.78rem]">
+      <div className="relative flex md:m-[8rem]">
+        {/* Make the backgrounds */}
+        <div className="absolute h-[18rem] -rotate-[2deg] rounded-lg bg-[#FEA918] md:w-[100.2%] md:rounded-3xl" />
+        <div
+          style={{
+            backgroundSize: "100%",
+            flexGrow: "1",
+          }}
+          className="relative flex-col items-center justify-center rounded-lg bg-main-image md:h-[20rem] md:w-[80%] md:rounded-3xl"
+        >
+          <div className="absolute bottom-0 left-0 right-0 top-0 z-10 h-full w-full rounded-3xl bg-black bg-opacity-30" />
+        </div>
+        {/* Content */}
+        <div className="absolute z-20 flex w-full flex-col gap-y-4 rounded-3xl px-[7.8rem] py-[1rem]">
           <Image
             src="/images/rayka-icon.svg"
             width="50"
             height="50"
             alt="rayka icon"
           />
-          <p className="  text-5xl font-bold text-primary	">درباره‌ما </p>
-          <p className="  text-[1rem] font-medium	 text-white">
+          <p className="text-5xl font-bold text-primary	">درباه‌ما </p>
+          <p className="Body font-medium text-white">
             ما در خانواده ی سخت کوش و خستگی ناپذیر شرکت ماورای ابعاد رایکا ،
             برای تحقق رویاهایمان میجنگیم. در کنار هم میسازیم و از تماشای آنچه
             روزی تصور کرده بودیم و حالا به آن تجسم بخشیده ایم لذت میبریم. لورم

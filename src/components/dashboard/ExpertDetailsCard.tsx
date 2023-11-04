@@ -15,7 +15,7 @@ const ExpertDetailsCard: FC<Props> = ({
   handleClickClose,
 }) => {
   return (
-    <div className="relative mx-auto mt-10 flex h-[100%] w-[90%] items-center justify-center gap-10 rounded-xl bg-primary px-10 py-5">
+    <div className="relative mx-auto mt-16 flex h-[100%] w-[90%] items-center justify-center gap-10 rounded-xl bg-primary px-10 py-5">
       <button
         onClick={handleClickClose}
         className="absolute -top-[2rem] right-5 flex items-center gap-3"

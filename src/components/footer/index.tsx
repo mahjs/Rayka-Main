@@ -4,7 +4,8 @@ import PageNavigation from "../dashboard/PageNavigation";
 const Footer = () => {
   return (
     <div className="w-full bg-black">
-      <div className="bg-gray-950 mr-auto flex w-[98%] justify-between gap-3 rounded-tr-md pb-[2rem] pt-[6rem] md:items-center md:justify-around md:pb-[5rem] md:pt-[8rem]">
+      <div className="bg-gray-950 relative mr-auto flex w-[98%] justify-between gap-3 rounded-tr-md pb-[2rem] pt-[6rem] md:items-center md:justify-around md:pb-[5rem] md:pt-[8rem]">
+        <Image src="/images/footer-bg.svg" layout="fill" alt="backgorund" />
         <div className="flex flex-col gap-2 md:gap-5">
           <Image
             src="/images/rayka-icon.svg"
@@ -26,7 +27,7 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col gap-5 text-white">
-          <h3 className="header-6">راه‌های ارتباطی</h3>
+          <h3 className="header-4">راه‌های ارتباطی</h3>
           <div className="Body-3 grid grid-cols-2 gap-2 md:flex md:flex-col md:gap-5">
             <div className="flex items-center gap-1 md:gap-3 ">
               <Image
