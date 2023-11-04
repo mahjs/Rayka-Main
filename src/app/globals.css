@@ -311,6 +311,16 @@ body {
 .nav.left {
   transform: translateX(-36rem) translatey(-50%);
 }
+@media (max-width: 499px) {
+  .nav.left {
+    transform: translateX(-12rem) translateY(3rem);
+  }
+}
 .nav.right {
   transform: translateX(100%) translatey(-50%);
+}
+@media (max-width: 499px) {
+  .nav.right {
+    transform: translateX(150%) translateY(3rem);
+  }
 }

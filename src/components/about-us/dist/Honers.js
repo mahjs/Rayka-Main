@@ -37,7 +37,7 @@ var images = [
     {
         src: honers2_svg_1["default"],
         alt: "honers2",
-        text: "توسعه شبکه داخلی کشور با استفاده از سرویس‌های بین‌المللی"
+        text: "توسعه سرویس ها"
     },
     {
         src: honers1_svg_1["default"],
@@ -49,11 +49,15 @@ var images = [
     { src: honers4_svg_1["default"], alt: "honers4", text: "3D V- CACHE" },
 ];
 var Honers = function (_a) {
-    return (react_1["default"].createElement("div", { className: "relative mb-[6.63rem]  flex items-start " },
-        react_1["default"].createElement(image_1["default"], { src: honersBackground_svg_1["default"], alt: "HonersBackground", className: "  h-[94.75rem] w-full  object-cover" }),
+    return (react_1["default"].createElement("div", { className: "relative mb-[3.63rem] flex  items-start md:mb-[6.63rem] " },
+        react_1["default"].createElement(image_1["default"], { src: honersBackground_svg_1["default"], alt: "HonersBackground", className: " h-[110rem] w-full object-cover  md:h-[94.75rem]" }),
         react_1["default"].createElement("div", { className: "z-1 absolute flex w-full flex-col justify-center gap-y-12 py-24" },
-            react_1["default"].createElement("p", { className: "my-5 text-center text-6xl\t font-extrabold\t text-white" }, "\u0627\u0641\u062A\u062E\u0627\u0631\u0627\u062A \u0645\u0627"),
+            react_1["default"].createElement("p", { className: "title my-5 text-center text-6xl\t font-extrabold\t text-white" }, "\u0627\u0641\u062A\u062E\u0627\u0631\u0627\u062A \u0645\u0627"),
             " ",
-            react_1["default"].createElement("div", { className: "absolute z-20 grid w-full grid-cols-2 justify-evenly gap-5 md:flex " }, informationData.map(function (info) { return (react_1["default"].createElement(InfoText_1["default"], { key: info.id, title: info.title, text: info.text })); })))));
+            react_1["default"].createElement("div", { className: "mx-auto grid grid-cols-2 gap-6 px-7 md:grid-cols-3 md:gap-12" }, images.map(function (image, index) { return (react_1["default"].createElement("div", { className: "group relative", key: index },
+                react_1["default"].createElement(image_1["default"], { src: image.src, alt: image.alt }),
+                react_1["default"].createElement("div", { className: "absolute inset-0 mx-auto flex items-center rounded-3xl transition-all duration-300 ease-in-out hover:bg-primary hover:opacity-50" },
+                    react_1["default"].createElement("span", { className: "subtitle-1 mx-auto px-[1.8rem] text-center text-4xl font-semibold text-primary transition-colors duration-300 ease-in-out group-hover:text-black" }, image.text)))); })),
+            react_1["default"].createElement("div", { className: " grid w-full grid-cols-2 justify-evenly gap-5 md:flex " }, informationData.map(function (info) { return (react_1["default"].createElement(InfoText_1["default"], { key: info.id, title: info.title, text: info.text })); })))));
 };
 exports["default"] = Honers;

@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import truePerson from "@/assets/images/truePerson.svg";
 import cert from "@/assets/images/cert.jpg";
@@ -9,8 +9,8 @@ interface Props {}
 const Persons: React.FC<Props> = ({}) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
+  const [imagesPerPage, setImagesPerPage] = useState(3);
 
-  const imagesPerPage = 3;
   const transitionDuration = 800; // Increased duration for a slower, more subtle effect
 
   const data = [
@@ -71,9 +71,24 @@ const Persons: React.FC<Props> = ({}) => {
     (currentImageIndex + 1) * imagesPerPage,
   );
 
+  useEffect(() => {
+    const updateImagesPerPage = () => {
+      const newImagesPerPage = window.innerWidth < 500 ? 2 : 3;
+      setImagesPerPage(newImagesPerPage);
+    };
+
+    window.addEventListener("resize", updateImagesPerPage);
+
+    // Set initial value on mount
+    updateImagesPerPage();
+
+    // Cleanup event listener on unmount
+    return () => window.removeEventListener("resize", updateImagesPerPage);
+  }, []);
+
   return (
     <div className="mb-[6.69rem] flex flex-col items-center justify-center">
-      <p className="mb-[4rem] text-7xl font-extrabold">خانواده ی رایکا</p>
+      <p className="title mb-[4rem]">خانواده ی رایکا</p>
       <div className="flex items-center justify-center gap-28">
         <div
           id="controls-carousel"
@@ -81,7 +96,7 @@ const Persons: React.FC<Props> = ({}) => {
           data-carousel="static"
         >
           <div
-            className={`relative flex h-56  w-[300rem] max-w-7xl justify-center gap-20 overflow-hidden rounded-lg transition-all duration-300 md:h-[40rem] ${
+            className={`h-86 relative flex  w-[300rem] max-w-sm justify-center gap-4 overflow-hidden rounded-lg transition-all duration-300 md:h-[40rem] md:max-w-7xl md:gap-20 ${
               isTransitioning ? "translate-x-[-100%] transform" : ""
             }`}
           >

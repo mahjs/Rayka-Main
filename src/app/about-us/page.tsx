@@ -15,9 +15,9 @@ const page: React.FC<Props> = ({}) => {
         subHeading="خانه -"
         childHeading="درباره ما"
       />
-      <div className="relative mb-[10rem] mt-[6.69rem] flex justify-center  ">
+      <div className="relative mb-[6.69rem] mt-[6.69rem] flex justify-center  ">
         <div className="absolute  h-8 w-11/12  -rotate-[2.5deg] rounded-3xl bg-[#FEA918] md:h-80 md:w-3/5" />
-        <div className="relative flex w-11/12 flex-col  gap-2 rounded-3xl bg-black px-[2.69rem] py-[2rem] md:h-96 md:w-3/5 md:gap-4 md:px-[7.8rem]	 md:py-[2.78rem]">
+        <div className="relative flex w-11/12 flex-col  gap-2 rounded-3xl bg-black px-[2.69rem] py-[2rem] md:h-[28rem] md:w-3/5 md:gap-2 md:px-[7.8rem]	 md:py-[3rem]">
           <Image
             src="/images/rayka-icon.svg"
             width="50"
@@ -41,8 +41,8 @@ const page: React.FC<Props> = ({}) => {
         </div>
       </div>
       <Honers />
-      {/* <Persons /> */}
-      {/* <Comments /> */}
+      <Persons />
+      <Comments />
     </div>
   );
 };
