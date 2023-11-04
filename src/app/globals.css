@@ -32,7 +32,7 @@ body {
     url(../assets/fonts/Kalameh-Thin.woff) format("woff"),
     url(../assets/fonts/Kalameh-Thin.woff2) format("woff2");
   font-style: normal;
-  font-size: 100;
+  font-weight: 100;
 }
 
 @font-face {
@@ -41,7 +41,7 @@ body {
     url(../assets/fonts/Kalameh-ExtraLight.woff) format("woff"),
     url(../assets/fonts/Kalameh-ExtraLight.woff2) format("woff2");
   font-style: normal;
-  font-size: 200;
+  font-weight: 200;
 }
 
 @font-face {
@@ -50,7 +50,7 @@ body {
     url(../assets/fonts/Kalameh-Light.woff) format("woff"),
     url(../assets/fonts/Kalameh-Light.woff2) format("woff2");
   font-style: normal;
-  font-size: 300;
+  font-weight: 300;
 }
 
 @font-face {
@@ -59,7 +59,7 @@ body {
     url(../assets/fonts/Kalameh-Regular.woff) format("woff"),
     url(../assets/fonts/Kalameh-Regular.woff2) format("woff2");
   font-style: normal;
-  font-size: 400;
+  font-weight: 400;
 }
 
 @font-face {
@@ -68,7 +68,7 @@ body {
     url(../assets/fonts/Kalameh-Medium.woff) format("woff"),
     url(../assets/fonts/Kalameh-Medium.woff2) format("woff2");
   font-style: normal;
-  font-size: 500;
+  font-weight: 500;
 }
 
 @font-face {
@@ -77,7 +77,7 @@ body {
     url(../assets/fonts/Kalameh-SemiBold.woff) format("woff"),
     url(../assets/fonts/Kalameh-SemiBold.woff2) format("woff2");
   font-style: normal;
-  font-size: 600;
+  font-weight: 600;
 }
 
 @font-face {
@@ -86,7 +86,7 @@ body {
     url(../assets/fonts/Kalameh-Bold.woff) format("woff"),
     url(../assets/fonts/Kalameh-Bold.woff2) format("woff2");
   font-style: normal;
-  font-size: 700;
+  font-weight: 700;
 }
 
 @font-face {
@@ -95,7 +95,7 @@ body {
     url(../assets/fonts/Kalameh-ExtraBold.woff) format("woff"),
     url(../assets/fonts/Kalameh-ExtraBold.woff2) format("woff2");
   font-style: normal;
-  font-size: 800;
+  font-weight: 800;
 }
 
 @font-face {
@@ -104,21 +104,12 @@ body {
     url(../assets/fonts/Kalameh-Black.woff) format("woff"),
     url(../assets/fonts/Kalameh-Black.woff2) format("woff2");
   font-style: normal;
-  font-size: 900;
+  font-weight: 900;
 }
 
 body {
   direction: rtl;
 }
-
-/* header-1 {
-  font-family: "KalamehBold";
-  font-size: large;
-  @media screen and (max-width: 768px) {
-    font-size: medium;
-    
-  }
-} */
 
 .btn-send {
   @apply Btn  relative ml-6 overflow-hidden rounded-lg bg-primary px-14 py-3.5 text-center text-black duration-300 hover:bg-[#111111] hover:text-primary focus:outline-none focus:ring-4 focus:ring-primary dark:bg-primary dark:hover:bg-[#111111] dark:focus:ring-primary;
@@ -132,11 +123,27 @@ body {
   @apply Btn rounded-lg bg-black px-16 py-3.5 text-center text-white duration-300 hover:bg-primary focus:outline-none focus:ring-4 focus:ring-[#111111] dark:bg-[#111111] dark:hover:bg-primary dark:focus:ring-[#111111];
 }
 
+body {
+  direction: rtl;
+}
+
+.btn-send {
+  @apply Btn  relative ml-6 overflow-hidden rounded-lg bg-primary px-14 py-3.5 text-center text-black duration-300 hover:bg-[#111111] hover:text-primary focus:outline-none focus:ring-4 focus:ring-[#111111] dark:bg-primary dark:hover:bg-[#111111] dark:focus:ring-primary;
+}
+
+.btn-shadow {
+  @apply absolute inset-0 -right-4 h-24 w-[2.3rem] rotate-[38deg] bg-yellow-500 opacity-30;
+}
+
+.Custom-Toast {
+  @apply flex w-full max-w-xs items-center rounded-lg bg-white p-4 text-gray-500 shadow dark:bg-gray-800 dark:text-gray-400;
+}
+
 .header-1 {
   font-family: "KalamehBold";
-  font-size: 7.61406rem;
-  @media screen and (max-width: 768px) {
-    font-size: 2.1875rem;
+  font-size: 2.41406rem;
+  @media screen and (min-width: 768px) {
+    font-size: 7.61406rem;
   }
 }
 
@@ -160,10 +167,14 @@ body {
   font-weight: 500;
   line-height: 150.5%;
 }
+
 .header-5 {
   font-family: "KalamehBold";
-  font-size: 1.5rem;
   line-height: 140%;
+  font-size: 0.74588rem;
+  @media screen and (min-width: 768px) {
+    font-size: 1.5rem;
+  }
 }
 
 .header-6 {
@@ -171,16 +182,16 @@ body {
   font-size: 2.85375rem;
   line-height: 150.5%;
   @media screen and (max-width: 758px) {
-    font-size: 2.53rem;
+    font-size: 1.43rem;
   }
 }
 
 .title {
   font-family: "KalamehExtraBold";
-  font-size: 4.75rem;
+  font-size: 1.36719rem;
   line-height: 140%;
-  @media screen and (max-width: 768px) {
-    font-size: 2.1875rem;
+  @media screen and (min-width: 768px) {
+    font-size: 4.75rem;
   }
 }
 
@@ -193,45 +204,57 @@ body {
 
 .subtitle {
   font-family: "KalamehRegular";
-  font-size: 1.8125rem;
+  font-size: 0.737rem;
   line-height: 150.5%;
+  @media screen and (min-width: 768px) {
+    font-size: 1.8125rem;
+  }
 }
 
 .subtitle-1 {
   font-family: "KalamehBold";
   font-size: 2.5125rem;
   line-height: 150.5%;
-  @media screen and (max-width: 768px) {
-    font-size: 1.20406rem;
-  }
 }
 
 .subtitle-2 {
   font-family: "KalamehBold";
   font-size: 3.35906rem;
   line-height: 140%;
+  @media screen and (max-width: 758px) {
+    font-size: 1.3rem;
+  }
 }
 
 .subtitle-3 {
   font-family: "KalamehBold";
   font-size: 1.9375rem;
   line-height: 140%;
+  @media screen and (max-width: 758px) {
+    font-size: 0.43rem;
+  }
 }
 
 .Body {
   font-family: "KalamehRegular";
   font-size: 1.16663rem;
   line-height: 140%;
+  @media screen and (max-width: 758px) {
+    font-size: 0.53rem;
+  }
 }
 .Body-2 {
   font-family: "KalamehRegular";
   font-size: 1.5625rem;
   line-height: 150%;
+  @media screen and (max-width: 758px) {
+    font-size: 0.5rem;
+  }
 }
 
 .Body-3 {
   font-family: "KalamehRegular";
-  font-size: 1.4375rem;
+  font-size: 0.7rem;
   line-height: 140%;
   @media screen and (max-width: 758px) {
     font-size: 0.63rem;
@@ -239,7 +262,7 @@ body {
 }
 
 .Btn {
-  font-family: "KalamehRegular";
+  font-family: "KalamehBold";
   font-size: 1.3rem;
   line-height: 150.5%;
 }
@@ -253,8 +276,8 @@ body {
   font-family: "KalamehBold";
   font-size: 7.56819rem;
   line-height: 140%;
-  @media screen and (max-width: 768px) {
-    font-size: 4.1875rem;
+  @media screen and (max-width: 758px) {
+    font-size: 3.63rem;
   }
 }
 
