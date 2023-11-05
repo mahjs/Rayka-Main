@@ -12,7 +12,7 @@ const JoinRaykaCard = () => {
         <p className="subtitle hidden md:block">اینجا برای همه جا هست!</p>
       </div>
       <div className="max-w-[75%] flex-col text-black md:max-w-[42%]">
-        <p className="Body">
+        <p className="title-1">
           تیم رایکا همواره در حال تلاش برای پیدا کردن استعداد های این سرزمین و
           بکارگیری آنها بصورت حضوری و دورکاری میباشد!{" "}
           <br className="hidden md:block" /> حتما به صفحه فرصت های شغلی سر بزنید

@@ -12,8 +12,8 @@ export const CommentsCard: React.FC<CardProps> = ({
   job,
   isActive,
 }) => (
-  <div className=" flex justify-center gap-8">
-    <div className="  flex flex-row-reverse justify-center gap-8">
+  <div className="flex justify-center gap-8">
+    <div className="flex flex-row-reverse justify-center gap-8">
       <div
         className={`w-13rem relative mt-4 flex h-[14rem] flex-col gap-12 md:w-[32rem] `}
       >
@@ -22,7 +22,7 @@ export const CommentsCard: React.FC<CardProps> = ({
             isActive ? "bg-primary" : "bg-white opacity-50"
           }`}
         >
-          <p className="Body">{text}</p>
+          <p className="title-1">{text}</p>
           <div
             className={`absolute mt-6 h-0 w-0 border-l-[22px] border-r-[22px] border-t-[40px] ${
               isActive ? "border-primary" : "border-white opacity-50"

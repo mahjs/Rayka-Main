@@ -141,11 +141,38 @@ body {
   }
 }
 
+.title-1 {
+  font-family: "KalamehRegular";
+  font-size: 1.16663rem;
+  line-height: 140%;
+  @media screen and (max-width: 758px) {
+    font-size: 0.53rem;
+  }
+}
+
 .title-2 {
+  font-family: "KalamehRegular";
+  font-size: 1.36213rem;
+  line-height: 150.5%;
+  @media screen and (max-width: 758px) {
+    font-size: 0.70431rem;
+  }
+}
+
+.title-3 {
   font-family: "KalamehRegular";
   font-size: 3.05663rem;
   font-weight: 700;
   line-height: 140%;
+}
+
+.title-4 {
+  font-family: "KalamehRegular";
+  font-size: 1.5625rem;
+  line-height: 150%;
+  @media screen and (max-width: 758px) {
+    font-size: 0.5rem;
+  }
 }
 
 .subtitle {
@@ -184,34 +211,7 @@ body {
   }
 }
 
-.Body {
-  font-family: "KalamehRegular";
-  font-size: 1.16663rem;
-  line-height: 140%;
-  @media screen and (max-width: 758px) {
-    font-size: 0.53rem;
-  }
-}
-
-.Body-1 {
-  font-family: "KalamehRegular";
-  font-size: 1.36213rem;
-  line-height: 150.5%;
-  @media screen and (max-width: 758px) {
-    font-size: 0.70431rem;
-  }
-}
-
-.Body-2 {
-  font-family: "KalamehRegular";
-  font-size: 1.5625rem;
-  line-height: 150%;
-  @media screen and (max-width: 758px) {
-    font-size: 0.5rem;
-  }
-}
-
-.Body-3 {
+.miniText {
   font-family: "KalamehRegular";
   font-size: 0.7rem;
   line-height: 140%;
