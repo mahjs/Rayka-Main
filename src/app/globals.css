@@ -251,7 +251,7 @@ body {
 
 .carousel {
   position: relative;
-  width: 35%;
+  width: 85%;
   height: 23rem;
   perspective: 500px;
   transform-style: preserve-3d;
@@ -310,21 +310,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  top: 50%;
+  top: 35%;
   z-index: 2;
   cursor: pointer;
   /* user-select: none; */
 }
-/* .nav.left {
-  transform: translateX(-1200%) translateY(-50%);
-  @media screen and (max-width: 500px) {
-    transform: translateX(-10rem) translateY(12rem);
-  }
+.nav.left {
 }
 
 .nav.right {
-  transform: translateX(40%) translateY(-50%);
-  @media screen and (max-width: 500px) {
-    transform: translateX(100%) translateY(12rem);
-  }
-} */
+  margin-right: -3rem;
+}
