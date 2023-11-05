@@ -357,15 +357,15 @@ body {
   /* user-select: none; */
 }
 .nav.left {
-  transform: translateX(-36rem) translateY(-50%);
+  transform: translateX(-1200%) translateY(-50%);
   @media screen and (max-width: 500px) {
-    transform: translateX(-10rem) translateY(4rem);
+    transform: translateX(-10rem) translateY(12rem);
   }
 }
 
 .nav.right {
-  transform: translateX(100%) translateY(-50%);
+  transform: translateX(40%) translateY(-50%);
   @media screen and (max-width: 500px) {
-    transform: translateX(100%) translateY(4rem);
+    transform: translateX(100%) translateY(12rem);
   }
 }
