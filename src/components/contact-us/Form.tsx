@@ -42,46 +42,39 @@ const Form: React.FC = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault(); // Prevent form from submitting the traditional way
-    setIsLoading(true); // Set loading state to true
+    event.preventDefault();
+    setIsLoading(true);
 
-    // Prepare the promise for the HTTP request (or a simulated one)
-    const requestPromise = new Promise((resolve) => setTimeout(resolve, 3000));
-
-    toast.promise(requestPromise, {
-      pending: {
-        render({ data }) {
-          return <div className="Body text-right">...در حال ارسال</div>;
-        },
-      },
-      success: {
-        render({ data }) {
-          return (
-            <div className="Body text-right">
-              رایکایی عزیز پیام شما با موفقیت ارسال شد
-            </div>
-          );
-        },
-      },
-
-      error: {
-        render({ data }) {
-          return (
-            <div className="Body text-right">
-              متاسفانه پیام شما ارسال نشد مجدد تلاش کنید.
-            </div>
-          );
-        },
-      },
-    });
+    const formData = new FormData(event.currentTarget);
+    const body = {
+      name: formData.get("floating_name"),
+      email: formData.get("floating_email"),
+      phone: formData.get("floating_phone"),
+      title: formData.get("floating_title"),
+      message: formData.get("message"),
+    };
 
     try {
-      await requestPromise;
-      // Handle server response here
+      const response = await fetch("/api/form", {
+        // Update this URL to match your server route
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(body),
+      });
+
+      if (!response.ok) {
+        throw new Error(`Error: ${response.status}`);
+      }
+
+      // Show success toast
+      toast.success("پیام شما با موفقیت ارسال شد");
     } catch (error) {
       console.error("Error when submitting form", error);
+      toast.error("متاسفانه پیام شما ارسال نشد مجدد تلاش کنید.");
     } finally {
-      setIsLoading(false); // Set loading state back to false
+      setIsLoading(false);
     }
   };
 
@@ -92,16 +85,16 @@ const Form: React.FC = () => {
         <div className="grid select-none grid-cols-2 gap-4 md:gap-7">
           <FloatingInput
             type="text"
-            name="floating_first_name"
-            id="floating_first_name"
+            name="floating_name"
+            id="floating_name"
             label="نام شما"
           />
           <FloatingInput
             type="text"
-            name="floating_last_name"
-            id="floating_last_name"
+            name="floating_email"
+            id="floating_email"
             label="پست الکترونیکی"
-            pattern="^[a-zA-Z0-9._:$!%-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,6}$"
+            pattern="^[a-zA-Z0-9._:$!%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$"
           />
           <FloatingInput
             type="tel"
@@ -112,12 +105,13 @@ const Form: React.FC = () => {
           />
           <FloatingInput
             type="text"
-            name="floating_company"
-            id="floating_company"
+            name="floating_title"
+            id="floating_title"
             label="موضوع متن"
           />
         </div>
         <textarea
+          name="message"
           id="message"
           className="row-span-4 mt-4 block h-40 w-full rounded border-0 bg-[#f5f5f5] p-2.5 text-sm text-gray-900 focus:border-primary focus:ring-primary dark:border-primary dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-primary dark:focus:ring-primary md:mt-7 md:h-60"
           placeholder="پیام شما ..."
