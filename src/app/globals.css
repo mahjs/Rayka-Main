@@ -258,7 +258,7 @@ body {
 }
 .card-container {
   position: absolute;
-  width: 100%;
+  width: 20%;
   height: 100%;
   transform: rotateY(calc(var(--offset) * 50deg))
     scaleY(calc(1 + var(--abs-offset) * -0.4))
