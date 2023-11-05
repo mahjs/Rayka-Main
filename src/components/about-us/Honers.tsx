@@ -1,12 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import InfoText from "../dashboard/InfoText";
-import honers1 from "@/assets/images/honers1.svg";
-import honers2 from "@/assets/images/honers2.svg";
-import honers3 from "@/assets/images/honers3.svg";
-import honers4 from "@/assets/images/honers4.svg";
-import honers5 from "@/assets/images/honers5.svg";
-import honers6 from "@/assets/images/honers6.svg";
+import honers1 from "@/assets/images/honers1.png";
+import honers2 from "@/assets/images/honers2.png";
+import honers3 from "@/assets/images/honers3.png";
+import honers4 from "@/assets/images/honers4.png";
+import honers5 from "@/assets/images/honers5.png";
+import honers6 from "@/assets/images/honers6.png";
 
 interface Props {}
 const informationData = [
