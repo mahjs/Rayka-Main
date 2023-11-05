@@ -1,6 +1,5 @@
 "use client";
-import React, { useState, useEffect, ReactNode, ReactElement } from "react";
-import styles from "./Carousel.module.css";
+import React, { ReactNode, ReactElement } from "react";
 import arrowRight from "@/assets/images/arrow-right.svg";
 import arrowLeft from "@/assets/images/arrow-left.svg";
 import Image from "next/image";
@@ -23,7 +22,7 @@ const Carousel: React.FC<CarouselProps> = ({ children, active, setActive }) => {
           type="button"
           aria-label="Next"
           className="nav left"
-          onClick={() => setActive((i) => i - 1)}
+          onClick={() => setActive((i: number) => i - 1)}
         >
           <Image src={arrowLeft} alt="arrow left" />
         </button>
@@ -51,7 +50,7 @@ const Carousel: React.FC<CarouselProps> = ({ children, active, setActive }) => {
           aria-label="Next"
           type="button"
           className="nav right"
-          onClick={() => setActive((i) => i + 1)}
+          onClick={() => setActive((i: number) => i + 1)}
         >
           <Image src={arrowRight} alt="arrow right" />
         </button>
