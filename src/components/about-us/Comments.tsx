@@ -30,7 +30,7 @@ const Comments: React.FC<Props> = ({}) => {
   ];
 
   return (
-    <div className="relative mb-[14.35rem] flex h-[550px] items-start justify-center bg-main-image ">
+    <div className="relative mb-[2.51rem] flex h-[550px] items-start justify-center bg-main-image ">
       <div className="z-10 flex w-full flex-col items-center justify-start gap-2 py-2">
         <h1 className="title text-white">صحبت مدیران</h1>
 

@@ -13,7 +13,7 @@ var page = function (_a) {
             react_1["default"].createElement("div", { className: "absolute h-[15rem] w-[90.1%] -rotate-[2deg] rounded-lg bg-[#FEA918] md:w-[80.1%] md:rounded-3xl" }),
             react_1["default"].createElement("div", { style: {
                     backgroundSize: "100%"
-                }, className: "relative h-[24rem] w-[90%] flex-col items-center justify-center rounded-lg bg-main-image md:h-[23rem] md:w-[80%] md:rounded-3xl" },
+                }, className: "relative h-[22rem] w-[90%] flex-col items-center justify-center rounded-lg bg-main-image md:h-[23rem] md:w-[80%] md:rounded-3xl" },
                 react_1["default"].createElement("div", { className: "absolute bottom-0 left-0 right-0 top-0 z-10 h-full w-full rounded-3xl bg-black bg-opacity-30" })),
             react_1["default"].createElement("div", { className: "absolute z-20 h-[22rem] w-[90%] flex-col items-center  justify-center p-12 md:w-[80%] md:rounded-3xl" },
                 react_1["default"].createElement(image_1["default"], { src: "/images/rayka-icon.svg", width: "50", height: "50", alt: "rayka icon", className: "w-12 md:w-16 " }),

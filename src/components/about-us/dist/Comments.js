@@ -23,7 +23,7 @@ var Comments = function (_a) {
             job: "فرانت-اند"
         },
     ];
-    return (react_1["default"].createElement("div", { className: "relative mb-[14.35rem] flex h-[550px] items-start justify-center bg-main-image " },
+    return (react_1["default"].createElement("div", { className: "relative mb-[2.51rem] flex h-[550px] items-start justify-center bg-main-image " },
         react_1["default"].createElement("div", { className: "z-10 flex w-full flex-col items-center justify-start gap-2 py-2" },
             react_1["default"].createElement("h1", { className: "title text-white" }, "\u0635\u062D\u0628\u062A \u0645\u062F\u06CC\u0631\u0627\u0646"),
             react_1["default"].createElement(Carousel_1["default"], { active: active, setActive: setActive }, cardsData.map(function (card, i) { return (react_1["default"].createElement(CommentsCard_1.CommentsCard, { key: i, text: card.text, name: card.name, job: card.job, isActive: i === active })); })))));
