@@ -17,7 +17,7 @@ const InfoText: FC<Props> = ({ title, text, unit }) => {
     if (!startAnimation || showValue === title) return;
     setTimeout(
       () => setShowValue((prevValue) => Math.min(prevValue + 1, title)),
-      22,
+      40,
     );
   }, [showValue, startAnimation, title]);
 

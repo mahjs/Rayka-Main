@@ -68,8 +68,8 @@ const Footer = () => {
                 height={25}
               />
               <p className="subtitle-3 max-w-[28rem]">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Soluta, accusantium?
+                تهرن، خیابان پاسداران، پایین‌تر از اطلس مال، نبش کوچه تنگستان
+                سوم، پلاک ۷۴۶ واحد ۲
               </p>
             </div>
           </div>

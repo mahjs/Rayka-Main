@@ -4,26 +4,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FC, useEffect, useState } from "react";
+import NavbarItem from "./components/NavbarItem";
 
-const Navbar = () => {
+const Navbar: FC = () => {
   const [showNavbar, setShowNavbar] = useState<boolean>(false);
-  const pathname = usePathname();
-  const RenderNavItem: FC<{ href: string; text: string }> = ({
-    href,
-    text,
-  }) => {
-    return (
-      <li
-        className={`${
-          pathname === href ? "text-[#FEA918]" : "text-white"
-        } flex-col text-center text-[1.8rem]`}
-      >
-        <Link href={href}>{text}</Link>
-        {pathname === href && <p className="text-inherit -mt-7">.</p>}
-      </li>
-    );
-  };
 
+  const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
@@ -53,16 +39,20 @@ const Navbar = () => {
     }
   }, [showNavbar]);
 
+  const handleLinkClick = () => {
+    setShowNavbar(false);
+  };
+
   return (
     <div
       className={`navbar fixed left-0 right-0 top-0 z-50 flex w-full justify-between px-5 py-5 transition-all  duration-500 
        md:pr-20 ${isScrolled ? "bg-[#00000099]" : ""}`}
     >
       <ul className="hidden gap-16 md:flex">
-        <RenderNavItem href="/" text="خانه" />
-        <RenderNavItem href="/about-us" text="درباره‌ما" />
-        <RenderNavItem href="/contact-us" text="ارتباط با ما" />
-        <RenderNavItem href="/jobs" text="فرصت‌های شغلی" />
+        <NavbarItem href="/" text="خانه" />
+        <NavbarItem href="/about-us" text="درباره‌ما" />
+        <NavbarItem href="/contact-us" text="ارتباط با ما" />
+        <NavbarItem href="/jobs" text="فرصت‌های شغلی" />
       </ul>
       <ul
         className={`fixed ${
@@ -71,7 +61,7 @@ const Navbar = () => {
       >
         <button
           onClick={() => setShowNavbar(false)}
-          className="absolute left-5 top-2 flex items-center gap-3"
+          className="absolute left-9 top-8 flex items-center gap-3"
         >
           <p className="body-3 text-white">بازگشت</p>
           <Image
@@ -81,10 +71,22 @@ const Navbar = () => {
             alt="arrow icon"
           />
         </button>
-        <RenderNavItem href="/" text="خانه" />
-        <RenderNavItem href="/about-us" text="درباره‌ما" />
-        <RenderNavItem href="/contact-us" text="ارتباط با ما" />
-        <RenderNavItem href="/jobs" text="فرصت‌های شغلی" />
+        <NavbarItem onClick={handleLinkClick} href="/" text="خانه" />
+        <NavbarItem
+          onClick={handleLinkClick}
+          href="/about-us"
+          text="درباره‌ما"
+        />
+        <NavbarItem
+          onClick={handleLinkClick}
+          href="/contact-us"
+          text="ارتباط با ما"
+        />
+        <NavbarItem
+          onClick={handleLinkClick}
+          href="/jobs"
+          text="فرصت‌های شغلی"
+        />
       </ul>
       <Image
         onClick={() => setShowNavbar(!showNavbar)}
