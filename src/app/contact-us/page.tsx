@@ -7,7 +7,7 @@ const ContactUsPage: React.FC = () => {
   return (
     <div className="select-none flex-col">
       <div className="flex w-full flex-col justify-center bg-main-image bg-no-repeat bg-cover pb-5 pt-16 text-center text-white md:h-[500px] md:p-0">
-        <h1 className="header-1">ارتباط با ما</h1>
+        <h2 className="header-1">ارتباط با ما</h2>
         <div className="subtitle flex justify-center">
           <p>
             <Link href="/">خانه-</Link>

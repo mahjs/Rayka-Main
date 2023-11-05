@@ -59,9 +59,9 @@ const MessagesForm: FC = () => {
   return (
     <div className="mt-10 grid select-none place-items-center p-[1em] md:p-[2.5em] lg:grid-cols-2 lg:p-[5em]">
       <div className="h-full w-full">
-        <h2 className="title text-center text-semiBlack md:text-right">
+        <p className="title text-center text-semiBlack md:text-right">
           دوست داریم صدای <span className="text-primary">شما</span> را بشنویم !
-        </h2>
+        </p>
         <p className="subtitle mr-1 mt-3 hidden text-semiBlack md:flex">
           جهت ارتباط با تیم رایکا فرم زیر را تکمیل کنید. <br /> تیم پشتیبانی در
           اسروع وقت با شما تماس خواهند گرفت !
