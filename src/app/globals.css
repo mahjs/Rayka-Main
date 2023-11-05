@@ -224,6 +224,9 @@ body {
   font-family: "KalamehBold";
   font-size: 1.3rem;
   line-height: 150.5%;
+  @media screen and (max-width: 758px) {
+    font-size: 0.83rem;
+  }
 }
 .Btn-2 {
   font-family: "KalamehRegular";
