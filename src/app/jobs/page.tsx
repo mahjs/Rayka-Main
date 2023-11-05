@@ -38,7 +38,7 @@ const JobCard: React.FC<Job> = ({ title, description, postedTime }) => {
         </div>
         <h2 className="subtitle-2 text-primary">{title}</h2>
         <p className="title-1 mb-4 mt-2 text-gray-300">{description}</p>
-        <p className="title-3 text-white">
+        <p className="title-1 text-white">
           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
           از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و
           سطرآنچنان که لازم است.
