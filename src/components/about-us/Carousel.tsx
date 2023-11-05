@@ -1,5 +1,6 @@
 "use client";
-import React, { ReactNode, ReactElement } from "react";
+import React, { useState, useEffect, ReactNode, ReactElement } from "react";
+import styles from "./Carousel.module.css";
 import arrowRight from "@/assets/images/arrow-right.svg";
 import arrowLeft from "@/assets/images/arrow-left.svg";
 import Image from "next/image";
@@ -16,18 +17,20 @@ const Carousel: React.FC<CarouselProps> = ({ children, active, setActive }) => {
   const count = React.Children.count(children);
 
   return (
-    <div className="carousel">
-      {active > 0 && (
-        <button
-          type="button"
-          aria-label="Next"
-          className="nav left"
-          onClick={() => setActive((i: number) => i - 1)}
-        >
-          <Image src={arrowLeft} alt="arrow left" />
-        </button>
-      )}
-      {/* @ts-ignore */}
+    <div className="carousel flex h-full  items-center justify-evenly gap-[7rem]">
+      <div>
+        {active < count - 1 && (
+          <button
+            aria-label="Next"
+            type="button"
+            className="nav right"
+            onClick={() => setActive((i) => i + 1)}
+          >
+            <Image src={arrowRight} alt="arrow right" />
+          </button>
+        )}
+      </div>
+
       {React.Children.map(children, (child: ReactElement, i: number) => (
         <div
           className="card-container"
@@ -45,16 +48,19 @@ const Carousel: React.FC<CarouselProps> = ({ children, active, setActive }) => {
           {child}
         </div>
       ))}
-      {active < count - 1 && (
-        <button
-          aria-label="Next"
-          type="button"
-          className="nav right"
-          onClick={() => setActive((i: number) => i + 1)}
-        >
-          <Image src={arrowRight} alt="arrow right" />
-        </button>
-      )}
+
+      <div>
+        {active > 0 && (
+          <button
+            type="button"
+            aria-label="Next"
+            className="nav left"
+            onClick={() => setActive((i) => i - 1)}
+          >
+            <Image src={arrowLeft} alt="arrow left" />
+          </button>
+        )}
+      </div>
     </div>
   );
 };
