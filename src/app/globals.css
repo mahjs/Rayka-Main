@@ -270,9 +270,6 @@ body {
     translateX(calc(var(--direction) * -5rem));
   filter: blur(calc(var(--abs-offset) * 1rem));
   transition: all 0.3s ease-out;
-  @media screen and (max-width: 500px) {
-    width: 15%;
-  }
 }
 .card {
   width: 100%;

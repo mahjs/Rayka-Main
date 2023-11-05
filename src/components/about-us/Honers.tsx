@@ -51,13 +51,6 @@ const images = [
 const Honers: React.FC<Props> = ({}) => {
   return (
     <div className="relative mb-[3.63rem] flex h-[74rem] w-full items-start bg-main-image bg-cover  bg-no-repeat md:mb-[6.63rem] md:h-[94.75rem] ">
-      {/* <Image
-        src="/images/bg-main.webp"
-        width={800}
-        height={800}
-        alt="HonersBackground"
-        className=" h-[74rem] w-full object-cover  md:h-[94.75rem]"
-      /> */}
       <div className="z-1 absolute flex w-full flex-col justify-center gap-y-12 py-6">
         <p className="title my-5 text-center text-6xl	 font-extrabold	 text-white">
           افتخارات ما
@@ -66,7 +59,7 @@ const Honers: React.FC<Props> = ({}) => {
           {images.map((image, index) => (
             <div className="group relative" key={index}>
               <Image src={image.src} alt={image.alt} />
-              <div className="absolute inset-0 mx-auto flex items-center rounded-3xl transition-all duration-300 ease-in-out hover:bg-primary hover:opacity-50 focus:bg-primary focus:opacity-50">
+              <div className="absolute inset-0 mx-auto flex items-center rounded-2xl transition-all duration-300 ease-in-out hover:bg-primary hover:opacity-50 focus:bg-primary focus:opacity-50">
                 <span className=" subtitle-1 mx-auto px-[1.8rem] text-center text-4xl font-semibold text-primary transition-colors duration-300 ease-in-out group-hover:text-black group-focus:text-black">
                   {image.text}
                 </span>
