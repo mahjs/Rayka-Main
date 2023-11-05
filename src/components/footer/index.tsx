@@ -62,7 +62,7 @@ const Footer = () => {
                 height={25}
                 className="h-[10px] w-[10px] md:h-[25px] md:w-[25px]"
               />
-              <p className="subtitle-3">Support@Raika.com</p>
+              <p className="subtitle-3">support@raikaco.org</p>
             </div>
             <div className="flex items-center gap-1 md:gap-3">
               <Image
@@ -73,7 +73,7 @@ const Footer = () => {
                 height={25}
               />
               <p className="subtitle-3 max-w-[28rem]">
-                تهرن، خیابان پاسداران، پایین‌تر از اطلس مال، نبش کوچه تنگستان
+                تهران، خیابان پاسداران، پایین‌تر از اطلس مال، نبش کوچه تنگستان
                 سوم، پلاک ۷۴۶ واحد ۲
               </p>
             </div>
