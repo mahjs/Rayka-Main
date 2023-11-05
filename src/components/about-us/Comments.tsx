@@ -9,7 +9,7 @@ import { CommentsCard } from "./CommentsCard";
 interface Props {}
 
 const Comments: React.FC<Props> = ({}) => {
-  const [active, setActive] = useState<number>(2);
+  const [active, setActive] = useState<number>(1);
 
   const cardsData = [
     {
@@ -30,12 +30,7 @@ const Comments: React.FC<Props> = ({}) => {
   ];
 
   return (
-    <div className="relative mb-[14.35rem] flex h-[500px] items-start justify-center ">
-      <Image
-        src={heroImage}
-        alt="Descriptive alt text"
-        className="absolute h-full w-full object-cover"
-      />
+    <div className="relative mb-[14.35rem] flex h-[550px] items-start justify-center bg-main-image ">
       <div className="z-10 flex w-full flex-col items-center justify-start gap-2 py-2">
         <h1 className="title text-white">صحبت مدیران</h1>
 
