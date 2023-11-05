@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import heroImage from "@/assets/images/hero-image.webp";
+import Link from "next/link";
 
 interface Props {
   heading: string;
@@ -14,15 +15,15 @@ const HeroSection: React.FC<Props> = ({
   childHeading,
 }) => {
   return (
-    <div className="flex h-[500px] items-center justify-center bg-main-image">
-      <div className="z-10 text-center">
-        <h1 className="header-1 mb-4 font-extrabold	text-white	">{heading}</h1>
-        <h2 className="text-3xl font-medium text-gray-400	">
-          {subHeading}{" "}
-          <span className="text-3xl font-medium text-primary">
-            {childHeading}
-          </span>
-        </h2>
+    <div className="flex w-full flex-col justify-center bg-main-image bg-no-repeat bg-cover pb-5 pt-16 text-center text-white md:h-[500px] md:pt-0">
+      <h1 className="header-1">{heading}</h1>
+      <div className="subtitle flex justify-center">
+        <p>
+          <Link href="/">{subHeading}</Link>
+        </p>
+        <p className="text-primary">
+          <Link href="/jobs">{childHeading}</Link>
+        </p>
       </div>
     </div>
   );

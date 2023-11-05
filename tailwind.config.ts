@@ -22,6 +22,7 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "main-image": "url('/images/bg-main.webp')",
+        "footer-image": "url('/images/footer-bg.svg')"
       },
     },
   },
