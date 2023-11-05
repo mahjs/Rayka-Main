@@ -15,7 +15,7 @@ const HeroSection: React.FC<Props> = ({
   childHeading,
 }) => {
   return (
-    <div className="flex w-full flex-col justify-center bg-main-image pb-5 pt-16 text-center text-white md:h-[500px] md:pt-0">
+    <div className="flex w-full flex-col justify-center bg-main-image bg-no-repeat bg-cover pb-5 pt-16 text-center text-white md:h-[500px] md:pt-0">
       <h1 className="header-1">{heading}</h1>
       <div className="subtitle flex justify-center">
         <p>
