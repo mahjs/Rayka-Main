@@ -54,27 +54,49 @@ const Form: React.FC = () => {
       message: formData.get("message"),
     };
 
-    try {
-      const response = await fetch("/api/form", {
-        // Update this URL to match your server route
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+    const requestPromise = fetch("/api/form", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(body),
+    });
+
+    toast.promise(
+      requestPromise,
+      {
+        pending: {
+          render({ data }) {
+            return <div className="title-1 text-right">...در حال ارسال</div>;
+          },
         },
-        body: JSON.stringify(body),
-      });
-
-      if (!response.ok) {
-        throw new Error(`Error: ${response.status}`);
-      }
-
-      toast.success("پیام شما با موفقیت ارسال شد");
-    } catch (error) {
-      console.error("Error when submitting form", error);
-      toast.error("متاسفانه پیام شما ارسال نشد مجدد تلاش کنید.");
-    } finally {
-      setIsLoading(false);
-    }
+        success: {
+          render({ data }) {
+            // You can use the response data if needed
+            setIsLoading(false);
+            return (
+              <div className="title-1 text-right">
+                رایکایی عزیز پیام شما با موفقیت ارسال شد
+              </div>
+            );
+          },
+        },
+        error: {
+          render({ data }) {
+            // You can use the error data if needed
+            setIsLoading(false);
+            return (
+              <div className="title-1 text-right">
+                متاسفانه پیام شما ارسال نشد مجدد تلاش کنید.
+              </div>
+            );
+          },
+        },
+      },
+      {
+        toastId: "form-request",
+      },
+    );
   };
 
   return (
@@ -89,11 +111,11 @@ const Form: React.FC = () => {
             label="نام شما"
           />
           <FloatingInput
-            type="text"
+            type="email"
             name="floating_email"
             id="floating_email"
             label="پست الکترونیکی"
-            pattern="^[a-zA-Z0-9._:$!%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$"
+            pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
           />
           <FloatingInput
             type="tel"
