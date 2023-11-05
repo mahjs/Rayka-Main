@@ -25,7 +25,7 @@ const JobCard: React.FC<Job> = ({ title, description, postedTime }) => {
   return (
     <div
       style={cardStyle}
-      className="w-[22rem] justify-between rounded-lg p-[2em] before:absolute before:inset-0 before:rounded-lg before:bg-black before:opacity-70 md:w-[36rem]"
+      className="justify-between rounded-lg p-5 before:absolute before:inset-0 before:rounded-lg before:bg-black before:opacity-70 md:w-[36rem] md:p-10"
     >
       <div className="relative z-10">
         <div className="flex justify-between">
@@ -44,10 +44,10 @@ const JobCard: React.FC<Job> = ({ title, description, postedTime }) => {
           سطرآنچنان که لازم است.
         </p>
         <div className="mt-3 flex justify-between">
-          <div className="Body flex">
+          <div className="Body flex gap-2 md:gap-5">
             {categories.map((item, index) => (
               <p
-                className={`Btn rounded-2xl bg-primary p-1 px-3 ${
+                className={`Btn rounded-2xl bg-primary p-1 md:p-2 ${
                   index !== categories.length / 1 ? "mx-1" : ""
                 }`}
                 key={index}
@@ -56,7 +56,10 @@ const JobCard: React.FC<Job> = ({ title, description, postedTime }) => {
               </p>
             ))}
           </div>
-          <Link className="flex items-center text-primary" href="/contact-us">
+          <Link
+            className="Btn flex items-center whitespace-nowrap text-primary"
+            href="/contact-us"
+          >
             اطلاعات بیشتر
             <svg
               xmlns="http://www.w3.org/2000/svg"

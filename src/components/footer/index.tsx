@@ -3,9 +3,14 @@ import PageNavigation from "../dashboard/PageNavigation";
 
 const Footer = () => {
   return (
-    <div className="w-full bg-black">
-      <div className="bg-gray-950 relative mr-auto flex w-[98%] justify-between gap-3 rounded-tr-md pb-[2rem] pt-[6rem] md:items-center md:justify-around md:pb-[5rem] md:pt-[8rem]">
-        <Image src="/images/footer-bg.svg" layout="fill" alt="backgorund" />
+    <div className="bg-black">
+      <div
+        style={{
+          backgroundSize: "100%",
+          backgroundRepeat: "no-repeat",
+        }}
+        className="bg-footer-image relative z-0 mr-auto flex w-full justify-between gap-3 object-contain px-3 pb-[2rem] pt-[6rem] md:items-center md:justify-around md:pb-[5rem] md:pt-[8rem]"
+      >
         <div className="flex flex-col gap-2 md:gap-5">
           <Image
             src="/images/rayka-icon.svg"
@@ -37,7 +42,7 @@ const Footer = () => {
                 height={25}
                 className="h-[10px] w-[10px] md:h-[25px] md:w-[25px]"
               />
-              <p>+98 930 547 1279</p>
+              <p className="subtitle-3">+98 930 547 1279</p>
             </div>
             <div className="flex items-center gap-1 md:gap-3">
               <Image
@@ -47,7 +52,7 @@ const Footer = () => {
                 height={25}
                 className="h-[10px] w-[10px] md:h-[25px] md:w-[25px]"
               />
-              <p>+21 374 54112</p>
+              <p className="subtitle-3">+21 374 54112</p>
             </div>
             <div className="flex items-center gap-1 md:gap-3">
               <Image
@@ -57,7 +62,7 @@ const Footer = () => {
                 height={25}
                 className="h-[10px] w-[10px] md:h-[25px] md:w-[25px]"
               />
-              <p>Support@Raika.com</p>
+              <p className="subtitle-3">Support@Raika.com</p>
             </div>
             <div className="flex items-center gap-1 md:gap-3">
               <Image

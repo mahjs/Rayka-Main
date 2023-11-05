@@ -68,6 +68,7 @@ const Navbar: FC = () => {
             src="/images/arrow.svg"
             width={15}
             height={15}
+            className="h-[15px] w-[15px]"
             alt="arrow icon"
           />
         </button>
@@ -90,7 +91,7 @@ const Navbar: FC = () => {
       </ul>
       <Image
         onClick={() => setShowNavbar(!showNavbar)}
-        className="md:hidden"
+        className="h-[17px] w-[25px] md:hidden"
         src="/images/menu.svg"
         width={25}
         height={17}
@@ -99,9 +100,10 @@ const Navbar: FC = () => {
       <Link href="/" className="mr-auto">
         <Image
           src="/images/rayka-icon.svg"
-          width="50"
-          height="50"
+          width={50}
+          height={50}
           alt="rayka icon"
+          className="h-[50px] w-[50px]"
         />
       </Link>
     </div>
