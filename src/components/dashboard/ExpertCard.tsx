@@ -45,6 +45,7 @@ const ExpertCard: FC<Props> = ({
           alt={title + " icon"}
           width={mobile ? 25 : 50}
           height={mobile ? 25 : 50}
+          className="h-[25px] w-[25px] md:h-[50px] md:w-[50px]"
         />
       </span>
       <p className="body text-inherit md:text-[1.5rem] md:font-bold">{title}</p>

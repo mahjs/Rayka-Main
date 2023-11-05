@@ -41,7 +41,7 @@ const Comments: React.FC<Props> = ({}) => {
               text={card.text}
               name={card.name}
               job={card.job}
-              isActive={i === active} // Pass the isActive prop
+              isActive={i === active ? true : false} // Pass the isActive prop
             />
           ))}
         </Carousel>
