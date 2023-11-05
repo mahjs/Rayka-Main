@@ -65,21 +65,21 @@ const Map: React.FC = () => {
         >
           <div
             onClick={(e) => e.stopPropagation()}
-            className="h-64 w-[36rem] rounded bg-white p-5"
+            className="h-56 w-[20rem] md:h-[20rem] md:w-[36rem] rounded bg-white p-5"
           >
             <button
-              className="title-1 rounded-lg bg-gray-50 px-5 py-2.5 text-primary shadow-2xl duration-300 hover:bg-gray-200"
+              className="title-2 rounded-lg bg-gray-50 px-5 py-2.5 text-primary shadow-2xl duration-300 hover:bg-gray-200"
               onClick={() => setShowModal(false)}
             >
               بستن
             </button>
             <div className="mb-[2.5em] mt-[1.5em] select-none">
-              <p className="title-4">
+              <p className="title-2">
                 از کدام سرویس مسیریابی می‌خواهید استفاده کنید؟
               </p>
-              <p className="flex text-sm">
+              <p className="flex miniText">
                 <svg
-                  className="ml-1 mt-[0.4em] h-4 w-4 text-gray-800 dark:text-gray-800"
+                  className="ml-1 md:mt-[0.1em] mt-[0.4em] w-2 h-2 md:h-4 md:w-4 text-gray-800 dark:text-gray-800"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"

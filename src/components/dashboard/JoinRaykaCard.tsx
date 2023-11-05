@@ -24,7 +24,7 @@ const JoinRaykaCard = () => {
           }}
           className="mt-5 hidden items-center justify-start gap-3 rounded-2xl bg-black px-5 py-2.5 md:flex"
         >
-          <p className="Btn-2 text-right text-[#FEA918]">
+          <p className="btn-2 text-right text-[#FEA918]">
             مشاهده فرصت‌های شغلی
           </p>
 
