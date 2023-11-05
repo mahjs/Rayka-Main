@@ -58,7 +58,7 @@ const Honers: React.FC<Props> = ({}) => {
         <div className="mx-auto grid grid-cols-2 gap-6 px-7 md:grid-cols-3 md:gap-12">
           {images.map((image, index) => (
             <div className="group relative" key={index}>
-              <Image src={image.src} alt={image.alt} />
+              <Image src={image.src} alt={image.alt} placeholder="blur"/>
               <div className="absolute inset-0 mx-auto flex items-center rounded-2xl transition-all duration-300 ease-in-out hover:bg-primary hover:opacity-50 focus:bg-primary focus:opacity-50">
                 <span className=" subtitle-1 mx-auto px-[1.8rem] text-center text-4xl font-semibold text-primary transition-colors duration-300 ease-in-out group-hover:text-black group-focus:text-black">
                   {image.text}
