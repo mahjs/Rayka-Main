@@ -50,14 +50,14 @@ const images = [
 ];
 const Honers: React.FC<Props> = ({}) => {
   return (
-    <div className="relative mb-[3.63rem] flex  items-start md:mb-[6.63rem] ">
-      <Image
+    <div className="relative mb-[3.63rem] flex h-[74rem] w-full items-start bg-main-image bg-cover  bg-no-repeat md:mb-[6.63rem] md:h-[94.75rem] ">
+      {/* <Image
         src="/images/bg-main.webp"
         width={800}
         height={800}
         alt="HonersBackground"
         className=" h-[74rem] w-full object-cover  md:h-[94.75rem]"
-      />
+      /> */}
       <div className="z-1 absolute flex w-full flex-col justify-center gap-y-12 py-6">
         <p className="title my-5 text-center text-6xl	 font-extrabold	 text-white">
           افتخارات ما
