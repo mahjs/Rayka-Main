@@ -315,7 +315,7 @@ body {
   cursor: pointer;
   /* user-select: none; */
 }
-.nav.left {
+/* .nav.left {
   transform: translateX(-1200%) translateY(-50%);
   @media screen and (max-width: 500px) {
     transform: translateX(-10rem) translateY(12rem);
@@ -327,4 +327,4 @@ body {
   @media screen and (max-width: 500px) {
     transform: translateX(100%) translateY(12rem);
   }
-}
+} */
