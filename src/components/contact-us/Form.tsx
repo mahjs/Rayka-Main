@@ -108,7 +108,7 @@ const Form: React.FC = () => {
             name="floating_phone"
             id="floating_phone"
             label="شماره تلفن"
-            pattern="\+(?:[0-9] ?){6,14}[0-9]"
+            pattern="(\+989|09)\d{9}"
           />
           <FloatingInput
             type="text"

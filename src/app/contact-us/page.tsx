@@ -20,7 +20,6 @@ const ContactUsPage: React.FC = () => {
       </div>
       <MessagesForm />
       <Address />
-      <Map />
     </div>
   );
 };
