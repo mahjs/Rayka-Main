@@ -61,7 +61,7 @@ const Experties = () => {
 
   return (
     <div className="absolute z-20 h-[18rem] w-[90%] flex-col items-center  justify-center md:w-[80%] md:rounded-3xl">
-      <p className="header-4 md:title-2 my-5 text-center text-white">
+      <p className="header-4 md:title-3 my-5 text-center text-white">
         حوضه تخصصی رایکا
       </p>
 

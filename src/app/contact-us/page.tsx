@@ -1,6 +1,5 @@
-import Address from "@/components/contact-us/Address";
-import Map from "@/components/contact-us/Map";
-import MessagesForm from "@/components/contact-us/MessagesForm";
+import Map from "@/app/contact-us/_Components/Map";
+import MessagesForm from "@/app/contact-us/_Components/MessagesForm";
 import Link from "next/link";
 import React from "react";
 
@@ -19,7 +18,7 @@ const ContactUsPage: React.FC = () => {
         </div>
       </div>
       <MessagesForm />
-      <Address />
+      <Map />
     </div>
   );
 };

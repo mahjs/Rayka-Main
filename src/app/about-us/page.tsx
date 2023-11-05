@@ -21,7 +21,7 @@ const page: React.FC<Props> = ({}) => {
           style={{
             backgroundSize: "100%",
           }}
-          className="relative h-[22rem] w-[90%] flex-col items-center justify-center rounded-lg bg-main-image md:h-[23rem] md:w-[80%] md:rounded-3xl"
+          className="relative h-[22rem] w-[90%] flex-col items-center justify-center rounded-lg bg-main-image md:h-[50dvh] md:w-[80%] md:rounded-3xl"
         >
           <div className="absolute bottom-0 left-0 right-0 top-0 z-10 h-full w-full rounded-3xl bg-black bg-opacity-30" />
         </div>
@@ -33,8 +33,8 @@ const page: React.FC<Props> = ({}) => {
             alt="rayka icon"
             className="w-12 md:w-16 "
           />
-          <p className="  title-2 text-5xl font-bold	text-primary">درباه‌ما </p>
-          <p className="  Body mt-3	 text-justify text-[1rem] font-medium	text-white">
+          <p className="  title-3 text-5xl font-bold	text-primary">درباه‌ما </p>
+          <p className="  title-1 mt-3	 text-justify text-[1rem] font-medium	text-white">
             ما در خانواده ی سخت کوش و خستگی ناپذیر شرکت ماورای ابعاد رایکا ،
             برای تحقق رویاهایمان میجنگیم. در کنار هم میسازیم و از تماشای آنچه
             روزی تصور کرده بودیم و حالا به آن تجسم بخشیده ایم لذت میبریم. لورم
