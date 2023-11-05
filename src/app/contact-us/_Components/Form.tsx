@@ -51,13 +51,13 @@ const Form: React.FC = () => {
     toast.promise(requestPromise, {
       pending: {
         render({ data }) {
-          return <div className="Body text-right">...در حال ارسال</div>;
+          return <div className="title-1 text-right">...در حال ارسال</div>;
         },
       },
       success: {
         render({ data }) {
           return (
-            <div className="Body text-right">
+            <div className="title-1 text-right">
               رایکایی عزیز پیام شما با موفقیت ارسال شد
             </div>
           );
@@ -67,7 +67,7 @@ const Form: React.FC = () => {
       error: {
         render({ data }) {
           return (
-            <div className="Body text-right">
+            <div className="title-1 text-right">
               متاسفانه پیام شما ارسال نشد مجدد تلاش کنید.
             </div>
           );

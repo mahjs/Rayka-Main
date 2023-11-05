@@ -13,7 +13,7 @@ const Footer = () => {
             width={50}
             height={50}
           />
-          <p className="Body-2 max-w-[18rem] text-white md:max-w-[25rem]">
+          <p className="title-4 max-w-[18rem] text-white md:max-w-[25rem]">
             ما در خانواده ی سخت کوش و خستگی ناپذیر شرکت ماورای ابعاد رایکا ،
             برای تحقق رویاهایمان میجنگیم. در کنار هم میسازیم و از تماشای آنچه
             روزی تصور <br className="hidden md:block" /> کرده بودیم و حالا به آن

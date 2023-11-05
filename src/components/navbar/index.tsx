@@ -73,7 +73,7 @@ const Navbar = () => {
           onClick={() => setShowNavbar(false)}
           className="absolute left-5 top-2 flex items-center gap-3"
         >
-          <p className="body-3 text-white">بازگشت</p>
+          <p className="miniText text-white">بازگشت</p>
           <Image
             src="/images/arrow.svg"
             width={15}

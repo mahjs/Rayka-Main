@@ -12,7 +12,6 @@ var DEFAULT_MAP_URL = "https://map.ir/lat/35.803776/lng/51.472840/z/16/p/%D9%85%
 var MAP_URL = process.env.NEXT_PUBLIC_MAP_URL || DEFAULT_MAP_URL;
 var Map = function () {
     var _a = react_1.useState(false), showModal = _a[0], setShowModal = _a[1];
-    var _b = react_1.useState(null), userLocation = _b[0], setUserLocation = _b[1];
     var openNavigation = function (service) {
         var _a;
         var navigationLinks = (_a = {},
@@ -24,19 +23,7 @@ var Map = function () {
         window.open(navigationLinks[service], "_blank");
     };
     var handleMapClick = function () {
-        if ("geolocation" in navigator) {
-            navigator.geolocation.getCurrentPosition(function (position) {
-                var userLat = position.coords.latitude;
-                var userLng = position.coords.longitude;
-                setUserLocation({ userLat: userLat, userLng: userLng });
-                setShowModal(true);
-            }, function (error) {
-                console.error("Error retrieving user location", error);
-            });
-        }
-        else {
-            console.error("Geolocation is not supported by this browser.");
-        }
+        setShowModal(true);
     };
     return (react_1["default"].createElement("div", { className: "relative mb-32 mt-12 h-[400px] w-full md:h-[350px]" },
         react_1["default"].createElement("iframe", { src: MAP_URL, width: "100%", height: "450", loading: "lazy", title: "\u0646\u0642\u0634\u0647 \u0645\u062D\u0644 \u0645\u0627" }),
