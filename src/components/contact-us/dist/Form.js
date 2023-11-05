@@ -41,7 +41,7 @@ var react_1 = require("react");
 var CustomBtn_1 = require("./CustomBtn");
 require("react-toastify/dist/ReactToastify.css");
 var react_toastify_1 = require("react-toastify");
-var commonInputClasses = "peer block w-full appearance-none rounded border-0 bg-[#f5f5f5] px-5 py-5 text-sm text-gray-900 focus:border-primary focus:outline-none focus:ring-0 dark:border-primary dark:text-white dark:focus:border-primary";
+var commonInputClasses = "peer block w-full text-right appearance-none rounded border-0 bg-[#f5f5f5] px-5 py-5 text-sm text-gray-900 focus:border-primary focus:outline-none focus:ring-0 dark:border-primary dark:text-white dark:focus:border-primary";
 var FloatingInput = function (_a) {
     var type = _a.type, name = _a.name, id = _a.id, label = _a.label, pattern = _a.pattern;
     return (react_1["default"].createElement("div", { className: "group relative z-0 w-full " },
@@ -61,7 +61,7 @@ var Form = function () {
                         pending: {
                             render: function (_a) {
                                 var data = _a.data;
-                                return react_1["default"].createElement("div", { className: "Body text-right\t " }, "...\u062F\u0631 \u062D\u0627\u0644 \u0627\u0631\u0633\u0627\u0644");
+                                return react_1["default"].createElement("div", { className: "Body text-right" }, "...\u062F\u0631 \u062D\u0627\u0644 \u0627\u0631\u0633\u0627\u0644");
                             }
                         },
                         success: {
@@ -101,7 +101,7 @@ var Form = function () {
             react_1["default"].createElement("div", { className: "grid select-none grid-cols-2 gap-4 md:gap-7" },
                 react_1["default"].createElement(FloatingInput, { type: "text", name: "floating_first_name", id: "floating_first_name", label: "\u0646\u0627\u0645 \u0634\u0645\u0627" }),
                 react_1["default"].createElement(FloatingInput, { type: "text", name: "floating_last_name", id: "floating_last_name", label: "\u067E\u0633\u062A \u0627\u0644\u06A9\u062A\u0631\u0648\u0646\u06CC\u06A9\u06CC", pattern: "^[a-zA-Z0-9._:$!%-]+@[a-zA-Z0-9.-]+\\\\.[a-zA-Z]{2,6}$" }),
-                react_1["default"].createElement(FloatingInput, { type: "tel", name: "floating_phone", id: "floating_phone", label: "\u0634\u0645\u0627\u0631\u0647 \u062A\u0644\u0641\u0646", pattern: "\\+(?:[0-9] ?){6,14}[0-9]" }),
+                react_1["default"].createElement(FloatingInput, { type: "tel", name: "floating_phone", id: "floating_phone", label: "\u0634\u0645\u0627\u0631\u0647 \u062A\u0644\u0641\u0646", pattern: "(\\+989|09)\\d{9}" }),
                 react_1["default"].createElement(FloatingInput, { type: "text", name: "floating_company", id: "floating_company", label: "\u0645\u0648\u0636\u0648\u0639 \u0645\u062A\u0646" })),
             react_1["default"].createElement("textarea", { id: "message", className: "row-span-4 mt-4 block h-40 w-full rounded border-0 bg-[#f5f5f5] p-2.5 text-sm text-gray-900 focus:border-primary focus:ring-primary dark:border-primary dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-primary dark:focus:ring-primary md:mt-7 md:h-60", placeholder: "\u067E\u06CC\u0627\u0645 \u0634\u0645\u0627 ..." }),
             react_1["default"].createElement(CustomBtn_1["default"], { sendText: isLoading ? "در حال ارسال..." : "ارسال پیام" }))));
