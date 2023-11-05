@@ -38,7 +38,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 exports.__esModule = true;
 var react_1 = require("react");
-var CustomBtn_1 = require("./CustomBtn");
+var CustomBtn_1 = require("../../app/contact-us/_Components/CustomBtn");
 require("react-toastify/dist/ReactToastify.css");
 var react_toastify_1 = require("react-toastify");
 var commonInputClasses = "peer block w-full text-right appearance-none rounded border-0 bg-[#f5f5f5] px-5 py-5 text-sm text-gray-900 focus:border-primary focus:outline-none focus:ring-0 dark:border-primary dark:text-white dark:focus:border-primary";

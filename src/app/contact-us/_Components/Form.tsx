@@ -68,7 +68,6 @@ const Form: React.FC = () => {
         throw new Error(`Error: ${response.status}`);
       }
 
-      // Show success toast
       toast.success("پیام شما با موفقیت ارسال شد");
     } catch (error) {
       console.error("Error when submitting form", error);

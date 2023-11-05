@@ -34,11 +34,11 @@ const JobCard: React.FC<Job> = ({ title, description, postedTime }) => {
             alt="headphone"
             className="h-[4.6685rem] w-[4.6685rem]"
           />
-          <p className="Body-3 text-gray-300">{postedTime}</p>
+          <p className="miniText text-gray-300">{postedTime}</p>
         </div>
         <h2 className="subtitle-2 text-primary">{title}</h2>
-        <p className="Body mb-4 mt-2 text-gray-300">{description}</p>
-        <p className="Body-1 text-white">
+        <p className="title-1 mb-4 mt-2 text-gray-300">{description}</p>
+        <p className="title-3 text-white">
           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
           از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و
           سطرآنچنان که لازم است.
