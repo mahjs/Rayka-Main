@@ -13,7 +13,7 @@ interface FloatingInputProps {
 }
 
 const commonInputClasses =
-  "peer block w-full appearance-none rounded border-0 bg-[#f5f5f5] px-5 py-5 text-sm text-gray-900 focus:border-primary focus:outline-none focus:ring-0 dark:border-primary dark:text-white dark:focus:border-primary";
+  "peer block w-full text-right appearance-none rounded border-0 bg-[#f5f5f5] px-5 py-5 text-sm text-gray-900 focus:border-primary focus:outline-none focus:ring-0 dark:border-primary dark:text-white dark:focus:border-primary";
 
 const FloatingInput: React.FC<FloatingInputProps> = ({
   type,
@@ -51,7 +51,7 @@ const Form: React.FC = () => {
     toast.promise(requestPromise, {
       pending: {
         render({ data }) {
-          return <div className="Body text-right	 ">...در حال ارسال</div>;
+          return <div className="Body text-right">...در حال ارسال</div>;
         },
       },
       success: {
