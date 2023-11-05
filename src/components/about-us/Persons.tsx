@@ -73,7 +73,7 @@ const Persons: React.FC<Props> = ({}) => {
 
   useEffect(() => {
     const updateImagesPerPage = () => {
-      const newImagesPerPage = window.innerWidth < 500 ? 2 : 3;
+      const newImagesPerPage = 2;
       setImagesPerPage(newImagesPerPage);
     };
 

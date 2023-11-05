@@ -62,7 +62,7 @@ var Persons = function (_a) {
     var visibleData = data.slice(currentImageIndex * imagesPerPage, (currentImageIndex + 1) * imagesPerPage);
     react_1.useEffect(function () {
         var updateImagesPerPage = function () {
-            var newImagesPerPage = window.innerWidth < 500 ? 2 : 3;
+            var newImagesPerPage = 2;
             setImagesPerPage(newImagesPerPage);
         };
         window.addEventListener("resize", updateImagesPerPage);

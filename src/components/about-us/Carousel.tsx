@@ -18,7 +18,7 @@ const Carousel: React.FC<CarouselProps> = ({ children, active, setActive }) => {
 
   return (
     <div className="carousel">
-      {active > 0 && (
+      {/* {active > 0 && (
         <button
           type="button"
           aria-label="Next"
@@ -27,7 +27,7 @@ const Carousel: React.FC<CarouselProps> = ({ children, active, setActive }) => {
         >
           <Image src={arrowLeft} alt="arrow left" />
         </button>
-      )}
+      )} */}
       {/* @ts-ignore */}
       {React.Children.map(children, (child: ReactElement, i: number) => (
         <div
@@ -46,7 +46,7 @@ const Carousel: React.FC<CarouselProps> = ({ children, active, setActive }) => {
           {child}
         </div>
       ))}
-      {active < count - 1 && (
+      {/* {active < count - 1 && (
         <button
           aria-label="Next"
           type="button"
@@ -55,7 +55,7 @@ const Carousel: React.FC<CarouselProps> = ({ children, active, setActive }) => {
         >
           <Image src={arrowRight} alt="arrow right" />
         </button>
-      )}
+      )} */}
     </div>
   );
 };
