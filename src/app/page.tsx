@@ -43,7 +43,7 @@ export default function Home() {
         className="flex items-center justify-between bg-main-image pt-16  md:h-[100vh] md:w-[100%] md:rounded-br-[30rem] md:pt-0"
       >
         <div className="flex-col px-5 pb-5 text-white md:mr-[8rem] md:py-10">
-          <p className="header-a hidden md:block">شرکت ماورای ابعاد رایکا</p>
+          <p className="header-3 hidden md:block">شرکت ماورای ابعاد رایکا</p>
           <p className="header-2 hidden md:block">
             همگام با <span className="text-primary">تکنولوژی</span>
           </p>

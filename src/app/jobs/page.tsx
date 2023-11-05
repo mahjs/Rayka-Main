@@ -47,7 +47,7 @@ const JobCard: React.FC<Job> = ({ title, description, postedTime }) => {
           <div className="Body flex gap-2 md:gap-5">
             {categories.map((item, index) => (
               <p
-                className={`Btn rounded-2xl bg-primary p-1 md:p-2 ${
+                className={`btn rounded-2xl bg-primary p-1 md:p-2 ${
                   index !== categories.length / 1 ? "mx-1" : ""
                 }`}
                 key={index}
@@ -57,7 +57,7 @@ const JobCard: React.FC<Job> = ({ title, description, postedTime }) => {
             ))}
           </div>
           <Link
-            className="Btn flex items-center whitespace-nowrap text-primary"
+            className="btn flex items-center whitespace-nowrap text-primary"
             href="/contact-us"
           >
             اطلاعات بیشتر

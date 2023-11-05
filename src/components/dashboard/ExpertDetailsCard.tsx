@@ -20,7 +20,7 @@ const ExpertDetailsCard: FC<Props> = ({
         onClick={handleClickClose}
         className="absolute -top-[2rem] right-5 flex items-center gap-3"
       >
-        <p className="Btn text-white">بازگشت</p>
+        <p className="btn text-white">بازگشت</p>
         <Image
           src="/images/arrow.svg"
           width={15}
