@@ -32,7 +32,7 @@ export default function Home() {
   return (
     <div className="relative flex flex-col gap-10 md:gap-20">
       {/* Background */}
-      <div className="absolute left-0 right-0 top-0 -z-30 hidden w-full bg-[#FEA918] md:block md:h-[80vh]" />
+      <div className="absolute left-0 right-0 top-0 -z-30 hidden w-full bg-[#FEA918] md:block md:h-[100vh]" />
 
       {/* Top content */}
       <div
@@ -40,7 +40,7 @@ export default function Home() {
           // backgroundSize: "100%",
           backgroundRepeat: "no-repeat",
         }}
-        className="flex items-center justify-between bg-main-image bg-[20%] pt-16 md:h-[80vh] md:rounded-br-[30rem] md:pt-0"
+        className="flex items-center justify-between bg-main-image bg-[20%] pt-16 md:h-[100vh] md:rounded-br-[30rem] md:pt-0"
       >
         <div className="flex-col px-5 pb-5 text-white md:mr-[8rem] md:py-10">
           <p className="header-a hidden md:block">شرکت ماورای ابعاد رایکا</p>
