@@ -3,9 +3,14 @@ import PageNavigation from "../dashboard/PageNavigation";
 
 const Footer = () => {
   return (
-    <div className="w-full bg-black">
-      <div className="bg-gray-950 relative mr-auto flex w-[98%] justify-between gap-3 rounded-tr-md pb-[2rem] pt-[6rem] md:items-center md:justify-around md:pb-[5rem] md:pt-[8rem]">
-        <Image src="/images/footer-bg.svg" layout="fill" alt="backgorund" />
+    <div className="bg-black">
+      <div
+        style={{
+          backgroundSize: "100%",
+          backgroundRepeat: "no-repeat",
+        }}
+        className="bg-footer-image relative z-0 mr-auto flex w-full justify-between gap-3 object-contain px-3 pb-[2rem] pt-[6rem] md:items-center md:justify-around md:pb-[5rem] md:pt-[8rem]"
+      >
         <div className="flex flex-col gap-2 md:gap-5">
           <Image
             src="/images/rayka-icon.svg"
