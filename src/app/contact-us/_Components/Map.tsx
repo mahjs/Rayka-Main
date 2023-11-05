@@ -57,9 +57,10 @@ const Map: React.FC = () => {
         break;
       case NavigationService.Google:
       default:
-        url = `geo:"https://map.ir/lat/35.803776/lng/51.472840/z/16/p/%D9%85%D8%A7%D9%8A%D9%86%D8%AC%D8%A7%DB%8C%DB%8C%D9%85"`;
-        if (!isMobile()) {
-          url = "https://maps.app.goo.gl/B2jSX3MbPCfWDPo99";
+        if (isMobile()) {
+          url = "geo:35.803776,51.472840";
+        } else {
+          url = "https://www.google.com/maps?q=35.803776,51.472840";
         }
         break;
     }
