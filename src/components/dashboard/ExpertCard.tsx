@@ -31,7 +31,7 @@ const ExpertCard: FC<Props> = ({
       onMouseOut={() => {
         setIconPath(orangeIconPath);
       }}
-      className={`relative flex h-[l00px] w-[150px] cursor-pointer flex-col flex-wrap overflow-hidden rounded-lg ${
+      className={`relative flex h-[l20px] w-[150px] cursor-pointer flex-col flex-wrap overflow-hidden rounded-lg ${
         mobile ? "bg-[#FEA918]" : "bg-[#3D3D3D]"
       }  px-[1rem] py-[1.5rem] text-${
         mobile ? "#000" : "white"

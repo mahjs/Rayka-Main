@@ -60,7 +60,7 @@ const Experties = () => {
   };
 
   return (
-    <div className="absolute z-20 flex h-[18rem] w-[90%] items-center justify-center md:w-[80%] md:rounded-3xl">
+    <div className="absolute z-20 flex h-[18rem] w-[90%] items-center justify-center lg:w-[80%] lg:rounded-3xl">
       <Transition
         show={!showDetails}
         enter="transition-all duration-500 delay-500"
@@ -73,12 +73,12 @@ const Experties = () => {
         <p
           className={`${
             showDetails ? "hidden" : ""
-          } header-3 md:title-2 absolute -top-5 left-[50%] my-5 translate-x-[-50%] text-center text-white`}
+          } header-3 lg:title-2 absolute -top-5 left-[50%] my-10 translate-x-[-50%] whitespace-nowrap text-center text-white`}
         >
           حوضه تخصصی رایکا
         </p>
       </Transition>
-      <div className="grid  grid-cols-2 gap-y-4 md:hidden">
+      <div className="mt-[8rem] grid grid-cols-2 gap-4 md:mt-[25rem] lg:hidden">
         {expertiesData.map((expert) => (
           <ExpertCard
             mobile
@@ -92,7 +92,7 @@ const Experties = () => {
         ))}
       </div>
 
-      <div className="mt-28 hidden md:block">
+      <div className="mt-28 hidden lg:block">
         <Transition
           show={showExperties}
           enter="transition-all duration-500 "
@@ -116,7 +116,7 @@ const Experties = () => {
           </div>
         </Transition>
       </div>
-      <div className="hidden md:block">
+      <div className="hidden lg:block">
         <Transition
           show={showDetails}
           enter="transition-all duration-500 "
@@ -127,7 +127,7 @@ const Experties = () => {
           leaveTo="opacity-0 translate-y-full"
         >
           <ExpertDetailsCard
-            index={selectedIndex + 1}
+            index={selectedIndex! + 1}
             handleClickClose={handleCloseButtonClick}
             key={selectedIndex}
             title={expertiesData[selectedIndex!].title}
