@@ -5,6 +5,8 @@ import React from "react";
 import Persons from "@/components/about-us/Persons";
 import Comments from "@/components/about-us/Comments";
 
+import RaykaIcon from "@/assets/images/rayka-icon.svg";
+
 interface Props {}
 
 const page: React.FC<Props> = ({}) => {
@@ -27,7 +29,7 @@ const page: React.FC<Props> = ({}) => {
         </div>
         <div className="absolute z-20 h-[22rem] w-[90%] flex-col items-center  justify-center p-12 md:w-[80%] md:rounded-3xl">
           <Image
-            src="/images/rayka-icon.svg"
+            src={RaykaIcon}
             width="50"
             height="50"
             alt="rayka icon"
