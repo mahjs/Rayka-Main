@@ -9,7 +9,7 @@ const Footer = () => {
           backgroundSize: "100%",
           backgroundRepeat: "no-repeat",
         }}
-        className="bg-footer-image relative z-0 mr-auto flex w-full justify-between gap-3 object-contain px-3 pb-[2rem] pt-[6rem] md:items-center md:justify-around md:pb-[5rem] md:pt-[8rem]"
+        className="relative z-0 mr-auto flex w-full justify-between gap-3 bg-footer-image object-contain px-3 pb-[2rem] pt-[6rem] md:items-start md:justify-around md:pb-[5rem] md:pt-[8rem]"
       >
         <div className="flex flex-col gap-2 md:gap-5">
           <Image
