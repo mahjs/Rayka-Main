@@ -75,7 +75,7 @@ export default function Home() {
       {/* Experties Content */}
       <div className="relative flex justify-center md:mb-5">
         {/* Make the backgrounds */}
-        <div className="absolute h-[24rem] w-[90%] -rotate-[2deg] rounded-lg bg-[#FEA918] md:h-[18rem] md:w-[90.1%] md:-rotate-[1deg] md:rounded-3xl" />
+        <div className="absolute h-[24rem] w-[90%] -rotate-[2deg] rounded-lg bg-[#FEA918] md:h-[40rem] md:w-[80.1%] md:-rotate-[2deg] md:rounded-3xl lg:h-[18rem] lg:w-[90.1%] lg:-rotate-[1deg]" />
         <div
           style={{
             backgroundSize: "100%",
