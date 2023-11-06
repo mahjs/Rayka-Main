@@ -13,7 +13,7 @@ interface FloatingInputProps {
 }
 
 const commonInputClasses =
-  "peer block w-full text-right appearance-none rounded border-0 bg-[#f5f5f5] px-5 py-5 text-sm text-gray-900 focus:border-primary focus:outline-none focus:ring-primary dark:border-primary dark:text-white dark:focus:border-primary";
+  "peer block w-full text-right appearance-none rounded border-0 bg-[#f5f5f5] px-5 py-5 text-sm text-gray-900 focus:border-primary focus:outline-none focus:ring-primary dpeer block w-full appearance-none rounded border-0 bg-[#f5f5f5] px-5 py-5 text-right text-sm text-gray-900 focus:border-primary focus:outline-none focus:ring-primary dark:border-primary dark:text-white dark:focus:border-primaryark:border-primary dark:text-white dark:focus:border-primary";
 
 const FloatingInput: React.FC<FloatingInputProps> = ({
   type,

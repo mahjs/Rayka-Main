@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { FC } from "react";
+import Arrow from "@/assets/images/arrow.svg";
 
 interface Props {
   index: number;
@@ -43,12 +44,7 @@ const ExpertDetailsCard: FC<Props> = ({
             className="flex items-center gap-3"
           >
             <p className="Btn-2 text-white">بازگشت</p>
-            <Image
-              src="/images/arrow.svg"
-              width={15}
-              height={15}
-              alt="arrow icon"
-            />
+            <Image src={Arrow} width={15} height={15} alt="arrow icon" />
           </button>
         </div>
         <p className="Body max-w-[80%]">

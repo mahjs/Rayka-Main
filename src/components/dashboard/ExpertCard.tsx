@@ -24,7 +24,10 @@ const ExpertCard: FC<Props> = ({
 
   return (
     <div
-      onClick={() => onClick(index - 1)}
+      onClick={() => {
+        if (mobile) return;
+        onClick(index - 1);
+      }}
       onMouseOver={() => {
         setIconPath(darkIconPath);
       }}
