@@ -61,10 +61,23 @@ const Experties = () => {
 
   return (
     <div className="absolute z-20 h-[18rem] w-[90%] flex-col items-center  justify-center md:w-[80%] md:rounded-3xl">
-      <p className="header-4 md:title-2 my-5 text-center text-white">
-        حوضه تخصصی رایکا
-      </p>
-
+      <Transition
+        show={!showDetails}
+        enter="transition-all duration-500 delay-500"
+        enterFrom="opacity-0"
+        enterTo="opacity-1"
+        leave="transition-all duration-500 delay-500"
+        leaveFrom="opacity-1"
+        leaveTo="opacity-0"
+      >
+        <p
+          className={`${
+            showDetails ? "hidden" : ""
+          } header-3 md:title-2 absolute left-[50%] my-5 translate-x-[-50%] text-center text-white`}
+        >
+          حوضه تخصصی رایکا
+        </p>
+      </Transition>
       <div className="grid  grid-cols-2 gap-y-4 md:hidden">
         {expertiesData.map((expert, index) => (
           <ExpertCard
@@ -89,7 +102,7 @@ const Experties = () => {
           leaveFrom="opacity-1 translate-y-0"
           leaveTo="opacity-0 translate-y-full"
         >
-          <div className="flex w-full justify-center gap-10">
+          <div className="mt-24 flex w-full justify-center gap-10">
             {expertiesData.map((expert, index) => (
               <ExpertCard
                 onClick={handleSelectedIndex}
