@@ -103,7 +103,7 @@ const Navbar: FC = () => {
           width={50}
           height={50}
           alt="rayka icon"
-          className="h-[50px] w-[50px]"
+          className="h-[25px] w-[25px] md:h-[50px] md:w-[50px]"
         />
       </Link>
     </div>
