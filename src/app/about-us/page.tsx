@@ -16,12 +16,12 @@ const page: React.FC<Props> = ({}) => {
         childHeading="درباره ما"
       />
       <div className="relative mb-10 mt-10 flex justify-center md:mb-[6.69rem] md:mt-[6.69rem]">
-        <div className="absolute h-[15rem] w-[90.1%] -rotate-[2deg] rounded-lg bg-[#FEA918] md:w-[80.1%] md:rounded-3xl" />
+        <div className="xl2:h-[29rem] absolute h-[22rem] w-[90.1%] -rotate-[2deg] rounded-lg bg-[#FEA918] md:w-[80.1%] md:rounded-3xl lg:-rotate-[1deg]" />
         <div
           style={{
             backgroundSize: "100%",
           }}
-          className="relative h-[22rem] w-[90%] flex-col items-center justify-center rounded-lg bg-main-image md:h-[50dvh] md:w-[80%] md:rounded-3xl"
+          className="relative h-[22rem] w-[90%] flex-col items-center justify-center rounded-lg bg-main-image md:h-[22rem] md:w-[80%] md:rounded-3xl"
         >
           <div className="absolute bottom-0 left-0 right-0 top-0 z-10 h-full w-full rounded-3xl bg-black bg-opacity-30" />
         </div>
@@ -33,8 +33,8 @@ const page: React.FC<Props> = ({}) => {
             alt="rayka icon"
             className="w-12 md:w-16 "
           />
-          <p className="  title-3 text-5xl font-bold	text-primary">درباه‌ما </p>
-          <p className="  title-1 mt-3	 text-justify text-[1rem] font-medium	text-white">
+          <p className="title-3 text-5xl font-bold	text-primary">درباه‌ما </p>
+          <p className="title-1 mt-3 text-justify font-medium	text-white">
             ما در خانواده ی سخت کوش و خستگی ناپذیر شرکت ماورای ابعاد رایکا ،
             برای تحقق رویاهایمان میجنگیم. در کنار هم میسازیم و از تماشای آنچه
             روزی تصور کرده بودیم و حالا به آن تجسم بخشیده ایم لذت میبریم. لورم
