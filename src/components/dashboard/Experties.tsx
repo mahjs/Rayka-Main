@@ -102,7 +102,7 @@ const Experties = () => {
           leaveFrom="opacity-1 translate-y-0"
           leaveTo="opacity-0 translate-y-full"
         >
-          <div className="flex w-full justify-center gap-10 lg:gap-20">
+          <div className="flex w-full justify-center gap-5 2xl:gap-20">
             {expertiesData.map((expert, index) => (
               <ExpertCard
                 onClick={handleSelectedIndex}
