@@ -92,7 +92,7 @@ const Experties = () => {
         ))}
       </div>
 
-      <div className="mt-28 hidden lg:block">
+      <div className="mt-32 hidden max-w-[100vw] lg:block">
         <Transition
           show={showExperties}
           enter="transition-all duration-500 "
@@ -102,7 +102,7 @@ const Experties = () => {
           leaveFrom="opacity-1 translate-y-0"
           leaveTo="opacity-0 translate-y-full"
         >
-          <div className="flex w-full justify-center gap-10">
+          <div className="flex w-full justify-center gap-10 lg:gap-20">
             {expertiesData.map((expert, index) => (
               <ExpertCard
                 onClick={handleSelectedIndex}
