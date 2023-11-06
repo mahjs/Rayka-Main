@@ -34,11 +34,11 @@ const JobCard: React.FC<Job> = ({ title, description, postedTime }) => {
             alt="headphone"
             className="h-[4.6685rem] w-[4.6685rem]"
           />
-          <p className="Body-3 text-gray-300">{postedTime}</p>
+          <p className="miniText text-gray-300">{postedTime}</p>
         </div>
         <h2 className="subtitle-2 text-primary">{title}</h2>
-        <p className="Body mb-4 mt-2 text-gray-300">{description}</p>
-        <p className="Body-1 text-white">
+        <p className="title-1 mb-4 mt-2 text-gray-300">{description}</p>
+        <p className="title-1 text-white">
           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
           از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و
           سطرآنچنان که لازم است.
@@ -47,7 +47,7 @@ const JobCard: React.FC<Job> = ({ title, description, postedTime }) => {
           <div className="Body flex gap-2 md:gap-5">
             {categories.map((item, index) => (
               <p
-                className={`Btn rounded-2xl bg-primary p-1 md:p-2 ${
+                className={`btn rounded-2xl bg-primary p-1 md:p-2 ${
                   index !== categories.length / 1 ? "mx-1" : ""
                 }`}
                 key={index}
@@ -57,7 +57,7 @@ const JobCard: React.FC<Job> = ({ title, description, postedTime }) => {
             ))}
           </div>
           <Link
-            className="Btn flex items-center whitespace-nowrap text-primary"
+            className="btn flex items-center whitespace-nowrap text-primary"
             href="/contact-us"
           >
             اطلاعات بیشتر
@@ -102,7 +102,7 @@ const Jobs: React.FC = () => {
   return (
     <div className="select-none flex-col ">
       <div className="flex w-full flex-col justify-center bg-main-image bg-no-repeat bg-cover pb-5 pt-16 text-center text-white md:h-[500px] md:pt-0">
-        <h1 className="header-1">فرصت های شغلی</h1>
+        <h2 className="header-1">فرصت های شغلی</h2>
         <div className="subtitle flex justify-center">
           <p>
             <Link href="/">خانه- </Link>

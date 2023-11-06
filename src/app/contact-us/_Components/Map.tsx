@@ -7,6 +7,12 @@ enum NavigationService {
   Google = "google",
 }
 
+// interface MapProps {
+//   latitude: string;
+//   longitude: string;
+//   companyName: string;
+// }
+
 interface Env {
   NEXT_PUBLIC_MAP_URL?: string;
 }
@@ -21,26 +27,49 @@ const MAP_URL: string = process.env.NEXT_PUBLIC_MAP_URL || DEFAULT_MAP_URL;
 
 const Map: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
+  const isMobile = (): boolean =>
+    /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
-  const openNavigation = (service: NavigationService) => {
-    const navigationLinks = {
-      [NavigationService.Mapir]:
-        "https://map.ir/lat/35.803851/lng/51.472974/z/18",
-      [NavigationService.Neshan]:
-        "https://neshan.org/maps/@35.803719,51.473093,19.3z,0p/places/_bvfZp_xRdsZ",
-      [NavigationService.Google]: "https://maps.app.goo.gl/B2jSX3MbPCfWDPo99",
-    };
-    setShowModal(false);
-
-    window.open(navigationLinks[service], "_blank");
+  const handleModalClose = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (e.target === e.currentTarget) {
+      setShowModal(false);
+    }
   };
 
-  const handleMapClick = () => {
-    setShowModal(true);
+  const handleMapClick = (): void => {
+    if (isMobile()) {
+      openNavigation(NavigationService.Google);
+    } else {
+      setShowModal(true);
+    }
+  };
+
+  const openNavigation = (service: NavigationService): void => {
+    let url: string;
+
+    switch (service) {
+      case NavigationService.Mapir:
+        url = "https://map.ir/lat/35.803851/lng/51.472974/z/18";
+        break;
+      case NavigationService.Neshan:
+        url =
+          "https://neshan.org/maps/@35.803719,51.473093,19.3z,0p/places/_bvfZp_xRdsZ1";
+        break;
+      case NavigationService.Google:
+      default:
+        if (isMobile()) {
+          url = "geo:35.803776,51.472840";
+        } else {
+          url = "https://www.google.com/maps?q=35.803776,51.472840";
+        }
+        break;
+    }
+    setShowModal(false);
+    window.open(url, "_blank");
   };
 
   return (
-    <div className="relative mb-32 mt-12 h-[400px] w-full md:h-[350px]">
+    <div className="relative inset-0 mb-32 mt-12 h-[400px] w-full md:h-[350px]">
       <iframe
         src={MAP_URL}
         width="100%"
@@ -54,21 +83,27 @@ const Map: React.FC = () => {
       ></div>
 
       {showModal && (
-        <div className="fixed left-0 top-0 flex h-full w-full items-center justify-center bg-black bg-opacity-50">
-          <div className="h-64 w-[36rem] rounded bg-white p-5">
+        <div
+          onClick={handleModalClose}
+          className="fixed left-0 top-0 flex h-full w-full items-center justify-center bg-black bg-opacity-50"
+        >
+          <div
+            onClick={(e) => e.stopPropagation()}
+            className="h-56 w-[20rem] rounded bg-white p-5 md:h-[17rem] md:w-[36rem]"
+          >
             <button
-              className="Body rounded-lg bg-gray-50 px-5 py-2.5 text-primary shadow-2xl duration-300 hover:bg-gray-200"
+              className="title-2 rounded-lg bg-gray-50 px-5 py-2.5 text-primary shadow-2xl duration-300 hover:bg-gray-200"
               onClick={() => setShowModal(false)}
             >
               بستن
             </button>
             <div className="mb-[2.5em] mt-[1.5em] select-none">
-              <p className="Body-2">
+              <p className="title-2">
                 از کدام سرویس مسیریابی می‌خواهید استفاده کنید؟
               </p>
-              <p className="flex text-sm">
+              <p className="miniText flex">
                 <svg
-                  className="ml-1 mt-[0.4em] h-4 w-4 text-gray-800 dark:text-gray-800"
+                  className="ml-1 mt-[0.4em] h-2 w-2 text-gray-800 dark:text-gray-800 md:mt-[0.1em] md:h-4 md:w-4"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -88,19 +123,19 @@ const Map: React.FC = () => {
             </div>
             <div className="flex items-stretch justify-around">
               <button
-                className="Body rounded-lg px-5 py-2.5 duration-300 hover:bg-gray-200"
+                className="title-1 rounded-lg px-5 py-2.5 duration-300 hover:bg-gray-200"
                 onClick={() => openNavigation(NavigationService.Mapir)}
               >
                 map.ir
               </button>
               <button
-                className="Body rounded-lg px-5 py-2.5 duration-300 hover:bg-gray-200"
+                className="title-1 rounded-lg px-5 py-2.5 duration-300 hover:bg-gray-200"
                 onClick={() => openNavigation(NavigationService.Neshan)}
               >
                 نشان
               </button>
               <button
-                className="Body rounded-lg px-5 py-2.5 duration-300 hover:bg-gray-200"
+                className="title-1 rounded-lg px-5 py-2.5 duration-300 hover:bg-gray-200"
                 onClick={() => openNavigation(NavigationService.Google)}
               >
                 گوگل مپ
