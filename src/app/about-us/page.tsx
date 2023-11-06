@@ -25,7 +25,7 @@ const page: React.FC<Props> = ({}) => {
         >
           <div className="absolute bottom-0 left-0 right-0 top-0 z-10 h-full w-full rounded-3xl bg-black bg-opacity-30" />
         </div>
-        <div className="absolute z-20 h-[22rem] w-[90%] flex-col items-center  justify-center p-12 md:w-[80%] md:rounded-3xl">
+        <div className="absolute z-20 h-[22rem] w-[90%] flex-col items-center  justify-center  p-12 md:w-[80%] md:rounded-3xl">
           <Image
             src="/images/rayka-icon.svg"
             width="50"
