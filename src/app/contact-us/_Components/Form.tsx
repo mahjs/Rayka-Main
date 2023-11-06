@@ -13,7 +13,7 @@ interface FloatingInputProps {
 }
 
 const commonInputClasses =
-  "peer block w-full text-right appearance-none rounded border-0 bg-[#f5f5f5] px-5 py-5 text-sm text-gray-900 focus:border-primary focus:outline-none focus:ring-0 dark:border-primary dark:text-white dark:focus:border-primary";
+  "peer block w-full text-right appearance-none rounded border-0 bg-[#f5f5f5] px-5 py-5 text-sm text-gray-900 focus:border-primary focus:outline-none focus:ring-primary dark:border-primary dark:text-white dark:focus:border-primary";
 
 const FloatingInput: React.FC<FloatingInputProps> = ({
   type,
@@ -134,7 +134,7 @@ const Form: React.FC = () => {
         <textarea
           name="message"
           id="message"
-          className="row-span-4 mt-4 block h-40 w-full rounded border-0 bg-[#f5f5f5] p-2.5 text-sm text-gray-900 focus:border-primary focus:ring-primary dark:border-primary dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-primary dark:focus:ring-primary md:mt-7 md:h-60"
+          className="row-span-4 mt-4 block h-40 w-full rounded border-0 bg-[#f5f5f5] p-2.5 text-sm text-gray-900 focus:ring-primary  dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 md:mt-7 md:h-60"
           placeholder="پیام شما ..."
         ></textarea>
         <CustomBtn sendText={isLoading ? "در حال ارسال..." : "ارسال پیام"} />
