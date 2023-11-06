@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FC, useEffect, useState } from "react";
-import NavbarItem from "../../components/navbar/components/NavbarItem";
+import NavbarItem from "./components/NavbarItem";
 import Arrow from "@/assets/images/arrow.svg";
 import Menu from "@/assets/images/menu.svg";
 import RaykaIcon from "@/assets/images/rayka-icon.svg";
@@ -48,7 +48,7 @@ const Navbar: FC = () => {
 
   return (
     <div
-      className={`navbar fixed left-0 right-0 top-0 z-50 flex w-full items-center justify-between  px-5 py-5 transition-all  duration-500 
+      className={`fixed left-0 right-0 top-0 z-50 flex w-full items-center justify-between  px-5 py-5 transition-all  duration-500 
        lg:pr-20 ${isScrolled ? "bg-[#00000099]" : ""}`}
     >
       <ul className="hidden gap-16 lg:flex">
