@@ -45,7 +45,7 @@ const Navbar: FC = () => {
 
   return (
     <div
-      className={`navbar fixed left-0 right-0 top-0 z-50 flex w-full justify-between  px-5 py-5 transition-all  duration-500 
+      className={`navbar fixed left-0 right-0 top-0 z-50 flex w-full items-center justify-between  px-5 py-5 transition-all  duration-500 
        lg:pr-20 ${isScrolled ? "bg-[#00000099]" : ""}`}
     >
       <ul className="hidden gap-16 lg:flex">
@@ -57,7 +57,7 @@ const Navbar: FC = () => {
       <ul
         className={`fixed ${
           showNavbar ? "left-0" : "left-full"
-        }  :hidden  top-0 flex h-full w-full flex-col justify-center gap-10 bg-[#000000cc] backdrop-blur-md transition-all duration-500`}
+        } top-0 flex h-full w-full flex-col justify-center gap-10 bg-[#000000cc] backdrop-blur-md transition-all duration-500 lg:hidden`}
       >
         <button
           onClick={() => setShowNavbar(false)}
