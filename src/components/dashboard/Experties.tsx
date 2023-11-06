@@ -60,18 +60,31 @@ const Experties = () => {
   };
 
   return (
-    <div className="absolute z-20 h-[18rem] w-[90%] flex-col items-center  justify-center md:w-[80%] md:rounded-3xl">
-      <p className="header-4 md:title-3 my-5 text-center text-white">
-        حوضه تخصصی رایکا
-      </p>
-
-      <div className="grid  grid-cols-2 gap-y-4 md:hidden">
-        {expertiesData.map((expert, index) => (
+    <div className="absolute z-20 flex h-[18rem] w-[90%] items-center justify-center lg:w-[80%] lg:rounded-3xl">
+      <Transition
+        show={!showDetails}
+        enter="transition-all duration-500 delay-500"
+        enterFrom="opacity-0"
+        enterTo="opacity-1"
+        leave="transition-all duration-500 delay-500"
+        leaveFrom="opacity-1"
+        leaveTo="opacity-0"
+      >
+        <p
+          className={`${
+            showDetails ? "hidden" : ""
+          } header-3 lg:title-2 absolute -top-5 left-[50%] my-10 translate-x-[-50%] whitespace-nowrap text-center text-white`}
+        >
+          حوضه تخصصی رایکا
+        </p>
+      </Transition>
+      <div className="mt-[8rem] grid grid-cols-2 gap-4 md:mt-[25rem] lg:hidden">
+        {expertiesData.map((expert) => (
           <ExpertCard
             mobile
             onClick={handleSelectedIndex}
             key={expert.id}
-            index={index + 1}
+            index={expert.id}
             title={expert.title}
             orangeIconPath={expert.orangeIconPath}
             darkIconPath={expert.darkIconPath}
@@ -79,7 +92,7 @@ const Experties = () => {
         ))}
       </div>
 
-      <div className="hidden md:block">
+      <div className="mt-28 hidden lg:block">
         <Transition
           show={showExperties}
           enter="transition-all duration-500 "
@@ -103,7 +116,7 @@ const Experties = () => {
           </div>
         </Transition>
       </div>
-      <div className="hidden md:block">
+      <div className="hidden lg:block">
         <Transition
           show={showDetails}
           enter="transition-all duration-500 "
@@ -114,6 +127,7 @@ const Experties = () => {
           leaveTo="opacity-0 translate-y-full"
         >
           <ExpertDetailsCard
+            index={selectedIndex! + 1}
             handleClickClose={handleCloseButtonClick}
             key={selectedIndex}
             title={expertiesData[selectedIndex!].title}

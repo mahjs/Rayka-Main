@@ -26,14 +26,14 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="hidden flex-col gap-5 text-center text-white md:flex ">
+        <div className="hidden flex-col gap-5 text-center text-white lg:flex ">
           <h3 className="header-6">صفحات</h3>
           <PageNavigation />
         </div>
 
         <div className="flex flex-col gap-5 text-white">
           <h3 className="header-6">راه‌های ارتباطی</h3>
-          <div className="Body-3 grid grid-cols-2 gap-2 md:flex md:flex-col md:gap-5">
+          <div className="Body-3 grid grid-cols-2 gap-2 md:flex md:flex-col lg:gap-5">
             <div className="flex items-center gap-1 md:gap-3 ">
               <Image
                 src="/images/call.svg"

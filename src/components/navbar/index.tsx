@@ -45,10 +45,10 @@ const Navbar: FC = () => {
 
   return (
     <div
-      className={`navbar fixed left-0 right-0 top-0 z-50 flex w-full justify-between px-5 py-5 transition-all  duration-500 
-       md:pr-20 ${isScrolled ? "bg-[#00000099]" : ""}`}
+      className={`navbar fixed left-0 right-0 top-0 z-50 flex w-full justify-between  px-5 py-5 transition-all  duration-500 
+       lg:pr-20 ${isScrolled ? "bg-[#00000099]" : ""}`}
     >
-      <ul className="hidden gap-16 md:flex">
+      <ul className="hidden gap-16 lg:flex">
         <NavbarItem href="/" text="خانه" />
         <NavbarItem href="/about-us" text="درباره‌ما" />
         <NavbarItem href="/contact-us" text="ارتباط با ما" />
@@ -57,7 +57,7 @@ const Navbar: FC = () => {
       <ul
         className={`fixed ${
           showNavbar ? "left-0" : "left-full"
-        }  top-0  flex h-full w-full flex-col justify-center gap-10 bg-[#000000cc] backdrop-blur-md transition-all duration-500 md:hidden`}
+        }  :hidden  top-0 flex h-full w-full flex-col justify-center gap-10 bg-[#000000cc] backdrop-blur-md transition-all duration-500`}
       >
         <button
           onClick={() => setShowNavbar(false)}
@@ -91,7 +91,7 @@ const Navbar: FC = () => {
       </ul>
       <Image
         onClick={() => setShowNavbar(!showNavbar)}
-        className="h-[17px] w-[25px] md:hidden"
+        className="h-[17px] w-[25px] lg:hidden"
         src="/images/menu.svg"
         width={25}
         height={17}
