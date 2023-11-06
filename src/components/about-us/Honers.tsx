@@ -13,7 +13,7 @@ const informationData = [
   {
     id: 1,
     title: 17,
-    text: "پروژه موفقیت‌آمیر",
+    text: "پروژه موفقیت‌آمیز",
   },
   {
     id: 2,

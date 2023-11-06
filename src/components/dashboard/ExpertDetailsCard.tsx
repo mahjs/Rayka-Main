@@ -20,7 +20,7 @@ const ExpertDetailsCard: FC<Props> = ({
         onClick={handleClickClose}
         className="absolute -top-[2rem] right-5 flex items-center gap-3"
       >
-        <p className="Btn text-white">بازگشت</p>
+        <p className="btn text-white">بازگشت</p>
         <Image
           src="/images/arrow.svg"
           width={15}
@@ -43,7 +43,7 @@ const ExpertDetailsCard: FC<Props> = ({
 
       <div className="flex-col">
         <h3 className="subtitle-1 mb-3">{name}</h3>
-        <p className="Body max-w-[80%]">
+        <p className="title-1 max-w-[80%]">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
           beatae ipsum voluptatibus saepe id earum minima voluptatem est iusto,
           laborum aut. Repellat tenetur temporibus quod alias dolore assumenda
