@@ -1,5 +1,10 @@
 import Image from "next/image";
 import PageNavigation from "../dashboard/PageNavigation";
+import RaykaIcon from "@/assets/images/rayka-icon.svg";
+import Call from "@/assets/images/call.svg";
+import Phone from "@/assets/images/phone.svg";
+import Letter from "@/assets/images/letter.svg";
+import Location from "@/assets/images/location.svg";
 
 const Footer = () => {
   return (
@@ -13,7 +18,7 @@ const Footer = () => {
       >
         <div className="flex flex-col gap-2 md:gap-5">
           <Image
-            src="/images/rayka-icon.svg"
+            src={RaykaIcon}
             alt="Rayka icon"
             width={50}
             height={50}
@@ -37,7 +42,7 @@ const Footer = () => {
           <div className="Body-3 grid grid-cols-2 gap-2 md:flex md:flex-col lg:gap-5">
             <div className="flex items-center gap-1 md:gap-3 ">
               <Image
-                src="/images/call.svg"
+                src={Call}
                 alt="call icon"
                 width={25}
                 height={25}
@@ -47,7 +52,7 @@ const Footer = () => {
             </div>
             <div className="flex items-center gap-1 md:gap-3">
               <Image
-                src="/images/phone.svg"
+                src={Phone}
                 alt="phone icon"
                 width={25}
                 height={25}
@@ -57,7 +62,7 @@ const Footer = () => {
             </div>
             <div className="flex items-center gap-1 md:gap-3">
               <Image
-                src="/images/letter.svg"
+                src={Letter}
                 alt="letter icon"
                 width={25}
                 height={25}
@@ -68,7 +73,7 @@ const Footer = () => {
             <div className="flex items-center gap-1 md:gap-3">
               <Image
                 className="h-[10px] w-[10px] md:h-[25px] md:w-[25px]"
-                src="/images/location.svg"
+                src={Location}
                 alt="location icon"
                 width={25}
                 height={25}

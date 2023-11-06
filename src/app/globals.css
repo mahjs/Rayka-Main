@@ -151,10 +151,13 @@ body {
 
 .title-1 {
   font-family: "KalamehRegular";
-  font-size: 1.16663rem;
+  font-size: 1.06663rem;
   line-height: 140%;
+  @media screen and (max-width: 1068px) {
+    font-size: 0.83rem;
+  }
   @media screen and (max-width: 758px) {
-    font-size: 0.53rem;
+    font-size: 0.63rem;
   }
 }
 

@@ -4,35 +4,43 @@ import { useState } from "react";
 import ExpertCard from "./ExpertCard";
 import ExpertDetailsCard from "./ExpertDetailsCard";
 import { Transition } from "@headlessui/react";
+import GlobOrange from "@/assets/images/glob-orange.svg";
+import Glob from "@/assets/images/glob.svg";
+import CloudOrange from "@/assets/images/cloud-orange.svg";
+import Cloud from "@/assets/images/cloud.svg";
+import AiOrange from "@/assets/images/ai-orange.svg";
+import Ai from "@/assets/images/ai.svg";
+import DataOrange from "@/assets/images/data-orange.svg";
+import Data from "@/assets/images/data.svg";
 
 const expertiesData = [
   {
     id: 1,
     title: "توسعه ارتباطات اینترنتی",
     name: "توسعه ارتباطات به چه معناست؟",
-    orangeIconPath: "/images/glob-orange.svg",
-    darkIconPath: "/images/glob.svg",
+    orangeIconPath: GlobOrange,
+    darkIconPath: Glob,
   },
   {
     id: 2,
     title: "کلود کامپیوتینگ (پردازش ابری)",
     name: "کلود کامپیوتینگ چیست؟",
-    orangeIconPath: "/images/cloud-orange.svg",
-    darkIconPath: "/images/cloud.svg",
+    orangeIconPath: CloudOrange,
+    darkIconPath: Cloud,
   },
   {
     id: 3,
     title: "ساخت ابزارهای هوش مصنوعی",
     name: "هوش مصنوعی چیست؟",
-    orangeIconPath: "/images/ai-orange.svg",
-    darkIconPath: "/images/ai.svg",
+    orangeIconPath: AiOrange,
+    darkIconPath: Ai,
   },
   {
     id: 4,
     title: "راه‌اندازی دیتاسنتر در پاپ‌های کل کشور",
     name: "دیتا سنتر و راه‌اندازی آن؟",
-    orangeIconPath: "/images/data-orange.svg",
-    darkIconPath: "/images/data.svg",
+    orangeIconPath: DataOrange,
+    darkIconPath: Data,
   },
 ];
 

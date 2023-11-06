@@ -24,7 +24,10 @@ const ExpertCard: FC<Props> = ({
 
   return (
     <div
-      onClick={() => onClick(index - 1)}
+      onClick={() => {
+        if (mobile) return;
+        onClick(index - 1);
+      }}
       onMouseOver={() => {
         setIconPath(darkIconPath);
       }}
@@ -49,9 +52,10 @@ const ExpertCard: FC<Props> = ({
         />
       </span>
       <p className="body text-inherit md:text-[1.5rem] md:font-bold">{title}</p>
-      <span className="absolute -top-12 text-[7rem] font-bold text-white opacity-5  md:-left-20 md:-top-24 md:text-[15rem]">
+      <span className="absolute -left-10 -top-12 text-[7rem] font-bold text-white  opacity-10 md:-left-20 md:-top-24 md:text-[15rem]">
         {String(index).padStart(2, "0")}
       </span>
+      <div className="absolute -left-[20%] -top-[35%] h-full w-[50%] rotate-[35deg]  bg-black opacity-10" />
     </div>
   );
 };

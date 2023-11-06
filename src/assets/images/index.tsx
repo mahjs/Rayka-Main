@@ -4,7 +4,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FC, useEffect, useState } from "react";
-import NavbarItem from "./components/NavbarItem";
+import NavbarItem from "../../components/navbar/components/NavbarItem";
+import Arrow from "@/assets/images/arrow.svg";
+import Menu from "@/assets/images/menu.svg";
+import RaykaIcon from "@/assets/images/rayka-icon.svg";
 
 const Navbar: FC = () => {
   const [showNavbar, setShowNavbar] = useState<boolean>(false);
@@ -65,7 +68,7 @@ const Navbar: FC = () => {
         >
           <p className="miniText text-white">بازگشت</p>
           <Image
-            src="/images/arrow.svg"
+            src={Arrow}
             width={15}
             height={15}
             className="h-[15px] w-[15px]"
@@ -92,14 +95,14 @@ const Navbar: FC = () => {
       <Image
         onClick={() => setShowNavbar(!showNavbar)}
         className="h-[17px] w-[25px] lg:hidden"
-        src="/images/menu.svg"
+        src={Menu}
         width={25}
         height={17}
         alt="menu icon"
       />
       <Link href="/" className="mr-auto">
         <Image
-          src="/images/rayka-icon.svg"
+          src={RaykaIcon}
           width={50}
           height={50}
           alt="rayka icon"
