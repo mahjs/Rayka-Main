@@ -17,6 +17,7 @@ const Footer = () => {
             alt="Rayka icon"
             width={50}
             height={50}
+            className="h-[25px] w-[25px] md:h-[50px] md:w-[50px] "
           />
           <p className="title-4 max-w-[18rem] text-white md:max-w-[25rem]">
             ما در خانواده ی سخت کوش و خستگی ناپذیر شرکت ماورای ابعاد رایکا ،
