@@ -2,27 +2,28 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import React from "react";
+import Person from "@/assets/images/person.png";
 
 const JoinRaykaCard = () => {
   const router = useRouter();
   return (
-    <div className="relative mr-auto flex w-[90%] flex-col gap-2 rounded-3xl bg-[#FEA918] p-3 md:flex-row  md:items-center md:gap-5 md:p-10 ">
+    <div className="relative mr-auto flex w-[90%] flex-col gap-2 rounded-3xl bg-[#FEA918] p-3 md:gap-5  md:p-10 lg:flex-row lg:items-center ">
       <div className="flex-col text-black">
         <p className="subtitle-2">عضو خانواده ما شو!</p>
-        <p className="subtitle hidden md:block">اینجا برای همه جا هست!</p>
+        <p className="subtitle hidden lg:block">اینجا برای همه جا هست!</p>
       </div>
-      <div className="max-w-[75%] flex-col text-black md:max-w-[42%]">
+      <div className="max-w-[70%] flex-col text-black lg:max-w-[42%]">
         <p className="title-1">
           تیم رایکا همواره در حال تلاش برای پیدا کردن استعداد های این سرزمین و
           بکارگیری آنها بصورت حضوری و دورکاری میباشد!{" "}
-          <br className="hidden md:block" /> حتما به صفحه فرصت های شغلی سر بزنید
+          <br className="hidden lg:block" /> حتما به صفحه فرصت های شغلی سر بزنید
           تا از فرصت های شغلی شرکت مطلع شوید!
         </p>
         <button
           onClick={() => {
             router.push("/jobs");
           }}
-          className="mt-5 hidden items-center justify-start gap-3 rounded-2xl bg-black px-5 py-2.5 md:flex"
+          className="mt-5 hidden items-center justify-start gap-3 rounded-2xl bg-black px-5 py-2.5 lg:flex"
         >
           <p className="btn-2 text-right text-[#FEA918]">
             مشاهده فرصت‌های شغلی
@@ -47,8 +48,8 @@ const JoinRaykaCard = () => {
       </div>
 
       <Image
-        className="absolute -left-4 bottom-0 h-[133px] w-[100px] md:h-[347px] md:w-[250px]"
-        src="/images/person.png"
+        className="absolute -left-4 bottom-0 h-[133px] w-[100px] md:h-[250px] md:w-[180px] lg:h-[347px] lg:w-[250px]"
+        src={Person}
         alt="A smiling person"
         width={220}
         height={220}
