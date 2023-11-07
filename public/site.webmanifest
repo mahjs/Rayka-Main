@@ -1,0 +1,45 @@
+{
+    "name": "شرکت ماورای ابعاد رایکا",
+    "short_name": "رایکا",
+    "icons": [
+        {
+            "src": "/icons/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/icons/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "start_url": "/?utm_source=homescreen",
+    "scope": "/",
+    "display": "standalone",
+    "orientation": "portrait-primary",
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "description": "همگام با تکنولوژی برای آینده ای هوشمندتر",
+    "dir": "rtl",
+    "lang": "fa",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "categories": ["business", "technology", "innovation"],
+    "shortcuts": [
+        {
+            "name": "درباره ما",
+            "short_name": "درباره",
+            "description": "اطلاعات بیشتر درباره شرکت ماورای ابعاد رایکا",
+            "url": "/about?utm_source=homescreen",
+            "icons": [
+                {
+                    "src": "/icons/shortcut-icon.png",
+                    "sizes": "192x192"
+                }
+            ]
+        }
+    ],
+    "iarc_rating_id": "e.g., 'e12345'"
+}

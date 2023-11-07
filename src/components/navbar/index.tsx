@@ -99,7 +99,7 @@ const Navbar: FC = () => {
       />
       <Link href="/" className="mr-auto">
         <Image
-          src="/images/rayka-icon.svg"
+          src="/images/logo.svg"
           width={50}
           height={50}
           alt="rayka icon"

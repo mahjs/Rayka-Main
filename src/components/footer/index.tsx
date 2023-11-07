@@ -13,7 +13,7 @@ const Footer = () => {
       >
         <div className="flex flex-col gap-2 md:gap-5">
           <Image
-            src="/images/rayka-icon.svg"
+            src="/images/logo.svg"
             alt="Rayka icon"
             width={50}
             height={50}
