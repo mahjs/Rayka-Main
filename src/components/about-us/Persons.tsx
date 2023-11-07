@@ -96,7 +96,7 @@ const Persons: React.FC<Props> = ({}) => {
           data-carousel="static"
         >
           <div
-            className={`h-86 relative flex  w-[300rem]  max-w-sm justify-center gap-4 overflow-hidden rounded-lg transition-all duration-300  md:h-[40rem] md:max-w-7xl md:gap-20 ${
+            className={`h-86 relative flex    max-w-sm justify-center gap-4 overflow-hidden rounded-lg transition-all duration-300  md:h-[40rem] md:max-w-7xl md:gap-20 ${
               isTransitioning ? "translate-x-[-100%] transform" : ""
             }`}
           >
