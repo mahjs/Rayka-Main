@@ -9,23 +9,19 @@ interface Props {}
 
 const page: React.FC<Props> = ({}) => {
   return (
-    <div className="flex-col">
+    <div className=" flex flex-col  ">
       <HeroSection
         heading="درباره ی ما"
         subHeading="خانه -"
         childHeading="درباره ما"
       />
-      <div className="relative mb-10 mt-10 flex justify-center md:mb-[6.69rem] md:mt-[6.69rem]">
-        <div className="absolute h-[15rem] w-[90.1%] -rotate-[2deg] rounded-lg bg-[#FEA918] md:w-[80.1%] md:rounded-3xl" />
+      <div className="relative mx-auto mt-24 h-[15rem] w-[90.1%] -rotate-[2deg] items-center rounded-lg bg-[#FEA918] md:mt-28 md:w-[80.1%] md:rounded-3xl">
         <div
           style={{
             backgroundSize: "100%",
           }}
-          className="relative h-[22rem] w-[90%] flex-col items-center justify-center rounded-lg bg-main-image md:h-[50dvh] md:w-[80%] md:rounded-3xl"
+          className="absolute  w-full -rotate-[-2deg] flex-col items-center justify-center rounded-lg bg-main-image p-12  md:rounded-3xl"
         >
-          <div className="absolute bottom-0 left-0 right-0 top-0 z-10 h-full w-full rounded-3xl bg-black bg-opacity-30" />
-        </div>
-        <div className="absolute z-20 h-[22rem] w-[90%] flex-col items-center  justify-center  p-12 md:w-[80%] md:rounded-3xl">
           <Image
             src="/images/rayka-icon.svg"
             width="50"

@@ -51,7 +51,7 @@ const images = [
 const Honers: React.FC<Props> = ({}) => {
   return (
     <div
-      className="relative mb-14 flex w-full flex-col items-center justify-center  bg-main-image py-12 md:mb-[5rem]"
+      className="relative mb-14 mt-36 flex w-full flex-col items-center justify-center bg-main-image  py-12 md:mb-[5rem] md:mt-60"
       style={{
         backgroundSize: "100%",
       }}
