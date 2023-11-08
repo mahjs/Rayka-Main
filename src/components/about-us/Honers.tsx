@@ -55,9 +55,9 @@ const Honers: React.FC<Props> = ({}) => {
         <p className="title my-5 text-center text-6xl	 font-extrabold	 text-white">
           افتخارات ما
         </p>{" "}
-        <div className="mx-auto grid grid-cols-2 gap-6 px-7  md:grid-cols-3 md:gap-12">
+        <div className="mx-auto grid grid-cols-2 gap-4 px-7  md:grid-cols-3 md:gap-12">
           {images.map((image, index) => (
-            <div className="group relative w-[12rem] md:w-full" key={index}>
+            <div className="group relative w-[10rem] md:w-full" key={index}>
               <Image src={image.src} alt={image.alt} />
               <div className="absolute inset-0 mx-auto flex items-center rounded-2xl transition-all duration-300 ease-in-out hover:bg-primary hover:opacity-50 focus:bg-primary focus:opacity-50">
                 <span className=" subtitle-1 mx-auto px-[1.8rem] text-center text-4xl font-semibold text-primary transition-colors duration-300 ease-in-out group-hover:text-black group-focus:text-black">
