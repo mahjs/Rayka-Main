@@ -47,7 +47,7 @@ const Navbar: FC = () => {
   };
 
   return (
-    <div
+    <nav
       className={`fixed left-0 right-0 top-0 z-50 flex w-full items-center justify-between  px-5 py-5 transition-all  duration-500 
        lg:pr-20 ${isScrolled ? "bg-[#00000099]" : ""}`}
     >
@@ -109,7 +109,7 @@ const Navbar: FC = () => {
           className="h-[25px] w-[25px] md:h-[50px] md:w-[50px]"
         />
       </Link>
-    </div>
+    </nav>
   );
 };
 

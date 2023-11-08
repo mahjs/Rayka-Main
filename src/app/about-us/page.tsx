@@ -11,7 +11,7 @@ interface Props {}
 
 const page: React.FC<Props> = ({}) => {
   return (
-    <div className="flex-col">
+    <main className="flex-col">
       <HeroSection
         heading="درباره ی ما"
         subHeading="خانه -"
@@ -27,7 +27,7 @@ const page: React.FC<Props> = ({}) => {
         >
           <div className="absolute bottom-0 left-0 right-0 top-0 z-10 h-full w-full rounded-3xl bg-black bg-opacity-30" />
         </div>
-        <div className="absolute z-20 h-[22rem] w-[90%] flex-col items-center  justify-center  p-12 md:w-[80%] md:rounded-3xl">
+        <article className="absolute z-20 h-[22rem] w-[90%] flex-col items-center  justify-center  p-12 md:w-[80%] md:rounded-3xl">
           <Image
             src={RaykaIcon}
             width="50"
@@ -48,13 +48,13 @@ const page: React.FC<Props> = ({}) => {
             می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
             الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
           </p>{" "}
-        </div>
+        </article>
       </div>
 
       <Honers />
       <Persons />
       <Comments />
-    </div>
+    </main>
   );
 };
 

@@ -18,7 +18,7 @@ const ExpertDetailsCard: FC<Props> = ({
   handleClickClose,
 }) => {
   return (
-    <div className="relative mx-auto flex h-[100%] w-[90%] items-center justify-center gap-10 rounded-xl px-10 py-5">
+    <section className="relative mx-auto flex h-[100%] w-[90%] items-center justify-center gap-10 rounded-xl px-10 py-5">
       <div className="relative min-h-[14rem] min-w-[14rem] flex-col overflow-hidden rounded-xl bg-primary p-5">
         <div>
           <Image
@@ -54,7 +54,7 @@ const ExpertDetailsCard: FC<Props> = ({
           non aperiam. Dolores dolor alias culpa corporis!
         </p>
       </div>
-    </div>
+    </section>
   );
 };
 

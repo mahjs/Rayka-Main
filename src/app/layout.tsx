@@ -24,7 +24,7 @@ export default function RootLayout({
           name="description"
           content="همگام با تکنولوژی برای آینده ای هوشمندتر"
         />
-        <meta name="keywords" content="کلیدواژه‌ها, تکنولوژی, هوشمند" />
+        <meta name="keywords" content="رایکا، پروژه ملی، ماورای ابعاد رایکا، شرکت رایکا" />
         <meta name="author" content="نام نویسنده یا شرکت" />
         <link rel="canonical" href="https://raikaco.org" />
         <link rel="icon" href="/favicon.ico" />
