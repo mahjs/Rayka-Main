@@ -11,7 +11,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fa" dir="rtl">
-      <Head>
+      <head>
         <title>شرکت ماورای ابعاد رایکا</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
@@ -69,7 +69,7 @@ export default function RootLayout({
           property="twitter:image"
           content="https://raikaco.org/images/share.png"
         />
-      </Head>
+      </head>
       <body>
         <Navbar />
         <main>{children}</main>
