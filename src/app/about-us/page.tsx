@@ -11,14 +11,14 @@ interface Props {}
 
 const page: React.FC<Props> = ({}) => {
   return (
-    <div className=" flex flex-col gap-36 ">
+    <main className=" flex flex-col gap-36 ">
       <HeroSection
         heading="درباره ی ما"
         subHeading="خانه -"
         childHeading="درباره ما"
       />
       <div className="  relative mx-auto  h-[15rem] w-[90.1%] -rotate-[2deg] items-center rounded-lg bg-[#FEA918]  md:w-[80.1%] md:rounded-3xl">
-        <div
+        <article
           style={{
             backgroundSize: "100%",
           }}
