@@ -23,15 +23,18 @@ const ExpertCard: FC<Props> = ({
   const [iconPath, setIconPath] = useState(orangeIconPath);
 
   return (
-    <div
-      onClick={() => onClick(index - 1)}
+    <section
+      onClick={() => {
+        if (mobile) return;
+        onClick(index - 1);
+      }}
       onMouseOver={() => {
         setIconPath(darkIconPath);
       }}
       onMouseOut={() => {
         setIconPath(orangeIconPath);
       }}
-      className={`relative flex h-[l00px] w-[150px] cursor-pointer flex-col flex-wrap overflow-hidden rounded-lg ${
+      className={`relative flex h-[l20px] w-[150px] cursor-pointer flex-col flex-wrap overflow-hidden rounded-lg ${
         mobile ? "bg-[#FEA918]" : "bg-[#3D3D3D]"
       }  px-[1rem] py-[1.5rem] text-${
         mobile ? "#000" : "white"
@@ -49,10 +52,11 @@ const ExpertCard: FC<Props> = ({
         />
       </span>
       <p className="body text-inherit md:text-[1.5rem] md:font-bold">{title}</p>
-      <span className="absolute -top-12 text-[7rem] font-bold text-white opacity-5  md:-left-20 md:-top-24 md:text-[15rem]">
+      <span className="absolute -left-10 -top-12 text-[7rem] font-bold text-white  opacity-10 md:-left-20 md:-top-24 md:text-[15rem]">
         {String(index).padStart(2, "0")}
       </span>
-    </div>
+      <div className="absolute -left-[20%] -top-[35%] h-full w-[50%] rotate-[35deg]  bg-black opacity-10" />
+    </section>
   );
 };
 

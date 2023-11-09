@@ -5,6 +5,9 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FC, useEffect, useState } from "react";
 import NavbarItem from "./components/NavbarItem";
+import Arrow from "@/assets/images/arrow.svg";
+import Menu from "@/assets/images/menu.svg";
+import RaykaIcon from "@/assets/images/rayka-icon.svg";
 
 const Navbar: FC = () => {
   const [showNavbar, setShowNavbar] = useState<boolean>(false);
@@ -44,11 +47,11 @@ const Navbar: FC = () => {
   };
 
   return (
-    <div
-      className={`navbar fixed left-0 right-0 top-0 z-50 flex w-full justify-between px-5 py-5 transition-all  duration-500 
-       md:pr-20 ${isScrolled ? "bg-[#00000099]" : ""}`}
+    <nav
+      className={`fixed left-0 right-0 top-0 z-50 flex w-full items-center justify-between  px-5 py-5 transition-all  duration-500 
+       lg:pr-20 ${isScrolled ? "bg-[#00000099]" : ""}`}
     >
-      <ul className="hidden gap-16 md:flex">
+      <ul className="hidden gap-16 lg:flex">
         <NavbarItem href="/" text="خانه" />
         <NavbarItem href="/about-us" text="درباره‌ما" />
         <NavbarItem href="/contact-us" text="ارتباط با ما" />
@@ -57,7 +60,7 @@ const Navbar: FC = () => {
       <ul
         className={`fixed ${
           showNavbar ? "left-0" : "left-full"
-        }  top-0  flex h-full w-full flex-col justify-center gap-10 bg-[#000000cc] backdrop-blur-md transition-all duration-500 md:hidden`}
+        } top-0 flex h-full w-full flex-col justify-center gap-10 bg-[#000000cc] backdrop-blur-md transition-all duration-500 lg:hidden`}
       >
         <button
           onClick={() => setShowNavbar(false)}
@@ -65,7 +68,7 @@ const Navbar: FC = () => {
         >
           <p className="miniText text-white">بازگشت</p>
           <Image
-            src="/images/arrow.svg"
+            src={Arrow}
             width={15}
             height={15}
             className="h-[15px] w-[15px]"
@@ -91,22 +94,22 @@ const Navbar: FC = () => {
       </ul>
       <Image
         onClick={() => setShowNavbar(!showNavbar)}
-        className="h-[17px] w-[25px] md:hidden"
-        src="/images/menu.svg"
+        className="h-[17px] w-[25px] lg:hidden"
+        src={Menu}
         width={25}
         height={17}
         alt="menu icon"
       />
       <Link href="/" className="mr-auto">
         <Image
-          src="/images/rayka-icon.svg"
+          src={RaykaIcon}
           width={50}
           height={50}
           alt="rayka icon"
-          className="h-[50px] w-[50px]"
+          className="h-[25px] w-[25px] md:h-[50px] md:w-[50px]"
         />
       </Link>
-    </div>
+    </nav>
   );
 };
 

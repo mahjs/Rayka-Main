@@ -4,35 +4,43 @@ import { useState } from "react";
 import ExpertCard from "./ExpertCard";
 import ExpertDetailsCard from "./ExpertDetailsCard";
 import { Transition } from "@headlessui/react";
+import GlobOrange from "@/assets/images/glob-orange.svg";
+import Glob from "@/assets/images/glob.svg";
+import CloudOrange from "@/assets/images/cloud-orange.svg";
+import Cloud from "@/assets/images/cloud.svg";
+import AiOrange from "@/assets/images/ai-orange.svg";
+import Ai from "@/assets/images/ai.svg";
+import DataOrange from "@/assets/images/data-orange.svg";
+import Data from "@/assets/images/data.svg";
 
 const expertiesData = [
   {
     id: 1,
     title: "توسعه ارتباطات اینترنتی",
     name: "توسعه ارتباطات به چه معناست؟",
-    orangeIconPath: "/images/glob-orange.svg",
-    darkIconPath: "/images/glob.svg",
+    orangeIconPath: GlobOrange,
+    darkIconPath: Glob,
   },
   {
     id: 2,
     title: "کلود کامپیوتینگ (پردازش ابری)",
     name: "کلود کامپیوتینگ چیست؟",
-    orangeIconPath: "/images/cloud-orange.svg",
-    darkIconPath: "/images/cloud.svg",
+    orangeIconPath: CloudOrange,
+    darkIconPath: Cloud,
   },
   {
     id: 3,
     title: "ساخت ابزارهای هوش مصنوعی",
     name: "هوش مصنوعی چیست؟",
-    orangeIconPath: "/images/ai-orange.svg",
-    darkIconPath: "/images/ai.svg",
+    orangeIconPath: AiOrange,
+    darkIconPath: Ai,
   },
   {
     id: 4,
     title: "راه‌اندازی دیتاسنتر در پاپ‌های کل کشور",
     name: "دیتا سنتر و راه‌اندازی آن؟",
-    orangeIconPath: "/images/data-orange.svg",
-    darkIconPath: "/images/data.svg",
+    orangeIconPath: DataOrange,
+    darkIconPath: Data,
   },
 ];
 
@@ -60,18 +68,31 @@ const Experties = () => {
   };
 
   return (
-    <div className="absolute z-20 h-[18rem] w-[90%] flex-col items-center  justify-center md:w-[80%] md:rounded-3xl">
-      <p className="header-4 md:title-3 my-5 text-center text-white">
-        حوضه تخصصی رایکا
-      </p>
-
-      <div className="grid  grid-cols-2 gap-y-4 md:hidden">
-        {expertiesData.map((expert, index) => (
+    <section className="absolute z-20 flex h-[18rem] w-[90%] items-center justify-center lg:w-[80%] lg:rounded-3xl">
+      <Transition
+        show={!showDetails}
+        enter="transition-all duration-500 delay-500"
+        enterFrom="opacity-0"
+        enterTo="opacity-1"
+        leave="transition-all duration-500 delay-500"
+        leaveFrom="opacity-1"
+        leaveTo="opacity-0"
+      >
+        <p
+          className={`${
+            showDetails ? "hidden" : ""
+          } header-3 lg:title-2 absolute -top-5 left-[50%] my-10 translate-x-[-50%] whitespace-nowrap text-center text-white`}
+        >
+          حوضه تخصصی رایکا
+        </p>
+      </Transition>
+      <div className="mt-[8rem] grid grid-cols-2 gap-4 md:mt-[25rem] lg:hidden">
+        {expertiesData.map((expert) => (
           <ExpertCard
             mobile
             onClick={handleSelectedIndex}
             key={expert.id}
-            index={index + 1}
+            index={expert.id}
             title={expert.title}
             orangeIconPath={expert.orangeIconPath}
             darkIconPath={expert.darkIconPath}
@@ -79,7 +100,7 @@ const Experties = () => {
         ))}
       </div>
 
-      <div className="hidden md:block">
+      <div className="mt-32 hidden max-w-[100vw] lg:block">
         <Transition
           show={showExperties}
           enter="transition-all duration-500 "
@@ -89,7 +110,7 @@ const Experties = () => {
           leaveFrom="opacity-1 translate-y-0"
           leaveTo="opacity-0 translate-y-full"
         >
-          <div className="flex w-full justify-center gap-10">
+          <div className="flex w-full justify-center gap-5 2xl:gap-20">
             {expertiesData.map((expert, index) => (
               <ExpertCard
                 onClick={handleSelectedIndex}
@@ -103,7 +124,7 @@ const Experties = () => {
           </div>
         </Transition>
       </div>
-      <div className="hidden md:block">
+      <div className="hidden lg:block">
         <Transition
           show={showDetails}
           enter="transition-all duration-500 "
@@ -114,6 +135,7 @@ const Experties = () => {
           leaveTo="opacity-0 translate-y-full"
         >
           <ExpertDetailsCard
+            index={selectedIndex! + 1}
             handleClickClose={handleCloseButtonClick}
             key={selectedIndex}
             title={expertiesData[selectedIndex!].title}
@@ -122,7 +144,7 @@ const Experties = () => {
           />
         </Transition>
       </div>
-    </div>
+    </section>
   );
 };
 

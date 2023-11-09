@@ -5,6 +5,8 @@ import React from "react";
 import Persons from "@/components/about-us/Persons";
 import Comments from "@/components/about-us/Comments";
 
+import RaykaIcon from "@/assets/images/rayka-icon.svg";
+
 interface Props {}
 
 const page: React.FC<Props> = ({}) => {
@@ -23,14 +25,14 @@ const page: React.FC<Props> = ({}) => {
           className="absolute  w-full -rotate-[-2deg] flex-col items-center justify-center rounded-lg bg-main-image p-12  md:rounded-3xl"
         >
           <Image
-            src="/images/rayka-icon.svg"
+            src={RaykaIcon}
             width="50"
             height="50"
             alt="rayka icon"
             className="w-12 md:w-16 "
           />
-          <p className="  title-3 text-5xl font-bold	text-primary">درباه‌ما </p>
-          <p className="  title-1 mt-3	 text-justify text-[1rem] font-medium	text-white">
+          <p className="title-3 text-5xl font-bold	text-primary">درباه‌ما </p>
+          <p className="title-1 mt-3 text-justify font-medium	text-white">
             ما در خانواده ی سخت کوش و خستگی ناپذیر شرکت ماورای ابعاد رایکا ،
             برای تحقق رویاهایمان میجنگیم. در کنار هم میسازیم و از تماشای آنچه
             روزی تصور کرده بودیم و حالا به آن تجسم بخشیده ایم لذت میبریم. لورم
@@ -42,13 +44,13 @@ const page: React.FC<Props> = ({}) => {
             می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
             الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
           </p>{" "}
-        </div>
+        </article>
       </div>
 
       <Honers />
       <Persons />
       <Comments />
-    </div>
+    </main>
   );
 };
 
