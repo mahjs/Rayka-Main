@@ -89,16 +89,16 @@ const Map: React.FC = () => {
         >
           <div
             onClick={(e) => e.stopPropagation()}
-            className="h-56 w-[20rem] rounded bg-white p-5 md:h-[17rem] md:w-[36rem]"
+            className="h-56 w-[20rem] rounded bg-white p-5 md:h-[19rem] md:w-[36rem]"
           >
             <button
-              className="title-2 rounded-lg bg-gray-50 px-5 py-2.5 text-primary shadow-2xl duration-300 hover:bg-gray-200"
+              className="btn-2 rounded-lg bg-gray-50 px-5 py-2.5 text-primary shadow-2xl duration-300 hover:bg-gray-200"
               onClick={() => setShowModal(false)}
             >
               بستن
             </button>
             <div className="mb-[2.5em] mt-[1.5em] select-none">
-              <p className="title-2">
+              <p className="title-4">
                 از کدام سرویس مسیریابی می‌خواهید استفاده کنید؟
               </p>
               <p className="miniText flex">
@@ -123,19 +123,19 @@ const Map: React.FC = () => {
             </div>
             <div className="flex items-stretch justify-around">
               <button
-                className="title-1 rounded-lg px-5 py-2.5 duration-300 hover:bg-gray-200"
+                className="subtitle-2 rounded-lg px-5 py-2.5 duration-300 hover:bg-gray-200"
                 onClick={() => openNavigation(NavigationService.Mapir)}
               >
                 map.ir
               </button>
               <button
-                className="title-1 rounded-lg px-5 py-2.5 duration-300 hover:bg-gray-200"
+                className="subtitle-2 rounded-lg px-5 py-2.5 duration-300 hover:bg-gray-200"
                 onClick={() => openNavigation(NavigationService.Neshan)}
               >
                 نشان
               </button>
               <button
-                className="title-1 rounded-lg px-5 py-2.5 duration-300 hover:bg-gray-200"
+                className="subtitle-2 rounded-lg px-5 py-2.5 duration-300 hover:bg-gray-200"
                 onClick={() => openNavigation(NavigationService.Google)}
               >
                 گوگل مپ

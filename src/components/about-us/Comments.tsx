@@ -32,7 +32,7 @@ const Comments: React.FC<Props> = ({}) => {
   return (
     <div className="relative mb-[2.51rem] flex h-[550px] items-start justify-center bg-main-image ">
       <div className="z-10 flex w-full flex-col items-center justify-start gap-2 py-16 md:py-2">
-        <h3 className="title text-white">صحبت مدیران</h3>
+        <h3 className="header-3 text-white">صحبت مدیران</h3>
 
         <Carousel active={active} setActive={setActive}>
           {cardsData.map((card, i) => (

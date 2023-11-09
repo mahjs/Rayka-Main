@@ -42,11 +42,11 @@ export default function Home() {
         className="flex w-[100%] items-center justify-between bg-main-image pt-16 md:h-[60vh] md:rounded-br-[30rem] md:pt-0 lg:h-[100vh]"
       >
         <div className="flex-col px-5 pb-5 text-white md:mr-[9rem] md:py-10">
-          <h1 className="header-3 hidden md:block">شرکت ماورای ابعاد رایکا</h1>
+          <h1 className="title hidden md:block">شرکت ماورای ابعاد رایکا</h1>
           <p className="header-2 hidden md:block">
             همگام با <span className="text-primary">تکنولوژی</span>
           </p>
-          <p className="md:header-2 hidden md:block">
+          <p className="header-2 hidden md:block">
             برای <span className="text-primary">آینده‌ای </span> هوشمندتر
           </p>
           <p className="text-[2rem] font-bold md:hidden">
@@ -55,7 +55,7 @@ export default function Home() {
           <p className="text-[2rem] font-bold md:hidden">
             <span className="text-primary">هوشمندی</span> در کسب و کار
           </p>
-          <p className="text-right text-white opacity-50 md:mt-0 md:text-[1.2rem] md:opacity-100 lg:max-w-[50%]">
+          <p className="subtitle-1 text-right text-white opacity-50 md:mt-0 md:opacity-100 lg:max-w-[50%]">
             ما در شرکت ماورای ابعاد رایکا به بهبود سرویس‌های موجود در حوزه
             فناوری و ارتباطات اکتفا نمی‌کنیم؛ ما به رویاهای تحقق نیافته جامه‌ی
             عمل می‌پوشانیم و در کنار هم از خلق آینده‌ای هوشمندتر لذت می‌بریم.
