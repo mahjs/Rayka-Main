@@ -47,51 +47,55 @@ const Navbar: FC = () => {
   };
 
   return (
-    <nav
+    <header
       className={`fixed left-0 right-0 top-0 z-50 flex w-full items-center justify-between  px-5 py-5 transition-all  duration-500 
        lg:pr-20 ${isScrolled ? "bg-[#00000099]" : ""}`}
     >
-      <ul className="hidden gap-16 lg:flex">
-        <NavbarItem href="/" text="خانه" />
-        <NavbarItem href="/about-us" text="درباره‌ما" />
-        <NavbarItem href="/contact-us" text="ارتباط با ما" />
-        <NavbarItem href="/jobs" text="فرصت‌های شغلی" />
-      </ul>
-      <ul
-        className={`fixed ${
-          showNavbar ? "left-0" : "left-full"
-        } top-0 flex h-full w-full flex-col justify-center gap-10 bg-[#000000cc] backdrop-blur-md transition-all duration-500 lg:hidden`}
-      >
-        <button
-          onClick={() => setShowNavbar(false)}
-          className="absolute left-9 top-8 flex items-center gap-3"
+      <nav className="hidden lg:block">
+        <ul className="hidden gap-16 lg:flex">
+          <NavbarItem href="/" text="خانه" />
+          <NavbarItem href="/about-us" text="درباره‌ما" />
+          <NavbarItem href="/contact-us" text="ارتباط با ما" />
+          <NavbarItem href="/jobs" text="فرصت‌های شغلی" />
+        </ul>
+      </nav>
+      <nav className="lg:hidden">
+        <ul
+          className={`fixed ${
+            showNavbar ? "left-0" : "left-full"
+          } top-0 flex h-full w-full flex-col justify-center gap-10 bg-[#000000cc] backdrop-blur-md transition-all duration-500 lg:hidden`}
         >
-          <p className="miniText text-white">بازگشت</p>
-          <Image
-            src={Arrow}
-            width={15}
-            height={15}
-            className="h-[15px] w-[15px]"
-            alt="arrow icon"
+          <button
+            onClick={() => setShowNavbar(false)}
+            className="absolute left-9 top-8 flex items-center gap-3"
+          >
+            <p className="miniText text-white">بازگشت</p>
+            <Image
+              src={Arrow}
+              width={15}
+              height={15}
+              className="h-[15px] w-[15px]"
+              alt="arrow icon"
+            />
+          </button>
+          <NavbarItem onClick={handleLinkClick} href="/" text="خانه" />
+          <NavbarItem
+            onClick={handleLinkClick}
+            href="/about-us"
+            text="درباره‌ما"
           />
-        </button>
-        <NavbarItem onClick={handleLinkClick} href="/" text="خانه" />
-        <NavbarItem
-          onClick={handleLinkClick}
-          href="/about-us"
-          text="درباره‌ما"
-        />
-        <NavbarItem
-          onClick={handleLinkClick}
-          href="/contact-us"
-          text="ارتباط با ما"
-        />
-        <NavbarItem
-          onClick={handleLinkClick}
-          href="/jobs"
-          text="فرصت‌های شغلی"
-        />
-      </ul>
+          <NavbarItem
+            onClick={handleLinkClick}
+            href="/contact-us"
+            text="ارتباط با ما"
+          />
+          <NavbarItem
+            onClick={handleLinkClick}
+            href="/jobs"
+            text="فرصت‌های شغلی"
+          />
+        </ul>
+      </nav>
       <Image
         onClick={() => setShowNavbar(!showNavbar)}
         className="h-[17px] w-[25px] lg:hidden"
@@ -109,7 +113,7 @@ const Navbar: FC = () => {
           className="h-[25px] w-[25px] md:h-[50px] md:w-[50px]"
         />
       </Link>
-    </nav>
+    </header>
   );
 };
 
