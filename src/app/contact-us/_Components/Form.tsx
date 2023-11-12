@@ -67,7 +67,7 @@ const Form: React.FC = () => {
       {
         pending: {
           render({ data }) {
-            return <div className="title-1 text-right">...در حال ارسال</div>;
+            return <div className="subtitle-2 text-right">...در حال ارسال</div>;
           },
         },
         success: {
@@ -75,7 +75,7 @@ const Form: React.FC = () => {
             // You can use the response data if needed
             setIsLoading(false);
             return (
-              <div className="title-1 text-right">
+              <div className="subtitle-2 text-right">
                 رایکایی عزیز پیام شما با موفقیت ارسال شد
               </div>
             );
@@ -86,7 +86,7 @@ const Form: React.FC = () => {
             // You can use the error data if needed
             setIsLoading(false);
             return (
-              <div className="title-1 text-right">
+              <div className="subtitle-2 text-right">
                 متاسفانه پیام شما ارسال نشد مجدد تلاش کنید.
               </div>
             );

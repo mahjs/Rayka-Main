@@ -82,7 +82,7 @@ const Experties = () => {
         <p
           className={`${
             showDetails ? "hidden" : ""
-          } header-3 lg:title-2 absolute -top-5 left-[50%] my-10 translate-x-[-50%] whitespace-nowrap text-center text-white`}
+          } header-5 absolute -top-10 left-[50%] my-10 translate-x-[-50%] whitespace-nowrap text-center text-white`}
         >
           حوضه تخصصی رایکا
         </p>

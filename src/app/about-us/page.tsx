@@ -11,13 +11,13 @@ interface Props {}
 
 const page: React.FC<Props> = ({}) => {
   return (
-    <main className=" flex flex-col gap-36 ">
+    <main className="flex flex-col gap-36 ">
       <HeroSection
         heading="درباره ی ما"
         subHeading="خانه -"
         childHeading="درباره ما"
       />
-      <div className="  relative mx-auto  h-[15rem] w-[90.1%] -rotate-[2deg] items-center rounded-lg bg-[#FEA918]  md:w-[80.1%] md:rounded-3xl">
+      <div className="relative mx-auto h-[15rem] w-[90.1%] -rotate-[2deg] items-center rounded-lg bg-[#FEA918] md:w-[80.1%] md:rounded-3xl">
         <article
           style={{
             backgroundSize: "100%",
@@ -31,8 +31,8 @@ const page: React.FC<Props> = ({}) => {
             alt="rayka icon"
             className="w-12 md:w-16 "
           />
-          <p className="title-3 text-5xl font-bold	text-primary">درباه‌ما </p>
-          <p className="title-1 mt-3 text-justify font-medium	text-white">
+          <p className="header-5 text-5xl font-bold	text-primary">درباه‌ما </p>
+          <p className="subtitle-1 mt-3 text-justify font-medium	text-white">
             ما در خانواده ی سخت کوش و خستگی ناپذیر شرکت ماورای ابعاد رایکا ،
             برای تحقق رویاهایمان میجنگیم. در کنار هم میسازیم و از تماشای آنچه
             روزی تصور کرده بودیم و حالا به آن تجسم بخشیده ایم لذت میبریم. لورم

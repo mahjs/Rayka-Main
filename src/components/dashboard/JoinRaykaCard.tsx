@@ -9,13 +9,13 @@ const JoinRaykaCard = () => {
   return (
     <section className="relative mr-auto flex w-[90%] flex-col gap-2 rounded-3xl bg-[#FEA918] p-3 md:gap-5  md:p-10 lg:flex-row lg:items-center ">
       <div className="flex-col text-black">
-        <p className="subtitle-2">عضو خانواده ما شو!</p>
-        <p className="subtitle hidden lg:block">اینجا برای همه جا هست!</p>
+        <p className="header-4">عضو خانواده ما شو!</p>
+        <p className="title-4 hidden lg:block">اینجا برای همه جا هست!</p>
       </div>
       <div className="max-w-[70%] flex-col text-black lg:max-w-[42%]">
-        <p className="title-1">
+        <p className="subtitle-2">
           تیم رایکا همواره در حال تلاش برای پیدا کردن استعداد های این سرزمین و
-          بکارگیری آنها بصورت حضوری و دورکاری میباشد!{" "}
+          بکارگیری آنها بصورت حضوری و دورکاری میباشد!
           <br className="hidden lg:block" /> حتما به صفحه فرصت های شغلی سر بزنید
           تا از فرصت های شغلی شرکت مطلع شوید!
         </p>

@@ -88,7 +88,7 @@ const Persons: React.FC<Props> = ({}) => {
 
   return (
     <div className="mb-[6.69rem] flex flex-col items-center justify-center">
-      <p className="title mb-[4rem]">خانواده ی رایکا</p>
+      <p className="header-3 mb-[4rem]">خانواده ی رایکا</p>
       <div className="flex items-center justify-center gap-28">
         <div
           id="controls-carousel"
@@ -110,8 +110,8 @@ const Persons: React.FC<Props> = ({}) => {
                   alt="truePerson"
                   className="mb-9 scale-100 transform rounded-2xl grayscale transition-transform duration-500 group-hover:scale-110 group-hover:grayscale-0"
                 />
-                <p className="subtitle-1">{item.name}</p>
-                <p className="subtitle-1">{item.surname}</p>
+                <p className="title">{item.name}</p>
+                <p className="subtitle-2">{item.surname}</p>
               </div>
             ))}
           </div>

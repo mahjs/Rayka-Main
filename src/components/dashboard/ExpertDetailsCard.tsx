@@ -44,7 +44,7 @@ const ExpertDetailsCard: FC<Props> = ({
 
       <div className="flex-col text-white">
         <div className="flex justify-between">
-          <h3 className="subtitle-1 mb-3">{name}</h3>
+          <h3 className="header-5 mb-3">{name}</h3>
           <button
             onClick={handleClickClose}
             className="flex items-center gap-3"
@@ -53,7 +53,7 @@ const ExpertDetailsCard: FC<Props> = ({
             <Image src={Arrow} width={15} height={15} alt="arrow icon" />
           </button>
         </div>
-        <p className="Body max-w-[80%]">
+        <p className="subtitle-2 max-w-[80%]">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
           beatae ipsum voluptatibus saepe id earum minima voluptatem est iusto,
           laborum aut. Repellat tenetur temporibus quod alias dolore assumenda

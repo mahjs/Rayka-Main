@@ -59,19 +59,19 @@ const MessagesForm: FC = () => {
   return (
     <div className="mt-10 grid select-none place-items-center p-[1em] md:p-[2.5em] lg:grid-cols-2 lg:p-[5em]">
       <div className="h-full w-full">
-        <p className="title text-center text-semiBlack md:text-right">
+        <p className="header-3 text-center text-semiBlack md:text-right">
           دوست داریم صدای <span className="text-primary">شما</span> را بشنویم !
         </p>
-        <p className="subtitle mr-1 mt-3 hidden text-semiBlack md:flex">
+        <p className="title-4 mr-1 mt-3 hidden text-semiBlack md:flex">
           جهت ارتباط با تیم رایکا فرم زیر را تکمیل کنید. <br /> تیم پشتیبانی در
           اسروع وقت با شما تماس خواهند گرفت !
         </p>
-        <p className="subtitle mr-1 mt-3 text-center text-semiBlack md:hidden">
+        <p className="title-3 mr-1 mt-3 text-center text-semiBlack md:hidden">
           جهت ارتباط با تیم رایکا فرم زیر را تکمیل کنید. <br /> تیم پشتیبانی در
           اسروع وقت با شما تماس خواهند گرفت !
         </p>
         <div className="mt-[3em] hidden items-center lg:flex ">
-          <p className="subtitle ml-3 text-semiBlack">
+          <p className="title-3 ml-3 text-semiBlack">
             سوالی دارید؟ به ما پیام دهید
           </p>
           {socialLinks.map((link) => (
