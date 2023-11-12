@@ -30,7 +30,13 @@ const ExpertDetailsCard: FC<Props> = ({
           />
         </div>
         <p className="subtitle">{title}</p>
-        <span className="absolute -top-24 right-14 text-[6rem] font-bold text-white opacity-20 md:text-[14rem]">
+        <span
+          style={{
+            textShadow:
+              "-3px -3px 0 #fff, 3px -3px 0 #fff, -3px 3px 0 #fff, 3px 3px 0 #fff",
+          }}
+          className="absolute -top-24 right-14 text-[6rem] font-bold text-white opacity-20 md:text-[14rem]"
+        >
           {String(index).padStart(2, "0")}
         </span>
         <div className="absolute -left-[20%] -top-[35%] h-full w-[50%] rotate-[35deg]  bg-black opacity-10" />
