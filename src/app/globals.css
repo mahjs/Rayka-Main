@@ -324,3 +324,8 @@ body {
 .nav.right {
   margin-right: -3rem;
 }
+.nav.disabled {
+  /* Add your styles for disabled buttons here */
+  opacity: 0.5; /* Example: lower opacity */
+  pointer-events: none; /* Ensures the button is not clickable */
+}
