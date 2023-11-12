@@ -29,7 +29,7 @@ const ExpertDetailsCard: FC<Props> = ({
             className="mb-3 h-[50px] w-[50px]"
           />
         </div>
-        <p className="subtitle">{title}</p>
+        <p className="title-3">{title}</p>
         <span
           style={{
             textShadow:

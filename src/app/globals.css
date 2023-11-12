@@ -65,10 +65,6 @@ body {
   @apply absolute inset-0 -right-4 h-24 w-[2.3rem] rotate-[38deg] bg-yellow-500 opacity-30;
 }
 
-body {
-  direction: rtl;
-}
-
 .btn-send {
   @apply btn  relative ml-6 overflow-hidden rounded-lg bg-primary px-14 py-3.5 text-center text-black duration-300 hover:bg-[#111111] hover:text-primary focus:outline-none focus:ring-4 focus:ring-[#111111] dark:bg-primary dark:hover:bg-[#111111] dark:focus:ring-primary;
 }
@@ -256,10 +252,14 @@ body {
   position: absolute;
   width: 20%;
   height: 100%;
-  transform: rotateY(calc(var(--offset) * 50deg)) scaleY(calc(1 + var(--abs-offset) * -0.4))
-    translateZ(calc(var(--abs-offset) * -30rem)) translateX(calc(var(--direction) * -5rem));
-  transform: rotateY(calc(var(--offset) * 50deg)) scaleY(calc(1 + var(--abs-offset) * -0.4))
-    translateZ(calc(var(--abs-offset) * -30rem)) translateX(calc(var(--direction) * -5rem));
+  transform: rotateY(calc(var(--offset) * 50deg))
+    scaleY(calc(1 + var(--abs-offset) * -0.4))
+    translateZ(calc(var(--abs-offset) * -30rem))
+    translateX(calc(var(--direction) * -5rem));
+  transform: rotateY(calc(var(--offset) * 50deg))
+    scaleY(calc(1 + var(--abs-offset) * -0.4))
+    translateZ(calc(var(--abs-offset) * -30rem))
+    translateX(calc(var(--direction) * -5rem));
   filter: blur(calc(var(--abs-offset) * 1rem));
   transition: all 0.3s ease-out;
 }
