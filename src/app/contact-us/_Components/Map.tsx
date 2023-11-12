@@ -69,7 +69,7 @@ const Map: React.FC = () => {
   };
 
   return (
-    <div className="relative inset-0 mb-32 mt-12 h-[400px] w-full md:h-[350px]">
+    <div className="relative inset-0 mt-12 h-[400px] w-full md:h-[350px]">
       <iframe
         src={MAP_URL}
         width="100%"

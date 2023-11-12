@@ -134,7 +134,7 @@ const Form: React.FC = () => {
         <textarea
           name="message"
           id="message"
-          className="row-span-4 mt-4 block h-40 w-full rounded border-0 bg-[#f5f5f5] p-2.5 text-sm text-gray-900 focus:ring-primary  dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 md:mt-7 md:h-60"
+          className="row-span-4 mt-4 block h-40 w-full rounded border-0 bg-[#f5f5f5] p-2.5 pr-[1.4em] text-sm text-gray-900 focus:ring-primary  dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 md:mt-7 md:h-60"
           placeholder="پیام شما ..."
         ></textarea>
         <CustomBtn sendText={isLoading ? "در حال ارسال..." : "ارسال پیام"} />

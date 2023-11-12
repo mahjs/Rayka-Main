@@ -25,7 +25,7 @@ const JobCard: React.FC<Job> = ({ title, description, postedTime }) => {
   return (
     <div
       style={cardStyle}
-      className="justify-between rounded-lg p-5 before:absolute before:inset-0 before:rounded-lg before:bg-black before:opacity-70 md:w-[36rem] md:p-10"
+      className="justify-between rounded-[1em] p-3 before:absolute before:inset-0 before:rounded-[1em] before:bg-black before:opacity-70 md:w-[38rem] md:p-7"
     >
       <div className="relative z-10">
         <div className="flex justify-between">
@@ -38,16 +38,16 @@ const JobCard: React.FC<Job> = ({ title, description, postedTime }) => {
         </div>
         <h2 className="header-4 text-primary">{title}</h2>
         <p className="subtitle-2 mb-4 mt-2 text-gray-300">{description}</p>
-        <p className="subtitle-2 text-white">
+        <p className="subtitle-1 text-white">
           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
           از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و
           سطرآنچنان که لازم است.
         </p>
-        <div className="mt-3 flex justify-between">
-          <div className="flex gap-2 md:gap-5">
+        <div className="mt-6 flex justify-between">
+          <div className="flex gap-1">
             {categories.map((item, index) => (
               <p
-                className={`btn rounded-2xl bg-primary p-1 md:p-2 ${
+                className={`btn rounded-2xl bg-primary px-3 py-1.5 ${
                   index !== categories.length / 1 ? "mx-1" : ""
                 }`}
                 key={index}
