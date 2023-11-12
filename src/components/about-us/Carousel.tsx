@@ -18,18 +18,16 @@ const Carousel: React.FC<CarouselProps> = ({ children, active, setActive }) => {
 
   return (
     <div className="carousel flex h-full  items-center justify-evenly gap-[7rem]">
-      <div>
-        {active < count - 1 && (
-          <button
-            aria-label="Next"
-            type="button"
-            className="nav right"
-            // @ts-ignore
-            onClick={() => setActive((i) => i + 1)}
-          >
-            <Image src={arrowRight} alt="arrow right" />
-          </button>
-        )}
+      <div className="md:w-[23rem]">
+        <button
+          aria-label="Next"
+          type="button"
+          className={`nav right ${active < count - 1 ? "" : "disabled"}`}
+          onClick={() => setActive((i) => i + 1)}
+          disabled={active >= count - 1}
+        >
+          <Image src={arrowRight} alt="arrow right" />
+        </button>
       </div>
 
       {React.Children.map(children, (child: ReactElement, i: number) => (
@@ -51,17 +49,15 @@ const Carousel: React.FC<CarouselProps> = ({ children, active, setActive }) => {
       ))}
 
       <div>
-        {active > 0 && (
-          <button
-            type="button"
-            aria-label="Next"
-            className="nav left"
-            // @ts-ignore
-            onClick={() => setActive((i) => i - 1)}
-          >
-            <Image src={arrowLeft} alt="arrow left" />
-          </button>
-        )}
+        <button
+          type="button"
+          aria-label="Previous"
+          className={`nav left ${active > 0 ? "" : "disabled"}`}
+          onClick={() => setActive((i) => i - 1)}
+          disabled={active <= 0}
+        >
+          <Image src={arrowLeft} alt="arrow left" />
+        </button>
       </div>
     </div>
   );

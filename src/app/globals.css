@@ -79,9 +79,11 @@ body {
 
 .header-1 {
   font-family: "KalamehBold";
-  font-size: 7.61406rem;
-  @media screen and (max-width: 768px) {
-    font-size: 2.41406rem;
+  font-family: "Kalameh";
+  font-size: 2.41406rem;
+  font-weight: 800;
+  @media screen and (min-width: 768px) {
+    font-size: 7.61406rem;
   }
 }
 
@@ -209,6 +211,14 @@ body {
   }
 }
 
+.subtitle-3 {
+  font-family: "Kalameh";
+  font-size: 2.35719rem;
+  line-height: 141.5%;
+  @media screen and (max-width: 1068px) {
+    font-size: 0.862rem;
+  }
+}
 .miniText {
   font-family: "KalamehRegular";
   font-size: 0.7rem;
@@ -309,4 +319,9 @@ body {
 
 .nav.right {
   margin-right: -3rem;
+}
+.nav.disabled {
+  /* Add your styles for disabled buttons here */
+  opacity: 0.5; /* Example: lower opacity */
+  pointer-events: none; /* Ensures the button is not clickable */
 }
