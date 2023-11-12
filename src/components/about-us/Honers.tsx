@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
 import InfoText from "../dashboard/InfoText";
 import honers1 from "@/assets/images/honers1.png";
@@ -36,38 +37,71 @@ const images = [
   {
     src: honers3,
     alt: "honers3",
-    text: "سرویس‌های بین‌المللی در شبکه ملی کشور",
+    title: "سرویس‌های بین‌المللی در شبکه ملی کشور",
+    text: "استفاده امن و بدون محدودیت از سرویس‌های بین‌المللی در داخل شبکه ملی کشور  برای کاربران",
   },
   {
     src: honers2,
     alt: "honers2",
-    text: "توسعه شبکه داخلی کشور با استفاده از سرویس‌های بین‌المللی",
+    title: "CDN",
+    text: "انتقال CDN (شبکه تحویل محتوا) بسیاری از پلتفرم‌ها به داخل کشور",
   },
   {
     src: honers1,
     alt: "honers1",
-    text: "توسعه شبکه داخلی کشور",
+    title: "توسعه شبکه داخلی کشور",
+    text: "توسعه شبکه داخلی کشور با استفاده از سرویس‌های بین‌المللی",
   },
-  { src: honers6, alt: "honers6", text: "3D V- CACHE" },
-  { src: honers5, alt: "honers5", text: "تامین اطلاعات با سرعت بالا" },
-  { src: honers4, alt: "honers4", text: "Liquid Data Storage" },
+  {
+    src: honers6,
+    alt: "honers6",
+    title: "3D V- CACHE",
+    text: "اولین کمپانی استفاده کننده از تکنولوژی ذخیره سازی موقت پردازش در ارایه‌های سه بعدی (3D V- CACHE)",
+  },
+  {
+    src: honers5,
+    alt: "honers5",
+    title: "تامین اطلاعات با سرعت بالا",
+    text: "تامین محتوای حیاطی از قبیل آپدیت‌ها و اطلاعات دیتابیسی و  اطلاعات کتابخانه‌های مهم برای برنامه ‌نویس‌ها و دانشگاه‌ها تا ۲۳۰ گیگابیت بر ثانیه",
+  },
+  {
+    src: honers4,
+    alt: "honers4",
+    title: "Liquid Data Storage",
+    text: "اولین کمپانی استفاده کننده از تکنولوژی ذخیره‌سازی مایع (Liquid Data Storage)",
+  },
 ];
 const Honers: React.FC<Props> = ({}) => {
+  const [textHover, setTextHover] = useState(false);
+  const handleMouseEnter = (index) => {
+    setTextHover(index);
+  };
+
+  const handleMouseLeave = () => {
+    setTextHover(null);
+  };
   return (
     <div
-      className="relative flex w-full flex-col items-center justify-center bg-main-image py-12 md:mt-[17rem] lg:mt-[8rem]"
+      className="relative flex w-full flex-col items-center justify-center bg-main-image  py-12 md:mt-[17rem] lg:mt-[8rem]"
       style={{
         backgroundSize: "100%",
       }}
     >
-      <p className="header-3 my-5 text-center text-white">افتخارات ما</p>{" "}
-      <div className="mx-auto grid grid-cols-2 gap-4 px-7 md:grid-cols-3 md:gap-8">
+      <p className="title my-5 text-center text-6xl	 font-extrabold	 text-white">
+        افتخارات ما
+      </p>{" "}
+      <div className="mx-auto grid grid-cols-2 gap-4 px-7  md:grid-cols-3 md:gap-8">
         {images.map((image, index) => (
-          <div className="group relative " key={index}>
+          <div
+            className="group relative transition duration-700 ease-in-out hover:text-xl" // Add 'group' class here
+            key={index}
+            onMouseEnter={() => handleMouseEnter(index)}
+            onMouseLeave={handleMouseLeave}
+          >
             <Image src={image.src} alt={image.alt} />
-            <div className="absolute inset-0 mx-auto flex items-center rounded-2xl transition-all duration-300 ease-in-out hover:bg-primary hover:opacity-50 focus:bg-primary focus:opacity-50">
-              <span className="title-1 mx-auto px-[1.8rem] text-center  text-primary transition-colors duration-300 ease-in-out group-hover:text-black group-focus:text-black">
-                {image.text}
+            <div className="absolute inset-0 mx-auto flex items-center rounded-2xl transition-all  duration-300 ease-in-out hover:bg-[#F1790A] hover:text-xl  hover:opacity-50 focus:bg-[#F1790A] focus:opacity-50">
+              <span className="subtitle-3 mx-auto px-[1.8rem] text-center text-4xl font-semibold text-primary transition-colors duration-300 ease-in-out group-hover:text-xl group-hover:text-black group-focus:text-black">
+                {textHover === index ? image.text : image.title}
               </span>
             </div>
           </div>
