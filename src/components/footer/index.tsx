@@ -48,14 +48,16 @@ const Footer = () => {
                 height={25}
                 className="h-[10px] w-[10px] md:h-[25px] md:w-[25px]"
               />
-              <p
-                style={{
-                  direction: "ltr",
-                }}
-                className="subtitle-1"
-              >
-                +98 930 547 12 79
-              </p>
+              <a href="tel:+989305471279">
+                <p
+                  style={{
+                    direction: "ltr",
+                  }}
+                  className="subtitle-1"
+                >
+                  +98 930 547 12 79
+                </p>
+              </a>
             </div>
             <div className="flex items-center gap-1 md:gap-3">
               <Image
@@ -65,14 +67,16 @@ const Footer = () => {
                 height={25}
                 className="h-[10px] w-[10px] md:h-[25px] md:w-[25px]"
               />
-              <p
-                style={{
-                  direction: "ltr",
-                }}
-                className="subtitle-1"
-              >
-                +21 3745 41 12
-              </p>
+              <a href="tel:02137454112">
+                <p
+                  style={{
+                    direction: "ltr",
+                  }}
+                  className="subtitle-1"
+                >
+                  +21 3745 41 12
+                </p>
+              </a>
             </div>
             <div className="flex items-center gap-1 md:gap-3">
               <Image
@@ -82,7 +86,9 @@ const Footer = () => {
                 height={25}
                 className="h-[10px] w-[10px] md:h-[25px] md:w-[25px]"
               />
-              <p className="subtitle-2">support@raikaco.org</p>
+              <a href="mailto:support@raikaco.org">
+                <p className="subtitle-2">support@raikaco.org</p>
+              </a>
             </div>
             <div className="flex items-center gap-1 md:gap-3">
               <Image
