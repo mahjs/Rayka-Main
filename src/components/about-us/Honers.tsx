@@ -82,7 +82,7 @@ const Honers: React.FC<Props> = ({}) => {
   };
   return (
     <div
-      className="relative flex w-full flex-col items-center justify-center bg-main-image  py-12 md:mt-[17rem] lg:mt-[8rem]"
+      className="relative mt-[10rem] flex w-full flex-col items-center justify-center bg-main-image  py-12 md:mt-[17rem] lg:mt-[8rem]"
       style={{
         backgroundSize: "100%",
       }}
@@ -93,14 +93,14 @@ const Honers: React.FC<Props> = ({}) => {
       <div className="mx-auto grid grid-cols-2 gap-4 px-7  md:grid-cols-3 md:gap-8">
         {images.map((image, index) => (
           <div
-            className="group relative transition duration-700 ease-in-out hover:text-xl" // Add 'group' class here
+            className="group relative transition duration-700 ease-in-out hover:text-xs md:hover:text-xl" // Add 'group' class here
             key={index}
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={handleMouseLeave}
           >
             <Image src={image.src} alt={image.alt} />
-            <div className="absolute inset-0 mx-auto flex items-center rounded-2xl transition-all  duration-300 ease-in-out hover:bg-[#F1790A] hover:text-xl  hover:opacity-50 focus:bg-[#F1790A] focus:opacity-50">
-              <span className="subtitle-3 mx-auto px-[1.8rem] text-center text-4xl font-semibold text-primary transition-colors duration-300 ease-in-out group-hover:text-xl group-hover:text-black group-focus:text-black">
+            <div className="absolute inset-0 mx-auto flex items-center rounded-2xl   transition-all duration-300 ease-in-out hover:bg-[#F1790A]	hover:text-xs   hover:opacity-50 focus:bg-[#F1790A] focus:opacity-50 md:hover:text-xl">
+              <span className="subtitle-3 mx-auto px-[1.8rem] text-center text-4xl font-semibold text-primary transition-colors duration-300 ease-in-out group-hover:text-xs group-hover:text-black group-focus:text-black md:group-hover:text-xl">
                 {textHover === index ? image.text : image.title}
               </span>
             </div>
