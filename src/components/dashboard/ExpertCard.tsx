@@ -23,7 +23,7 @@ const ExpertCard: FC<Props> = ({
   const [iconPath, setIconPath] = useState(orangeIconPath);
 
   return (
-    <div
+    <section
       onClick={() => {
         if (mobile) return;
         onClick(index - 1);
@@ -62,7 +62,7 @@ const ExpertCard: FC<Props> = ({
         {String(index).padStart(2, "0")}
       </span>
       <div className="absolute -left-[20%] -top-[35%] h-full w-[50%] rotate-[35deg]  bg-black opacity-10" />
-    </div>
+    </section>
   );
 };
 

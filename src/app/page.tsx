@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import InfoText from "../components/dashboard/InfoText";
 import JoinRaykaCard from "@/components/dashboard/JoinRaykaCard";

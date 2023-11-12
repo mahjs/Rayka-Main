@@ -4,11 +4,6 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import Head from "next/head";
 
-export const metadata: Metadata = {
-  title: "ماورای ابعاد رایکا",
-  description: "همگام با تکنولوژی برای آینده ای هوشمندتر",
-};
-
 export default function RootLayout({
   children,
 }: {
@@ -16,17 +11,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fa" dir="rtl">
-      <Head>
-        <title>ماورای ابعاد رایکا</title>
+      <head>
+        <title>شرکت ماورای ابعاد رایکا</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
         <meta
           name="description"
           content="همگام با تکنولوژی برای آینده ای هوشمندتر"
         />
-        <meta name="keywords" content="کلیدواژه‌ها, تکنولوژی, هوشمند" />
+        <meta name="keywords" content="رایکا، پروژه ملی، ماورای ابعاد رایکا، شرکت رایکا" />
         <meta name="author" content="نام نویسنده یا شرکت" />
         <link rel="canonical" href="https://raikaco.org" />
+        <meta http-equiv="Content-Language" content="fa" />
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="apple-touch-icon"
@@ -73,7 +69,7 @@ export default function RootLayout({
           property="twitter:image"
           content="https://raikaco.org/images/share.png"
         />
-      </Head>
+      </head>
       <body>
         <Navbar />
         <main>{children}</main>

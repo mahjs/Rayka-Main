@@ -7,7 +7,7 @@ import Person from "@/assets/images/person.png";
 const JoinRaykaCard = () => {
   const router = useRouter();
   return (
-    <div className="relative mr-auto flex w-[90%] flex-col gap-2 rounded-3xl bg-[#FEA918] p-3 md:gap-5  md:p-10 lg:flex-row lg:items-center ">
+    <section className="relative mr-auto flex w-[90%] flex-col gap-2 rounded-3xl bg-[#FEA918] p-3 md:gap-5  md:p-10 lg:flex-row lg:items-center ">
       <div className="flex-col text-black">
         <p className="subtitle-2">عضو خانواده ما شو!</p>
         <p className="subtitle hidden lg:block">اینجا برای همه جا هست!</p>
@@ -54,7 +54,7 @@ const JoinRaykaCard = () => {
         width={220}
         height={220}
       />
-    </div>
+    </section>
   );
 };
 

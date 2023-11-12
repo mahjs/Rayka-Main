@@ -69,7 +69,7 @@ const Experties = () => {
   };
 
   return (
-    <div className="absolute z-20 flex h-[18rem] w-[90%] items-center justify-center lg:w-[80%] lg:rounded-3xl">
+    <section className="absolute z-20 flex h-[18rem] w-[90%] items-center justify-center lg:w-[80%] lg:rounded-3xl">
       <Transition
         show={!showDetails}
         enter="transition-all duration-500 delay-500"
@@ -148,7 +148,7 @@ const Experties = () => {
           />
         </Transition>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -8,7 +8,7 @@ import Location from "@/assets/images/location.svg";
 
 const Footer = () => {
   return (
-    <div className="bg-black">
+    <footer className="bg-black">
       <div
         style={{
           backgroundSize: "100%",
@@ -86,7 +86,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 
