@@ -36,15 +36,15 @@ const JobCard: React.FC<Job> = ({ title, description, postedTime }) => {
           />
           <p className="miniText text-gray-300">{postedTime}</p>
         </div>
-        <h2 className="subtitle-2 text-primary">{title}</h2>
-        <p className="title-1 mb-4 mt-2 text-gray-300">{description}</p>
-        <p className="title-1 text-white">
+        <h2 className="header-4 text-primary">{title}</h2>
+        <p className="subtitle-2 mb-4 mt-2 text-gray-300">{description}</p>
+        <p className="subtitle-2 text-white">
           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
           از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و
           سطرآنچنان که لازم است.
         </p>
         <div className="mt-3 flex justify-between">
-          <div className="Body flex gap-2 md:gap-5">
+          <div className="flex gap-2 md:gap-5">
             {categories.map((item, index) => (
               <p
                 className={`btn rounded-2xl bg-primary p-1 md:p-2 ${
@@ -57,7 +57,7 @@ const JobCard: React.FC<Job> = ({ title, description, postedTime }) => {
             ))}
           </div>
           <Link
-            className="btn flex items-center whitespace-nowrap text-primary"
+            className="btn-2 flex items-center whitespace-nowrap text-primary"
             href="/contact-us"
           >
             اطلاعات بیشتر
@@ -103,7 +103,7 @@ const Jobs: React.FC = () => {
     <div className="select-none flex-col ">
       <div className="flex w-full flex-col justify-center bg-main-image bg-cover bg-no-repeat pb-5 pt-16 text-center text-white md:h-[500px] md:pt-0">
         <h2 className="header-1">فرصت های شغلی</h2>
-        <div className="subtitle flex justify-center">
+        <div className="title-3 flex justify-center">
           <p>
             <Link href="/">خانه- </Link>
           </p>

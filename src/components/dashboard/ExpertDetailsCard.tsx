@@ -29,7 +29,7 @@ const ExpertDetailsCard: FC<Props> = ({
             className="mb-3 h-[50px] w-[50px]"
           />
         </div>
-        <p className="subtitle">{title}</p>
+        <p className="title-2">{title}</p>
         <span className="absolute -top-24 right-14 text-[6rem] font-bold text-white opacity-20 md:text-[14rem]">
           {String(index).padStart(2, "0")}
         </span>
@@ -38,7 +38,7 @@ const ExpertDetailsCard: FC<Props> = ({
 
       <div className="flex-col text-white">
         <div className="flex justify-between">
-          <h3 className="subtitle-1 mb-3">{name}</h3>
+          <h3 className="header-5 mb-3">{name}</h3>
           <button
             onClick={handleClickClose}
             className="flex items-center gap-3"
@@ -47,7 +47,7 @@ const ExpertDetailsCard: FC<Props> = ({
             <Image src={Arrow} width={15} height={15} alt="arrow icon" />
           </button>
         </div>
-        <p className="Body max-w-[80%]">
+        <p className="subtitle-2 max-w-[80%]">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
           beatae ipsum voluptatibus saepe id earum minima voluptatem est iusto,
           laborum aut. Repellat tenetur temporibus quod alias dolore assumenda

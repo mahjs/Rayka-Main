@@ -33,38 +33,40 @@ const informationData = [
   },
 ];
 const images = [
-  { src: honers3, alt: "honers3", text: "توسعه شبکه داخلی کشور" },
+  {
+    src: honers3,
+    alt: "honers3",
+    text: "سرویس‌های بین‌المللی در شبکه ملی کشور",
+  },
   {
     src: honers2,
     alt: "honers2",
-    text: "توسعه سرویس ها",
+    text: "توسعه شبکه داخلی کشور با استفاده از سرویس‌های بین‌المللی",
   },
   {
     src: honers1,
     alt: "honers1",
-    text: "سرویس‌های بین‌المللی در شبکه ملی کشور",
+    text: "توسعه شبکه داخلی کشور",
   },
-  { src: honers6, alt: "honers6", text: "Liquid Data Storage" },
+  { src: honers6, alt: "honers6", text: "3D V- CACHE" },
   { src: honers5, alt: "honers5", text: "تامین اطلاعات با سرعت بالا" },
-  { src: honers4, alt: "honers4", text: "3D V- CACHE" },
+  { src: honers4, alt: "honers4", text: "Liquid Data Storage" },
 ];
 const Honers: React.FC<Props> = ({}) => {
   return (
     <div
-      className="relative flex w-full flex-col items-center justify-center bg-main-image  py-12 md:mt-[17rem] lg:mt-[8rem]"
+      className="relative flex w-full flex-col items-center justify-center bg-main-image py-12 md:mt-[17rem] lg:mt-[8rem]"
       style={{
         backgroundSize: "100%",
       }}
     >
-      <p className="title my-5 text-center text-6xl	 font-extrabold	 text-white">
-        افتخارات ما
-      </p>{" "}
-      <div className="mx-auto grid grid-cols-2 gap-4 px-7  md:grid-cols-3 md:gap-8">
+      <p className="header-3 my-5 text-center text-white">افتخارات ما</p>{" "}
+      <div className="mx-auto grid grid-cols-2 gap-4 px-7 md:grid-cols-3 md:gap-8">
         {images.map((image, index) => (
           <div className="group relative " key={index}>
             <Image src={image.src} alt={image.alt} />
             <div className="absolute inset-0 mx-auto flex items-center rounded-2xl transition-all duration-300 ease-in-out hover:bg-primary hover:opacity-50 focus:bg-primary focus:opacity-50">
-              <span className=" subtitle-1 mx-auto px-[1.8rem] text-center text-4xl font-semibold text-primary transition-colors duration-300 ease-in-out group-hover:text-black group-focus:text-black">
+              <span className="title-1 mx-auto px-[1.8rem] text-center  text-primary transition-colors duration-300 ease-in-out group-hover:text-black group-focus:text-black">
                 {image.text}
               </span>
             </div>

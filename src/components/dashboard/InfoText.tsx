@@ -54,7 +54,7 @@ const InfoText: FC<Props> = ({ title, text, unit }) => {
         {showValue}
         {unit ? unit : ""}+
       </p>
-      <p className="title-2 text-center font-bold text-white">{text}</p>
+      <p className="title-3 text-center font-bold text-white">{text}</p>
     </div>
   );
 };

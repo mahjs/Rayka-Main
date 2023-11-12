@@ -22,7 +22,7 @@ export const CommentsCard: React.FC<CardProps> = ({
             isActive ? "bg-primary" : "bg-white opacity-50"
           }`}
         >
-          <p className="title-1">{text}</p>
+          <p className="subtitle-2">{text}</p>
           <div
             className={`absolute mt-6 h-0 w-0 border-l-[22px] border-r-[22px] border-t-[40px] ${
               isActive ? "border-primary" : "border-white opacity-50"

@@ -48,7 +48,7 @@ const Footer = () => {
                 height={25}
                 className="h-[10px] w-[10px] md:h-[25px] md:w-[25px]"
               />
-              <p className="subtitle-3">+98 930 547 1279</p>
+              <p className="subtitle-1">+98 930 547 1279</p>
             </div>
             <div className="flex items-center gap-1 md:gap-3">
               <Image
@@ -58,7 +58,7 @@ const Footer = () => {
                 height={25}
                 className="h-[10px] w-[10px] md:h-[25px] md:w-[25px]"
               />
-              <p className="subtitle-3">+21 374 54112</p>
+              <p className="subtitle-1">+21 374 54112</p>
             </div>
             <div className="flex items-center gap-1 md:gap-3">
               <Image
@@ -68,7 +68,7 @@ const Footer = () => {
                 height={25}
                 className="h-[10px] w-[10px] md:h-[25px] md:w-[25px]"
               />
-              <p className="subtitle-3">support@raikaco.org</p>
+              <p className="subtitle-1">support@raikaco.org</p>
             </div>
             <div className="flex items-center gap-1 md:gap-3">
               <Image
@@ -78,7 +78,7 @@ const Footer = () => {
                 width={25}
                 height={25}
               />
-              <p className="subtitle-3 max-w-[28rem]">
+              <p className="subtitle-1 max-w-[28rem]">
                 تهران، خیابان پاسداران، پایین‌تر از اطلس مال، نبش کوچه تنگستان
                 سوم، پلاک ۷۴۶ واحد ۲
               </p>
