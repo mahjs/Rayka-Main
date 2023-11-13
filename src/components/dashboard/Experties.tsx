@@ -38,6 +38,7 @@ const expertiesData = [
   {
     id: 4,
     title: "راه‌اندازی دیتاسنتر در پاپ‌های کل کشور",
+    title2: "راه‌اندازی دیتاسنتر ",
     name: "دیتا سنتر و راه‌اندازی آن؟",
     orangeIconPath: DataOrange,
     darkIconPath: Data,
@@ -100,7 +101,7 @@ const Experties = () => {
         ))}
       </div>
 
-      <div className="mt-32 hidden max-w-[100vw] lg:block">
+      <div className="mt-36 hidden max-w-[100vw] lg:block">
         <Transition
           show={showExperties}
           enter="transition-all duration-500 "
@@ -138,7 +139,10 @@ const Experties = () => {
             index={selectedIndex! + 1}
             handleClickClose={handleCloseButtonClick}
             key={selectedIndex}
-            title={expertiesData[selectedIndex!].title}
+            title={
+              expertiesData[selectedIndex!].title2 ||
+              expertiesData[selectedIndex!].title
+            }
             name={expertiesData[selectedIndex!].name}
             iconPath={expertiesData[selectedIndex!].darkIconPath}
           />

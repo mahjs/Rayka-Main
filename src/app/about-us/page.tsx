@@ -22,7 +22,7 @@ const page: React.FC<Props> = ({}) => {
           style={{
             backgroundSize: "100%",
           }}
-          className="absolute  w-full -rotate-[-2deg] flex-col items-center justify-center rounded-lg bg-main-image p-12  md:rounded-3xl"
+          className="absolute   w-full -rotate-[-2deg] flex-col items-center justify-center rounded-lg bg-main-image  p-12 md:rounded-3xl"
         >
           <Image
             src={RaykaIcon}

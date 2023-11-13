@@ -30,7 +30,7 @@ export const CommentsCard: React.FC<CardProps> = ({
           ></div>
         </div>
         <div className="flex items-center justify-start gap-5">
-          <div className="h-20 w-20 rounded-full border-4 border-solid border-primary bg-black">
+          <div className="h-[5rem] w-[5rem] rounded-full border-4 border-solid border-primary bg-black">
             <div className="mx-auto mt-[0.25rem] h-16 w-16 overflow-hidden rounded-full bg-transparent">
               <Image
                 src={truPerson}
