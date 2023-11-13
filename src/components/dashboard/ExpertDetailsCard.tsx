@@ -45,7 +45,7 @@ const ExpertDetailsCard: FC<Props> = ({
             textShadow:
               "-3px -3px 0 #fff, 3px -3px 0 #fff, -3px 3px 0 #fff, 3px 3px 0 #fff",
           }}
-          className="absolute -top-24 right-14 text-[6rem] font-bold text-white opacity-20 md:text-[14rem]"
+          className="absolute -top-20 right-14 text-[6rem] font-bold text-white opacity-20 md:text-[12rem]"
         >
           {String(index).padStart(2, "0")}
         </span>
