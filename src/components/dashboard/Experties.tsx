@@ -13,6 +13,7 @@ import Ai from "@/assets/images/ai.svg";
 import DataOrange from "@/assets/images/data-orange.svg";
 import Data from "@/assets/images/data.svg";
 
+// Experts details for showing the expert cards
 const expertiesData = [
   {
     id: 1,
@@ -45,6 +46,9 @@ const expertiesData = [
   },
 ];
 
+/**
+ * The component wrapper for showing the expert cards.
+ */
 const Experties = () => {
   const [showExperties, setShowExperties] = useState<boolean>(true);
   const [showDetails, setShowDetails] = useState<boolean>(false);

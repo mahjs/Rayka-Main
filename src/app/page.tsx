@@ -3,6 +3,7 @@ import InfoText from "../components/dashboard/InfoText";
 import JoinRaykaCard from "@/components/dashboard/JoinRaykaCard";
 import Experties from "@/components/dashboard/Experties";
 
+// Information data for showing the company project and description.
 const informationData = [
   {
     id: 1,
@@ -26,6 +27,10 @@ const informationData = [
     text: "تعداد کاربران",
   },
 ];
+
+/**
+ * The main root component for showing the root address page ('/').
+ */
 
 export default function Home() {
   return (

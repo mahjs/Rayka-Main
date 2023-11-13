@@ -8,11 +8,20 @@ interface Props {
   text: string;
 }
 
+/**
+ * Component for showing the number and its text
+ *
+ * @param unit - Unit for the number
+ * @param title - The value for the text.
+ * @param text -  Title for the card. It's description.
+ */
+
 const InfoText: FC<Props> = ({ title, text, unit }) => {
   const numberRef = useRef<null | HTMLDivElement>(null);
   const [startAnimation, setStartAnimation] = useState<boolean>(false);
   const [showValue, setShowValue] = useState(0);
 
+  // Animate the value for the text.
   useEffect(() => {
     if (!startAnimation || showValue === title) return;
     setTimeout(
@@ -21,6 +30,7 @@ const InfoText: FC<Props> = ({ title, text, unit }) => {
     );
   }, [showValue, startAnimation, title]);
 
+  // Start animation when the component is fully visible.
   useEffect(() => {
     const refElem = numberRef.current as HTMLDivElement;
     const observer = new IntersectionObserver(

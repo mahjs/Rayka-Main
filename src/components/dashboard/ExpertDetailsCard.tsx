@@ -10,6 +10,16 @@ interface Props {
   handleClickClose: () => void;
 }
 
+/**
+ * Expert detail card when selecting one of the expert cards.
+ *
+ * @param index - Index of the card in the card list..
+ * @param title - Title of the details expert card.
+ * @param iconPath - Icon path for the card.
+ * @param name  - The name of the card for showing the the header
+ * @param handleClickClose - Click handler for closing the detail card.
+ */
+
 const ExpertDetailsCard: FC<Props> = ({
   index,
   title,

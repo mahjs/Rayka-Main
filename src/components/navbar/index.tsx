@@ -9,6 +9,10 @@ import Arrow from "@/assets/images/arrow.svg";
 import Menu from "@/assets/images/menu.svg";
 import RaykaIcon from "@/assets/images/rayka-icon.svg";
 
+/**
+ * Navbar for the whole app.
+ */
+
 const Navbar: FC = () => {
   const [showNavbar, setShowNavbar] = useState<boolean>(false);
 
