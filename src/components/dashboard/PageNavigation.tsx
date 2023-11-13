@@ -3,14 +3,46 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
 
+/**
+ * Page navigation on the footer. a simple list of links
+ *
+ */
+
 const PageNavigation = () => {
   const pathname = usePathname();
   return (
-    <nav className="title-4 flex flex-col gap-4">
-        <Link className={pathname === "/" ? "text-[#FEA918]" : ""} href="/">خانه</Link>
-        <Link className={pathname === "/about-us" ? "text-[#FEA918]" : ""} href="/about-us">درباه‌ما</Link>
-        <Link className={pathname === "/contact-us" ? "text-[#FEA918]" : ""} href="/contact-us">ارتباط با ما</Link>
-        <Link className={pathname === "/jobs" ? "text-[#FEA918]" : ""}href="/jobs">فرصت‌های شغلی</Link>
+    <nav>
+      <ul className="title-4 flex flex-col gap-4">
+        <li>
+          <Link className={pathname === "/" ? "text-[#FEA918]" : ""} href="/">
+            خانه
+          </Link>
+        </li>
+        <li>
+          <Link
+            className={pathname === "/about-us" ? "text-[#FEA918]" : ""}
+            href="/about-us"
+          >
+            درباه‌ما
+          </Link>
+        </li>
+        <li>
+          <Link
+            className={pathname === "/contact-us" ? "text-[#FEA918]" : ""}
+            href="/contact-us"
+          >
+            ارتباط با ما
+          </Link>
+        </li>
+        <li>
+          <Link
+            className={pathname === "/jobs" ? "text-[#FEA918]" : ""}
+            href="/jobs"
+          >
+            فرصت‌های شغلی
+          </Link>
+        </li>
+      </ul>
     </nav>
   );
 };

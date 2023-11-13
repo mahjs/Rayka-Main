@@ -2,7 +2,10 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
-import Head from "next/head";
+
+/**
+ * The Layout component for the whole app and showing the static component that is showing on the whole app.
+ */
 
 export default function RootLayout({
   children,
@@ -19,7 +22,10 @@ export default function RootLayout({
           name="description"
           content="همگام با تکنولوژی برای آینده ای هوشمندتر"
         />
-        <meta name="keywords" content="رایکا، پروژه ملی، ماورای ابعاد رایکا، شرکت رایکا" />
+        <meta
+          name="keywords"
+          content="رایکا، پروژه ملی، ماورای ابعاد رایکا، شرکت رایکا"
+        />
         <meta name="author" content="نام نویسنده یا شرکت" />
         <link rel="canonical" href="https://raikaco.org" />
         <meta http-equiv="Content-Language" content="fa" />

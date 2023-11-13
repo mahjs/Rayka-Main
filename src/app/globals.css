@@ -132,15 +132,15 @@ body {
 
 .header-6 {
   font-family: "KalamehBold";
-  font-size: 2.85375rem;
+  font-size: 2.05375rem;
   font-weight: 500;
   line-height: 150.5%;
   color: #fff;
   @media screen and (max-width: 1068px) {
-    font-size: 1.81406rem;
+    font-size: 1.61406rem;
   }
   @media screen and (max-width: 768px) {
-    font-size: 1.21406rem;
+    font-size: 1.01406rem;
   }
 }
 

@@ -9,6 +9,10 @@ import Arrow from "@/assets/images/arrow.svg";
 import Menu from "@/assets/images/menu.svg";
 import RaykaIcon from "@/assets/images/rayka-icon.svg";
 
+/**
+ * Navbar for the whole app.
+ */
+
 const Navbar: FC = () => {
   const [showNavbar, setShowNavbar] = useState<boolean>(false);
 
@@ -48,8 +52,8 @@ const Navbar: FC = () => {
 
   return (
     <header
-      className={`fixed left-0 right-0 top-0 z-50 flex w-full items-center justify-between  px-5 py-5 transition-all  duration-500 
-       lg:pr-20 ${isScrolled ? "bg-[#00000099]" : ""}`}
+      className={`fixed left-0 right-0 top-0 z-50 flex w-full items-center justify-between  border-[#ffffff22] px-5 py-5  transition-all duration-500 md:border-b-[1px] 
+       lg:pr-20 ${isScrolled ? "bg-[#00000099] xl:backdrop-blur-sm" : ""}`}
     >
       <nav className="hidden lg:block">
         <ul className="hidden gap-16 lg:flex">

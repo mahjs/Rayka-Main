@@ -4,6 +4,10 @@ import { useRouter } from "next/navigation";
 import React from "react";
 import Person from "@/assets/images/person.png";
 
+/**
+ * Component for showing the join us card and some small description for company.
+ */
+
 const JoinRaykaCard = () => {
   const router = useRouter();
   return (

@@ -3,6 +3,7 @@ import InfoText from "../components/dashboard/InfoText";
 import JoinRaykaCard from "@/components/dashboard/JoinRaykaCard";
 import Experties from "@/components/dashboard/Experties";
 
+// Information data for showing the company project and description.
 const informationData = [
   {
     id: 1,
@@ -27,14 +28,18 @@ const informationData = [
   },
 ];
 
+/**
+ * The main root component for showing the root address page ('/').
+ */
+
 export default function Home() {
   return (
-    <div className="relative flex flex-col gap-10 md:gap-20">
+    <main className="relative flex flex-col gap-10 md:gap-20">
       {/* Background */}
       <div className="absolute left-0 right-0 top-0 -z-30 hidden bg-[#FEA918] md:block md:h-[60vh] lg:h-[100vh] lg:w-[90vw]" />
 
       {/* Top content */}
-      <div
+      <section
         style={{
           backgroundSize: "100% 100%",
           backgroundRepeat: "no-repeat",
@@ -42,7 +47,7 @@ export default function Home() {
         className="flex w-[100%] items-center justify-between bg-main-image pt-16 md:h-[60vh] md:rounded-br-[30rem] md:pt-0 lg:h-[100vh]"
       >
         <div className="flex-col overflow-x-hidden px-5 pb-5 text-white md:mr-[11rem] md:py-10">
-          <h1 className="header-4 hidden md:block">شرکت ماورای ابعاد رایکا</h1>
+          <h1 className="header-6 hidden md:block">شرکت ماورای ابعاد رایکا</h1>
           <p className="header-2 hidden whitespace-nowrap md:block">
             همگام با <span className="text-primary">تکنولوژی</span>
           </p>
@@ -69,10 +74,10 @@ export default function Home() {
             <Link href="#">LINKEDIN</Link>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Experties Content */}
-      <div className="relative flex justify-center md:mb-5">
+      <section className="relative flex justify-center md:mb-5">
         {/* Make the backgrounds */}
         <div className="absolute h-[24rem] w-[90%] -rotate-[2deg] rounded-lg bg-[#FEA918] md:h-[40rem] md:w-[80.1%] md:-rotate-[2deg] md:rounded-3xl lg:h-[18rem] lg:w-[90.1%] lg:-rotate-[1deg]" />
         <div
@@ -85,10 +90,10 @@ export default function Home() {
         </div>
         {/* Content */}
         <Experties />
-      </div>
+      </section>
 
       {/* Information Content */}
-      <div
+      <section
         className="relative flex h-[20rem] w-full items-center justify-center  bg-main-image md:mb-[5rem]"
         style={{
           backgroundSize: "100%",
@@ -105,11 +110,11 @@ export default function Home() {
             />
           ))}
         </div>
-      </div>
+      </section>
 
       <div className="z-10 -mb-[2rem] ml-[10%] flex items-center justify-center md:-mb-[5rem]">
         <JoinRaykaCard />
       </div>
-    </div>
+    </main>
   );
 }
