@@ -53,7 +53,7 @@ const Navbar: FC = () => {
   return (
     <header
       className={`fixed left-0 right-0 top-0 z-50 flex w-full items-center justify-between  px-5 py-5 transition-all  duration-500 
-       lg:pr-20 ${isScrolled ? "bg-[#00000099]" : ""}`}
+       lg:pr-20 ${isScrolled ? "bg-[#00000099] xl:backdrop-blur-sm" : ""}`}
     >
       <nav className="hidden lg:block">
         <ul className="hidden gap-16 lg:flex">
