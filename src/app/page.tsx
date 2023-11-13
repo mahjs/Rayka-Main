@@ -47,7 +47,7 @@ export default function Home() {
         className="flex w-[100%] items-center justify-between bg-main-image pt-16 md:h-[60vh] md:rounded-br-[30rem] md:pt-0 lg:h-[100vh]"
       >
         <div className="flex-col overflow-x-hidden px-5 pb-5 text-white md:mr-[11rem] md:py-10">
-          <h1 className="header-4 hidden md:block">شرکت ماورای ابعاد رایکا</h1>
+          <h1 className="header-6 hidden md:block">شرکت ماورای ابعاد رایکا</h1>
           <p className="header-2 hidden whitespace-nowrap md:block">
             همگام با <span className="text-primary">تکنولوژی</span>
           </p>
