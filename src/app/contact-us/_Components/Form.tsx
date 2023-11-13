@@ -4,6 +4,15 @@ import CustomBtn from "./CustomBtn";
 import "react-toastify/dist/ReactToastify.css";
 import { toast, ToastContainer } from "react-toastify";
 
+/**
+ * Props for the FloatingInput component.
+ * @interface
+ * @property {string} type - The input type (e.g., text, email, tel).
+ * @property {string} name - The name attribute for the input element.
+ * @property {string} id - The id attribute for the input element.
+ * @property {string} label - The label text for the input element.
+ * @property {string} [pattern] - The regex pattern for the input validation (optional).
+ */
 interface FloatingInputProps {
   type: string;
   name: string;
@@ -13,8 +22,16 @@ interface FloatingInputProps {
 }
 
 const commonInputClasses =
-  "peer block w-full text-right appearance-none rounded border-0 bg-[#f5f5f5] px-5 py-5 text-sm text-gray-900 focus:border-primary focus:outline-none focus:ring-primary dpeer block w-full appearance-none rounded border-0 bg-[#f5f5f5] px-5 py-5 text-right text-sm text-gray-900 focus:border-primary focus:outline-none focus:ring-primary dark:border-primary dark:text-white dark:focus:border-primaryark:border-primary dark:text-white dark:focus:border-primary";
+  "peer block w-full text-right appearance-none rounded border-0 bg-[#f5f5f5] px-5 py-5 text-sm text-gray-900 focus:border-primary focus:outline-none focus:ring-primary dark:border-primary dark:text-white dark:focus:border-primary";
 
+/**
+ * FloatingInput - A custom input component with floating label effect.
+ * It uses common styles for consistency across different input types.
+ *
+ * @component
+ * @param {FloatingInputProps} props - The props for the component.
+ * @returns {React.ReactElement} A styled input element with floating label effect.
+ */
 const FloatingInput: React.FC<FloatingInputProps> = ({
   type,
   name,
@@ -38,6 +55,14 @@ const FloatingInput: React.FC<FloatingInputProps> = ({
   );
 };
 
+/**
+ * Form - A component for handling user input and submissions.
+ * It utilizes custom FloatingInput components for various input fields
+ * and integrates toast notifications for submission feedback.
+ *
+ * @component
+ * @returns {React.ReactElement} A form with input fields and custom button for submission.
+ */
 const Form: React.FC = () => {
   const [isLoading, setIsLoading] = useState(false);
 

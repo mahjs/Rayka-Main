@@ -1,18 +1,11 @@
 "use client";
 import React, { FC, useState } from "react";
 import Form from "./Form";
-import Image from "next/image";
-import insta from "../../../../public/social-img/insta.svg";
-import telegram from "../../../../public/social-img/telegram.svg";
-import linkedin from "../../../../public/social-img/linkedin.svg";
 import Link from "next/link";
 
 /**
- * Represents the structure of a social media link.
- * @interface
- * @property {string} src - The image source URL for the social media icon.
- * @property {string} alt - The alternative text for the social media icon.
- * @property {string} href - The URL to the social media page.
+ * Interface representing a social media link.
+ * Includes properties for the icon source, alternative text, and the URL.
  */
 interface SocialLink {
   src: JSX.Element;
@@ -21,7 +14,8 @@ interface SocialLink {
 }
 
 /**
- * A constant array containing objects with information about social media links.
+ * Array of social media links containing information about each platform.
+ * Used to render social media icons with links to respective pages.
  */
 const socialLinks: SocialLink[] = [
   {
@@ -73,14 +67,12 @@ const socialLinks: SocialLink[] = [
 ];
 
 /**
- * Renders a clickable social media icon that links to a social media page.
- * Utilizes Next.js's Image and Link components for optimized images and routing.
+ * Functional component to render a social media link.
+ * Utilizes Next.js's Link component for optimized routing.
  *
- * @component
- * @param {SocialLink} props.link - The social link details to be rendered.
- * @returns {React.ReactElement} A React Element containing the clickable icon.
+ * @param {SocialLink} link - Object containing details of the social link.
+ * @returns {React.ReactElement} React element representing a clickable social media icon.
  */
-
 const SocialLinkComponent: React.FC<{ link: SocialLink }> = ({ link }) => {
   const classNames = `cursor-pointer ${
     link.alt === "Telegram logo" ? "mx-5" : ""
@@ -98,11 +90,10 @@ const SocialLinkComponent: React.FC<{ link: SocialLink }> = ({ link }) => {
 };
 
 /**
- * The MessagesForm component is responsible for rendering a form where users can submit their messages.
- * It also displays a set of social media links for additional ways to contact.
+ * Component to render a message submission form and social media links.
+ * Allows users to contact through a form or social media platforms.
  *
- * @component
- * @returns {React.ReactElement} A React Element that includes a title, description, social links, and the form.
+ * @returns {React.ReactElement} React element including a form and social media links.
  */
 const MessagesForm: FC = () => {
   return (
@@ -115,7 +106,7 @@ const MessagesForm: FC = () => {
           <p className="word-spacing">
             جهت ارتباط با تیم رایکا فرم زیر را تکمیل کنید. <br />
             <span className="word-spacing-1">
-              تیم پشتیبانی در اسروع وقت با شما تماس <br /> خواهند گرفت !
+              تیم پشتیبانی در اسرع وقت با شما تماس <br /> خواهند گرفت !
             </span>
           </p>
         </div>

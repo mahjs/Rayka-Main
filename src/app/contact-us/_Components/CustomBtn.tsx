@@ -1,6 +1,26 @@
 import React from "react";
 
-const CustomBtn: React.FC<{ sendText: string }> = ({ sendText }) => {
+/**
+ * Props interface for CustomBtn component.
+ * @property {string} sendText - The text to display on the button.
+ */
+interface CustomBtnProps {
+  sendText: string;
+}
+
+/**
+ * CustomBtn component.
+ * Renders a stylized button with a unique hover effect.
+ * The button receives its text from the sendText prop.
+ *
+ * The component uses a local <style> tag for custom CSS, which defines
+ * the appearance and hover effect of the button. The use of local styles
+ * ensures that these styles are scoped to this component only.
+ *
+ * @param {CustomBtnProps} props - Props containing the text for the button.
+ * @returns {JSX.Element} - A button within a flex container.
+ */
+const CustomBtn: React.FC<CustomBtnProps> = ({ sendText }) => {
   return (
     <>
       <style jsx>{`
