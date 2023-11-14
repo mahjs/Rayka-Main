@@ -12,6 +12,17 @@ interface Props {
   onClick: (index: number) => void;
 }
 
+/**
+ * Show the expert details and make it like a card.
+ *
+ * @param index - The index of every card in the list.
+ * @param title - Title for the card. A brief explanation.
+ * @param mobile - Is this card showing on the mobile or not.
+ * @param orangeIconPath - The icon in orange color for hover effect
+ * @param darkIconPath - The icon in dark color for regular show.
+ * @param onClick - onClick handler when clicking on the card.
+ */
+
 const ExpertCard: FC<Props> = ({
   index,
   title,

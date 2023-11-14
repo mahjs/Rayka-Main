@@ -6,6 +6,10 @@ import Phone from "@/assets/images/phone.svg";
 import Letter from "@/assets/images/letter.svg";
 import Location from "@/assets/images/location.svg";
 
+/**
+ * Footer for the whole app.
+ */
+
 const Footer = () => {
   return (
     <footer className="bg-black">

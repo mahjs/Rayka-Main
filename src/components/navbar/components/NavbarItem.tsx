@@ -10,6 +10,14 @@ interface Props {
   text: string;
 }
 
+/**
+ *  Navbar item for the navbar component.
+ *
+ * @param onClick - onClick handler for the navbar item.
+ * @param href - The destination address for navigating to.
+ * @param text - Text for the item.
+ */
+
 const NavbarItem: FC<Props> = ({ onClick, href, text }) => {
   const pathname = usePathname();
   return (
