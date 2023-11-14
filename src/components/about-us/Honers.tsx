@@ -81,7 +81,7 @@ const Honers: React.FC<Props> = ({}) => {
   };
 
   const handleMouseLeave = () => {
-    setTextHover(false);
+    setTextHover(null);
   };
 
   return (
