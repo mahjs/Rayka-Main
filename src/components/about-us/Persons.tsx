@@ -1,3 +1,31 @@
+/**
+ * Persons Component
+ *
+ * This component creates a carousel display of images and names, representing members of the 'Rayka' family.
+ * It includes functionality to navigate through the images using previous and next buttons.
+ *
+ * The component uses the `useState` hook for managing the index of the current image, the transition state,
+ * and the number of images displayed per page. The `useEffect` hook is used to adjust the number of images
+ * per page based on the window size.
+
+ * Methods:
+ *  - `nextImage`: Increments `currentImageIndex` to show the next set of images.
+ *  - `prevImage`: Decrements `currentImageIndex` to show the previous set of images.
+ *
+ * Constants:
+ *  - `transitionDuration`: Duration of the transition animation in milliseconds.
+ *  - `data`: Array of objects containing information about each person (name, surname, and image).
+ *
+ * Usage:
+ * ```jsx
+ * <Persons />
+ * ```
+ *
+ * The `Persons` component renders a carousel of images and names. Users can navigate through the images
+ * using next and previous buttons. The component is responsive and adjusts the number of images displayed
+ * per page according to the window size. The names and surnames of the persons are displayed below their images.
+ */
+
 "use client";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";

@@ -310,3 +310,82 @@ body {
   opacity: 0.5; /* Example: lower opacity */
   pointer-events: none; /* Ensures the button is not clickable */
 }
+
+.read-more-check {
+  display: none;
+}
+.read-more-label:before {
+  content: "^";
+  top: 0.4rem;
+  position: absolute;
+  color: white;
+  right: 1rem;
+  font-size: 1rem;
+  transform: rotate(180deg);
+}
+.read-more-check:checked ~ .read-more-label:before {
+  top: 0.7rem;
+  transform: rotate(0);
+}
+/* .read-more-label:after {
+  content: "ادامه";
+}
+.read-more-check:checked ~ .read-more-label:after {
+  content: "کم";
+} */
+.read-more-label {
+  animation: ring 1.5s infinite; /* Add this line */
+
+  color: #fea918;
+  text-shadow: 0 0.1rem 0.3rem rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  box-shadow: 0 0.15rem 0.3rem rgba(0, 0, 0, 0.4);
+  transition: bottom 0.5s linear 0s;
+}
+.read-more-check:checked ~ .read-more-label {
+  bottom: 1rem;
+}
+/* 
+@keyframes ring {
+  0% {
+    box-shadow: 0 0 0 0 rgba(254, 169, 24, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(254, 169, 24, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(254, 169, 24, 0);
+  }
+} */
+/*
+  The styles above aren't related with the functionality
+*/
+.read-more {
+  max-height: 0;
+  display: block;
+  overflow: hidden;
+  transition: max-height 0.5s linear 0s;
+  color: white;
+  font-family: "KalamehRegular";
+  font-size: 1.36213rem;
+  line-height: 150.5%;
+  @media screen and (max-width: 758px) {
+    font-size: 0.70431rem;
+  }
+}
+/*
+The down side of this approach is that you have to know what will be the max-height in advance
+*/
+.read-more-check:checked ~ .read-more {
+  max-height: 20rem;
+}
+@media (min-width: 769px) {
+  .read-more-check:checked ~ .read-more {
+    max-height: 40rem;
+  }
+}
+@media (max-width: 768px) {
+  .read-more-check:checked ~ .read-more {
+    max-height: 90rem;
+  }
+}

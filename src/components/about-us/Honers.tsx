@@ -1,3 +1,26 @@
+/**
+ * Honers Component
+ *
+ * This component displays a set of images and information related to the achievements and honors of a company.
+ * It makes use of the `useState` hook from React to manage hover state over the images to toggle between
+ * showing the title and detailed text of each honor.
+ *
+ * The component is structured into two main sections:
+ * 1. A grid display of images representing different honors.
+ * 2. A list of textual information data highlighting key statistics or achievements.
+ *
+ * Methods:
+ *  - `handleMouseEnter`: Sets the `textHover` state to the index of the hovered image.
+ *  - `handleMouseLeave`: Resets the `textHover` state to null.
+ *
+ * Usage:
+ * ```jsx
+ * <Honers />
+ * ```
+ *
+ * The component renders a series of images (sourced from the `images` array) in a grid layout. Each image can be hovered over to reveal additional information. Below the images, key statistics or achievements (sourced from the `informationData` array) are displayed.
+ */
+
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
@@ -81,10 +104,12 @@ const Honers: React.FC<Props> = ({}) => {
   const handleMouseLeave = () => {
     setTextHover(null);
   };
+
   return (
     <div
-      className="relative mt-[10rem] flex w-full flex-col items-center justify-center bg-main-image  py-12 md:mt-[17rem] lg:mt-[8rem]"
+      className={`relative  flex w-full flex-col items-center justify-center bg-main-image  py-12 `}
       style={{
+        transition: "margin-top 0.5s ease-in-out", // Add this line for transition
         backgroundSize: "100%",
       }}
     >

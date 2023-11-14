@@ -1,3 +1,25 @@
+/**
+ * Comments Component
+ *
+ * This component is designed to display comments or testimonials from various individuals,
+ * typically managers or team members. It uses a Carousel component to allow users to navigate
+ * through different comments. Each comment is rendered using the `CommentsCard` component.
+ *
+ * The component maintains the state of the currently active card in the carousel using the `useState` hook.
+
+ * Constants:
+ *  - `cardsData`: An array of objects, each containing the text, name, and job title for each comment card.
+ *
+ * Usage:
+ * ```jsx
+ * <Comments />
+ * ```
+ *
+ * Inside the render, a `Carousel` component is used to render the comments dynamically. Each comment
+ * is passed to the `CommentsCard` component as a child of `Carousel`. The `active` state is used to
+ * determine which comment card is currently active, and it's passed as a prop to the `CommentsCard`.
+ */
+
 "use client";
 
 import React, { useState } from "react";
