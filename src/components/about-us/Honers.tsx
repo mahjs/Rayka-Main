@@ -9,7 +9,9 @@ import honers4 from "@/assets/images/honers4.png";
 import honers5 from "@/assets/images/honers5.png";
 import honers6 from "@/assets/images/honers6.png";
 
-interface Props {}
+interface Props {
+  showMore: boolean;
+}
 const informationData = [
   {
     id: 1,
@@ -71,19 +73,21 @@ const images = [
     text: "اولین کمپانی استفاده کننده از تکنولوژی ذخیره‌سازی مایع (Liquid Data Storage)",
   },
 ];
-const Honers: React.FC<Props> = ({}) => {
-  const [textHover, setTextHover] = useState(false);
-  const handleMouseEnter = (index) => {
+const Honers: React.FC<Props> = ({ showMore }) => {
+  const [textHover, setTextHover] = useState<number | boolean>(false);
+  const handleMouseEnter = (index: number) => {
     setTextHover(index);
   };
 
   const handleMouseLeave = () => {
-    setTextHover(null);
+    setTextHover(false);
   };
+
   return (
     <div
-      className="relative mt-[10rem] flex w-full flex-col items-center justify-center bg-main-image  py-12 md:mt-[17rem] lg:mt-[8rem]"
+      className={`relative  flex w-full flex-col items-center justify-center bg-main-image  py-12 `}
       style={{
+        transition: "margin-top 0.5s ease-in-out", // Add this line for transition
         backgroundSize: "100%",
       }}
     >
