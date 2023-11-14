@@ -72,8 +72,9 @@ const images = [
   },
 ];
 const Honers: React.FC<Props> = ({}) => {
-  const [textHover, setTextHover] = useState(false);
-  const handleMouseEnter = (index) => {
+  const [textHover, setTextHover] = useState<number | null>(null);
+
+  const handleMouseEnter = (index: number) => {
     setTextHover(index);
   };
 
@@ -118,31 +119,6 @@ const Honers: React.FC<Props> = ({}) => {
         ))}
       </div>
     </div>
-
-    // <div className="relative mb-[3.63rem] flex h-[81rem] w-full items-start bg-main-image bg-cover  bg-no-repeat md:mb-[6.63rem] md:h-[94.75rem] ">
-    //   <div className="z-1 absolute flex w-full flex-col justify-center gap-y-12 py-6">
-    //     <p className="title my-5 text-center text-6xl	 font-extrabold	 text-white">
-    //       افتخارات ما
-    //     </p>{" "}
-    //     <div className="mx-auto grid grid-cols-2 gap-4 px-7  md:grid-cols-3 md:gap-8">
-    //       {images.map((image, index) => (
-    //         <div className="group relative " key={index}>
-    //           <Image src={image.src} alt={image.alt} />
-    //           <div className="absolute inset-0 mx-auto flex items-center rounded-2xl transition-all duration-300 ease-in-out hover:bg-primary hover:opacity-50 focus:bg-primary focus:opacity-50">
-    //             <span className=" subtitle-1 mx-auto px-[1.8rem] text-center text-4xl font-semibold text-primary transition-colors duration-300 ease-in-out group-hover:text-black group-focus:text-black">
-    //               {image.text}
-    //             </span>
-    //           </div>
-    //         </div>
-    //       ))}
-    //     </div>
-    //     <div className=" grid w-full grid-cols-2 justify-evenly gap-5 md:flex ">
-    //       {informationData.map((info) => (
-    //         <InfoText key={info.id} title={info.title} text={info.text} />
-    //       ))}
-    //     </div>
-    //   </div>
-    // </div>
   );
 };
 

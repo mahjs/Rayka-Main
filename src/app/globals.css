@@ -57,18 +57,6 @@ body {
   direction: rtl;
 }
 
-.btn-send {
-  @apply btn  relative ml-6 overflow-hidden rounded-lg bg-primary px-14 py-3.5 text-center text-black duration-300 hover:bg-[#111111] hover:text-primary focus:outline-none focus:ring-4 focus:ring-primary dark:bg-primary dark:hover:bg-[#111111] dark:focus:ring-primary;
-}
-
-.btn-shadow {
-  @apply absolute inset-0 -right-4 h-24 w-[2.3rem] rotate-[38deg] bg-yellow-500 opacity-30;
-}
-
-.Custom-Toast {
-  @apply flex w-full max-w-xs items-center rounded-lg bg-white p-4 text-gray-500 shadow dark:bg-gray-800 dark:text-gray-400;
-}
-
 .header-1 {
   font-family: "KalamehBold";
   font-size: 2.41406rem;

@@ -23,7 +23,7 @@ const Carousel: React.FC<CarouselProps> = ({ children, active, setActive }) => {
           aria-label="Next"
           type="button"
           className={`nav right ${active < count - 1 ? "" : "disabled"}`}
-          onClick={() => setActive((i) => i + 1)}
+          onClick={() => setActive(active + 1)}
           disabled={active >= count - 1}
         >
           <Image src={arrowRight} alt="arrow right" />
@@ -53,7 +53,7 @@ const Carousel: React.FC<CarouselProps> = ({ children, active, setActive }) => {
           type="button"
           aria-label="Previous"
           className={`nav left ${active > 0 ? "" : "disabled"}`}
-          onClick={() => setActive((i) => i - 1)}
+          onClick={() => setActive(active - 1)}
           disabled={active <= 0}
         >
           <Image src={arrowLeft} alt="arrow left" />

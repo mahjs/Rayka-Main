@@ -45,7 +45,7 @@ const CustomBtn: React.FC<CustomBtnProps> = ({ sendText }) => {
           background: #111111;
           width: 115%;
           transform: skewX(-25deg);
-          opacity: 0.4;
+          opacity: 0.6;
         }
       `}</style>
 
