@@ -1,3 +1,26 @@
+/**
+ * Honers Component
+ *
+ * This component displays a set of images and information related to the achievements and honors of a company.
+ * It makes use of the `useState` hook from React to manage hover state over the images to toggle between
+ * showing the title and detailed text of each honor.
+ *
+ * The component is structured into two main sections:
+ * 1. A grid display of images representing different honors.
+ * 2. A list of textual information data highlighting key statistics or achievements.
+ *
+ * Methods:
+ *  - `handleMouseEnter`: Sets the `textHover` state to the index of the hovered image.
+ *  - `handleMouseLeave`: Resets the `textHover` state to null.
+ *
+ * Usage:
+ * ```jsx
+ * <Honers />
+ * ```
+ *
+ * The component renders a series of images (sourced from the `images` array) in a grid layout. Each image can be hovered over to reveal additional information. Below the images, key statistics or achievements (sourced from the `informationData` array) are displayed.
+ */
+
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
@@ -9,9 +32,7 @@ import honers4 from "@/assets/images/honers4.png";
 import honers5 from "@/assets/images/honers5.png";
 import honers6 from "@/assets/images/honers6.png";
 
-interface Props {
-  showMore: boolean;
-}
+interface Props {}
 const informationData = [
   {
     id: 1,

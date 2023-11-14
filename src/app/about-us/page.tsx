@@ -1,3 +1,28 @@
+/**
+ * Page component for displaying information about the company.
+ *
+ * This component uses several sub-components to structure the about us page.
+ * It includes a hero section, an image with description of the company, and
+ * sections for honors, persons, and comments. A checkbox is used to toggle
+ * additional information in the company description.
+ * 
+ * The `useState` hook is used for managing the state of the `showMore` boolean,
+ * which controls the display of extended company information.
+ *
+
+ * Sub-Components:
+ *  - `HeroSection`: Displays the main heading and subheadings of the page.
+ *  - `Image`: Renders the company's icon.
+ *  - `Honers`: Component to display the company's honors.
+ *  - `Persons`: Component to display key personnel in the company.
+ *  - `Comments`: Component to display comments or testimonials.
+
+ * Usage:
+ * ```jsx
+ * <Page />
+ * ```
+ */
+
 "use client";
 import HeroSection from "@/components/HeroSection";
 import Image from "next/image";
@@ -105,7 +130,7 @@ const page: React.FC<Props> = ({}) => {
       </article>
       {/* </div> */}
 
-      <Honers showMore={showMore} />
+      <Honers />
       <Persons />
       <Comments />
     </main>
