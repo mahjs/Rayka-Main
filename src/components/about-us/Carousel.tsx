@@ -30,24 +30,25 @@ const Carousel: React.FC<CarouselProps> = ({ children, active, setActive }) => {
         </button>
       </div>
 
-      {React.Children.map(children, (child: ReactElement, i: number) => (
-        <div
-          className="card-container"
-          style={{
-            // @ts-ignore
-            "--active": i === active ? 1 : 0,
-            "--offset": (active - i) / 3,
-            "--direction": Math.sign(active - i),
-            "--abs-offset": Math.abs(active - i) / 3,
-            pointerEvents: active === i ? "auto" : "none",
-            opacity: Math.abs(active - i) >= MAX_VISIBILITY ? "0" : "1",
-            display: Math.abs(active - i) > MAX_VISIBILITY ? "none" : "block",
-          }}
-        >
-          {child}
-        </div>
-      ))}
-
+      {React.Children.map(children, (child: ReactElement, i: number) => {
+        const isHidden = (active === 0 && i === 2) || (active === 2 && i === 0);
+        return (
+          <div
+            className="card-container"
+            style={{
+              "--active": i === active ? 1 : 0,
+              "--offset": (active - i) / 3,
+              "--direction": Math.sign(active - i),
+              "--abs-offset": Math.abs(active - i) / 3,
+              pointerEvents: active === i ? "auto" : "none",
+              opacity: isHidden ? "0" : "1",
+              display: isHidden ? "none" : "block",
+            }}
+          >
+            {child}
+          </div>
+        );
+      })}
       <div>
         <button
           type="button"
