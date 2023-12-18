@@ -54,7 +54,7 @@ const AboutUS: React.FC<Props> = ({}) => {
         style={{
           backgroundSize: "100%",
         }}
-        className=" mx-auto w-[90%] flex-col items-center justify-center rounded-lg bg-main-image  px-36 py-12 md:rounded-3xl"
+        className=" mx-auto w-[90%] flex-col items-center justify-center rounded-lg bg-main-image px-8  py-12 md:rounded-3xl md:px-36 "
       >
         <Image
           src={RaykaIcon}
