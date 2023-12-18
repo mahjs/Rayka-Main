@@ -36,7 +36,7 @@ const ExpertCard: FC<Props> = ({
   return (
     <section
       onClick={() => {
-        if (mobile) return;
+        // if (mobile) return;
         onClick(index - 1);
       }}
       onMouseOver={() => {

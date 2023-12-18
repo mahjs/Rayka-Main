@@ -107,6 +107,7 @@ body {
   @media screen and (max-width: 768px) {
     font-size: 2.1875rem;
   }
+
 }
 
 .header-6 {
@@ -154,9 +155,9 @@ body {
   font-family: "KalamehRegular";
   font-size: 1.8125rem;
   line-height: 150.5%;
-  font-weight: 500;
-  @media screen and (max-width: 768px) {
-    font-size: 0.737rem;
+  font-weight: 700;
+  @media screen and (max-width: 608px) {
+    font-size: 1.237rem;
   }
 }
 
@@ -221,6 +222,10 @@ body {
   font-family: "KalamehRegular";
   font-size: 1.059rem;
   line-height: 140%;
+
+  @media screen and (max-width: 758px) {
+    font-size: 0.83rem;
+  }
 }
 
 .number {
