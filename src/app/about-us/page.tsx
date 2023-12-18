@@ -75,11 +75,11 @@ const page: React.FC<Props> = ({}) => {
           سری محصولات قابل استفاده و چند میلیون کاربر دست پیدا کرد، تصمیم گرفت
           به صورت کاملا رسمی و قانونی با هلدینگ بزرگ تابا تلکام که یکی از
           بزرگترین هلدنیگ‌های زیرساخت ارتباط کشور است، همکاری کند.
-          {/* {!showMore && (
+          {!showMore && (
             <label htmlFor="read-more-check-1" className="read-more-label">
               ادامه ...{" "}
             </label>
-          )} */}
+          )}
         </p>{" "}
         <input
           id="read-more-check-1"

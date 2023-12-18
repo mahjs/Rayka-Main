@@ -119,16 +119,16 @@ const Honers: React.FC<Props> = ({}) => {
       <div className="mx-auto grid grid-cols-2 gap-4 px-7  md:grid-cols-3 md:gap-8">
         {images.map((image, index) => (
           <div
-            className="  relative hover:text-xs  md:hover:text-xl" // Add 'group' class here
+            className="group relative"
             key={index}
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={handleMouseLeave}
           >
             <Image src={image.src} alt={image.alt} />
-            <div className="absolute inset-0 mx-auto flex items-center rounded-2xl   transition-all duration-500 ease-in-out hover:bg-[#F1790A]	hover:text-xs  hover:opacity-50  focus:bg-[#F1790A] focus:opacity-50  md:hover:text-xl">
+            <div className="absolute inset-0 mx-auto flex items-center justify-center rounded-2xl hover:bg-[#F1790A] hover:opacity-50 focus:bg-[#F1790A] focus:opacity-50">
               <span
-                className={`subtitle-3 mx-auto px-[1.8rem] text-center text-4xl font-semibold  ${
-                  textHover === index ? "text-black" : "text-primary"
+                className={`subtitle-3 mx-auto px-[1.8rem] text-center text-4xl font-semibold transition-all duration-500 ease-in-out ${
+                  textHover === index ? "animate-fadeIn" : "text-primary"
                 }`}
               >
                 {textHover === index ? image.text : image.title}
