@@ -319,7 +319,6 @@ body {
   display: none;
 }
 .read-more-label:before {
-  content: "^";
   top: 0.4rem;
   position: absolute;
   color: white;
