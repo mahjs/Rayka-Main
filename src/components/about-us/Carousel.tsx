@@ -23,7 +23,7 @@ const Carousel: React.FC<CarouselProps> = ({ children, active, setActive }) => {
   const count = React.Children.count(children);
 
   return (
-    <div className="carousel flex h-full  items-center justify-evenly gap-[7rem]">
+    <div className="carousel flex h-full  items-center justify-evenly gap-[11rem] md:gap-[7rem]">
       <div className="md:w-[23rem]">
         <button
           aria-label="Next"

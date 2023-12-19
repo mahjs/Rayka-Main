@@ -18,7 +18,7 @@ export const CommentsCard: React.FC<CardProps> = ({
         className={`relative mt-4 flex h-[14rem] w-[13rem] flex-col gap-12 md:w-[32rem] `}
       >
         <div
-          className={` rounded-2xl p-[1.90rem]  text-justify ${
+          className={` rounded-2xl p-[1.90rem] text-right ${
             isActive ? "bg-primary" : "bg-white opacity-50"
           }`}
         >

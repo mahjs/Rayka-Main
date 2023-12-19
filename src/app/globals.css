@@ -244,7 +244,7 @@ body {
   position: relative;
   width: 85%;
   height: 23rem;
-  /* perspective: 1000px; */
+  perspective: 900px;
   transform-style: preserve-3d;
 }
 .card-container {
