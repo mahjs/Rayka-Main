@@ -126,7 +126,7 @@ const Honers: React.FC<Props> = ({}) => {
             <Image src={image.src} alt={image.alt} />
             <div className="absolute inset-0 mx-auto flex items-center justify-center rounded-2xl hover:bg-[rgba(241,121,10,0.5)] focus:bg-[rgba(241,121,10,0.5)]">
               <span
-                className={`subtitle-3 mx-auto px-[1.8rem] text-center text-4xl font-semibold transition-all duration-500 ease-in-out ${
+                className={`subtitle-3 mx-auto px-[1.8rem] text-center  transition-all duration-500 ease-in-out ${
                   textHover === index ? "animate-fadeIn" : "text-primary"
                 } hover:text-black`}
               >
