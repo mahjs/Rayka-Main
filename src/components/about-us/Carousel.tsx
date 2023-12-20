@@ -6,6 +6,12 @@ import arrowLeft from "@/assets/images/arrow-left.svg";
 import Image from "next/image";
 
 const MAX_VISIBILITY = 3;
+interface CustomStyleProps extends React.CSSProperties {
+  "--active"?: number;
+  "--offset"?: number;
+  "--direction"?: number;
+  "--abs-offset"?: number;
+}
 
 interface CarouselProps {
   children: ReactElement | ReactElement[]; // Corrected type
@@ -17,7 +23,7 @@ const Carousel: React.FC<CarouselProps> = ({ children, active, setActive }) => {
   const count = React.Children.count(children);
 
   return (
-    <div className="carousel flex h-full  items-center justify-evenly gap-[7rem]">
+    <div className="carousel flex h-full  items-center justify-evenly gap-[11rem] md:gap-[7rem]">
       <div className="md:w-[23rem]">
         <button
           aria-label="Next"
@@ -32,19 +38,17 @@ const Carousel: React.FC<CarouselProps> = ({ children, active, setActive }) => {
 
       {React.Children.map(children, (child: ReactElement, i: number) => {
         const isHidden = (active === 0 && i === 2) || (active === 2 && i === 0);
+        const style: CustomStyleProps = {
+          "--active": i === active ? 1 : 0,
+          "--offset": (active - i) / 3,
+          "--direction": Math.sign(active - i),
+          "--abs-offset": Math.abs(active - i) / 3,
+          pointerEvents: active === i ? "auto" : "none",
+          opacity: isHidden ? "0" : "1",
+          display: isHidden ? "none" : "block",
+        };
         return (
-          <div
-            className="card-container"
-            style={{
-              "--active": i === active ? 1 : 0,
-              "--offset": (active - i) / 3,
-              "--direction": Math.sign(active - i),
-              "--abs-offset": Math.abs(active - i) / 3,
-              pointerEvents: active === i ? "auto" : "none",
-              opacity: isHidden ? "0" : "1",
-              display: isHidden ? "none" : "block",
-            }}
-          >
+          <div className="card-container" style={style}>
             {child}
           </div>
         );
