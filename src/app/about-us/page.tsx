@@ -35,7 +35,7 @@ import RaykaIcon from "@/assets/images/rayka-icon.svg";
 
 interface Props {}
 
-const page: React.FC<Props> = ({}) => {
+const AboutUS: React.FC<Props> = ({}) => {
   const [showMore, setShowMore] = useState(false);
 
   // Event handler for checkbox
@@ -87,7 +87,7 @@ const page: React.FC<Props> = ({}) => {
           className="read-more-check"
           onChange={handleShowMoreChange} // Attach the event handler
         />
-        <p className="read-more text-justify	">
+        <p className="read-more text-justify">
           شرکت ماورای ابعاد رایکا، در سال 1401 توسط یک تیم 6 نفره از متخصصان
           جوان و فعالان شبکه، کامپیوتر و ارتباط زیرساختی و تکنولوژی‌هایی مانند
           بلاک چین، AI و NFT تاسیس شد و از آن زمان تاکنون به یکی از پیشروترین
@@ -121,11 +121,6 @@ const page: React.FC<Props> = ({}) => {
           با اینترنت و IT سروکار دارند. چشم‌انداز رایکا این است که در چند سال
           آینده به یکی از بزرگترین هلدینگ‌هایی که در مباحث اینترنتی کشور سرشناس
           است، مبدل شود.{" "}
-          {showMore && (
-            <label htmlFor="read-more-check-1" className="read-more-label">
-              کم ...{" "}
-            </label>
-          )}
         </p>
       </article>
       {/* </div> */}
@@ -137,4 +132,4 @@ const page: React.FC<Props> = ({}) => {
   );
 };
 
-export default page;
+export default AboutUS;

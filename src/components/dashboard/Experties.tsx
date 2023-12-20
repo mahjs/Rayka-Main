@@ -73,7 +73,7 @@ const Experties = () => {
   };
 
   return (
-    <section className="absolute z-20 flex h-[18rem] w-[90%] items-center justify-center lg:w-[80%] lg:rounded-3xl">
+    <section className="absolute z-20 flex w-[90%] items-center justify-center lg:w-[80%] lg:rounded-3xl">
       <Transition
         show={!showDetails}
         enter="transition-all duration-500 delay-500"
@@ -91,21 +91,31 @@ const Experties = () => {
           حوضه تخصصی رایکا
         </p>
       </Transition>
-      <div className="mt-[8rem] grid grid-cols-2 gap-4 md:mt-[25rem] lg:hidden">
-        {expertiesData.map((expert) => (
-          <ExpertCard
-            mobile
-            onClick={handleSelectedIndex}
-            key={expert.id}
-            index={expert.id}
-            title={expert.title}
-            orangeIconPath={expert.orangeIconPath}
-            darkIconPath={expert.darkIconPath}
-          />
-        ))}
-      </div>
+      <Transition
+        show={showExperties}
+        enter="transition-all duration-500 "
+        enterFrom="opacity-0 translate-y-full"
+        enterTo="opacity-1 translate-y-0"
+        leave="transition-all duration-500"
+        leaveFrom="opacity-1 translate-y-0"
+        leaveTo="opacity-0 translate-y-full"
+      >
+        <div className="mt-[5rem] grid grid-cols-2 gap-4 lg:hidden">
+          {expertiesData.map((expert) => (
+            <ExpertCard
+              mobile
+              onClick={handleSelectedIndex}
+              key={expert.id}
+              index={expert.id}
+              title={expert.title}
+              orangeIconPath={expert.orangeIconPath}
+              darkIconPath={expert.darkIconPath}
+            />
+          ))}
+        </div>
+      </Transition>
 
-      <div className="mt-36 hidden max-w-[100vw] lg:block">
+      <div className="mt-24 hidden max-w-[100vw] lg:block">
         <Transition
           show={showExperties}
           enter="transition-all duration-500 "
@@ -129,29 +139,27 @@ const Experties = () => {
           </div>
         </Transition>
       </div>
-      <div className="hidden lg:block">
-        <Transition
-          show={showDetails}
-          enter="transition-all duration-500 "
-          enterFrom="opacity-0 translate-y-full"
-          enterTo="opacity-1 translate-y-0"
-          leave="transition-all duration-500"
-          leaveFrom="opacity-1 translate-y-0"
-          leaveTo="opacity-0 translate-y-full"
-        >
-          <ExpertDetailsCard
-            index={selectedIndex! + 1}
-            handleClickClose={handleCloseButtonClick}
-            key={selectedIndex}
-            title={
-              expertiesData[selectedIndex!].title2 ||
-              expertiesData[selectedIndex!].title
-            }
-            name={expertiesData[selectedIndex!].name}
-            iconPath={expertiesData[selectedIndex!].darkIconPath}
-          />
-        </Transition>
-      </div>
+      <Transition
+        show={showDetails}
+        enter="transition-all duration-500 "
+        enterFrom="opacity-0 translate-y-full"
+        enterTo="opacity-1 translate-y-0"
+        leave="transition-all duration-500"
+        leaveFrom="opacity-1 translate-y-0"
+        leaveTo="opacity-0 translate-y-full"
+      >
+        <ExpertDetailsCard
+          index={selectedIndex! + 1}
+          handleClickClose={handleCloseButtonClick}
+          key={selectedIndex}
+          title={
+            expertiesData[selectedIndex!].title2 ||
+            expertiesData[selectedIndex!].title
+          }
+          name={expertiesData[selectedIndex!].name}
+          iconPath={expertiesData[selectedIndex!].darkIconPath}
+        />
+      </Transition>
     </section>
   );
 };
