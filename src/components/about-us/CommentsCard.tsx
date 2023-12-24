@@ -15,10 +15,10 @@ export const CommentsCard: React.FC<CardProps> = ({
   <div className="flex justify-center gap-8">
     <div className="flex flex-row-reverse justify-center gap-8">
       <div
-        className={`w-13rem relative mt-4 flex h-[14rem] flex-col gap-12 md:w-[32rem] `}
+        className={`relative mt-4 flex h-[14rem] w-[13rem] flex-col gap-12 md:w-[32rem] `}
       >
         <div
-          className={` rounded-2xl p-[1.90rem]  text-justify ${
+          className={` rounded-2xl p-[1.90rem] text-right ${
             isActive ? "bg-primary" : "bg-white opacity-50"
           }`}
         >
@@ -30,12 +30,12 @@ export const CommentsCard: React.FC<CardProps> = ({
           ></div>
         </div>
         <div className="flex items-center justify-start gap-5">
-          <div className="h-[5rem] w-[5rem] rounded-full border-4 border-solid border-primary bg-black">
-            <div className="mx-auto mt-[0.25rem] h-16 w-16 overflow-hidden rounded-full bg-transparent">
+          <div className="h-[5rem] w-[5rem] rounded-[10rem] border-4 border-solid border-primary bg-black">
+            <div className="mx-auto mt-[0.25rem] h-16 w-16 overflow-hidden rounded-[10rem] bg-transparent">
               <Image
                 src={truPerson}
                 alt="trueperson"
-                className="rounded-full object-cover"
+                className="rounded-[10rem]"
               />
             </div>
           </div>
