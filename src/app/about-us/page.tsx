@@ -50,7 +50,12 @@ const page: React.FC<Props> = ({}) => {
         childHeading="درباره ما"
       />
       {/* <div className="absolute mx-auto h-[15rem] w-full -rotate-[2deg] items-center rounded-lg bg-[#FEA918] md:w-[80.1%] md:rounded-3xl"> */}
-      <article className=" mx-auto w-[90%] flex-col items-center justify-center rounded-lg bg-main-image bg-auto  bg-no-repeat px-8  py-12 md:rounded-3xl md:px-36 ">
+      <article
+        style={{
+          backgroundSize: "100%",
+        }}
+        className=" mx-auto w-[90%] flex-col items-center justify-center rounded-lg bg-main-image bg-auto  bg-no-repeat px-8  py-12 md:rounded-3xl md:px-36 "
+      >
         <Image
           src={RaykaIcon}
           width="50"
