@@ -3,6 +3,7 @@ import React from "react";
 import BgImage from "../../../public/images/bg-main.webp";
 import Link from "next/link";
 import headphone from "@/assets/images/headphone.svg";
+import Nojob from "../../assets/images/NoJob.svg"
 
 /**
  * Represents the structure and required fields of a job listing.
@@ -141,15 +142,22 @@ const Jobs: React.FC = () => {
         </div>
       </div>
       <div className="my-5 flex flex-wrap justify-center gap-5 p-[3em] md:justify-around">
-        {jobsData.map((job, index) => (
-          <JobCard
-            key={index}
-            title={job.title}
-            description={job.description}
-            category={job.category}
-            postedTime={job.postedTime}
-          />
-        ))}
+        {/* {jobsData.length > 0 ? (
+          jobsData.map((job, index) => (
+            <JobCard
+              key={index}
+              title={job.title}
+              description={job.description}
+              category={job.category}
+              postedTime={job.postedTime}
+            />
+          ))
+        ) : ( */}
+          <div className="text-center title-2 flex flex-wrap items-center justify-center w-[40%]">
+            <Image src={Nojob} alt="Job Position" width={250} height={250} />
+            <p>با تشکر از علاقه شما, <br /> هم‌اکنون فرصت شغلی جدیدی موجود نیست.</p>
+          </div>
+        {/* )} */}
       </div>
     </div>
   );
