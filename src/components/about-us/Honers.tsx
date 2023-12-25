@@ -107,7 +107,7 @@ const Honers: React.FC<Props> = ({}) => {
 
   return (
     <div
-      className={`bg-coverjustify-center  relative flex w-full flex-col items-center bg-main-image bg-cover bg-no-repeat  py-12 `}
+      className={`relative  flex w-full flex-col items-center justify-center bg-main-image bg-cover bg-no-repeat  py-12 `}
       style={{
         transition: "margin-top 0.5s ease-in-out",
       }}
