@@ -382,12 +382,17 @@ The down side of this approach is that you have to know what will be the max-hei
 .read-more-check:checked ~ .read-more {
   max-height: 20rem;
 }
-@media (min-width: 769px) {
+/* @media (min-width: 769px) {
   .read-more-check:checked ~ .read-more {
     max-height: 40rem;
   }
-}
+} */
 @media (max-width: 768px) {
+  .read-more-check:checked ~ .read-more {
+    max-height: 90rem;
+  }
+}
+@media (min-width: 769px) {
   .read-more-check:checked ~ .read-more {
     max-height: 90rem;
   }
