@@ -67,9 +67,11 @@ const FloatingInput: React.FC<FloatingInputProps> = ({
 const ResumeForm: React.FC = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
+  const [selectedFileName, setSelectedFileName] = useState<string>();
 
   const handleFileSelect = (file: File | null) => {
     setSelectedFile(file);
+    setSelectedFileName(file ? file.name : undefined);
   };
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
@@ -165,7 +167,7 @@ const ResumeForm: React.FC = () => {
           className="row-span-4 mt-4 block h-40 w-full rounded-[1.0625rem] border-0 bg-[#E7E7E7] p-2.5 pr-[1.4em] text-sm text-gray-900 focus:ring-primary  dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 md:mt-7 md:h-60"
           placeholder="توضیحات بیشتر ..."
         ></textarea>
-        <UploadBtn onFileSelect={handleFileSelect} />
+        <UploadBtn onFileSelect={handleFileSelect} selectedFileName={selectedFileName} />
         <CustomBtn sendText={isLoading ? "در حال ارسال..." : "ارسال رزومه"} />
       </form>
     </>
