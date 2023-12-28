@@ -6,8 +6,10 @@ interface Props {
   index: number;
   title: string;
   name: string;
+  desc: string;
   iconPath: string;
   handleClickClose: () => void;
+  arrayLength: number;
 }
 
 /**
@@ -25,8 +27,12 @@ const ExpertDetailsCard: FC<Props> = ({
   title,
   iconPath,
   name,
+  desc,
   handleClickClose,
+  arrayLength,
 }) => {
+  const isLastItem = index === arrayLength - 1;
+  const descStyle = isLastItem ? "subtitle-1 max-w-[100%] text-justify text-sm" : "subtitle-2 max-w-[100%] text-justify";
   return (
     <section className="relative mx-auto flex h-[100%] w-[90%] flex-col items-center justify-center gap-5 rounded-xl p-5 md:mt-[2rem] md:p-8 lg:mt-0 lg:flex-row">
       <div className="relative ml-auto h-[9rem] w-[12rem] flex-col overflow-hidden rounded-xl bg-primary p-5 md:h-[14rem] md:w-[18rem] lg:h-[14rem] lg:w-[32rem]">
@@ -56,11 +62,8 @@ const ExpertDetailsCard: FC<Props> = ({
         <div className="flex justify-between">
           <h3 className="title mb-3">{name}</h3>
         </div>
-        <p className="subtitle-1 max-w-[100%] text-justify">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-          beatae ipsum voluptatibus saepe id earum minima voluptatem est iusto,
-          laborum aut. Repellat tenetur temporibus quod alias dolore assumenda
-          non aperiam. Dolores dolor alias culpa corporis!
+        <p className={descStyle}>
+          {desc}
         </p>
       </div>
       <button
