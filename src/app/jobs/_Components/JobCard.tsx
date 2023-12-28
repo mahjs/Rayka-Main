@@ -25,7 +25,7 @@ const JobCard: React.FC<Job> = ({ id, title, description, icon }) => {
     return (
         <div
             style={cardStyle}
-            className={`mb-[3.5em] flex justify-between rounded-[1em] border border-gray-200 ${isActive ? 'bg-primary' : 'bg-[#fff]'} p-3 md:w-[24.5rem] md:p-7`}
+            className={`mb-[3.5em] flex justify-between rounded-[1em] border border-gray-200 ${isActive ? 'bg-primary' : 'bg-[#fff]'} p-3 md:w-[24.2rem] md:p-7`}
         >
             <div>
                 <div className="flex items-center gap-3">

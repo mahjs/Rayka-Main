@@ -1,10 +1,11 @@
 "use client";
-import Image from "next/image";
 import React from "react";
-import BgImage from "../../../public/images/bg-main.webp";
 import Link from "next/link";
+import Image from "next/image";
 import Nojob from "../../assets/images/NoJob.svg";
 import { categories, jobsData } from "@/utils/jobData";
+import BgImage from "../../../public/images/bg-main.webp";
+
 /**
  * Represents the structure and required fields of a job listing.
  * @property {string} title - The title or position of the job.
@@ -19,7 +20,6 @@ interface Job {
   category: string;
   postedTime: string;
   icon: string;
-
 }
 
 /**
@@ -42,6 +42,7 @@ const cardStyle: React.CSSProperties = {
  * @param {string} label - The text label of the button.
  * @returns {JSX.Element} - A styled button element.
  */
+
 const CategoryButton: React.FC<{ label: string }> = ({ label }) => (
   <p className="btn mx-1 rounded-2xl bg-primary px-3 py-1.5">{label}</p>
 );
@@ -63,7 +64,7 @@ const JobCard: React.FC<Job> = ({ id, title, description, postedTime, icon }) =>
       <div className="flex justify-between">
         <Image
           src={icon}
-          alt="headphone"
+          alt="job icon"
           className="h-[4.6685rem] w-[4.6685rem]"
         />
         <p className="miniText text-gray-300">{postedTime}</p>
