@@ -1,10 +1,10 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import BgImage from "../../../public/images/bg-main.webp";
 import Link from "next/link";
-import headphone from "@/assets/images/headphone.svg";
-import Nojob from "../../assets/images/NoJob.svg"
-
+import Nojob from "../../assets/images/NoJob.svg";
+import { categories, jobsData } from "@/utils/jobData";
 /**
  * Represents the structure and required fields of a job listing.
  * @property {string} title - The title or position of the job.
@@ -13,10 +13,13 @@ import Nojob from "../../assets/images/NoJob.svg"
  * @property {string} postedTime - The time or date when the job was posted.
  */
 interface Job {
+  id: string;
   title: string;
   description: string;
   category: string;
   postedTime: string;
+  icon: string;
+
 }
 
 /**
@@ -32,9 +35,6 @@ const cardStyle: React.CSSProperties = {
   backgroundRepeat: "no-repeat",
   position: "relative",
 };
-
-// Array of categories, potentially fetched or static as per use case.
-const categories = ["دورکاری", "حضوری", "آموزشی"];
 
 /**
  * CategoryButton component.
@@ -54,15 +54,15 @@ const CategoryButton: React.FC<{ label: string }> = ({ label }) => (
  * @returns {JSX.Element} - A styled div element representing a job card.
  */
 
-const JobCard: React.FC<Job> = ({ title, description, postedTime }) => (
+const JobCard: React.FC<Job> = ({ id, title, description, postedTime, icon }) => (
   <div
     style={cardStyle}
-    className="justify-between rounded-[1em] p-3 before:absolute before:inset-0 before:rounded-[1em] before:bg-black before:opacity-70 md:w-[38rem] md:p-7"
+    className="mb-[3.5em] flex justify-between rounded-[1em] p-3 before:absolute before:inset-0 before:rounded-[1em] before:bg-black before:opacity-70 md:w-[42rem] md:p-7"
   >
     <div className="relative z-10">
       <div className="flex justify-between">
         <Image
-          src={headphone}
+          src={icon}
           alt="headphone"
           className="h-[4.6685rem] w-[4.6685rem]"
         />
@@ -82,8 +82,8 @@ const JobCard: React.FC<Job> = ({ title, description, postedTime }) => (
           ))}
         </div>
         <Link
+          href={`../jobs/${id}`}
           className="btn-2 flex items-center whitespace-nowrap text-primary"
-          href="/contact-us"
         >
           اطلاعات بیشتر
           <svg
@@ -113,20 +113,6 @@ const JobCard: React.FC<Job> = ({ title, description, postedTime }) => (
  * @returns {JSX.Element} - A div containing multiple JobCard components.
  */
 const Jobs: React.FC = () => {
-  const jobsData: Job[] = [
-    {
-      title: "پشتیبان سایت",
-      description: "شروع دستمزد از  8 میلیون تومان...",
-      category: "دورکاری",
-      postedTime: "چند دقیقه پیش",
-    },
-    {
-      title: "پشتیبان سایت",
-      description: "شروع دستمزد از  8 میلیون تومان...",
-      category: "حضوری",
-      postedTime: "چند دقیقه پیش",
-    },
-  ];
 
   return (
     <div className="select-none flex-col ">
@@ -142,22 +128,26 @@ const Jobs: React.FC = () => {
         </div>
       </div>
       <div className="my-5 flex flex-wrap justify-center gap-5 p-[3em] md:justify-around">
-        {/* {jobsData.length > 0 ? (
-          jobsData.map((job, index) => (
+        {jobsData.length > 0 ? (
+          jobsData.map((job) => (
             <JobCard
-              key={index}
+              key={job.id}
+              id={job.id}
               title={job.title}
               description={job.description}
               category={job.category}
               postedTime={job.postedTime}
+              icon={job.icon}
             />
           ))
-        ) : ( */}
-          <div className="text-center title-2 flex flex-wrap items-center justify-center w-[40%]">
+        ) : (
+          <div className="title-2 flex w-[40%] flex-wrap items-center justify-center text-center">
             <Image src={Nojob} alt="Job Position" width={250} height={250} />
-            <p>با تشکر از علاقه شما, <br /> هم‌اکنون فرصت شغلی جدیدی موجود نیست.</p>
+            <p>
+              با تشکر از علاقه شما, <br /> هم‌اکنون فرصت شغلی جدیدی موجود نیست.
+            </p>
           </div>
-        {/* )} */}
+        )}
       </div>
     </div>
   );
