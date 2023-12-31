@@ -118,7 +118,7 @@ const Experties = () => {
         </div>
       </Transition>
 
-      <div className="mt-24 hidden max-w-[100vw] lg:block">
+      <div className="mt-24 hidden max-w-[100vw] lg:block px-1">
         <Transition
           show={showExperties}
           enter="transition-all duration-500 "

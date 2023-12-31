@@ -10,7 +10,6 @@ import NoJobImage from "../../../assets/images/NoJob.svg";
 import Advantages from "../_Components/Advantages";
 import Jobduties from "../_Components/Jobduties";
 
-
 const JobDetails: React.FC = () => {
   const [selectedJobTitle, setSelectedJobTitle] = useState("");
 
@@ -24,11 +23,13 @@ const JobDetails: React.FC = () => {
   }, [window.location.pathname]);
 
   return (
-    <div className="flex flex-col items-center justify-center gap-y-[7em] overflow-x-hidden bg-[#F5F5F5] pt-14">
+    <div className="flex flex-col items-center justify-center gap-y-[7em] overflow-x-hidden bg-[#F5F5F5] px-[2em] pt-14">
       <div className="flex w-full flex-wrap items-center justify-evenly">
         <Image src={UserImage} alt="job image" />
-        <div className="lg:mt-[10em] text-center lg:ml-[4em]">
-          <h2 className="text-[4rem] lg:text-[5.61875rem] font-[800]">{selectedJobTitle}</h2>
+        <div className="text-center lg:ml-[4em] lg:mt-[10em]">
+          <h2 className="text-[4rem] font-[800] lg:text-[5.61875rem]">
+            {selectedJobTitle}
+          </h2>
           <p className="text-[1.65569rem] font-[400] text-[#c3c3c3]">
             توسعه و برنامه نویسی
           </p>
@@ -36,20 +37,22 @@ const JobDetails: React.FC = () => {
       </div>
       <Advantages />
       <Jobduties />
-      <div className="w-full lg:w-[76rem] p-[1em]">
-        <h2 className="text-[2.5rem] lg:text-[3.61788rem] font-[800]">فرم درخواست همکاری</h2>
+      <div className="w-full p-[1em] md:w-[55rem] md:px-[5em] lg:px-0 xl:w-[76rem]">
+        <h2 className="text-[2.5rem] font-[800] lg:text-[3.61788rem]">
+          فرم درخواست همکاری
+        </h2>
         <p className="text-[1.04688rem] font-[400] text-[#898989]">
           همکاران ما در اسرع وقت رزومه شما را بررسی کرده و با شما تماس خواهند
           گرفت !
         </p>
         <ResumeForm />
         <div className="mt-[5em] flex items-center justify-between">
-          <p className="lg:text-[1.6555rem] text-[1rem] font-[600] text-[#898989]">
+          <p className="text-[1rem] font-[600] text-[#898989] lg:text-[1.6555rem]">
             موقعیت های شغلی دیگر ...
           </p>
           <Link
             href="/jobs"
-            className="flex items-center gap-3 text-[1rem] lg:text-[1.42625rem] font-[600] text-primary"
+            className="flex items-center gap-3 text-[1rem] font-[600] text-primary lg:text-[1.42625rem]"
           >
             مشاهده همه
             <svg
@@ -72,20 +75,27 @@ const JobDetails: React.FC = () => {
         </div>
         <div className="my-5 mt-[2em] flex flex-wrap justify-center md:justify-between">
           {jobsData.length > 0 ? (
-            jobsData.slice(0, 3).map((job) => (
-              <JobCard
-                key={job.id}
-                id={job.id}
-                title={job.title}
-                description={job.description}
-                category={job.category}
-                postedTime={job.postedTime}
-                icon={job.icon}
-              />
-            ))
+            jobsData
+              .slice(0, 3)
+              .map((job) => (
+                <JobCard
+                  key={job.id}
+                  id={job.id}
+                  title={job.title}
+                  description={job.description}
+                  category={job.category}
+                  postedTime={job.postedTime}
+                  icon={job.icon}
+                />
+              ))
           ) : (
             <div className="title-2 flex w-[40%] flex-wrap items-center justify-center text-center">
-              <Image src={NoJobImage} alt="Job Position" width={250} height={250} />
+              <Image
+                src={NoJobImage}
+                alt="Job Position"
+                width={250}
+                height={250}
+              />
               <p>
                 با تشکر از علاقه شما, <br /> هم‌اکنون فرصت شغلی جدیدی موجود
                 نیست.

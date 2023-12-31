@@ -23,7 +23,7 @@ const PageNavigation = () => {
             className={pathname === "/about-us" ? "text-[#FEA918]" : ""}
             href="/about-us"
           >
-            درباه‌ما
+            درباره‌ما
           </Link>
         </li>
         <li>
