@@ -55,7 +55,13 @@ const CategoryButton: React.FC<{ label: string }> = ({ label }) => (
  * @returns {JSX.Element} - A styled div element representing a job card.
  */
 
-const JobCard: React.FC<Job> = ({ id, title, description, postedTime, icon }) => (
+const JobCard: React.FC<Job> = ({
+  id,
+  title,
+  description,
+  postedTime,
+  icon,
+}) => (
   <div
     style={cardStyle}
     className="mb-[3.5em] flex justify-between rounded-[1em] p-3 before:absolute before:inset-0 before:rounded-[1em] before:bg-black before:opacity-70 md:w-[42rem] md:p-7"
@@ -65,7 +71,7 @@ const JobCard: React.FC<Job> = ({ id, title, description, postedTime, icon }) =>
         <Image
           src={icon}
           alt="job icon"
-          className="h-[4.6685rem] w-[4.6685rem]"
+          className="h-[2.1685rem] w-[2.1685rem] md:h-[4.6685rem] md:w-[4.6685rem]"
         />
         <p className="miniText text-gray-300">{postedTime}</p>
       </div>
@@ -114,7 +120,6 @@ const JobCard: React.FC<Job> = ({ id, title, description, postedTime, icon }) =>
  * @returns {JSX.Element} - A div containing multiple JobCard components.
  */
 const Jobs: React.FC = () => {
-
   return (
     <div className="select-none flex-col ">
       <div className="flex w-full flex-col justify-center bg-main-image bg-cover bg-no-repeat pb-5 pt-16 text-center text-white md:h-[500px] md:pt-0">

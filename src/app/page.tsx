@@ -112,7 +112,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="z-10 -mb-[2rem] ml-[10%] flex items-center justify-center md:-mb-[5rem]">
+      <div className="z-10 -mb-[2rem] ml-[5%] xl:ml-[10%] flex items-center justify-center md:-mb-[5rem]">
         <JoinRaykaCard />
       </div>
     </main>
