@@ -139,7 +139,7 @@ const ResumeForm: React.FC = () => {
     <>
       <form className="mt-4 w-full md:mt-7" onSubmit={handleSubmit}>
         <ToastContainer />
-        <div className="grid select-none grid-cols-3 gap-4 md:gap-7">
+        <div className="grid select-none grid-cols-1 sm:grid-cols-3 gap-4 md:gap-7">
           <FloatingInput
             type="text"
             name="floating_name"

@@ -21,7 +21,7 @@ const Advantages = () => {
                             fill="#111111"
                         />
                     </svg>
-                    <p className="mr-4 text-[2.08513rem] font-[600]">امکان دورکاری</p>
+                    <p className="mr-4 text-[1.5rem] font-[600]">امکان دورکاری</p>
                 </li>
                 <span className="hidden h-10 w-[0.1rem] rounded-xl bg-[#000] opacity-5 lg:flex"></span>
                 <li className="flex items-center justify-evenly">
@@ -43,7 +43,7 @@ const Advantages = () => {
                             fill="black"
                         />
                     </svg>
-                    <p className="mr-4 text-[2.08513rem] font-[600]">بیمه تکمیلی</p>
+                    <p className="mr-4 text-[1.5rem] font-[600]">بیمه تکمیلی</p>
                 </li>
                 <span className="hidden h-10 w-[0.1rem] rounded-xl bg-[#000] opacity-5 lg:flex"></span>
                 <li className="flex items-center justify-evenly">
@@ -67,7 +67,7 @@ const Advantages = () => {
                             fill="black"
                         />
                     </svg>
-                    <p className="mr-4 text-[2.08513rem] font-[600]">تجهیزات کامل</p>
+                    <p className="mr-4 text-[1.5rem] font-[600]">تجهیزات کامل</p>
                 </li>
                 <span className="hidden h-10 w-[0.1rem] rounded-xl bg-[#000] opacity-5 lg:flex"></span>
                 <li className="flex items-center justify-evenly">
@@ -91,7 +91,7 @@ const Advantages = () => {
                             fill="black"
                         />
                     </svg>
-                    <p className="mr-4 text-[2.08513rem] font-[600]">تجهیزات کامل</p>
+                    <p className="mr-4 text-[1.5rem] font-[600]">تجهیزات کامل</p>
                 </li>
             </ul>
         </>

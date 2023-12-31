@@ -1,7 +1,7 @@
 import headphone from "..//assets/images/headphone.svg";
 import android from "../assets/images/android.svg"
 import front from "../assets/images/Front.svg"
-
+import wordpress from "../assets/images/wordpress.svg"
 export interface Job {
     id: string;
     title: string;
@@ -52,7 +52,7 @@ export const jobsData: Job[] = [
         description: "شروع دستمزد از  12 میلیون تومان...",
         category: "دورکاری",
         postedTime: "چند دقیقه پیش",
-        icon: headphone
+        icon: wordpress
 
     },
     {
