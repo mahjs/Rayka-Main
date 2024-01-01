@@ -68,23 +68,23 @@ body {
 
 .header-2 {
   font-family: "KalamehExtraBold";
-  font-size: 6.18713rem;
+  font-size: clamp(2.95rem, 6vw, 6.18713rem);
   font-weight: 800;
-  @media screen and (max-width: 1068px) {
+  /* @media screen and (max-width: 1068px) {
     font-size: 3.61406rem;
   }
   @media screen and (max-width: 768px) {
-    font-size: 2.81406rem;
-  }
+    font-size: 2.11406rem;
+  } */
 }
 
 .header-3 {
   font-family: "KalamehExtraBold";
-  font-size: 4.75rem;
+  font-size: clamp(1.36719rem, 7vw, 4.75rem);
   line-height: 140%;
-  @media screen and (max-width: 768px) {
+  /* @media screen and (max-width: 768px) {
     font-size: 1.36719rem;
-  }
+  } */
 }
 
 .header-4 {
@@ -111,16 +111,16 @@ body {
 
 .header-6 {
   font-family: "KalamehBold";
-  font-size: 2.05375rem;
+  font-size: clamp(0.95rem, 3vw, 2.05375rem);
   font-weight: 500;
   line-height: 150.5%;
   color: #fff;
-  @media screen and (max-width: 1068px) {
+  /* @media screen and (max-width: 1068px) {
     font-size: 1.61406rem;
   }
   @media screen and (max-width: 768px) {
     font-size: 1.01406rem;
-  }
+  } */
 }
 
 .title {
@@ -152,12 +152,12 @@ body {
 
 .title-3 {
   font-family: "KalamehRegular";
-  font-size: 1.8125rem;
+  font-size: clamp(1.037rem, 1.6vw, 1.8125rem);
   line-height: 150.5%;
-  font-weight: 500;
-  @media screen and (max-width: 768px) {
-    font-size: 0.737rem;
-  }
+  font-weight: 700;
+  /* @media screen and (max-width: 608px) {
+    font-size: 1.237rem;
+  } */
 }
 
 .title-4 {
@@ -171,11 +171,11 @@ body {
 
 .subtitle-1 {
   font-family: "KalamehRegular";
-  font-size: 1.36213rem;
+  font-size: clamp(0.8rem, 3vw, 1.36213rem);
   line-height: 150.5%;
-  @media screen and (max-width: 758px) {
+  /* @media screen and (max-width: 758px) {
     font-size: 0.70431rem;
-  }
+  } */
 }
 
 .subtitle-2 {
@@ -221,6 +221,10 @@ body {
   font-family: "KalamehRegular";
   font-size: 1.059rem;
   line-height: 140%;
+
+  @media screen and (max-width: 758px) {
+    font-size: 0.83rem;
+  }
 }
 
 .number {

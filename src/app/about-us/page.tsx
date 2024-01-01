@@ -35,7 +35,7 @@ import RaykaIcon from "@/assets/images/rayka-icon.svg";
 
 interface Props {}
 
-const page: React.FC<Props> = ({}) => {
+const AboutUS: React.FC<Props> = ({}) => {
   const [showMore, setShowMore] = useState(false);
 
   // Event handler for checkbox
@@ -120,10 +120,10 @@ const page: React.FC<Props> = ({}) => {
       </div>
 
       <Honers />
-      <Persons />
-      <Comments />
+      {/* <Persons /> */}
+      {/* <Comments /> */}
     </main>
   );
 };
 
-export default page;
+export default AboutUS;
