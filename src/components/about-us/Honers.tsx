@@ -128,7 +128,7 @@ const Honers: React.FC<Props> = ({}) => {
               <span
                 className={`subtitle-3 mx-auto px-[1.8rem] text-center  transition-all duration-500 ease-in-out ${
                   textHover === index ? "animate-fadeIn" : "text-primary"
-                } hover:text-black`}
+                } hover:text-[#111]`}
               >
                 {textHover === index ? image.text : image.title}
               </span>

@@ -162,11 +162,12 @@ body {
 
 .title-4 {
   font-family: "KalamehRegular";
-  font-size: 1.5625rem;
+  font-size: clamp(0.5rem, 2vw, 1.5625rem);
+  /* font-size: 1.5625rem; */
   line-height: 150%;
-  @media screen and (max-width: 758px) {
+  /* @media screen and (max-width: 758px) {
     font-size: 0.5rem;
-  }
+  } */
 }
 
 .subtitle-1 {
@@ -229,11 +230,12 @@ body {
 
 .number {
   font-family: "KalamehBold";
-  font-size: 7.56819rem;
+  font-size: clamp(3.63rem, 8vw, 7.56819rem);
+  /* font-size: 7.56819rem; */
   line-height: 140%;
-  @media screen and (max-width: 758px) {
+  /* @media screen and (max-width: 758px) {
     font-size: 4.63rem;
-  }
+  } */
 }
 
 .word-spacing {

@@ -56,7 +56,7 @@ const CustomBtn: React.FC<CustomBtnProps> = ({ sendText }) => {
       <div className="mt-6 flex">
         <button
           type="submit"
-          className="btn ml-6 overflow-hidden rounded-lg bg-primary px-14 py-3.5 text-center font-[100] text-black focus:outline-none focus:ring-4 focus:ring-primary"
+          className="btn ml-6 overflow-hidden rounded-lg bg-primary px-14 py-3.5 text-center font-[100] text-[#111] focus:outline-none focus:ring-4 focus:ring-primary"
         >
           <p className="absolute font-[100]">{sendText}</p>
           {sendText}
