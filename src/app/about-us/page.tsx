@@ -119,8 +119,8 @@ const AboutUS: React.FC<Props> = ({}) => {
       </div>
 
       <Honers />
-      {/* <Persons /> */}
-      {/* <Comments /> */}
+      <Persons />
+      <Comments />
     </main>
   );
 };
