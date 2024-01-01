@@ -63,7 +63,7 @@ const AboutUS: React.FC<Props> = ({}) => {
           alt="rayka icon"
           className="w-12 md:w-16 "
         />
-        <p className="header-5 text-5xl font-bold	text-primary">درباه‌ما </p>
+        <p className="header-5 text-5xl font-bold	text-primary">درباره‌ما </p>
         <p className="subtitle-1 mt-3 text-justify font-medium	text-white">
           شرکت ماورای ابعاد رایکا، در سال 1401 توسط یک تیم 6 نفره از متخصصان
           جوان و فعالان شبکه، کامپیوتر و ارتباط زیرساختی و تکنولوژی‌هایی مانند
