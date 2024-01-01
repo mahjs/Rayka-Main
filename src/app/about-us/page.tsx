@@ -52,8 +52,8 @@ const AboutUS: React.FC<Props> = ({}) => {
       {/* <div className="absolute mx-auto h-[15rem] w-full -rotate-[2deg] items-center rounded-lg bg-[#FEA918] md:w-[80.1%] md:rounded-3xl"> */}
 
       {/* </div> */}
-      <div className=" flex w-full justify-center">
-        <article className="h-[100%]  max-h-full  w-[90%]	flex-col items-center  justify-start rounded-lg bg-main-image bg-cover bg-no-repeat   px-8  py-12 md:rounded-3xl md:px-24 ">
+      <div className=" subtitle-1 flex w-full justify-center">
+        <article className=" h-[100%] max-h-full  w-[90%]	flex-col items-center  justify-start rounded-lg bg-main-image bg-cover bg-no-repeat   px-8  py-12 md:rounded-3xl md:px-24 ">
           <Image
             src={RaykaIcon}
             width="50"
@@ -62,7 +62,7 @@ const AboutUS: React.FC<Props> = ({}) => {
             className="w-12 md:w-16 "
           />
           <p className="header-5 	text-primary">درباه‌ما </p>
-          <p className="subtitle-1 mt-3 text-justify 	text-white">
+          <p className=" mt-3 text-justify 	text-white">
             شرکت ماورای ابعاد رایکا، در سال 1401 توسط یک تیم 6 نفره از متخصصان
             جوان و فعالان شبکه، کامپیوتر و ارتباط زیرساختی و تکنولوژی‌هایی مانند
             بلاک چین، AI و NFT تاسیس شد و از آن زمان تاکنون به یکی از پیشروترین
@@ -85,8 +85,7 @@ const AboutUS: React.FC<Props> = ({}) => {
             className="read-more-check"
             onChange={handleShowMoreChange} // Attach the event handler
           />
-          <p className="read-more text-justify	">
-            {" "}
+          <p className="read-more  text-justify	">
             حاصل این همکاری، پیاده‌سازی تمام پروژه‌های توسعه زیرساخت اینترنت در
             کشور و آوردن عصر جدید تکنولوژی به ایران است. در نتیجه امکان استفاده
             بدون محدودیت و امن از سرویس های بین المللی در شبکه محلی کشور، برای

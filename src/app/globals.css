@@ -373,12 +373,6 @@ body {
   overflow: hidden;
   transition: max-height 0.5s linear 0s;
   color: white;
-  font-family: "KalamehRegular";
-  font-size: 1.36213rem;
-  line-height: 150.5%;
-  @media screen and (max-width: 758px) {
-    font-size: 0.70431rem;
-  }
 }
 /*
 The down side of this approach is that you have to know what will be the max-height in advance
