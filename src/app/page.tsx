@@ -66,14 +66,14 @@ export default function Home() {
             عمل می‌پوشانیم و در کنار هم از خلق آینده‌ای هوشمندتر لذت می‌بریم.
           </p>
         </div>
-        <div className="-ml-[3rem] hidden -rotate-90  gap-10 text-white md:flex">
+        {/* <div className="-ml-[3rem] hidden -rotate-90  gap-10 text-white md:flex">
           <div>
             <Link href="#">INSTAGRAM</Link>
           </div>
           <div>
             <Link href="#">LINKEDIN</Link>
           </div>
-        </div>
+        </div> */}
       </section>
 
       {/* Experties Content */}
