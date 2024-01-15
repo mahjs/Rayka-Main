@@ -52,7 +52,7 @@ const Footer = () => {
                     direction: "ltr",
                   }}
                 >
-                  +98 930 547 12 79
+                  +98 9108957597
                 </p>
               </a>
             </div>
@@ -71,7 +71,7 @@ const Footer = () => {
                   }}
                   // className="subtitle-1"
                 >
-                  +21 3745 41 12
+                  021-96660000
                 </p>
               </a>
             </div>
