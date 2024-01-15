@@ -36,6 +36,7 @@ const CustomBtn: React.FC<CustomBtnProps> = ({ sendText }) => {
           width: 12%;
           height: 100%;
           background: #000;
+          opacity:0.2;
           position: absolute;
           top: 0;
           right: -14px;
@@ -46,7 +47,7 @@ const CustomBtn: React.FC<CustomBtnProps> = ({ sendText }) => {
           background: #000;
           width: 115%;
           transform: skewX(-25deg);
-          // opacity: 0.6;
+          opacity: 1;
         }
         .btn:hover {
           color: #fff;
