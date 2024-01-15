@@ -11,13 +11,13 @@ import Person from "@/assets/images/person.webp";
 const JoinRaykaCard = () => {
   const router = useRouter();
   return (
-    <section className="relative mx-auto flex w-[70%] flex-col gap-2 rounded-3xl bg-[#FEA918] p-3 md:gap-5 md:p-10 lg:flex-row lg:items-center xl:w-[70%] ">
-      <div className="flex-col text-[#111]">
-        <p className="header-4">عضو خانواده ما شو!</p>
-        <p className="title-4 hidden lg:block">اینجا برای همه جا هست!</p>
+    <section className="relative mx-auto flex w-[70%] max-w-[1300px] flex-col rounded-3xl bg-[#FEA918] p-3 md:w-[80%] md:p-10 lg:flex-row lg:items-center lg:gap-5 xl:w-[70%] ">
+      <div className="flex flex-col text-[#111]">
+        <p className="header-4 whitespace-nowrap">عضو خانواده ما شو!</p>
+        <p className="title-4 hidden md:block">اینجا برای همه جا هست!</p>
       </div>
-      <div className="w-[67%] flex-col text-[#111] md:max-w-[70%] lg:max-w-[42%]">
-        <p className="subtitle-2">
+      <div className="ml-[200px] w-[80%] flex-col text-[#111] lg:max-w-[62%]">
+        <p className="subtitle-2 max-w-[90%] ">
           تیم رایکا همواره در حال تلاش برای پیدا کردن استعدادهای این سرزمین و
           به‌کارگیری آن‌ها به‌ صورت حضوری و دورکاری است.
           <br className="hidden lg:block" /> حتما به صفحه فرصت‌های شغلی سر بزنید
@@ -52,7 +52,7 @@ const JoinRaykaCard = () => {
       </div>
 
       <Image
-        className="absolute -left-4 bottom-0 h-auto w-[130px] md:w-[220px] lg:w-[300px]"
+        className="absolute -bottom-1 -left-5 w-[130px] md:w-[250px] lg:w-[340px]"
         src={Person}
         alt="A smiling person"
       />
