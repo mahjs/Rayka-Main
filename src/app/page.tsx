@@ -62,7 +62,7 @@ export default function Home() {
           </p>
           <p className="subtitle-1 text-right text-white opacity-50 md:mt-0 md:opacity-100 lg:max-w-[50%]">
             ما در شرکت ماورای ابعاد رایکا به بهبود سرویس‌های موجود در حوزه
-            فناوری و ارتباطات اکتفا نمی‌کنیم؛ ما به رویاهای تحقق نیافته جامه‌ی
+            فناوری و ارتباطات اکتفا نمی‌کنیم؛ ما به رویاهای تحقق‌نیافته جامه‌
             عمل می‌پوشانیم و در کنار هم از خلق آینده‌ای هوشمندتر لذت می‌بریم.
           </p>
         </div>
@@ -99,7 +99,7 @@ export default function Home() {
           backgroundSize: "100%",
         }}
       >
-        <div className="absolute bottom-0 left-0 right-0 top-0 z-10 h-full w-full rounded-3xl bg-black bg-opacity-30" />
+        <div className="absolute bottom-0 left-0 right-0 top-0 z-10 h-full w-full rounded-3xl bg-black bg-opacity-60" />
         <div className="absolute z-20 grid w-full grid-cols-2 justify-evenly gap-5 md:flex ">
           {informationData.map((info) => (
             <InfoText
@@ -112,7 +112,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="z-10 -mb-[2rem] ml-[5%] xl:ml-[10%] flex items-center justify-center md:-mb-[5rem]">
+      <div className="z-10 -mb-[2rem] flex items-center justify-center md:-mb-[5rem]">
         <JoinRaykaCard />
       </div>
     </main>
