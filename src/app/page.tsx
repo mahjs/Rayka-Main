@@ -99,7 +99,7 @@ export default function Home() {
           backgroundSize: "100%",
         }}
       >
-        <div className="absolute bottom-0 left-0 right-0 top-0 z-10 h-full w-full rounded-3xl bg-black bg-opacity-30" />
+        <div className="absolute bottom-0 left-0 right-0 top-0 z-10 h-full w-full rounded-3xl bg-black bg-opacity-60" />
         <div className="absolute z-20 grid w-full grid-cols-2 justify-evenly gap-5 md:flex ">
           {informationData.map((info) => (
             <InfoText
@@ -112,7 +112,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="z-10 -mb-[2rem] ml-[5%] xl:ml-[10%] flex items-center justify-center md:-mb-[5rem]">
+      <div className="z-10 -mb-[2rem] flex items-center justify-center md:-mb-[5rem]">
         <JoinRaykaCard />
       </div>
     </main>

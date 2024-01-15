@@ -11,12 +11,12 @@ import Person from "@/assets/images/person.webp";
 const JoinRaykaCard = () => {
   const router = useRouter();
   return (
-    <section className="relative mr-auto flex w-[95%] xl:w-[90%] flex-col gap-2 rounded-3xl bg-[#FEA918] p-3 md:gap-5  md:p-10 lg:flex-row lg:items-center ">
+    <section className="relative mx-auto flex w-[70%] flex-col gap-2 rounded-3xl bg-[#FEA918] p-3 md:gap-5 md:p-10 lg:flex-row lg:items-center xl:w-[70%] ">
       <div className="flex-col text-[#111]">
         <p className="header-4">عضو خانواده ما شو!</p>
         <p className="title-4 hidden lg:block">اینجا برای همه جا هست!</p>
       </div>
-      <div className="w-[37%] md:max-w-[70%] flex-col text-[#111] lg:max-w-[42%]">
+      <div className="w-[67%] flex-col text-[#111] md:max-w-[70%] lg:max-w-[42%]">
         <p className="subtitle-2">
           تیم رایکا همواره در حال تلاش برای پیدا کردن استعداد های این سرزمین و
           بکارگیری آنها بصورت حضوری و دورکاری میباشد!
@@ -52,7 +52,7 @@ const JoinRaykaCard = () => {
       </div>
 
       <Image
-        className="absolute -left-4 bottom-0 h-auto w-[100px] md:w-[180px] lg:w-[350px]"
+        className="absolute -left-4 bottom-0 h-auto w-[130px] md:w-[220px] lg:w-[300px]"
         src={Person}
         alt="A smiling person"
       />
