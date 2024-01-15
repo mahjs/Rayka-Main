@@ -88,8 +88,9 @@ const Experties = () => {
         leaveTo="opacity-0"
       >
         <p
-          className={`${showDetails ? "hidden" : ""
-            } header-5 absolute -top-10 left-[50%] my-10 translate-x-[-50%] whitespace-nowrap text-center text-white`}
+          className={`${
+            showDetails ? "hidden" : ""
+          } header-5 absolute -top-10 left-[50%] my-20 translate-x-[-50%] whitespace-nowrap text-center text-white`}
         >
           حوضه تخصصی رایکا
         </p>
@@ -118,7 +119,7 @@ const Experties = () => {
         </div>
       </Transition>
 
-      <div className="mt-24 hidden max-w-[100vw] lg:block px-1">
+      <div className="mt-36 hidden max-w-[100vw] px-1 lg:block">
         <Transition
           show={showExperties}
           enter="transition-all duration-500 "

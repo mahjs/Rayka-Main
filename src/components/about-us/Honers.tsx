@@ -107,7 +107,7 @@ const Honers: React.FC<Props> = ({}) => {
 
   return (
     <div
-      className={`relative mb-[6.69rem] flex w-full flex-col items-center justify-center bg-honors-image bg-cover bg-no-repeat  py-12 `}
+      className={`relative mb-[6.69rem] flex w-full flex-col items-center justify-center bg-honors-image bg-cover bg-no-repeat  pb-28 pt-7`}
       style={{
         transition: "margin-top 0.5s ease-in-out",
       }}
@@ -126,7 +126,7 @@ const Honers: React.FC<Props> = ({}) => {
             <Image src={image.src} alt={image.alt} />
             <div className="absolute inset-0 mx-auto flex items-center justify-center rounded-2xl hover:bg-[rgba(241,121,10,0.5)] focus:bg-[rgba(241,121,10,0.5)]">
               <span
-                className={`subtitle-3 mx-auto px-[1.8rem] text-center  transition-all duration-500 ease-in-out ${
+                className={`subtitle-3 mx-auto px-[1.8rem] text-center  transition-all duration-500 ease-linear ${
                   textHover === index ? "animate-fadeIn" : "text-primary"
                 } hover:text-[#111]`}
               >

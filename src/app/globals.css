@@ -109,8 +109,11 @@ body {
   font-family: "KalamehBold";
   font-size: 3.35906rem;
   line-height: 140%;
-  @media screen and (max-width: 1068px) {
+  @media screen and (max-width: 1468px) {
     font-size: 2.2rem;
+  }
+  @media screen and (max-width: 1068px) {
+    font-size: 1.8rem;
   }
   @media screen and (max-width: 768px) {
     font-size: 1.2rem;
