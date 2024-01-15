@@ -35,8 +35,8 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="hidden flex-col gap-5 text-center text-white lg:flex ">
-          <h3 className="header-6">صفحات</h3>
+        <div className="hidden flex-col gap-6 text-center text-white lg:flex ">
+          <h3 className="header-6">صفحات دیگر</h3>
           <PageNavigation />
         </div>
 
