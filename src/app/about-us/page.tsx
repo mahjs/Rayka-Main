@@ -46,7 +46,20 @@ const AboutUS: React.FC<Props> = ({}) => {
       const newTimer = setTimeout(() => {
         setShowMore(false);
       }, 600);
-      setTimer(newTimer);
+      const [timer, setTimer] = useState<NodeJS.Timeout | null>(null);
+
+      // ...
+
+      const handleShowMoreChange = () => {
+        if (!showMore) {
+          setShowMore(true);
+        } else {
+          const newTimer: NodeJS.Timeout = setTimeout(() => {
+            setShowMore(false);
+          }, 600);
+          setTimer(newTimer);
+        }
+      };
     }
   };
 
