@@ -26,7 +26,7 @@ declare const process: {
 
 // Default and environment-based URL for the map
 const DEFAULT_MAP_URL =
-  "https://map.ir/lat/35.803776/lng/51.472840/z/16/p/%D9%85%D8%A7%D9%8A%D9%86%D8%AC%D8%A7%DB%8C%DB%8C%D9%85";
+  "https://map.ir/lat/35.803776/lng/51.472840/z/16/p/%D9%85%D8%A7%D8%A7%DB%8C%D9%86%D8%AC%D8%A7%DB%8C%DB%8C%D9%85";
 const MAP_URL: string = process.env.NEXT_PUBLIC_MAP_URL || DEFAULT_MAP_URL;
 
 /**

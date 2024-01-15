@@ -60,11 +60,11 @@ const InfoText: FC<Props> = ({ title, text, unit }) => {
 
   return (
     <div ref={numberRef} className="flex-col items-center justify-center gap-5">
-      <p className="number text-center font-bold text-[#FEA918] md:text-[6rem]">
+      <p className="number text-center text-[#FEA918]">
         {showValue}
         {unit ? unit : ""}+
       </p>
-      <p className="title-3 text-center font-bold text-white">{text}</p>
+      <p className="title-3 text-center text-[#fff]">{text}</p>
     </div>
   );
 };

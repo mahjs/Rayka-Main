@@ -85,7 +85,7 @@ const images = [
     src: honers5,
     alt: "honers5",
     title: "تامین اطلاعات با سرعت بالا",
-    text: "تامین محتوای حیاطی از قبیل آپدیت‌ها و اطلاعات دیتابیسی و  اطلاعات کتابخانه‌های مهم برای برنامه ‌نویس‌ها و دانشگاه‌ها تا ۲۳۰ گیگابیت بر ثانیه",
+    text: "تامین محتوای حیاتی از قبیل آپدیت‌ها و اطلاعات دیتابیسی و  اطلاعات کتابخانه‌های مهم برای برنامه ‌نویس‌ها و دانشگاه‌ها تا ۲۳۰ گیگابیت بر ثانیه",
   },
   {
     src: honers4,
@@ -107,10 +107,9 @@ const Honers: React.FC<Props> = ({}) => {
 
   return (
     <div
-      className={`relative  flex w-full flex-col items-center justify-center bg-main-image  py-12 `}
+      className={`relative  flex w-full flex-col items-center justify-center bg-honors-image bg-cover bg-no-repeat  py-12 `}
       style={{
-        transition: "margin-top 0.5s ease-in-out", // Add this line for transition
-        backgroundSize: "100%",
+        transition: "margin-top 0.5s ease-in-out",
       }}
     >
       <p className="title my-5 text-center text-6xl	 font-extrabold	 text-white">
@@ -119,17 +118,17 @@ const Honers: React.FC<Props> = ({}) => {
       <div className="mx-auto grid grid-cols-2 gap-4 px-7  md:grid-cols-3 md:gap-8">
         {images.map((image, index) => (
           <div
-            className="  relative hover:text-xs  md:hover:text-xl" // Add 'group' class here
+            className="group relative"
             key={index}
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={handleMouseLeave}
           >
             <Image src={image.src} alt={image.alt} />
-            <div className="absolute inset-0 mx-auto flex items-center rounded-2xl   transition-all duration-500 ease-in-out hover:bg-[#F1790A]	hover:text-xs  hover:opacity-50  focus:bg-[#F1790A] focus:opacity-50  md:hover:text-xl">
+            <div className="absolute inset-0 mx-auto flex items-center justify-center rounded-2xl hover:bg-[rgba(241,121,10,0.5)] focus:bg-[rgba(241,121,10,0.5)]">
               <span
-                className={`subtitle-3 mx-auto px-[1.8rem] text-center text-4xl font-semibold  ${
-                  textHover === index ? "text-black" : "text-primary"
-                }`}
+                className={`subtitle-3 mx-auto px-[1.8rem] text-center  transition-all duration-500 ease-in-out ${
+                  textHover === index ? "animate-fadeIn" : "text-primary"
+                } hover:text-[#111]`}
               >
                 {textHover === index ? image.text : image.title}
               </span>
@@ -152,3 +151,15 @@ const Honers: React.FC<Props> = ({}) => {
 };
 
 export default Honers;
+
+{
+  /* <div className="absolute inset-0 mx-auto flex items-center justify-center rounded-2xl hover:bg-[rgba(241,121,10,0.2)] focus:bg-[rgba(241,121,10,0.5)]">
+  <span
+    className={`subtitle-3 mx-auto px-[1.8rem] text-center text-4xl font-semibold transition-all duration-500 ease-in-out ${
+      textHover === index ? "animate-fadeIn" : "text-primary"
+    } hover:text-black`}
+  >
+    {textHover === index ? image.text : image.title}
+  </span>
+</div>; */
+}

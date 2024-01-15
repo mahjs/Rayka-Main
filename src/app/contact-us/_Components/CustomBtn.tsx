@@ -28,13 +28,14 @@ const CustomBtn: React.FC<CustomBtnProps> = ({ sendText }) => {
           border: none;
           position: relative;
           cursor: pointer;
+          transition: color 2.2s ease;
         }
         .btn::before {
           transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
           content: "";
           width: 12%;
           height: 100%;
-          background: #1818186c;
+          background: #000;
           position: absolute;
           top: 0;
           right: -14px;
@@ -42,18 +43,22 @@ const CustomBtn: React.FC<CustomBtnProps> = ({ sendText }) => {
         }
 
         .btn:hover::before {
-          background: #111111;
+          background: #000;
           width: 115%;
           transform: skewX(-25deg);
-          opacity: 0.6;
+          // opacity: 0.6;
+        }
+        .btn:hover {
+          color: #fff;
         }
       `}</style>
 
       <div className="mt-6 flex">
         <button
           type="submit"
-          className="btn ml-6 overflow-hidden rounded-lg bg-primary px-14 py-3.5 text-center text-black focus:outline-none focus:ring-4 focus:ring-primary"
+          className="btn ml-6 overflow-hidden rounded-lg bg-primary px-14 py-3.5 text-center font-[100] text-[#111] focus:outline-none focus:ring-4 focus:ring-primary"
         >
+          <p className="absolute font-[100]">{sendText}</p>
           {sendText}
         </button>
       </div>

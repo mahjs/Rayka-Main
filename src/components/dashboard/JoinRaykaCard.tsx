@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import React from "react";
-import Person from "@/assets/images/person.png";
+import Person from "@/assets/images/person.webp";
 
 /**
  * Component for showing the join us card and some small description for company.
@@ -11,12 +11,12 @@ import Person from "@/assets/images/person.png";
 const JoinRaykaCard = () => {
   const router = useRouter();
   return (
-    <section className="relative mr-auto flex w-[90%] flex-col gap-2 rounded-3xl bg-[#FEA918] p-3 md:gap-5  md:p-10 lg:flex-row lg:items-center ">
-      <div className="flex-col text-black">
+    <section className="relative mr-auto flex w-[95%] xl:w-[90%] flex-col gap-2 rounded-3xl bg-[#FEA918] p-3 md:gap-5  md:p-10 lg:flex-row lg:items-center ">
+      <div className="flex-col text-[#111]">
         <p className="header-4">عضو خانواده ما شو!</p>
         <p className="title-4 hidden lg:block">اینجا برای همه جا هست!</p>
       </div>
-      <div className="max-w-[70%] flex-col text-black lg:max-w-[42%]">
+      <div className="w-[37%] md:max-w-[70%] flex-col text-[#111] lg:max-w-[42%]">
         <p className="subtitle-2">
           تیم رایکا همواره در حال تلاش برای پیدا کردن استعداد های این سرزمین و
           بکارگیری آنها بصورت حضوری و دورکاری میباشد!
@@ -52,11 +52,9 @@ const JoinRaykaCard = () => {
       </div>
 
       <Image
-        className="absolute -left-4 bottom-0 h-[133px] w-[100px] md:h-[250px] md:w-[180px] lg:h-[347px] lg:w-[250px]"
+        className="absolute -left-4 bottom-0 h-auto w-[100px] md:w-[180px] lg:w-[350px]"
         src={Person}
         alt="A smiling person"
-        width={220}
-        height={220}
       />
     </section>
   );
