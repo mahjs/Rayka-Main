@@ -84,10 +84,8 @@ export default function Home() {
           style={{
             backgroundSize: "100%",
           }}
-          className="relative h-[24rem] w-[90%] flex-col items-center justify-center rounded-lg bg-work-plans-image bg-cover bg-center brightness-[.2] md:h-[40rem] md:w-[80%] md:rounded-3xl lg:h-[18rem] lg:w-[90%]"
-        >
-          <div className="absolute bottom-0 left-0 right-0 top-0 z-10 h-full w-full rounded-3xl bg-black bg-opacity-30" />
-        </div>
+          className="relative h-[24rem] w-[90%] flex-col items-center justify-center rounded-lg bg-work-plans-image bg-cover bg-center md:h-[40rem] md:w-[80%] md:rounded-3xl lg:h-[18rem] lg:w-[90%]"
+        />
         {/* Content */}
         <Experties />
       </section>
@@ -99,7 +97,7 @@ export default function Home() {
           backgroundSize: "100%",
         }}
       >
-        <div className="absolute bottom-0 left-0 right-0 top-0 z-10 h-full w-full rounded-3xl bg-black bg-opacity-80" />
+        <div className="rounded-3x absolute bottom-0 left-0 right-0 top-0 z-10 h-full w-full" />
         <div className="absolute z-30 grid w-full grid-cols-2 justify-evenly gap-5 md:flex ">
           {informationData.map((info) => (
             <InfoText

@@ -63,13 +63,7 @@ const ExpertCard: FC<Props> = ({
         />
       </span>
       <p className="body text-inherit md:text-[1.5rem] md:font-bold">{title}</p>
-      <span
-        style={{
-          textShadow:
-            "-3px -3px 0 #fff, 3px -3px 0 #fff, -3px 3px 0 #fff, 3px 3px 0 #fff",
-        }}
-        className="absolute -left-10 -top-12 text-[7rem] font-extrabold text-white opacity-10 md:-left-20 md:-top-24 md:text-[15rem]"
-      >
+      <span className="absolute -left-10 -top-12 text-[7rem] font-extrabold text-white opacity-10 md:-left-20 md:-top-24 md:text-[15rem]">
         {String(index).padStart(2, "0")}
       </span>
       <div className="absolute -left-[20%] -top-[35%] h-full w-[50%] rotate-[35deg]  bg-black opacity-10" />
