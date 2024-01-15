@@ -18,9 +18,7 @@ const Footer = () => {
           <Image
             src={RaykaIcon}
             alt="Rayka icon"
-            width={50}
-            height={50}
-            className="h-[25px] w-[25px] md:h-[60px] md:w-[60px] "
+            className="h-[1.62488rem] w-[1.62488rem] md:h-[5rem] md:w-[5rem] "
           />
           <p className="title-4 max-w-[18rem] text-white md:max-w-[28rem]">
             ما در خانواده سخت‌کوش و خستگی‌ناپذیر شرکت ماورای ابعاد رایکا، برای

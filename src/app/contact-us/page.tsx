@@ -2,6 +2,7 @@ import Map from "@/app/contact-us/_Components/Map";
 import MessagesForm from "@/app/contact-us/_Components/MessagesForm";
 import Link from "next/link";
 import React from "react";
+import Address from "./_Components/Address";
 
 /**
  * Represents the Contact Us page of the application.
@@ -32,6 +33,7 @@ const ContactUsPage: React.FC = () => {
       {/* Message form for user inquiries */}
       <MessagesForm />
 
+      <Address />
       {/* Map component showing location */}
       <Map />
     </main>
