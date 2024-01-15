@@ -126,10 +126,10 @@ const AboutUS: React.FC<Props> = ({}) => {
             فناوری‌های موجود در کشور به کاربران ارائه دهیم.
             {showMore && (
               <label htmlFor="read-more-check-1" className="read-more-label">
-                کم ...{" "}
+                کم ...
               </label>
             )}
-          </p>{" "}
+          </p>
         </article>
       </div>
 
