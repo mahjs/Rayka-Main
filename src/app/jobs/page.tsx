@@ -133,7 +133,7 @@ const Jobs: React.FC = () => {
           </p>
         </div>
       </div>
-      <div className="my-5 flex flex-wrap justify-center gap-5 p-[3em] md:justify-around h-[720px] lg:h-auto">
+      <div className="my-5 flex flex-wrap justify-center gap-5 p-[3em] md:justify-around">
         {jobsData.length > 0 ? (
           jobsData.map((job) => (
             <JobCard
