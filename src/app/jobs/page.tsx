@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Nojob from "../../assets/images/NoJob.svg";
 import { categories, jobsData } from "@/utils/jobData";
-import BgImage from "../../../public/images/bg-main.webp";
+import BgImage from "../../assets/images/job.webp";
 
 /**
  * Represents the structure and required fields of a job listing.

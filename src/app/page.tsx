@@ -84,7 +84,7 @@ export default function Home() {
           style={{
             backgroundSize: "100%",
           }}
-          className="relative h-[24rem] w-[90%] flex-col items-center justify-center rounded-lg bg-main-image md:h-[40rem] md:w-[80%] md:rounded-3xl lg:h-[18rem] lg:w-[90%]"
+          className="relative h-[24rem] w-[90%] flex-col items-center justify-center rounded-lg bg-work-plans-image bg-cover bg-center md:h-[40rem] md:w-[80%] md:rounded-3xl lg:h-[18rem] lg:w-[90%]"
         >
           <div className="absolute bottom-0 left-0 right-0 top-0 z-10 h-full w-full rounded-3xl bg-black bg-opacity-30" />
         </div>
@@ -94,7 +94,7 @@ export default function Home() {
 
       {/* Information Content */}
       <section
-        className="relative flex h-[20rem] w-full items-center justify-center  bg-main-image md:mb-[5rem]"
+        className="relative flex h-[20rem] w-full items-center justify-center bg-statistics-image bg-cover bg-center md:mb-[5rem]"
         style={{
           backgroundSize: "100%",
         }}

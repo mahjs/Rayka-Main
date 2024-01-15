@@ -48,12 +48,13 @@ const AboutUS: React.FC<Props> = ({}) => {
         heading="درباره ی ما"
         subHeading="خانه -"
         childHeading="درباره ما"
+        image="about-us"
       />
       {/* <div className="absolute mx-auto h-[15rem] w-full -rotate-[2deg] items-center rounded-lg bg-[#FEA918] md:w-[80.1%] md:rounded-3xl"> */}
 
       {/* </div> */}
       <div className=" subtitle-1 flex w-full justify-center">
-        <article className=" h-[100%] max-h-full  w-[90%]	flex-col items-center  justify-start rounded-lg bg-main-image bg-cover bg-no-repeat   px-8  py-12 md:rounded-3xl md:px-24 ">
+        <article className="h-[100%] max-h-full w-[90%] flex-col items-center justify-start rounded-lg bg-honors-image bg-center bg-cover bg-no-repeat backdrop-brightness-50 px-8 py-12 md:rounded-3xl md:px-24">
           <Image
             src={RaykaIcon}
             width="50"

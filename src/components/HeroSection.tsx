@@ -2,20 +2,29 @@ import React from "react";
 import Image from "next/image";
 import heroImage from "@/assets/images/hero-image.webp";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
 
 interface Props {
   heading: string;
   subHeading: string;
   childHeading: string;
+  image: string;
 }
 
 const HeroSection: React.FC<Props> = ({
   heading,
   subHeading,
   childHeading,
+  image
 }) => {
   return (
-    <div className="flex w-full flex-col justify-center bg-main-image bg-no-repeat bg-cover pb-5 pt-16 text-center text-white md:h-[500px] md:pt-0">
+    <div className={cn("flex w-full flex-col justify-center bg-no-repeat bg-cover bg-center pb-5 pt-16 text-center text-white md:h-[500px] md:pt-0",
+      {
+        "bg-contact-us-image" : image==="contact-us",
+        "bg-about-us-image" : image === "about-us",
+        "bg-job-image" : image === "job" 
+      }
+    )}>
       <h2 className="header-1">{heading}</h2>
       <div className="title-4 flex justify-center">
         <p>
