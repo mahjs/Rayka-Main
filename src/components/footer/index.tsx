@@ -12,8 +12,8 @@ import Location from "@/assets/images/location.svg";
 
 const Footer = () => {
   return (
-    <footer className=" bg-black px-5">
-      <div className="relative mx-auto flex max-w-[1300px] justify-between gap-5 bg-footer-image bg-no-repeat object-contain pb-[2rem] pt-[6rem] md:items-start md:pb-[5rem] md:pt-[8rem] lg:px-0">
+    <footer className="bg-black px-5">
+      <div className="relative mx-auto flex max-w-[1300px] justify-between gap-5 bg-footer-image bg-no-repeat object-contain pb-[2rem] pt-[4rem] md:items-start md:pb-[3rem] md:pt-[8rem] lg:px-0">
         <div className="flex flex-col gap-2 md:gap-3">
           <Image
             src={RaykaIcon}
@@ -37,7 +37,7 @@ const Footer = () => {
 
         <div className="flex flex-col gap-2 text-white md:gap-6">
           <h3 className="header-6">راه‌های ارتباطی</h3>
-          <div className="Body-3 grid grid-cols-2 flex-col gap-2 md:flex md:gap-9">
+          <div className="title-4 grid grid-cols-2 flex-col gap-2 md:flex md:gap-9">
             <div className="flex items-center gap-1 md:hidden md:gap-3 ">
               <Image
                 src={Call}
@@ -51,7 +51,6 @@ const Footer = () => {
                   style={{
                     direction: "ltr",
                   }}
-                  className="subtitle-1"
                 >
                   +98 930 547 12 79
                 </p>
@@ -70,7 +69,7 @@ const Footer = () => {
                   style={{
                     direction: "ltr",
                   }}
-                  className="subtitle-1"
+                  // className="subtitle-1"
                 >
                   +21 3745 41 12
                 </p>
@@ -85,7 +84,7 @@ const Footer = () => {
                 className="h-[10px] w-[10px] md:h-[25px] md:w-[25px]"
               />
               <a href="mailto:support@raikaco.org">
-                <p className="subtitle-2">support@raikaco.org</p>
+                <p>support@raikaco.org</p>
               </a>
             </div>
             <div className="flex items-center gap-1 md:gap-3">
@@ -96,7 +95,7 @@ const Footer = () => {
                 width={25}
                 height={25}
               />
-              <p className="subtitle-2 max-w-[20rem]">
+              <p className="max-w-[20rem]">
                 تهران، خیابان پاسداران، پایین‌تر از اطلس مال، نبش کوچه تنگستان
                 سوم، پلاک ۷۴۶ واحد ۲
               </p>
