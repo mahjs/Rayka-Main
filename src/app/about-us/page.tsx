@@ -27,7 +27,7 @@
 import HeroSection from "@/components/HeroSection";
 import Image from "next/image";
 import Honers from "@/components/about-us/Honers";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Persons from "@/components/about-us/Persons";
 import Comments from "@/components/about-us/Comments";
 
@@ -37,11 +37,26 @@ interface Props {}
 
 const AboutUS: React.FC<Props> = ({}) => {
   const [showMore, setShowMore] = useState(false);
+  const [timer, setTimer] = useState(null);
 
-  // Event handler for checkbox
   const handleShowMoreChange = () => {
-    setShowMore(!showMore);
+    if (!showMore) {
+      setShowMore(true);
+    } else {
+      const newTimer = setTimeout(() => {
+        setShowMore(false);
+      }, 600);
+      setTimer(newTimer);
+    }
   };
+
+  useEffect(() => {
+    return () => {
+      if (timer) {
+        clearTimeout(timer);
+      }
+    };
+  }, [timer]);
   return (
     <main className="flex flex-col  gap-36 ">
       <HeroSection
@@ -72,10 +87,10 @@ const AboutUS: React.FC<Props> = ({}) => {
             کردن VDS در ایران تبدیل شده است.
             {!showMore && (
               <label htmlFor="read-more-check-1" className="read-more-label">
-                ادامه ...{" "}
+                ادامه ...
               </label>
             )}
-          </p>{" "}
+          </p>
           <input
             id="read-more-check-1"
             type="checkbox"
