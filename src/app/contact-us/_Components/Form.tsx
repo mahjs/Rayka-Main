@@ -22,7 +22,7 @@ interface FloatingInputProps {
 }
 
 const commonInputClasses =
-  "peer block w-full text-right appearance-none rounded border-0 bg-[#f5f5f5] px-5 py-5 text-sm text-gray-900 focus:border-primary focus:outline-none focus:ring-primary ";
+  "peer block w-full text-right appearance-none rounded border-0 bg-[#E7E7E7] px-5 py-5 text-sm text-gray-900 focus:border-primary focus:outline-none focus:ring-primary ";
 /**
  * FloatingInput - A custom input component with floating label effect.
  * It uses common styles for consistency across different input types.
