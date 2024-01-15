@@ -13,14 +13,8 @@ import Location from "@/assets/images/location.svg";
 const Footer = () => {
   return (
     <footer className="bg-black">
-      <div
-        style={{
-          backgroundSize: "100%",
-          backgroundRepeat: "no-repeat",
-        }}
-        className="relative z-0 mr-auto flex w-full justify-between gap-3 bg-footer-image object-contain px-3 pb-[2rem] pt-[6rem] md:items-start md:justify-around md:pb-[5rem] md:pt-[8rem]"
-      >
-        <div className="flex flex-col gap-2 md:gap-5">
+      <div className="relative z-0 flex w-full gap-5 bg-footer-image bg-no-repeat object-contain px-6 pb-[2rem] pt-[6rem] md:items-start md:pb-[5rem] md:pt-[8rem]">
+        <div className="flex flex-col gap-2 md:ml-auto md:mr-[14%] md:gap-5">
           <Image
             src={RaykaIcon}
             alt="Rayka icon"
@@ -40,10 +34,10 @@ const Footer = () => {
           <PageNavigation />
         </div>
 
-        <div className="flex flex-col gap-5 text-white">
+        <div className="flex flex-col gap-2 text-white md:ml-[12%] md:mr-auto md:gap-6">
           <h3 className="header-6">راه‌های ارتباطی</h3>
-          <div className="Body-3 grid grid-cols-2 gap-2 md:flex md:flex-col lg:gap-5">
-            <div className="flex items-center gap-1 md:gap-3 ">
+          <div className="Body-3 flex flex-col gap-2 md:gap-9">
+            {/* <div className="flex items-center gap-1 md:gap-3 ">
               <Image
                 src={Call}
                 alt="call icon"
@@ -61,7 +55,7 @@ const Footer = () => {
                   +98 930 547 12 79
                 </p>
               </a>
-            </div>
+            </div> */}
             <div className="flex items-center gap-1 md:gap-3">
               <Image
                 src={Phone}
