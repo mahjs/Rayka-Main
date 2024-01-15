@@ -58,7 +58,7 @@ const Navbar: FC = () => {
       <nav className="hidden lg:block">
         <ul className="hidden gap-16 lg:flex">
           <NavbarItem href="/" text="خانه" />
-          <NavbarItem href="/about-us" text="درباره‌ما" />
+          <NavbarItem href="/about-us" text="درباره ما" />
           <NavbarItem href="/contact-us" text="ارتباط با ما" />
           <NavbarItem href="/jobs" text="فرصت‌های شغلی" />
         </ul>
@@ -86,7 +86,7 @@ const Navbar: FC = () => {
           <NavbarItem
             onClick={handleLinkClick}
             href="/about-us"
-            text="درباره‌ما"
+            text="درباره ما"
           />
           <NavbarItem
             onClick={handleLinkClick}

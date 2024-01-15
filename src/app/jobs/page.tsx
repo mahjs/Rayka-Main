@@ -121,7 +121,7 @@ const JobCard: React.FC<Job> = ({
  */
 const Jobs: React.FC = () => {
   return (
-    <div className="min-h-[100dvh] select-none flex-col">
+    <div className="h-full min-h-[100dvh]  select-none flex-col">
       <div className="flex w-full flex-col justify-center bg-job-image bg-cover bg-center bg-no-repeat pb-5 pt-16 text-center text-white md:h-[500px] md:pt-0">
         <h2 className="header-1-plus">فرصت های شغلی</h2>
         <div className="title-3 flex justify-center">
@@ -133,7 +133,7 @@ const Jobs: React.FC = () => {
           </p>
         </div>
       </div>
-      <div className="my-5 flex flex-wrap justify-center gap-5 p-[3em] md:justify-around">
+      <div className="my-5 flex h-[100dvh] flex-col items-center justify-center gap-5 p-[3em] md:justify-around">
         {jobsData.length > 0 ? (
           jobsData.map((job) => (
             <JobCard

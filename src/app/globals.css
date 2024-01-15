@@ -105,7 +105,6 @@ body {
   } */
 }
 
-
 .header-4 {
   font-family: "KalamehBold";
   font-size: 3.35906rem;
@@ -123,6 +122,15 @@ body {
 
 .header-5 {
   font-family: "KalamehRegular";
+  font-size: 3.05663rem;
+  font-weight: 700;
+  line-height: 140%;
+  @media screen and (max-width: 768px) {
+    font-size: 2.1875rem;
+  }
+}
+.about-5 {
+  font-family: "KalamehBold";
   font-size: 3.05663rem;
   font-weight: 700;
   line-height: 140%;

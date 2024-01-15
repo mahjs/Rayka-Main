@@ -60,7 +60,7 @@ const AboutUS: React.FC<Props> = ({}) => {
   return (
     <main className="flex flex-col  gap-36 ">
       <HeroSection
-        heading="درباره‌ما"
+        heading="درباره ما"
         subHeading="خانه -"
         childHeading="درباره ما"
         image="about-us"
@@ -77,7 +77,7 @@ const AboutUS: React.FC<Props> = ({}) => {
             alt="rayka icon"
             className="w-12 md:w-16 "
           />
-          <p className="header-5 	text-primary">درباره‌ما </p>
+          <p className="about-5 	text-primary">درباره ما </p>
           <p className="mt-3 text-white">
             شرکت ماورای ابعاد رایکا، در سال 1401 توسط یک تیم 6 نفره متشکل از
             متخصصان جوان و فعالان شبکه، کامپیوتر و ارتباط زیرساختی و
