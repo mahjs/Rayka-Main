@@ -66,6 +66,15 @@ body {
   }
 }
 
+.header-1-plus {
+  font-family: "KalamehBold";
+  font-size: 1.9rem;
+  font-weight: 800;
+  @media screen and (min-width: 768px) {
+    font-size: 7.11406rem;
+  }
+}
+
 .header-2 {
   font-family: "KalamehExtraBold";
   font-size: clamp(2.95rem, 6vw, 6.18713rem);
@@ -86,6 +95,16 @@ body {
     font-size: 1.36719rem;
   } */
 }
+
+.header-3-plus {
+  font-family: "KalamehExtraBold";
+  font-size: clamp(1.36719rem, 4vw, 4.75rem);
+  line-height: 140%;
+  /* @media screen and (max-width: 768px) {
+    font-size: 1.36719rem;
+  } */
+}
+
 
 .header-4 {
   font-family: "KalamehBold";
