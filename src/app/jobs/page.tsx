@@ -133,7 +133,7 @@ const Jobs: React.FC = () => {
           </p>
         </div>
       </div>
-      <div className="my-5 flex flex-wrap justify-center gap-5 p-[3em] md:justify-around">
+      <div className="my-5 flex flex-wrap justify-center gap-5 p-[3em] md:justify-around h-[720px] lg:h-auto">
         {jobsData.length > 0 ? (
           jobsData.map((job) => (
             <JobCard
@@ -147,7 +147,7 @@ const Jobs: React.FC = () => {
             />
           ))
         ) : (
-          <div className="title-2 flex w-[40%] flex-wrap items-center justify-center text-center">
+          <div className="title-2 flex w-[40%] flex-wrap lg:items-center justify-center text-center">
             <Image src={Nojob} alt="Job Position" width={250} height={250} />
             <p>
               با تشکر از علاقه شما, <br /> هم‌اکنون فرصت شغلی جدیدی موجود نیست.
