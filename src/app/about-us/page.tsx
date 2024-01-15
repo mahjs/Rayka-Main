@@ -37,7 +37,7 @@ interface Props {}
 
 const AboutUS: React.FC<Props> = ({}) => {
   const [showMore, setShowMore] = useState(false);
-  const [timer, setTimer] = useState(null);
+  const [timer, setTimer] = useState<NodeJS.Timeout | null>(null); // Use NodeJS.Timeout for Node environment
 
   const handleShowMoreChange = () => {
     if (!showMore) {
