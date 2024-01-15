@@ -97,33 +97,36 @@ const SocialLinkComponent: React.FC<{ link: SocialLink }> = ({ link }) => {
  */
 const MessagesForm: FC = () => {
   return (
-    <div className="mt-10 grid select-none place-items-center p-[1em] md:p-[2.5em] lg:grid-cols-2 lg:p-[5em]">
-      <div className="h-full w-full">
-        <p className="header-3 text-center text-[#111] md:text-right">
-          دوست داریم صدای <span className="text-primary">شما</span> را بشنویم !
-        </p>
-        <div className="title-3 mr-1 mt-3 hidden text-[#111] md:flex">
-          <p className="word-spacing">
-            جهت ارتباط با تیم رایکا فرم زیر را تکمیل کنید. <br />
-            <span className="word-spacing-1">
-              تیم پشتیبانی در اسرع وقت با شما تماس <br /> خواهند گرفت !
-            </span>
+    <div className="container 2xl:mx-auto">
+      <div className="mt-10 grid select-none place-items-center p-[1em] md:p-[2.5em] lg:grid-cols-2 lg:p-[5em]">
+        <div className="h-full w-full">
+          <p className="header-3 text-center text-[#111] md:text-right">
+            دوست داریم صدای <span className="text-primary">شما</span> را بشنویم
+            !
           </p>
-        </div>
-        <p className="title-3 mr-1 mt-3 text-center text-[#111] md:hidden">
-          جهت ارتباط با تیم رایکا فرم زیر را تکمیل کنید. <br /> تیم پشتیبانی در
-          اسرع وقت با شما تماس خواهند گرفت !
-        </p>
-        <div className="mt-[3em] hidden items-center lg:flex ">
-          <p className="subtitle-3 ml-3 text-[#111]">
-            سوالی دارید؟ به ما پیام دهید
+          <div className="title-3 mr-1 mt-3 hidden text-[#111] md:flex">
+            <p className="word-spacing">
+              جهت ارتباط با تیم رایکا فرم زیر را تکمیل کنید. <br />
+              <span className="word-spacing-1">
+                تیم پشتیبانی در اسرع وقت با شما تماس <br /> خواهند گرفت !
+              </span>
+            </p>
+          </div>
+          <p className="title-3 mr-1 mt-3 text-center text-[#111] md:hidden">
+            جهت ارتباط با تیم رایکا فرم زیر را تکمیل کنید. <br /> تیم پشتیبانی
+            در اسرع وقت با شما تماس خواهند گرفت !
           </p>
-          {socialLinks.map((link) => (
-            <SocialLinkComponent key={link.href} link={link} />
-          ))}
+          <div className="mt-[3em] hidden items-center lg:flex ">
+            <p className="subtitle-3 ml-3 text-[#111]">
+              سوالی دارید؟ به ما پیام دهید
+            </p>
+            {socialLinks.map((link) => (
+              <SocialLinkComponent key={link.href} link={link} />
+            ))}
+          </div>
         </div>
+        <Form />
       </div>
-      <Form />
     </div>
   );
 };

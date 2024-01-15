@@ -31,6 +31,7 @@ const ContactUsPage: React.FC = () => {
       </div>
       {/* Message form for user inquiries */}
       <MessagesForm />
+
       {/* Map component showing location */}
       <Map />
     </main>
