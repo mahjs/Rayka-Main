@@ -261,11 +261,15 @@ body {
 .number {
   font-family: "KalamehBold";
   font-size: clamp(3.63rem, 8vw, 7.56819rem);
-  /* font-size: 7.56819rem; */
   line-height: 140%;
-  /* @media screen and (max-width: 758px) {
-    font-size: 4.63rem;
-  } */
+}
+.number-2 {
+  font-family: "KalamehBold";
+  font-size: 8rem;
+  line-height: 140%;
+  @media screen and (min-width: 768px) {
+    font-size: 15rem;
+  }
 }
 
 .word-spacing {

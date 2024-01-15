@@ -65,9 +65,6 @@ const AboutUS: React.FC<Props> = ({}) => {
         childHeading="درباره ما"
         image="about-us"
       />
-      {/* <div className="absolute mx-auto h-[15rem] w-full -rotate-[2deg] items-center rounded-lg bg-[#FEA918] md:w-[80.1%] md:rounded-3xl"> */}
-
-      {/* </div> */}
       <div className=" subtitle-1 flex w-full justify-center">
         <article className="h-[100%] max-h-full w-[90%] flex-col items-center justify-start rounded-lg bg-honors-image bg-cover bg-center bg-no-repeat px-8 py-12 backdrop-brightness-50 md:rounded-3xl md:px-24">
           <Image
@@ -77,8 +74,8 @@ const AboutUS: React.FC<Props> = ({}) => {
             alt="rayka icon"
             className="w-12 md:w-16 "
           />
-          <p className="about-5 	text-primary">درباره ما </p>
-          <p className="mt-3 text-white">
+          <p className="about-5	text-primary">درباره ما </p>
+          <p className="mt-3 select-none text-white">
             شرکت ماورای ابعاد رایکا، در سال 1401 توسط یک تیم 6 نفره متشکل از
             متخصصان جوان و فعالان شبکه، کامپیوتر و ارتباط زیرساختی و
             تکنولوژی‌هایی مانند بلاک‌چین، AI و NFT تاسیس شد و از آن زمان تاکنون
@@ -97,7 +94,7 @@ const AboutUS: React.FC<Props> = ({}) => {
             className="read-more-check"
             onChange={handleShowMoreChange} // Attach the event handler
           />
-          <p className="read-more 	">
+          <p className="read-more select-none text-justify">
             رایکا قبل از اینکه به شرکت تبدیل شود در حوزه‌های مختلف از قبیل بهبود
             زیرساخت‌های شبکه، کلودگیمینگ و ... فعالیت می‌کرد؛ زمانی که به یک سری
             محصولات قابل‌استفاده و چند میلیون کاربر دست پیدا کرد، تصمیم گرفت به
