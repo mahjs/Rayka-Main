@@ -12,38 +12,35 @@ import Location from "@/assets/images/location.svg";
 
 const Footer = () => {
   return (
-    <footer className="bg-black">
-      <div
-        style={{
-          backgroundSize: "100%",
-          backgroundRepeat: "no-repeat",
-        }}
-        className="relative z-0 mr-auto flex w-full justify-between gap-3 bg-footer-image object-contain px-3 pb-[2rem] pt-[6rem] md:items-start md:justify-around md:pb-[5rem] md:pt-[8rem]"
-      >
-        <div className="flex flex-col gap-2 md:gap-5">
+    <footer className=" bg-black px-5">
+      <div className="relative mx-auto flex max-w-[1300px] justify-between gap-5 bg-footer-image bg-no-repeat object-contain pb-[2rem] pt-[6rem] md:items-start md:pb-[5rem] md:pt-[8rem] lg:px-0">
+        <div className="flex flex-col gap-2 md:gap-3">
           <Image
             src={RaykaIcon}
             alt="Rayka icon"
             width={50}
             height={50}
-            className="h-[25px] w-[25px] md:h-[50px] md:w-[50px] "
+            className="h-[25px] w-[25px] md:h-[60px] md:w-[60px] "
           />
-          <p className="title-4 max-w-[18rem] text-white md:max-w-[25rem]">
+          <p className="title-4 max-w-[18rem] text-white md:max-w-[28rem]">
             ما در خانواده سخت‌کوش و خستگی‌ناپذیر شرکت ماورای ابعاد رایکا، برای
-            تحقق رویاهایمان می‌جنگیم؛ در کنار هم می‌سازیم و از تماشای آنچه روزی
-            تصور کرده بودیم و حالا به آن تجسم بخشیده‌ایم لذت می‌بریم.
+            تحقق رویاهایمان می‌جنگیم؛
+            <span className="title-4 hidden max-w-[18rem] text-white md:inline md:max-w-[28rem]">
+              در کنار هم می‌سازیم و از تماشای آنچه روزی تصور کرده بودیم و حالا
+              به آن تجسم بخشیده‌ایم لذت می‌بریم.
+            </span>
           </p>
         </div>
 
         <div className="hidden flex-col gap-6 text-center text-white lg:flex ">
-          <h3 className="header-6">صفحات دیگر</h3>
+          <h3 className="header-6 whitespace-nowrap">صفحات دیگر</h3>
           <PageNavigation />
         </div>
 
-        <div className="flex flex-col gap-5 text-white">
+        <div className="flex flex-col gap-2 text-white md:gap-6">
           <h3 className="header-6">راه‌های ارتباطی</h3>
-          <div className="Body-3 grid grid-cols-2 gap-2 md:flex md:flex-col lg:gap-5">
-            <div className="flex items-center gap-1 md:gap-3 ">
+          <div className="Body-3 grid grid-cols-2 flex-col gap-2 md:flex md:gap-9">
+            <div className="flex items-center gap-1 md:hidden md:gap-3 ">
               <Image
                 src={Call}
                 alt="call icon"
@@ -101,7 +98,7 @@ const Footer = () => {
                 width={25}
                 height={25}
               />
-              <p className="subtitle-2 max-w-[28rem]">
+              <p className="subtitle-2 max-w-[20rem]">
                 تهران، خیابان پاسداران، پایین‌تر از اطلس مال، نبش کوچه تنگستان
                 سوم، پلاک ۷۴۶ واحد ۲
               </p>

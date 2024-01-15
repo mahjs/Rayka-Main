@@ -74,9 +74,8 @@ const socialLinks: SocialLink[] = [
  * @returns {React.ReactElement} React element representing a clickable social media icon.
  */
 const SocialLinkComponent: React.FC<{ link: SocialLink }> = ({ link }) => {
-  const classNames = `cursor-pointer ${
-    link.alt === "Telegram logo" ? "mx-5" : ""
-  }`;
+  const classNames = `cursor-pointer ${link.alt === "Telegram logo" ? "mx-5" : ""
+    }`;
 
   return (
     <Link href={link.href} passHref target="_blank" rel="noopener noreferrer">
@@ -97,22 +96,22 @@ const SocialLinkComponent: React.FC<{ link: SocialLink }> = ({ link }) => {
  */
 const MessagesForm: FC = () => {
   return (
-    <div className="container 2xl:mx-auto">
+    <div className="">
       <div className="mt-10 grid select-none place-items-center p-[1em] md:p-[2.5em] lg:grid-cols-2 lg:p-[5em]">
         <div className="h-full w-full">
-          <p className="header-3 text-center text-[#111] md:text-right">
+          <p className="header-3-plus text-center text-[#111] lg:text-right">
             دوست داریم صدای <span className="text-primary">شما</span> را بشنویم
             !
           </p>
-          <div className="title-3 mr-1 mt-3 hidden text-[#111] md:flex">
-            <p className="word-spacing">
+          <div className="title-3 mr-1 mt-3 hidden text-[#595959] lg:flex">
+            <p className="">
               جهت ارتباط با تیم رایکا فرم زیر را تکمیل کنید. <br />
-              <span className="word-spacing-1">
+              <span className="">
                 تیم پشتیبانی در اسرع وقت با شما تماس <br /> خواهند گرفت !
               </span>
             </p>
           </div>
-          <p className="title-3 mr-1 mt-3 text-center text-[#111] md:hidden">
+          <p className="title-3 mr-1 mt-3 text-center text-[#595959] lg:hidden">
             جهت ارتباط با تیم رایکا فرم زیر را تکمیل کنید. <br /> تیم پشتیبانی
             در اسرع وقت با شما تماس خواهند گرفت !
           </p>
