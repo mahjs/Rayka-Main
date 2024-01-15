@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Nojob from "../../assets/images/NoJob.svg";
 import { categories, jobsData } from "@/utils/jobData";
-import BgImage from "../../assets/images/job.webp";
+import BgImage from "../../../public/images/job.webp";
 
 /**
  * Represents the structure and required fields of a job listing.
@@ -122,7 +122,7 @@ const JobCard: React.FC<Job> = ({
 const Jobs: React.FC = () => {
   return (
     <div className="select-none flex-col ">
-      <div className="flex w-full flex-col justify-center bg-main-image bg-cover bg-no-repeat pb-5 pt-16 text-center text-white md:h-[500px] md:pt-0">
+      <div className="flex w-full flex-col justify-center bg-job-image bg-cover bg-no-repeat bg-center pb-5 pt-16 text-center text-white md:h-[500px] md:pt-0">
         <h2 className="header-1">فرصت های شغلی</h2>
         <div className="title-3 flex justify-center">
           <p>

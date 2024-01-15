@@ -29,15 +29,14 @@ const Footer = () => {
             className="h-[25px] w-[25px] md:h-[50px] md:w-[50px] "
           />
           <p className="title-4 max-w-[18rem] text-white md:max-w-[25rem]">
-            ما در خانواده ی سخت کوش و خستگی ناپذیر شرکت ماورای ابعاد رایکا ،
-            برای تحقق رویاهایمان میجنگیم. در کنار هم میسازیم و از تماشای آنچه
-            روزی تصور <br className="hidden md:block" /> کرده بودیم و حالا به آن
-            تجسم بخشیده ایم لذت میبریم.
+            ما در خانواده سخت‌کوش و خستگی‌ناپذیر شرکت ماورای ابعاد رایکا، برای
+            تحقق رویاهایمان می‌جنگیم؛ در کنار هم می‌سازیم و از تماشای آنچه روزی
+            تصور کرده بودیم و حالا به آن تجسم بخشیده‌ایم لذت می‌بریم.
           </p>
         </div>
 
-        <div className="hidden flex-col gap-5 text-center text-white lg:flex ">
-          <h3 className="header-6">صفحات</h3>
+        <div className="hidden flex-col gap-6 text-center text-white lg:flex ">
+          <h3 className="header-6">صفحات دیگر</h3>
           <PageNavigation />
         </div>
 
