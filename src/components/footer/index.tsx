@@ -95,7 +95,7 @@ const Footer = () => {
                 width={25}
                 height={25}
               />
-              <p className="max-w-[20rem]">
+              <p className="title-5 w-[20rem]">
                 تهران، خیابان پاسداران، پایین‌تر از اطلس مال، نبش کوچه تنگستان
                 سوم، پلاک ۷۴۶ واحد ۲
               </p>
