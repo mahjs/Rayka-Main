@@ -18,8 +18,8 @@ interface Props {
 
 const InfoText: FC<Props> = ({ title, text, unit }) => {
   const numberRef = useRef<null | HTMLDivElement>(null);
-  const [startAnimation, setStartAnimation] = useState<boolean>(false);
   const [showValue, setShowValue] = useState(0);
+  const [startAnimation, setStartAnimation] = useState<boolean>(false);
 
   // Animate the value for the text.
   useEffect(() => {

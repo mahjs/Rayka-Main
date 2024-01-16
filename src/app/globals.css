@@ -199,6 +199,15 @@ body {
     font-size: 0.5rem;
   } */
 }
+.title-5 {
+  font-family: "KalamehRegular";
+  font-size: clamp(0.45rem, 1.5vw, 1.2625rem);
+  /* font-size: 1.5625rem; */
+  line-height: 140%;
+  /* @media screen and (max-width: 758px) {
+    font-size: 0.5rem;
+  } */
+}
 
 .subtitle-1 {
   font-family: "KalamehRegular";
