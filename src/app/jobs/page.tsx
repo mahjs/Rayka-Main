@@ -147,7 +147,7 @@ const Jobs: React.FC = () => {
             />
           ))
         ) : (
-          <div className="title-2 flex w-[40%] flex-wrap items-center justify-center text-center">
+          <div className="title-2 flex w-[40%] flex-wrap lg:items-center justify-center text-center">
             <Image src={Nojob} alt="Job Position" width={250} height={250} />
             <p>
               با تشکر از علاقه شما, <br /> هم‌اکنون فرصت شغلی جدیدی موجود نیست.

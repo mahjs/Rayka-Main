@@ -68,11 +68,11 @@ body {
 
 .header-1-plus {
   font-family: "KalamehBold";
-  font-size: 1.9rem;
+  font-size: clamp(1.9rem, 7vw, 7.11406rem);
   font-weight: 800;
-  @media screen and (min-width: 768px) {
+  /* @media screen and (min-width: 768px) {
     font-size: 7.11406rem;
-  }
+  } */
 }
 
 .header-2 {
