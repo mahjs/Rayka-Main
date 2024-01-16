@@ -1,41 +1,66 @@
 "use client";
 import React, { useState } from "react";
 
+/**
+ * Enum for supported navigation services.
+ */
 enum NavigationService {
   Mapir = "mapir",
   Neshan = "neshan",
   Google = "google",
 }
 
-// interface MapProps {
-//   latitude: string;
-//   longitude: string;
-//   companyName: string;
-// }
-
+/**
+ * Interface for environment variables.
+ */
 interface Env {
   NEXT_PUBLIC_MAP_URL?: string;
 }
 
+/**
+ * Global declaration for accessing environment variables.
+ */
 declare const process: {
   env: Env;
 };
 
+// Default and environment-based URL for the map
 const DEFAULT_MAP_URL =
-  "https://map.ir/lat/35.803776/lng/51.472840/z/16/p/%D9%85%D8%A7%D9%8A%D9%86%D8%AC%D8%A7%DB%8C%DB%8C%D9%85";
+  "https://map.ir/lat/35.803776/lng/51.472840/z/16/p/%D9%85%D8%A7%D8%A7%DB%8C%D9%86%D8%AC%D8%A7%DB%8C%DB%8C%D9%85";
 const MAP_URL: string = process.env.NEXT_PUBLIC_MAP_URL || DEFAULT_MAP_URL;
 
+/**
+ * Map component for displaying location on an interactive map.
+ * This component checks the device type and opens an appropriate navigation service.
+ * It also includes a modal for desktop users to choose the navigation service.
+ *
+ * @component
+ * @returns {React.ReactElement} Interactive map component with navigation options.
+ */
 const Map: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
+
+  /**
+   * Detects if the device is mobile.
+   * @returns {boolean} True if the device is mobile, otherwise false.
+   */
   const isMobile = (): boolean =>
     /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
+  /**
+   * Closes the modal when clicked outside of it.
+   * @param {React.MouseEvent<HTMLDivElement>} e - The mouse event.
+   */
   const handleModalClose = (e: React.MouseEvent<HTMLDivElement>) => {
     if (e.target === e.currentTarget) {
       setShowModal(false);
     }
   };
 
+  /**
+   * Handles map click event.
+   * Opens navigation service for mobile or shows modal for desktop.
+   */
   const handleMapClick = (): void => {
     if (isMobile()) {
       openNavigation(NavigationService.Google);
@@ -44,6 +69,10 @@ const Map: React.FC = () => {
     }
   };
 
+  /**
+   * Opens a URL based on the selected navigation service.
+   * @param {NavigationService} service - The navigation service to be used.
+   */
   const openNavigation = (service: NavigationService): void => {
     let url: string;
 
@@ -69,7 +98,7 @@ const Map: React.FC = () => {
   };
 
   return (
-    <div className="relative inset-0 mb-32 mt-12 h-[400px] w-full md:h-[350px]">
+    <div className="relative inset-0 mt-12 h-[400px] w-full md:h-[430px]">
       <iframe
         src={MAP_URL}
         width="100%"

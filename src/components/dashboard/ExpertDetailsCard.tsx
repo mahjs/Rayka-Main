@@ -6,8 +6,10 @@ interface Props {
   index: number;
   title: string;
   name: string;
+  desc: string;
   iconPath: string;
   handleClickClose: () => void;
+  arrayLength: number;
 }
 
 /**
@@ -25,28 +27,26 @@ const ExpertDetailsCard: FC<Props> = ({
   title,
   iconPath,
   name,
+  desc,
   handleClickClose,
+  arrayLength,
 }) => {
+  const descStyle = "subtitle-2 max-w-[100%] text-sm";
+
   return (
-    <section className="relative mx-auto flex h-[100%] w-[90%] items-center justify-center gap-10 rounded-xl px-10 py-5">
-      <div className="relative min-h-[14rem] min-w-[14rem] flex-col overflow-hidden rounded-xl bg-primary p-5">
+    <section className="relative mx-auto flex h-[100%] w-[90%] flex-col items-center justify-center rounded-xl p-5 md:mt-[2rem] md:p-8 lg:mt-0 lg:flex-row lg:gap-5">
+      <div className="relative ml-auto h-[9rem] w-[12rem] flex-col overflow-hidden rounded-xl bg-primary p-5 md:h-[14rem] md:min-w-[18rem] lg:h-[12rem] lg:min-w-[15rem]">
         <div>
           <Image
             src={iconPath}
             width={50}
             height={50}
             alt={`icon for ${title}`}
-            className="mb-3 h-[50px] w-[50px]"
+            className="mb-1 h-[30px] w-[30px] md:h-[50px] md:w-[50px]"
           />
         </div>
         <p className="title-3">{title}</p>
-        <span
-          style={{
-            textShadow:
-              "-3px -3px 0 #fff, 3px -3px 0 #fff, -3px 3px 0 #fff, 3px 3px 0 #fff",
-          }}
-          className="absolute -top-20 right-14 text-[6rem] font-bold text-white opacity-20 md:text-[12rem]"
-        >
+        <span className="number-2 absolute -left-8 -top-10 text-[5rem] font-bold text-white opacity-20 md:-top-16 md:text-[12rem]">
           {String(index).padStart(2, "0")}
         </span>
         <div className="absolute -left-[20%] -top-[35%] h-full w-[50%] rotate-[35deg]  bg-black opacity-10" />
@@ -54,22 +54,17 @@ const ExpertDetailsCard: FC<Props> = ({
 
       <div className="flex-col text-white">
         <div className="flex justify-between">
-          <h3 className="header-5 mb-3">{name}</h3>
-          <button
-            onClick={handleClickClose}
-            className="flex items-center gap-3"
-          >
-            <p className="Btn-2 text-white">بازگشت</p>
-            <Image src={Arrow} width={15} height={15} alt="arrow icon" />
-          </button>
+          <h3 className="title mb-3">{name}</h3>
         </div>
-        <p className="subtitle-2 max-w-[80%]">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-          beatae ipsum voluptatibus saepe id earum minima voluptatem est iusto,
-          laborum aut. Repellat tenetur temporibus quod alias dolore assumenda
-          non aperiam. Dolores dolor alias culpa corporis!
-        </p>
+        <p className={descStyle}>{desc}</p>
       </div>
+      <button
+        onClick={handleClickClose}
+        className="absolute left-1 top-8 flex items-center gap-3 md:left-6 md:top-4"
+      >
+        <p className="btn-2 text-white">بازگشت</p>
+        <Image src={Arrow} width={15} height={15} alt="arrow icon" />
+      </button>
     </section>
   );
 };

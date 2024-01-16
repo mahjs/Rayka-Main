@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import React from "react";
-import Person from "@/assets/images/person.png";
+import Person from "@/assets/images/person.webp";
 
 /**
  * Component for showing the join us card and some small description for company.
@@ -11,17 +11,17 @@ import Person from "@/assets/images/person.png";
 const JoinRaykaCard = () => {
   const router = useRouter();
   return (
-    <section className="relative mr-auto flex w-[90%] flex-col gap-2 rounded-3xl bg-[#FEA918] p-3 md:gap-5  md:p-10 lg:flex-row lg:items-center ">
-      <div className="flex-col text-black">
-        <p className="header-4">عضو خانواده ما شو!</p>
-        <p className="title-4 hidden lg:block">اینجا برای همه جا هست!</p>
+    <section className="relative mx-auto flex w-[70%] max-w-[1300px] flex-col rounded-3xl bg-[#FEA918] p-3 md:w-[80%] md:p-10 lg:flex-row lg:items-center lg:gap-5 xl:w-[70%] ">
+      <div className="flex flex-col text-[#111]">
+        <p className="header-4 whitespace-nowrap">عضو خانواده ما شو!</p>
+        <p className="title-4 hidden md:block">اینجا برای همه جا هست!</p>
       </div>
-      <div className="max-w-[70%] flex-col text-black lg:max-w-[42%]">
-        <p className="subtitle-2">
-          تیم رایکا همواره در حال تلاش برای پیدا کردن استعداد های این سرزمین و
-          بکارگیری آنها بصورت حضوری و دورکاری میباشد!
-          <br className="hidden lg:block" /> حتما به صفحه فرصت های شغلی سر بزنید
-          تا از فرصت های شغلی شرکت مطلع شوید!
+      <div className="ml-[200px] w-[80%] flex-col text-[#111] lg:max-w-[62%]">
+        <p className="subtitle-2 max-w-[90%] ">
+          تیم رایکا همواره در حال تلاش برای پیدا کردن استعدادهای این سرزمین و
+          به‌کارگیری آن‌ها به‌ صورت حضوری و دورکاری است.
+          <br className="hidden lg:block" /> حتما به صفحه فرصت‌های شغلی سر بزنید
+          تا از فرصت‌های شغلی شرکت مطلع شوید!
         </p>
         <button
           onClick={() => {
@@ -52,11 +52,9 @@ const JoinRaykaCard = () => {
       </div>
 
       <Image
-        className="absolute -left-4 bottom-0 h-[133px] w-[100px] md:h-[250px] md:w-[180px] lg:h-[347px] lg:w-[250px]"
+        className="absolute -bottom-1 -left-5 w-[130px] md:w-[250px] lg:w-[340px]"
         src={Person}
         alt="A smiling person"
-        width={220}
-        height={220}
       />
     </section>
   );

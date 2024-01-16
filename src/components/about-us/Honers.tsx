@@ -1,5 +1,28 @@
+/**
+ * Honers Component
+ *
+ * This component displays a set of images and information related to the achievements and honors of a company.
+ * It makes use of the `useState` hook from React to manage hover state over the images to toggle between
+ * showing the title and detailed text of each honor.
+ *
+ * The component is structured into two main sections:
+ * 1. A grid display of images representing different honors.
+ * 2. A list of textual information data highlighting key statistics or achievements.
+ *
+ * Methods:
+ *  - `handleMouseEnter`: Sets the `textHover` state to the index of the hovered image.
+ *  - `handleMouseLeave`: Resets the `textHover` state to null.
+ *
+ * Usage:
+ * ```jsx
+ * <Honers />
+ * ```
+ *
+ * The component renders a series of images (sourced from the `images` array) in a grid layout. Each image can be hovered over to reveal additional information. Below the images, key statistics or achievements (sourced from the `informationData` array) are displayed.
+ */
+
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import InfoText from "../dashboard/InfoText";
 import honers1 from "@/assets/images/honers1.png";
@@ -62,7 +85,7 @@ const images = [
     src: honers5,
     alt: "honers5",
     title: "تامین اطلاعات با سرعت بالا",
-    text: "تامین محتوای حیاطی از قبیل آپدیت‌ها و اطلاعات دیتابیسی و  اطلاعات کتابخانه‌های مهم برای برنامه ‌نویس‌ها و دانشگاه‌ها تا ۲۳۰ گیگابیت بر ثانیه",
+    text: "تامین محتوای حیاتی از قبیل آپدیت‌ها و اطلاعات دیتابیسی و  اطلاعات کتابخانه‌های مهم برای برنامه ‌نویس‌ها و دانشگاه‌ها تا ۲۳۰ گیگابیت بر ثانیه",
   },
   {
     src: honers4,
@@ -72,19 +95,21 @@ const images = [
   },
 ];
 const Honers: React.FC<Props> = ({}) => {
-  const [textHover, setTextHover] = useState(false);
-  const handleMouseEnter = (index) => {
+  const [textHover, setTextHover] = useState<number | null>(null);
+
+  const handleMouseEnter = (index: number) => {
     setTextHover(index);
   };
 
   const handleMouseLeave = () => {
     setTextHover(null);
   };
+
   return (
     <div
-      className="relative mt-[10rem] flex w-full flex-col items-center justify-center bg-main-image  py-12 md:mt-[17rem] lg:mt-[8rem]"
+      className={`relative mb-[6.69rem] flex w-full flex-col items-center justify-center bg-honors-image bg-cover bg-no-repeat  pb-28 pt-7`}
       style={{
-        backgroundSize: "100%",
+        transition: "margin-top 0.5s ease-in-out",
       }}
     >
       <p className="title my-5 text-center text-6xl	 font-extrabold	 text-white">
@@ -93,14 +118,18 @@ const Honers: React.FC<Props> = ({}) => {
       <div className="mx-auto grid grid-cols-2 gap-4 px-7  md:grid-cols-3 md:gap-8">
         {images.map((image, index) => (
           <div
-            className="group relative transition duration-700 ease-in-out hover:text-xs md:hover:text-xl" // Add 'group' class here
+            className="group relative"
             key={index}
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={handleMouseLeave}
           >
             <Image src={image.src} alt={image.alt} />
-            <div className="absolute inset-0 mx-auto flex items-center rounded-2xl   transition-all duration-300 ease-in-out hover:bg-[#F1790A]	hover:text-xs   hover:opacity-50 focus:bg-[#F1790A] focus:opacity-50 md:hover:text-xl">
-              <span className="subtitle-3 mx-auto px-[1.8rem] text-center text-4xl font-semibold text-primary transition-colors duration-300 ease-in-out group-hover:text-xs group-hover:text-black group-focus:text-black md:group-hover:text-xl">
+            <div className="absolute inset-0 mx-auto flex items-center justify-center rounded-2xl hover:bg-[rgba(241,121,10,0.5)] focus:bg-[rgba(241,121,10,0.5)]">
+              <span
+                className={`subtitle-3 mx-auto px-[1.8rem] text-center  transition-all duration-500 ease-linear ${
+                  textHover === index ? "animate-fadeIn" : "text-primary"
+                } hover:text-[#111]`}
+              >
                 {textHover === index ? image.text : image.title}
               </span>
             </div>
@@ -118,32 +147,19 @@ const Honers: React.FC<Props> = ({}) => {
         ))}
       </div>
     </div>
-
-    // <div className="relative mb-[3.63rem] flex h-[81rem] w-full items-start bg-main-image bg-cover  bg-no-repeat md:mb-[6.63rem] md:h-[94.75rem] ">
-    //   <div className="z-1 absolute flex w-full flex-col justify-center gap-y-12 py-6">
-    //     <p className="title my-5 text-center text-6xl	 font-extrabold	 text-white">
-    //       افتخارات ما
-    //     </p>{" "}
-    //     <div className="mx-auto grid grid-cols-2 gap-4 px-7  md:grid-cols-3 md:gap-8">
-    //       {images.map((image, index) => (
-    //         <div className="group relative " key={index}>
-    //           <Image src={image.src} alt={image.alt} />
-    //           <div className="absolute inset-0 mx-auto flex items-center rounded-2xl transition-all duration-300 ease-in-out hover:bg-primary hover:opacity-50 focus:bg-primary focus:opacity-50">
-    //             <span className=" subtitle-1 mx-auto px-[1.8rem] text-center text-4xl font-semibold text-primary transition-colors duration-300 ease-in-out group-hover:text-black group-focus:text-black">
-    //               {image.text}
-    //             </span>
-    //           </div>
-    //         </div>
-    //       ))}
-    //     </div>
-    //     <div className=" grid w-full grid-cols-2 justify-evenly gap-5 md:flex ">
-    //       {informationData.map((info) => (
-    //         <InfoText key={info.id} title={info.title} text={info.text} />
-    //       ))}
-    //     </div>
-    //   </div>
-    // </div>
   );
 };
 
 export default Honers;
+
+{
+  /* <div className="absolute inset-0 mx-auto flex items-center justify-center rounded-2xl hover:bg-[rgba(241,121,10,0.2)] focus:bg-[rgba(241,121,10,0.5)]">
+  <span
+    className={`subtitle-3 mx-auto px-[1.8rem] text-center text-4xl font-semibold transition-all duration-500 ease-in-out ${
+      textHover === index ? "animate-fadeIn" : "text-primary"
+    } hover:text-black`}
+  >
+    {textHover === index ? image.text : image.title}
+  </span>
+</div>; */
+}

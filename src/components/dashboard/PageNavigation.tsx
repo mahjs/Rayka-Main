@@ -12,18 +12,18 @@ const PageNavigation = () => {
   const pathname = usePathname();
   return (
     <nav>
-      <ul className="title-4 flex flex-col gap-4">
-        <li>
+      <ul className="title-4 flex flex-col gap-8">
+        {/* <li>
           <Link className={pathname === "/" ? "text-[#FEA918]" : ""} href="/">
             خانه
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link
             className={pathname === "/about-us" ? "text-[#FEA918]" : ""}
             href="/about-us"
           >
-            درباه‌ما
+            درباره ما
           </Link>
         </li>
         <li>

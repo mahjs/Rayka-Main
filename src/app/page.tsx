@@ -62,18 +62,18 @@ export default function Home() {
           </p>
           <p className="subtitle-1 text-right text-white opacity-50 md:mt-0 md:opacity-100 lg:max-w-[50%]">
             ما در شرکت ماورای ابعاد رایکا به بهبود سرویس‌های موجود در حوزه
-            فناوری و ارتباطات اکتفا نمی‌کنیم؛ ما به رویاهای تحقق نیافته جامه‌ی
+            فناوری و ارتباطات اکتفا نمی‌کنیم؛ ما به رویاهای تحقق‌نیافته جامه‌
             عمل می‌پوشانیم و در کنار هم از خلق آینده‌ای هوشمندتر لذت می‌بریم.
           </p>
         </div>
-        <div className="-ml-[3rem] hidden -rotate-90  gap-10 text-white md:flex">
+        {/* <div className="-ml-[3rem] hidden -rotate-90  gap-10 text-white md:flex">
           <div>
             <Link href="#">INSTAGRAM</Link>
           </div>
           <div>
             <Link href="#">LINKEDIN</Link>
           </div>
-        </div>
+        </div> */}
       </section>
 
       {/* Experties Content */}
@@ -84,23 +84,21 @@ export default function Home() {
           style={{
             backgroundSize: "100%",
           }}
-          className="relative h-[24rem] w-[90%] flex-col items-center justify-center rounded-lg bg-main-image md:h-[40rem] md:w-[80%] md:rounded-3xl lg:h-[18rem] lg:w-[90%]"
-        >
-          <div className="absolute bottom-0 left-0 right-0 top-0 z-10 h-full w-full rounded-3xl bg-black bg-opacity-30" />
-        </div>
+          className="relative h-[24rem] w-[90%] flex-col items-center justify-center rounded-lg bg-work-plans-image bg-cover bg-center md:h-[40rem] md:w-[80%] md:rounded-3xl lg:h-[18rem] lg:w-[90%]"
+        />
         {/* Content */}
         <Experties />
       </section>
 
       {/* Information Content */}
       <section
-        className="relative flex h-[20rem] w-full items-center justify-center  bg-main-image md:mb-[5rem]"
+        className="relative flex h-[20rem] w-full items-center justify-center bg-statistics-image bg-cover bg-center md:mb-[5rem] lg:mt-16"
         style={{
           backgroundSize: "100%",
         }}
       >
-        <div className="absolute bottom-0 left-0 right-0 top-0 z-10 h-full w-full rounded-3xl bg-black bg-opacity-30" />
-        <div className="absolute z-20 grid w-full grid-cols-2 justify-evenly gap-5 md:flex ">
+        <div className="rounded-3x absolute bottom-0 left-0 right-0 top-0 z-10 h-full w-full" />
+        <div className="absolute z-30 grid w-full grid-cols-2 justify-evenly gap-5 md:flex ">
           {informationData.map((info) => (
             <InfoText
               key={info.id}
@@ -112,7 +110,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="z-10 -mb-[2rem] ml-[10%] flex items-center justify-center md:-mb-[5rem]">
+      <div className="z-10 -mb-[2rem] flex items-center justify-center md:-mb-[5rem]">
         <JoinRaykaCard />
       </div>
     </main>
