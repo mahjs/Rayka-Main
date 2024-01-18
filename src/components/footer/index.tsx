@@ -13,20 +13,17 @@ import Location from "@/assets/images/location.svg";
 const Footer = () => {
   return (
     <footer className="bg-black px-5">
-      <div className="relative mx-auto flex max-w-[1300px] justify-between gap-5 bg-footer-image bg-no-repeat object-contain pb-[2rem] pt-[4rem] md:items-start md:pb-[3rem] md:pt-[8rem] lg:px-0">
-        <div className="flex flex-col gap-2 md:gap-3">
+      <div className="relative mx-auto flex max-w-[1300px] justify-around gap-5 bg-footer-image bg-no-repeat object-contain pb-[1.5rem] pt-[2.5rem] md:items-start md:pb-[2rem] md:pt-[6.5rem]">
+        <div className="flex flex-col gap-2 md:gap-3 lg:ml-auto">
           <Image
             src={RaykaIcon}
             alt="Rayka icon"
-            className="h-[1.62488rem] w-[1.62488rem] md:h-[5rem] md:w-[5rem] "
+            className="h-[1.62488rem] w-[1.62488rem] md:h-[4rem] md:w-[4rem] lg:h-[5rem] lg:w-[5rem]"
           />
-          <p className="title-4 max-w-[18rem] text-white md:max-w-[28rem]">
+          <p className="title-4 max-w-[9.5rem] text-white md:max-w-[19rem] lg:max-w-[28rem]">
             ما در خانواده سخت‌کوش و خستگی‌ناپذیر شرکت ماورای ابعاد رایکا، برای
-            تحقق رویاهایمان می‌جنگیم؛
-            <span className="title-4 hidden max-w-[18rem] text-white md:inline md:max-w-[28rem]">
-              در کنار هم می‌سازیم و از تماشای آنچه روزی تصور کرده بودیم و حالا
-              به آن تجسم بخشیده‌ایم لذت می‌بریم.
-            </span>
+            تحقق رویاهایمان می‌جنگیم؛ در کنار هم می‌سازیم و از تماشای آنچه روزی
+            تصور کرده بودیم و حالا به آن تجسم بخشیده‌ایم لذت می‌بریم.
           </p>
         </div>
 
@@ -35,10 +32,10 @@ const Footer = () => {
           <PageNavigation />
         </div>
 
-        <div className="flex flex-col gap-2 text-white md:gap-6">
+        <div className="flex flex-col gap-2 text-white md:gap-6 lg:mr-auto">
           <h3 className="header-6">راه‌های ارتباطی</h3>
-          <div className="title-4 grid grid-cols-2 flex-col gap-2 md:flex md:gap-9">
-            <div className="flex items-center gap-1 md:hidden md:gap-3 ">
+          <div className="title-4 flex flex-col gap-2 md:flex md:gap-6">
+            {/* <div className="flex items-center gap-1 md:hidden md:gap-3 ">
               <Image
                 src={Call}
                 alt="call icon"
@@ -55,7 +52,7 @@ const Footer = () => {
                   +98 9108957597
                 </p>
               </a>
-            </div>
+            </div> */}
             <div className="flex items-center gap-1 md:gap-3">
               <Image
                 src={Phone}
@@ -95,7 +92,7 @@ const Footer = () => {
                 width={25}
                 height={25}
               />
-              <p className="title-5 w-[20rem]">
+              <p className="title-5 w-[9rem] md:w-[14rem] lg:w-[25rem]">
                 تهران، خیابان پاسداران، پایین‌تر از اطلس مال، نبش کوچه تنگستان
                 سوم، پلاک ۷۴۶ واحد ۲
               </p>
