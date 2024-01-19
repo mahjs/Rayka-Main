@@ -26,15 +26,15 @@ export async function POST(req: NextRequest) {
     const { name, email, phone, title, message } = validationResult.data;
 
     try {
-      await prisma.form.create({
-        data: {
-          name,
-          email,
-          phone,
-          title,
-          message,
-        },
-      });
+      // await prisma.form.create({
+      //   data: {
+      //     name,
+      //     email,
+      //     phone,
+      //     title,
+      //     message,
+      //   },
+      // });
 
       return NextResponse.json("message sent");
     } catch (error) {
