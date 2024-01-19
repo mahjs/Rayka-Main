@@ -28,7 +28,7 @@ export default function RootLayout({
         />
         <meta name="author" content="نام نویسنده یا شرکت" />
         <link rel="canonical" href="https://raikaco.org" />
-        <meta http-equiv="Content-Language" content="fa" />
+        <meta httpEquiv="Content-Language" content="fa" />
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="apple-touch-icon"
