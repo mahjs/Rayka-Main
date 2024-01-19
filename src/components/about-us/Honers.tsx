@@ -107,12 +107,12 @@ const Honers: React.FC<Props> = ({}) => {
 
   return (
     <div
-      className={`relative mb-[6.69rem] flex w-full flex-col items-center justify-center bg-honors-image bg-cover bg-no-repeat  pb-28 pt-7`}
+      className={`bg-honors-image relative mb-[6.69rem] flex w-full flex-col items-center justify-center bg-cover bg-no-repeat  pb-28 pt-7`}
       style={{
         transition: "margin-top 0.5s ease-in-out",
       }}
     >
-      <p className="title my-5 text-center text-6xl	 font-extrabold	 text-white">
+      <p className="title my-6 text-center text-6xl font-extrabold	 text-white	 md:my-10">
         افتخارات ما
       </p>{" "}
       <div className="mx-auto grid grid-cols-2 gap-4 px-7  md:grid-cols-3 md:gap-8">
