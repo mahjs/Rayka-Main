@@ -84,7 +84,7 @@ export default function Home() {
           style={{
             backgroundSize: "100%",
           }}
-          className="bg-work-plans-image relative h-[24rem] w-[90%] flex-col items-center justify-center rounded-lg bg-cover bg-center md:h-[43rem] md:w-[80%] md:rounded-3xl lg:h-[18rem] lg:w-[90%]"
+          className="relative h-[24rem] w-[90%] flex-col items-center justify-center rounded-lg bg-work-plans-image bg-cover bg-center md:h-[43rem] md:w-[80%] md:rounded-3xl lg:h-[18rem] lg:w-[90%]"
         />
         {/* Content */}
         <Experties />
@@ -92,7 +92,7 @@ export default function Home() {
 
       {/* Information Content */}
       <section
-        className="bg-statistics-image relative flex h-[20rem] w-full items-center justify-center bg-cover bg-center md:mb-[5rem] lg:mt-16"
+        className="relative flex h-[20rem] w-full items-center justify-center bg-statistics-image bg-cover bg-center md:mb-[5rem] lg:mt-16"
         style={{
           backgroundSize: "100%",
         }}
