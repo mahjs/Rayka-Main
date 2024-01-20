@@ -1,10 +1,9 @@
-import Link from "next/link";
 import InfoText from "../components/dashboard/InfoText";
 import JoinRaykaCard from "@/components/dashboard/JoinRaykaCard";
 import Experties from "@/components/dashboard/Experties";
 
 // Information data for showing the company project and description.
-const informationData = [
+export const informationData = [
   {
     id: 1,
     title: 17,
@@ -80,23 +79,13 @@ export default function Home() {
       <section className="relative flex justify-center md:mb-5">
         {/* Make the backgrounds */}
         <div className="absolute h-[24rem] w-[90%] -rotate-[2deg] rounded-lg bg-[#FEA918] md:h-[43rem] md:w-[80.1%] md:-rotate-[2deg] md:rounded-3xl lg:h-[18rem] lg:w-[90.1%] lg:-rotate-[1deg]" />
-        <div
-          style={{
-            backgroundSize: "100%",
-          }}
-          className="relative h-[24rem] w-[90%] flex-col items-center justify-center rounded-lg bg-work-plans-image bg-cover bg-center md:h-[43rem] md:w-[80%] md:rounded-3xl lg:h-[18rem] lg:w-[90%]"
-        />
+        <div className="relative h-[24rem] w-[90%] flex-col items-center justify-center rounded-lg bg-work-plans-image bg-no-repeat md:h-[43rem] md:w-[80%] md:rounded-3xl lg:h-[18rem] lg:w-[90%]" />
         {/* Content */}
         <Experties />
       </section>
 
       {/* Information Content */}
-      <section
-        className="relative flex h-[20rem] w-full items-center justify-center bg-statistics-image bg-cover bg-center md:mb-[5rem] lg:mt-16"
-        style={{
-          backgroundSize: "100%",
-        }}
-      >
+      <section className="relative flex h-[20rem] w-full items-center justify-center bg-statistics-image bg-cover bg-center bg-no-repeat md:mb-[5rem] lg:mt-16">
         <div className="rounded-3x absolute bottom-0 left-0 right-0 top-0 z-10 h-full w-full" />
         <div className="absolute z-30 grid w-full grid-cols-2 justify-evenly gap-5 md:flex ">
           {informationData.map((info) => (
@@ -110,7 +99,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="z-10 -mb-[2rem] flex items-center justify-center  md:-mb-[3rem]">
+      <div className="z-10 -mb-[1rem] flex items-center justify-center  md:-mb-[3rem]">
         <JoinRaykaCard />
       </div>
     </main>

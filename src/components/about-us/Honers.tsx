@@ -31,31 +31,9 @@ import honers3 from "@/assets/images/honers3.png";
 import honers4 from "@/assets/images/honers4.png";
 import honers5 from "@/assets/images/honers5.png";
 import honers6 from "@/assets/images/honers6.png";
+import { informationData } from "@/app/page";
 
 interface Props {}
-const informationData = [
-  {
-    id: 1,
-    title: 17,
-    text: "پروژه موفقیت‌آمیز",
-  },
-  {
-    id: 2,
-    title: 35,
-    text: "پرسنل مجرب",
-  },
-  {
-    id: 3,
-    title: 7,
-    text: "همکای‌های بین‌المللی",
-  },
-  {
-    id: 4,
-    title: 1,
-    unit: "M",
-    text: "تعداد کاربران",
-  },
-];
 const images = [
   {
     src: honers3,
@@ -107,12 +85,12 @@ const Honers: React.FC<Props> = ({}) => {
 
   return (
     <div
-      className={`relative mb-[6.69rem] flex w-full flex-col items-center justify-center bg-honors-image bg-cover bg-no-repeat  pb-16 pt-7`}
+      className={`relative mb-[6.69rem] flex w-full flex-col items-center justify-center bg-honors-image bg-cover bg-no-repeat  pb-5 pt-7 lg:pb-12`}
       style={{
         transition: "margin-top 0.5s ease-in-out",
       }}
     >
-      <p className="title my-6 text-center text-6xl font-extrabold	 text-white	 md:my-10">
+      <p className="header-4-plus my-6 text-center text-white md:my-10">
         افتخارات ما
       </p>{" "}
       <div className="mx-auto grid grid-cols-2 gap-4 px-7  md:grid-cols-3 md:gap-8">
