@@ -11,7 +11,7 @@ import Person from "@/assets/images/person.webp";
 const JoinRaykaCard = () => {
   const router = useRouter();
   return (
-    <section className="relative mx-auto flex w-[70%] max-w-[1300px] flex-col rounded-3xl bg-[#FEA918] p-3 md:w-[80%] md:p-10 lg:flex-row lg:items-center lg:gap-5 xl:w-[70%] ">
+    <section className="relative mx-auto flex w-[70%] max-w-[1300px] flex-col rounded-2xl bg-[#FEA918] p-3 md:w-[80%] md:p-10 lg:flex-row lg:items-center lg:gap-5 xl:w-[70%] ">
       <div className="flex flex-col text-[#111]">
         <p className="header-4 whitespace-nowrap">عضو خانواده ما شو!</p>
         <p className="title-4 hidden md:block">اینجا برای همه جا هست!</p>

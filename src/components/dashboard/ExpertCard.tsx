@@ -45,14 +45,10 @@ const ExpertCard: FC<Props> = ({
       onMouseOut={() => {
         setIconPath(orangeIconPath);
       }}
-      className={`group relative flex h-[l20px] w-[150px] cursor-pointer flex-col flex-wrap overflow-hidden rounded-lg 
-      ${
-        mobile ? "bg-[#2E2E2E]" : "bg-[#2E2E2E]"
-      }  py-[1.5rem] pr-[1.2rem] md:pr-[2.2rem] text-${
-        mobile ? "white" : "white"
-      } transition-all duration-200 hover:scale-110 hover:bg-primary hover:text-[#232323] md:h-[250px] md:w-[250px] md:gap-10 ${
-        mobile ? "justify-self-center" : ""
-      }`}
+      className={`group relative flex h-[l20px] w-[150px] cursor-pointer flex-col flex-wrap overflow-hidden rounded-lg bg-[#2E2E2E] py-[1.5rem] pr-[1.2rem] text-white transition-all
+       duration-200 hover:scale-110 hover:bg-primary hover:text-[#232323]  focus:scale-110 focus:bg-primary focus:text-[#232323] active:scale-110 active:bg-primary active:text-[#232323] md:h-[250px] md:w-[250px] md:gap-10 md:pr-[2.2rem] ${
+         mobile ? "justify-self-center" : ""
+       }`}
     >
       <span className="md:mt-8">
         <Image
@@ -65,11 +61,11 @@ const ExpertCard: FC<Props> = ({
       </span>
       <p className="title text-inherit md:font-bold">{title}</p>
       <span
-        className={`number-2 mob absolute -left-8 -top-10 text-white opacity-[.15] transition-all duration-200 group-hover:opacity-[.15] md:-left-16 md:-top-20 md:opacity-[.15] lg:opacity-[.03]`}
+        className={`number-2 mob absolute -left-8 -top-10 text-white opacity-[.15] transition-all duration-200 group-hover:opacity-[.15] group-focus:opacity-[.15] group-active:opacity-[.15] md:-left-16 md:-top-20 md:opacity-[.15] lg:opacity-[.03]`}
       >
         {String(index).padStart(2, "0")}
       </span>
-      <div className="absolute right-0 top-0 h-[120%] w-[120%] bg-black opacity-10 transition-all duration-200 group-hover:-top-[55%] group-hover:right-[60%] group-hover:rotate-[35deg]" />
+      <div className="absolute right-0 top-0 h-[120%] w-[120%] bg-black opacity-10 transition-all duration-200 group-hover:-top-[55%] group-hover:right-[60%] group-hover:rotate-[35deg] group-focus:-top-[55%] group-focus:right-[60%] group-focus:rotate-[35deg] group-active:-top-[55%] group-active:right-[60%] group-active:rotate-[35deg]" />
     </section>
   );
 };

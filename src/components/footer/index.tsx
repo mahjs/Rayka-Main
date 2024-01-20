@@ -12,7 +12,7 @@ import Location from "@/assets/images/location.svg";
 
 const Footer = () => {
   return (
-    <footer className="bg-black bg-footer-image bg-no-repeat px-5">
+    <footer className="bg-black bg-footer-image bg-contain px-5">
       <div className="relative mx-auto flex max-w-[1300px] justify-around gap-5  object-contain pb-[1.5rem] pt-[2.5rem] md:items-start md:pb-[2rem] md:pt-[6.5rem]">
         <div className="flex max-w-[40%] flex-col gap-2 md:gap-3 lg:ml-auto">
           <Image
