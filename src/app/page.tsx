@@ -48,19 +48,19 @@ export default function Home() {
       >
         <div className="flex-col overflow-x-hidden px-5 pb-5 text-white md:mr-[11rem] md:py-10">
           <h1 className="header-6 hidden md:block">شرکت ماورای ابعاد رایکا</h1>
-          <p className="header-2 hidden whitespace-nowrap md:block">
+          <p className="header-2 whitespace-nowrap ">
             همگام با <span className="text-primary">تکنولوژی</span>
           </p>
-          <p className="header-2 hidden whitespace-nowrap md:block">
+          <p className="header-2 whitespace-nowrap ">
             برای <span className="text-primary">آینده‌ای </span> هوشمندتر
           </p>
-          <p className="text-[2rem] font-bold md:hidden">
+          {/* <p className="text-[1.8rem] font-bold md:hidden">
             <span className="text-primary">نوآوری</span> در فناوری
-          </p>
-          <p className="text-[2rem] font-bold md:hidden">
+          </p> */}
+          {/* <p className="text-[2rem] font-bold md:hidden">
             <span className="text-primary">هوشمندی</span> در کسب و کار
-          </p>
-          <p className="subtitle-1 text-right text-white opacity-50 md:mt-0 md:opacity-100 lg:max-w-[50%]">
+          </p> */}
+          <p className="subtitle-1 text-right text-white md:mt-0 lg:max-w-[50%]">
             ما در شرکت ماورای ابعاد رایکا به بهبود سرویس‌های موجود در حوزه
             فناوری و ارتباطات اکتفا نمی‌کنیم؛ ما به رویاهای تحقق‌نیافته جامه‌
             عمل می‌پوشانیم و در کنار هم از خلق آینده‌ای هوشمندتر لذت می‌بریم.
@@ -110,7 +110,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="z-10 -mb-[2rem] flex items-center justify-center md:-mb-[5rem]">
+      <div className="z-10 -mb-[2rem] flex items-center justify-center  md:-mb-[3rem]">
         <JoinRaykaCard />
       </div>
     </main>

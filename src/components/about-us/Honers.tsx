@@ -107,7 +107,7 @@ const Honers: React.FC<Props> = ({}) => {
 
   return (
     <div
-      className={`bg-honors-image relative mb-[6.69rem] flex w-full flex-col items-center justify-center bg-cover bg-no-repeat  pb-28 pt-7`}
+      className={`relative mb-[6.69rem] flex w-full flex-col items-center justify-center bg-honors-image bg-cover bg-no-repeat  pb-16 pt-7`}
       style={{
         transition: "margin-top 0.5s ease-in-out",
       }}
@@ -136,7 +136,7 @@ const Honers: React.FC<Props> = ({}) => {
           </div>
         ))}
       </div>
-      <div className=" mt-9 grid w-full grid-cols-2 justify-evenly gap-5 md:flex ">
+      <div className="mt-10 grid w-full grid-cols-2 justify-evenly gap-5 md:flex ">
         {informationData.map((info) => (
           <InfoText
             key={info.id}
