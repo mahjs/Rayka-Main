@@ -90,9 +90,9 @@ const Experties = () => {
         <p
           className={`${
             showDetails ? "hidden" : ""
-          } absolute -top-12 left-[50%] my-20 translate-x-[-50%] whitespace-nowrap text-center text-[2rem] text-white md:text-[2.8rem] lg:text-[3rem]`}
+          } header-3 absolute -top-12 left-[50%] my-20 translate-x-[-50%] whitespace-nowrap text-center font-extrabold text-white`}
         >
-          حوضه تخصص رایکا
+          حوزه تخصص رایکا
         </p>
       </Transition>
       <Transition

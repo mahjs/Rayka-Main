@@ -45,24 +45,25 @@ const ExpertCard: FC<Props> = ({
       onMouseOut={() => {
         setIconPath(orangeIconPath);
       }}
-      className={`group relative flex h-[l20px] w-[150px] cursor-pointer flex-col flex-wrap overflow-hidden rounded-lg ${
-        mobile ? "bg-[#FEA918]" : "bg-[#2E2E2E]"
+      className={`group relative flex h-[l20px] w-[150px] cursor-pointer flex-col flex-wrap overflow-hidden rounded-lg 
+      ${
+        mobile ? "bg-[#2E2E2E]" : "bg-[#2E2E2E]"
       }  py-[1.5rem] pr-[1.2rem] md:pr-[2.2rem] text-${
-        mobile ? "#000" : "white"
+        mobile ? "white" : "white"
       } transition-all duration-200 hover:scale-110 hover:bg-primary hover:text-[#232323] md:h-[250px] md:w-[250px] md:gap-10 ${
         mobile ? "justify-self-center" : ""
       }`}
     >
       <span className="md:mt-8">
         <Image
-          src={mobile ? darkIconPath : iconPath}
+          src={iconPath}
           alt={title + " icon"}
           width={mobile ? 25 : 50}
           height={mobile ? 25 : 50}
           className="h-[25px] w-[25px] md:h-[50px] md:w-[50px]"
         />
       </span>
-      <p className="body text-inherit md:text-[1.5rem] md:font-bold">{title}</p>
+      <p className="title text-inherit md:font-bold">{title}</p>
       <span
         className={`number-2 mob absolute -left-8 -top-10 text-white opacity-[.15] transition-all duration-200 group-hover:opacity-[.15] md:-left-16 md:-top-20 md:opacity-[.15] lg:opacity-[.03]`}
       >

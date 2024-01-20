@@ -15,17 +15,20 @@ const HeroSection: React.FC<Props> = ({
   heading,
   subHeading,
   childHeading,
-  image
+  image,
 }) => {
   return (
-    <div className={cn("flex w-full flex-col justify-center bg-no-repeat bg-cover bg-center pb-5 pt-16 text-center text-white md:h-[500px] md:pt-0",
-      {
-        "bg-contact-us-image" : image==="contact-us",
-        "bg-about-us-image" : image === "about-us",
-        "bg-job-image" : image === "job" 
-      }
-    )}>
-      <h2 className="header-1">{heading}</h2>
+    <div
+      className={cn(
+        "flex w-full flex-col justify-center bg-cover bg-center bg-no-repeat pb-5 pt-16 text-center text-white md:h-[500px] md:pt-0",
+        {
+          "bg-contact-us-image": image === "contact-us",
+          "bg-about-us-image": image === "about-us",
+          "bg-job-image": image === "job",
+        },
+      )}
+    >
+      <h2 className="header-1-plus">{heading}</h2>
       <div className="title-4 flex justify-center">
         <p>
           <Link href="/">{subHeading}</Link>

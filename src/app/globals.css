@@ -61,6 +61,7 @@ body {
   user-select: none; /* Standard */
 }
 
+
 .header-1 {
   font-family: "KalamehBold";
   font-size: 2.41406rem;
@@ -81,7 +82,7 @@ body {
 
 .header-2 {
   font-family: "KalamehExtraBold";
-  font-size: clamp(2.95rem, 6vw, 6.18713rem);
+  font-size: clamp(2.05rem, 6vw, 6.18713rem);
   font-weight: 800;
   /* @media screen and (max-width: 1068px) {
     font-size: 3.61406rem;
@@ -93,11 +94,8 @@ body {
 
 .header-3 {
   font-family: "KalamehExtraBold";
-  font-size: clamp(1.36719rem, 7vw, 4.75rem);
+  font-size: clamp(1.36719rem, 5.5vw, 3.05rem);
   line-height: 140%;
-  /* @media screen and (max-width: 768px) {
-    font-size: 1.36719rem;
-  } */
 }
 
 .header-3-plus {
@@ -144,25 +142,22 @@ body {
 }
 
 .header-6 {
-  font-family: "KalamehBold";
+  font-family: "KalamehRegular";
   font-size: clamp(0.95rem, 3vw, 2.05375rem);
   font-weight: 500;
   line-height: 150.5%;
   color: #fff;
-  /* @media screen and (max-width: 1068px) {
-    font-size: 1.61406rem;
-  }
-  @media screen and (max-width: 768px) {
-    font-size: 1.01406rem;
-  } */
 }
 
 .title {
   font-family: "KalamehBold";
-  font-size: 2.61744rem;
-  line-height: 150.5%;
+  font-size: 1.61744rem;
+  line-height: 130.5%;
+  @media screen and (max-width: 968px) {
+    font-size: 1.53rem;
+  }
   @media screen and (max-width: 758px) {
-    font-size: 1.43rem;
+    font-size: .86rem;
   }
 }
 
@@ -186,9 +181,9 @@ body {
 
 .title-3 {
   font-family: "KalamehRegular";
-  font-size: clamp(1.037rem, 1.6vw, 1.8125rem);
-  line-height: 150.5%;
-  font-weight: 700;
+  font-size: clamp(1rem, 1.4vw, 1.4125rem);
+  line-height: 110.5%;
+  font-weight: 400;
   /* @media screen and (max-width: 608px) {
     font-size: 1.237rem;
   } */
@@ -211,7 +206,7 @@ body {
 
 .subtitle-1 {
   font-family: "KalamehRegular";
-  font-size: clamp(0.8rem, 3vw, 1.36213rem);
+  font-size: clamp(0.75rem, 2.8vw, 1.36213rem);
   line-height: 150.5%;
   /* @media screen and (max-width: 758px) {
     font-size: 0.70431rem;
@@ -227,6 +222,10 @@ body {
   }
   @media screen and (max-width: 758px) {
     font-size: 0.63rem;
+  }
+
+  @media screen and (max-width: 658px) {
+    font-size: 0.48rem;
   }
 }
 
@@ -269,7 +268,7 @@ body {
 
 .number {
   font-family: "KalamehBold";
-  font-size: clamp(3.63rem, 8vw, 7.56819rem);
+  font-size: clamp(3.03rem, 7vw, 7.16819rem);
   line-height: 140%;
 }
 .number-2 {
