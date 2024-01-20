@@ -31,7 +31,30 @@ import honers3 from "@/assets/images/honers3.png";
 import honers4 from "@/assets/images/honers4.png";
 import honers5 from "@/assets/images/honers5.png";
 import honers6 from "@/assets/images/honers6.png";
-import { informationData } from "@/app/page";
+
+const informationData = [
+  {
+    id: 1,
+    title: 17,
+    text: "پروژه موفقیت‌آمیز",
+  },
+  {
+    id: 2,
+    title: 35,
+    text: "پرسنل مجرب",
+  },
+  {
+    id: 3,
+    title: 7,
+    text: "همکاری‌های بین‌المللی",
+  },
+  {
+    id: 4,
+    title: 1,
+    unit: "M",
+    text: "تعداد کاربران",
+  },
+];
 
 interface Props {}
 const images = [
