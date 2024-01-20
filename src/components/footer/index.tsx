@@ -14,13 +14,13 @@ const Footer = () => {
   return (
     <footer className="bg-black px-5">
       <div className="relative mx-auto flex max-w-[1300px] justify-around gap-5 bg-footer-image bg-no-repeat object-contain pb-[1.5rem] pt-[2.5rem] md:items-start md:pb-[2rem] md:pt-[6.5rem]">
-        <div className="flex flex-col gap-2 md:gap-3 lg:ml-auto">
+        <div className="flex max-w-[40%] flex-col gap-2 md:gap-3 lg:ml-auto">
           <Image
             src={RaykaIcon}
             alt="Rayka icon"
             className="h-[1.62488rem] w-[1.62488rem] md:h-[4rem] md:w-[4rem] lg:h-[5rem] lg:w-[5rem]"
           />
-          <p className="title-4 max-w-[9.5rem] text-white md:max-w-[19rem] lg:max-w-[28rem]">
+          <p className="title-4 min-w-[9.5rem] text-white">
             ما در خانواده سخت‌کوش و خستگی‌ناپذیر شرکت ماورای ابعاد رایکا، برای
             تحقق رویاهایمان می‌جنگیم؛ در کنار هم می‌سازیم و از تماشای آنچه روزی
             تصور کرده بودیم و حالا به آن تجسم بخشیده‌ایم لذت می‌بریم.
