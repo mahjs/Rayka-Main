@@ -79,7 +79,7 @@ export default function Home() {
       <section className="relative flex justify-center md:mb-5">
         {/* Make the backgrounds */}
         <div className="absolute h-[24rem] w-[90%] -rotate-[2deg] rounded-lg bg-[#FEA918] md:h-[43rem] md:w-[80.1%] md:-rotate-[2deg] md:rounded-3xl lg:h-[18rem] lg:w-[90.1%] lg:-rotate-[1deg]" />
-        <div className="relative h-[24rem] w-[90%] flex-col items-center justify-center rounded-lg bg-work-plans-image bg-no-repeat md:h-[43rem] md:w-[80%] md:rounded-3xl lg:h-[18rem] lg:w-[90%]" />
+        <div className="relative h-[24rem] w-[90%] flex-col items-center justify-center rounded-lg bg-work-plans-image bg-cover bg-no-repeat md:h-[43rem] md:w-[80%] md:rounded-3xl lg:h-[18rem] lg:w-[90%]" />
         {/* Content */}
         <Experties />
       </section>
