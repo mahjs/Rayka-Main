@@ -3,7 +3,7 @@ import JoinRaykaCard from "@/components/dashboard/JoinRaykaCard";
 import Experties from "@/components/dashboard/Experties";
 
 // Information data for showing the company project and description.
-export const informationData = [
+const informationData = [
   {
     id: 1,
     title: 17,
