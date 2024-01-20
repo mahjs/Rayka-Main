@@ -18,7 +18,7 @@ const informationData = [
   {
     id: 3,
     title: 7,
-    text: "همکای‌های بین‌المللی",
+    text: "همکاری‌های بین‌المللی",
   },
   {
     id: 4,
