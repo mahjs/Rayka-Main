@@ -236,6 +236,14 @@ body {
     font-size: 0.70431rem;
   } */
 }
+.subtitle-1-change {
+  font-family: "KalamehRegular";
+  font-size: 1.36213;
+  line-height: 150.5%;
+  @media screen and (max-width: 758px) {
+    font-size: 0.59606rem;
+  }
+}
 
 .subtitle-2 {
   font-family: "KalamehRegular";
@@ -274,7 +282,10 @@ body {
   line-height: 150.5%;
   font-weight: 600;
   @media screen and (max-width: 768px) {
-    font-size: 0.85rem;
+    font-size: 0.862rem;
+  }
+  @media screen and (max-width: 337px) {
+    font-size: 0.48rem;
   }
 }
 

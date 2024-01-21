@@ -125,7 +125,7 @@ const Honers: React.FC<Props> = ({}) => {
             onMouseLeave={handleMouseLeave}
           >
             <Image src={image.src} alt={image.alt} />
-            <div className="absolute inset-0 mx-auto flex items-center justify-center rounded-2xl hover:bg-[rgba(241,121,10,0.5)] focus:bg-[rgba(241,121,10,0.5)]">
+            <div className="absolute inset-0 mx-auto flex items-center justify-center rounded-lg hover:bg-[rgba(241,121,10,0.5)] focus:bg-[rgba(241,121,10,0.5)]">
               <span
                 className={`subtitle-3 mx-auto px-[1.8rem] text-center  transition-all duration-500 ease-linear ${
                   textHover === index ? "animate-fadeIn" : "text-primary"
