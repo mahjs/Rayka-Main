@@ -250,7 +250,7 @@ body {
     width: 24rem;
   }
   @media screen and (max-width: 1000px) {
-    width: 18rem;
+   width: 18rem;
   }
 
   @media screen and (max-width: 568px) {
