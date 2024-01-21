@@ -157,10 +157,25 @@ body {
 
 .header-6 {
   font-family: "KalamehRegular";
-  font-size: clamp(0.95rem, 3vw, 2.05375rem);
+  font-size: clamp(0.95rem, 3vw, 3.05375rem);
   font-weight: 500;
   line-height: 150.5%;
   color: #fff;
+}
+.header-7 {
+  font-family: "KalamehBold";
+  font-size: clamp(0.95rem, 3vw, 3.05375rem);
+  font-weight: 500;
+  line-height: 150.5%;
+  color: #fff;
+  @media screen and (max-width: 968px) {
+    font-family: "KalamehBold";
+    font-size: 1.3rem;
+  }
+  @media screen and (max-width: 758px) {
+    font-family: "KalamehBold";
+    font-size: 0.94369rem;
+  }
 }
 
 .title {
@@ -217,6 +232,14 @@ body {
   font-family: "KalamehRegular";
   font-size: clamp(0.5rem, 2vw, 1.5625rem);
   line-height: 140%;
+  @media screen and (max-width: 968px) {
+    font-family: "KalamehRegular";
+    font-size: 1rem;
+  }
+  @media screen and (max-width: 768px) {
+    font-family: "KalamehRegular";
+    font-size: 0.404rem;
+  }
 }
 .title-5 {
   font-family: "KalamehRegular";
@@ -227,7 +250,19 @@ body {
     font-size: 0.5rem;
   } */
 }
-
+.title-6 {
+  font-family: "KalamehRegular";
+  font-size: clamp(0.5rem, 2vw, 1.5625rem);
+  line-height: 140%;
+  @media screen and (max-width: 968px) {
+    font-family: "KalamehRegular";
+    font-size: 1rem;
+  }
+  @media screen and (max-width: 768px) {
+    font-family: "KalamehRegular";
+    font-size: 0.38669rem;
+  }
+}
 .subtitle-1 {
   font-family: "KalamehRegular";
   font-size: clamp(0.75rem, 2.8vw, 1.36213rem);
@@ -282,9 +317,18 @@ body {
   line-height: 150.5%;
   font-weight: 600;
   @media screen and (max-width: 768px) {
+    font-family: "KalamehBold";
+
     font-size: 0.862rem;
   }
+  @media screen and (max-width: 668px) {
+    font-family: "KalamehBold";
+
+    font-size: 0.56rem;
+  }
   @media screen and (max-width: 337px) {
+    font-family: "KalamehBold";
+
     font-size: 0.48rem;
   }
 }

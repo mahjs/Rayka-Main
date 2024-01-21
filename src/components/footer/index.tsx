@@ -33,8 +33,8 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col gap-2 text-white md:gap-6 lg:mr-auto">
-          <h3 className="title">راه‌های ارتباطی</h3>
-          <div className="title-4 flex flex-col gap-2 md:flex md:gap-6">
+          <h3 className="header-7">راه‌های ارتباطی</h3>
+          <div className="title-6 flex flex-col gap-2 md:flex md:gap-6">
             <div className="flex items-center gap-1 md:gap-3">
               <Image
                 src={Phone}
@@ -74,7 +74,7 @@ const Footer = () => {
                 width={25}
                 height={25}
               />
-              <p className="title-5 w-[9rem] md:w-[14rem] lg:w-[25rem]">
+              <p className="title-6 w-[9rem] md:w-[14rem] lg:w-[25rem]">
                 تهران، خیابان پاسداران، پایین‌تر از اطلس مال، نبش کوچه تنگستان
                 سوم، پلاک ۷۴۶ واحد ۲
               </p>

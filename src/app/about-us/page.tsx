@@ -58,7 +58,7 @@ const AboutUS: React.FC<Props> = ({}) => {
     };
   }, [timer]);
   return (
-    <main className="flex flex-col  gap-36 ">
+    <main className="flex flex-col  gap-20 sm:gap-36">
       <HeroSection
         heading="درباره ما"
         subHeading="خانه -"
