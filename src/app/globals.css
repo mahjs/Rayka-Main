@@ -339,12 +339,12 @@ body {
   @media screen and (max-width: 668px) {
     font-family: "KalamehBold";
 
-    font-size: 0.56rem;
+    font-size: 0.86rem;
   }
-  @media screen and (max-width: 337px) {
+  @media screen and (max-width: 380px) {
     font-family: "KalamehBold";
 
-    font-size: 0.48rem;
+    font-size: 0.58rem;
   }
 }
 
