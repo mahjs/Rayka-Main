@@ -90,9 +90,9 @@ const Experties = () => {
         <p
           className={`${
             showDetails ? "hidden" : ""
-          } header-3 absolute -top-12 left-[50%] my-20 translate-x-[-50%] whitespace-nowrap text-center font-extrabold text-white`}
+          } header-5 absolute -top-12 left-[50%] my-20 translate-x-[-50%] whitespace-nowrap text-center text-white`}
         >
-          حوزه تخصص رایکا
+          حوضه تخصصی رایکا
         </p>
       </Transition>
       <Transition
@@ -104,7 +104,7 @@ const Experties = () => {
         leaveFrom="opacity-1 translate-y-0"
         leaveTo="opacity-0 translate-y-full"
       >
-        <div className="mt-[6rem] grid grid-cols-2 gap-4 md:mt-[8rem] lg:hidden">
+        <div className="mt-[6rem] grid grid-cols-2 gap-4 lg:hidden">
           {expertiesData.map((expert) => (
             <ExpertCard
               mobile
