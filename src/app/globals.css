@@ -117,7 +117,7 @@ body {
     font-size: 1.8rem;
   }
   @media screen and (max-width: 768px) {
-    font-size: 1.2rem;
+    font-size: 1.20669rem;
   }
 }
 .header-4-plus {
@@ -150,6 +150,7 @@ body {
   font-weight: 700;
   line-height: 140%;
   @media screen and (max-width: 768px) {
+    font-family: "KalamehBold";
     font-size: 2.1875rem;
   }
 }
@@ -167,10 +168,13 @@ body {
   font-size: 1.61744rem;
   line-height: 130.5%;
   @media screen and (max-width: 968px) {
+    font-family: "KalamehBold";
+
     font-size: 1.53rem;
   }
   @media screen and (max-width: 758px) {
-    font-size: 0.86rem;
+    font-size: 0.97181rem;
+    font-family: "KalamehBold";
   }
 }
 
@@ -246,6 +250,21 @@ body {
 
   @media screen and (max-width: 658px) {
     font-size: 0.48rem;
+  }
+}
+.change-2 {
+  font-family: "KalamehRegular";
+  font-size: 1.06663rem;
+  line-height: 140%;
+  @media screen and (max-width: 1068px) {
+    font-size: 0.83rem;
+  }
+  @media screen and (max-width: 758px) {
+    font-size: 1.36rem;
+  }
+
+  @media screen and (max-width: 658px) {
+    font-size: 0.6875rem;
   }
 }
 
