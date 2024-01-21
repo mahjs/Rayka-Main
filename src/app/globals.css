@@ -61,7 +61,6 @@ body {
   user-select: none; /* Standard */
 }
 
-
 .header-1 {
   font-family: "KalamehBold";
   font-size: 2.41406rem;
@@ -171,7 +170,7 @@ body {
     font-size: 1.53rem;
   }
   @media screen and (max-width: 758px) {
-    font-size: .86rem;
+    font-size: 0.86rem;
   }
 }
 
@@ -201,6 +200,13 @@ body {
   /* @media screen and (max-width: 608px) {
     font-size: 1.237rem;
   } */
+}
+
+.title-3-plus {
+  font-family: "KalamehRegular";
+  line-height: 110.5%;
+  font-weight: 500;
+  font-size: clamp(0.737rem, 2.8vw, 1.82563rem);
 }
 
 .title-4 {

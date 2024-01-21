@@ -122,9 +122,9 @@ const JobCard: React.FC<Job> = ({
 const Jobs: React.FC = () => {
   return (
     <div className="h-full min-h-[100dvh]  select-none flex-col">
-      <div className="flex w-full flex-col justify-center bg-job-image bg-cover bg-center bg-no-repeat pb-5 pt-16 text-center text-white md:h-[500px] md:pt-0">
+      <div className="flex h-[39vh] w-full flex-col justify-center bg-job-image bg-cover bg-center bg-no-repeat pb-5 pt-16 text-center text-white md:h-[60vh] md:pt-0 lg:h-[100vh]">
         <h2 className="header-1-plus">فرصت های شغلی</h2>
-        <div className="title-3 flex justify-center">
+        <div className="title-3-plus flex justify-center">
           <p>
             <Link href="/">خانه- </Link>
           </p>
@@ -147,7 +147,7 @@ const Jobs: React.FC = () => {
             />
           ))
         ) : (
-          <div className="title-2 flex w-[40%] flex-wrap lg:items-center justify-center text-center">
+          <div className="title-2 flex w-[40%] flex-wrap justify-center text-center lg:items-center">
             <Image src={Nojob} alt="Job Position" width={250} height={250} />
             <p>
               با تشکر از علاقه شما, <br /> هم‌اکنون فرصت شغلی جدیدی موجود نیست.
