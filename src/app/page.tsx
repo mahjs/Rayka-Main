@@ -97,7 +97,7 @@ export default function Home() {
       {/* Information Content */}
       <section className="relative flex h-[20rem] w-full items-center justify-center bg-statistics-image bg-cover bg-center bg-no-repeat md:mb-[5rem] lg:mt-16">
         <div className="rounded-3x absolute bottom-0 left-0 right-0 top-0 z-10 h-full w-full" />
-        <div className="absolute z-30 grid w-full grid-cols-2 justify-evenly gap-5 md:flex ">
+        <div className="absolute z-30 grid w-full max-w-[1900px] grid-cols-2 justify-evenly gap-5 md:flex ">
           {informationData.map((info) => (
             <InfoText
               key={info.id}

@@ -15,23 +15,19 @@ const Footer = () => {
     <footer className="bg-black bg-footer-image bg-contain px-5">
       <div className="relative mx-auto flex max-w-[1300px] justify-around gap-5 object-contain pb-[1.5rem] pt-[2.5rem] md:items-start md:pb-[2rem] md:pt-[4.5rem]">
         <div className="flex max-w-[40%] flex-col gap-2 md:gap-3 lg:ml-auto">
-          <Image
-            src={RaykaIcon}
-            alt="Rayka icon"
-            className="h-[1.62488rem] w-[1.62488rem] md:h-[4.5rem] md:w-[4.5rem]"
-          />
+          <Image src={RaykaIcon} alt="Rayka icon" className="footer-logo" />{" "}
           <p className="title-4 footer-description  text-white">
+            {" "}
             ما در خانواده سخت‌کوش و خستگی‌ناپذیر شرکت ماورای ابعاد رایکا، برای
             تحقق رویاهایمان می‌جنگیم؛ در کنار هم می‌سازیم و از تماشای آنچه روزی
-            تصور کرده بودیم و حالا به آن تجسم بخشیده‌ایم لذت می‌بریم.
-          </p>
-        </div>
-
+            تصور کرده بودیم و حالا به آن تجسم بخشیده‌ایم لذت می‌بریم.{" "}
+          </p>{" "}
+        </div>{" "}
         <div className="hidden flex-col gap-6 text-center text-white lg:flex ">
-          <h3 className="header-7 whitespace-nowrap">صفحات دیگر</h3>
+          {" "}
+          <h3 className="header-7 whitespace-nowrap">صفحات دیگر</h3>{" "}
           <PageNavigation />
         </div>
-
         <div className="flex flex-col gap-2 text-white md:gap-6 lg:mr-auto">
           <h3 className="header-7">راه‌های ارتباطی</h3>
           <div className="title-6 flex flex-col gap-2 md:flex md:gap-6">

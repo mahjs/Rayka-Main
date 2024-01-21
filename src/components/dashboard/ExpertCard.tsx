@@ -34,8 +34,6 @@ const ExpertCard: FC<Props> = ({
   const [iconPath, setIconPath] = useState(
     mobile ? darkIconPath : orangeIconPath,
   );
-  const [hoveredMobile, setHoveredMobile] = useState<boolean>(false);
-
   return (
     <section
       onClick={() => {
@@ -49,6 +47,9 @@ const ExpertCard: FC<Props> = ({
         setIconPath(mobile ? orangeIconPath : darkIconPath);
       }}
       onMouseOut={() => {
+        setIconPath(mobile ? darkIconPath : orangeIconPath);
+      }}
+      onFocus={() => {
         setIconPath(mobile ? darkIconPath : orangeIconPath);
       }}
       className={`group relative flex h-[130px] w-[140px] cursor-pointer flex-col flex-wrap gap-4 overflow-hidden rounded-lg bg-primary py-[1.5rem] pr-[1.2rem] text-[#232323] transition-all duration-200 hover:scale-110

@@ -257,6 +257,19 @@ body {
     width: 7rem;
   }
 }
+.footer-logo {
+  width: 80px;
+  @media screen and (max-width: 1200px) {
+    width: 60px;
+  }
+  @media screen and (max-width: 1000px) {
+   width: 45px;
+  }
+
+  @media screen and (max-width: 568px) {
+    width: 22px;
+  }
+}
 
 .title-5 {
   font-family: "KalamehRegular";
