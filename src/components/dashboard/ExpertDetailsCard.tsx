@@ -31,7 +31,7 @@ const ExpertDetailsCard: FC<Props> = ({
   handleClickClose,
   arrayLength,
 }) => {
-  const descStyle = "subtitle-2 max-w-[100%] text-sm";
+  const descStyle = "change-2 max-w-[100%] text-sm";
 
   return (
     <section className="relative mx-auto flex h-[100%] w-[90%] flex-col items-center justify-center rounded-xl p-5 md:mt-[2rem] md:p-8 lg:mt-0 lg:flex-row lg:gap-5">
@@ -45,7 +45,7 @@ const ExpertDetailsCard: FC<Props> = ({
             className="mb-1 h-[30px] w-[30px] md:h-[50px] md:w-[50px]"
           />
         </div>
-        <p className="title-3">{title}</p>
+        <p className="title">{title}</p>
         <span className="number-2 absolute -left-8 -top-10 text-[5rem] font-bold text-white opacity-20 md:-top-16 md:text-[12rem]">
           {String(index).padStart(2, "0")}
         </span>
@@ -54,7 +54,7 @@ const ExpertDetailsCard: FC<Props> = ({
 
       <div className="flex-col text-white">
         <div className="flex justify-between">
-          <h3 className="title mb-3">{name}</h3>
+          <h3 className="header-4 mb-3">{name}</h3>
         </div>
         <p className={descStyle}>{desc}</p>
       </div>
