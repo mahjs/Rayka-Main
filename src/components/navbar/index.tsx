@@ -19,6 +19,9 @@ const Navbar: FC = () => {
   const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
   useEffect(() => {
+    if (window.scrollY > 100) {
+      setIsScrolled(true);
+    }
     const handleScroll = () => {
       if (window.scrollY > 100) {
         setIsScrolled(true);

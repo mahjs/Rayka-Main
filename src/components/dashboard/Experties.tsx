@@ -90,7 +90,7 @@ const Experties = () => {
         <p
           className={`${
             showDetails ? "hidden" : ""
-          } about-5 absolute -top-12 left-[50%] my-20 translate-x-[-50%] whitespace-nowrap text-center text-white`}
+          } about-5 absolute -top-12 left-[50%] my-[4.5rem] translate-x-[-50%] whitespace-nowrap text-center text-white`}
         >
           حوضه تخصصی رایکا
         </p>
@@ -104,7 +104,7 @@ const Experties = () => {
         leaveFrom="opacity-1 translate-y-0"
         leaveTo="opacity-0 translate-y-full"
       >
-        <div className="mt-[6rem] grid grid-cols-2 gap-4 lg:hidden">
+        <div className="mt-[6rem] grid grid-cols-2 gap-4 md:mt-[8rem] lg:hidden">
           {expertiesData.map((expert) => (
             <ExpertCard
               mobile

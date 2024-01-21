@@ -122,7 +122,7 @@ const JobCard: React.FC<Job> = ({
 const Jobs: React.FC = () => {
   return (
     <div className="h-full min-h-[100dvh]  select-none flex-col">
-      <div className="flex h-[39vh] w-full flex-col justify-center bg-job-image bg-cover bg-center bg-no-repeat pb-5 pt-16 text-center text-white md:h-[60vh] md:pt-0 lg:h-[100vh]">
+      <div className="flex h-[230px] w-full flex-col justify-center bg-job-image bg-cover bg-center bg-no-repeat text-center text-white md:h-[400px] md:pt-0 lg:h-[600px]">
         <h2 className="header-1-plus">فرصت های شغلی</h2>
         <div className="title-3-plus flex justify-center">
           <p>
