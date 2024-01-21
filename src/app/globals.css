@@ -206,6 +206,13 @@ body {
   } */
 }
 
+.title-3-plus {
+  font-family: "KalamehRegular";
+  line-height: 110.5%;
+  font-weight: 500;
+  font-size: clamp(0.737rem, 2.8vw, 1.82563rem);
+}
+
 .title-4 {
   font-family: "KalamehRegular";
   font-size: clamp(0.5rem, 2vw, 1.5625rem);

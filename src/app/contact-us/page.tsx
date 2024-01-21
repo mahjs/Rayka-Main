@@ -19,9 +19,9 @@ const ContactUsPage: React.FC = () => {
   return (
     <main className="select-none flex-col">
       {/* Main banner section with navigation links */}
-      <div className="flex w-full flex-col justify-center bg-contact-us-image bg-cover bg-center bg-no-repeat pb-5 pt-16 text-center text-white md:h-[500px] md:p-0">
+      <div className="flex h-[39vh] w-full flex-col justify-center bg-contact-us-image bg-cover bg-center bg-no-repeat pb-5 pt-16 text-center text-white md:h-[60vh] md:p-0 lg:h-[100vh]">
         <h2 className="header-1-plus">ارتباط با ما</h2>
-        <div className="title-4 flex justify-center">
+        <div className="title-3-plus flex justify-center">
           <p>
             <Link href="/">خانه-</Link>
           </p>

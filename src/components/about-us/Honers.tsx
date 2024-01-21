@@ -116,7 +116,7 @@ const Honers: React.FC<Props> = ({}) => {
       <p className="header-4-plus my-6 text-center text-white md:my-10">
         افتخارات ما
       </p>{" "}
-      <div className="mx-auto grid grid-cols-2 gap-4 px-7  md:grid-cols-3 md:gap-8">
+      <div className="mx-auto mt-[1.25em] grid grid-cols-2 gap-4  px-7 md:grid-cols-3 md:gap-8">
         {images.map((image, index) => (
           <div
             className="group relative"
