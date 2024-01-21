@@ -59,12 +59,20 @@ export default function Home() {
           {/* <p className="text-[2rem] font-bold md:hidden">
             <span className="text-primary">هوشمندی</span> در کسب و کار
           </p> */}
-          <p className="subtitle-1 text-right text-white md:mt-0 lg:max-w-[50%]">
+          <p className="subtitle-1 hidden text-right text-white opacity-50 md:mt-0 md:block md:opacity-100 lg:max-w-[50%]">
             ما در شرکت ماورای ابعاد رایکا به بهبود سرویس‌های موجود در حوزه
             فناوری و ارتباطات اکتفا نمی‌کنیم؛ ما به رویاهای تحقق‌نیافته جامه‌
             عمل می‌پوشانیم و در کنار هم از خلق آینده‌ای هوشمندتر لذت می‌بریم.
           </p>
+          <p className="subtitle-1-change mt-3 block text-right text-white opacity-50 md:hidden">
+            ما در خانواده ی سخت کوش و خستگی ناپذیر شرکت ماورای ابعاد رایکا ،
+            برای تحقق
+            <br /> رویاهایمان میجنگیم. در کنار هم میسازیم و از تماشای آنچه روزی
+            تصور کرده بودیم و <br />
+            حالا به آن تجسم بخشیده ایم لذت میبریم.
+          </p>
         </div>
+
         {/* <div className="-ml-[3rem] hidden -rotate-90  gap-10 text-white md:flex">
           <div>
             <Link href="#">INSTAGRAM</Link>
