@@ -32,18 +32,18 @@ const ExpertDetailsCard: FC<Props> = ({
   arrayLength,
 }) => {
   return (
-    <section className="relative mx-auto flex h-[100%] w-[90%] flex-col items-center justify-center gap-5 rounded-xl p-5 md:mt-[2rem] md:p-8 lg:mt-0 lg:flex-row">
-      <div className="relative ml-auto h-[140px] w-[150px] flex-col overflow-hidden rounded-xl bg-primary p-5 pt-8 md:h-[240px] md:w-[260px] lg:h-[12rem] lg:min-w-[14rem]">
+    <section className="relative mx-auto flex h-[100%] w-[90%] flex-col items-center justify-center gap-5 rounded-xl p-5 pt-16 md:mt-[2rem] md:p-8 lg:mt-0 lg:flex-row">
+      <div className="relative ml-auto flex h-[140px] w-[100%] items-center gap-2 overflow-hidden rounded-xl bg-primary p-5 pt-8 md:h-[240px] md:w-[260px] md:flex-col md:items-start lg:h-[12rem] lg:min-w-[14rem]">
         <div>
           <Image
             src={iconPath}
             width={50}
             height={50}
             alt={`icon for ${title}`}
-            className="mb-1 h-[30px] w-[30px] md:h-[50px] md:w-[50px]"
+            className="mb-1 h-[70px] w-[70px] md:h-[50px] md:w-[50px]"
           />
         </div>
-        <p className="title">{title}</p>
+        <p className="title-detail">{title}</p>
         <span className="number-2 absolute -left-10 -top-12 text-[5rem] font-bold text-white opacity-[.1] md:-left-14 md:-top-16 md:text-[12rem]">
           {String(index).padStart(2, "0")}
         </span>
