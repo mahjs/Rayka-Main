@@ -47,7 +47,7 @@ const ExpertDetailsCard: FC<Props> = ({
         <span className="number-2 absolute -left-10 -top-12 text-[5rem] font-bold text-white opacity-[.1] md:-left-14 md:-top-16 md:text-[12rem]">
           {String(index).padStart(2, "0")}
         </span>
-        <div className="absolute -left-[20%] -top-[35%] h-full w-[50%] rotate-[35deg]  bg-black opacity-10" />
+        <div className="absolute -left-[33%] -top-[40%] h-full w-[50%] rotate-[35deg] bg-black opacity-10  md:-left-[20%] md:-top-[35%]" />
       </div>
 
       <div className="flex-col text-white">

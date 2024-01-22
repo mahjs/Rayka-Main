@@ -13,7 +13,7 @@ import Location from "@/assets/images/location.svg";
 const Footer = () => {
   return (
     <footer className="bg-black bg-footer-image bg-contain px-5">
-      <div className="relative mx-auto flex max-w-[1300px] justify-around gap-5 object-contain pb-[1.5rem] pt-[2.5rem] md:items-start md:pb-[2rem] md:pt-[4.5rem]">
+      <div className="relative mx-auto flex max-w-[1300px] justify-around gap-5 object-contain pb-[1rem] pt-[1.5rem] md:items-start md:pb-[2rem] md:pt-[3.5rem] lg:pt-[4.5rem]">
         <div className="flex max-w-[40%] flex-col gap-2 md:gap-3 lg:ml-auto">
           <Image src={RaykaIcon} alt="Rayka icon" className="footer-logo" />{" "}
           <p className="title-4 footer-description  text-white">
@@ -71,8 +71,9 @@ const Footer = () => {
                 height={25}
               />
               <p className="title-6 w-[9rem] md:w-[14rem] lg:w-[25rem]">
-                تهران، خیابان پاسداران، پایین‌تر از اطلس مال، نبش کوچه تنگستان
-                سوم، پلاک ۷۴۶ واحد ۲
+                تهران، خیابان پاسداران، پایین‌تر از اطلس مال،{" "}
+                <br className="md:hidden" /> نبش کوچه تنگستان سوم، پلاک ۷۴۶ واحد
+                ۲
               </p>
             </div>
           </div>
