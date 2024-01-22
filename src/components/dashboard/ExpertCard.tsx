@@ -82,7 +82,7 @@ const ExpertCard: FC<Props> = ({
         {title}
       </p>
       <span
-        className={`number-2 mob absolute -left-10 -top-12 text-white opacity-[.05] transition-all duration-200 group-hover:opacity-[.1] group-focus:opacity-[.1] group-active:opacity-[.1] md:-left-16 md:-top-20 md:opacity-[.1] lg:-left-[4.5rem] lg:-top-[5rem] lg:opacity-[.03]`}
+        className={`number-2 mob absolute -left-10 -top-12 text-white opacity-[.03] transition-all duration-200 group-hover:opacity-[.1] group-focus:opacity-[.1] group-active:opacity-[.1] md:-left-16 md:-top-20 lg:-left-[4.5rem] lg:-top-[5rem] lg:opacity-[.03]`}
       >
         {String(index).padStart(2, "0")}
       </span>
