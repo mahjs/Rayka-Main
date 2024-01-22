@@ -168,14 +168,14 @@ body {
 .header-7 {
   font-family: "KalamehBold";
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 2.2rem;
   line-height: 140.5%;
   color: #fff;
   @media screen and (max-width: 968px) {
     font-size: 1.4rem;
   }
   @media screen and (max-width: 758px) {
-    font-size: 0.70369rem;
+    font-size: 0.7rem;
   }
 }
 
@@ -399,7 +399,7 @@ body {
 
 .number {
   font-family: "KalamehBold";
-  font-size: clamp(3.03rem, 7vw, 7.16819rem);
+  font-size: clamp(3.83rem, 7vw, 7.16819rem);
   line-height: 140%;
 }
 .number-2 {
