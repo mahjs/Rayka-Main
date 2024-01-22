@@ -12,7 +12,7 @@ import Location from "@/assets/images/location.svg";
 
 const Footer = () => {
   return (
-    <footer className="bg-black bg-footer-image bg-contain px-5">
+    <footer className="max-width-wide bg-black bg-footer-image bg-contain px-5">
       <div className="relative mx-auto flex max-w-[1300px] justify-around gap-5 object-contain pb-[1rem] pt-[1.5rem] md:items-start md:pb-[2rem] md:pt-[3.5rem] lg:pt-[4.5rem]">
         <div className="flex max-w-[40%] flex-col gap-2 md:gap-3 lg:ml-auto">
           <Image src={RaykaIcon} alt="Rayka icon" className="footer-logo" />{" "}

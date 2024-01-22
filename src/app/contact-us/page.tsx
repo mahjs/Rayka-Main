@@ -17,7 +17,7 @@ import Address from "./_Components/Address";
  */
 const ContactUsPage: React.FC = () => {
   return (
-    <main className="select-none flex-col">
+    <main className="max-width-wide select-none flex-col">
       {/* Main banner section with navigation links */}
       <div className="flex h-[230px] w-full flex-col justify-center bg-contact-us-image bg-cover bg-center bg-no-repeat text-center text-white md:h-[400px] md:p-0 lg:h-[600px]">
         <h2 className="header-1-plus">ارتباط با ما</h2>

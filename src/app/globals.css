@@ -397,6 +397,14 @@ body {
   }
 }
 
+
+.max-width-wide {
+  @media screen and (min-width: 1921px) {
+    width: 1920px;
+    margin-inline: auto;
+  }
+}
+
 .miniText {
   font-family: "KalamehRegular";
   font-size: 0.7rem;

@@ -33,9 +33,9 @@ const informationData = [
 
 export default function Home() {
   return (
-    <main className="relative flex flex-col gap-10 md:gap-20">
+    <main className="max-width-wide relative flex flex-col gap-10 md:gap-20">
       {/* Background */}
-      <div className="absolute left-0 right-0 top-0 -z-30 hidden bg-[#FEA918] md:block md:h-[60vh] lg:h-[100vh] lg:w-[90vw]" />
+      <div className="absolute left-0 right-0 top-0 -z-30 hidden max-w-[1800px] bg-[#FEA918] md:block md:h-[60vh] lg:h-[100vh] lg:w-[90vw]" />
 
       {/* Top content */}
       <section

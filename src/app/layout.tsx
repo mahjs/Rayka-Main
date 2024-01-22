@@ -76,10 +76,12 @@ export default function RootLayout({
           content="https://raikaco.org/images/share.png"
         />
       </head>
-      <body>
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
+      <body className="flex flex-col 2xl:bg-gray-300">
+        <div>
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );
