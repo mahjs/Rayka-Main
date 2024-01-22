@@ -11,13 +11,13 @@ import Person from "@/assets/images/person.webp";
 const JoinRaykaCard = () => {
   const router = useRouter();
   return (
-    <section className="relative mx-auto flex w-[70%] max-w-[1300px] flex-col rounded-2xl bg-[#FEA918] p-3 md:w-[80%] md:p-10 lg:flex-row lg:items-center lg:gap-5 xl:w-[70%] ">
+    <section className="relative mx-auto flex w-[70%] max-w-[1300px] flex-col rounded-2xl bg-[#FEA918] p-3 md:w-[80%] md:p-8 lg:flex-row lg:items-center lg:gap-5 xl:w-[70%] ">
       <div className="flex flex-col text-[#111]">
         <p className="header-4 whitespace-nowrap">عضو خانواده ما شو!</p>
         <p className="title-4 hidden md:block">اینجا برای همه جا هست!</p>
       </div>
       <div className="ml-[200px] w-[80%] flex-col text-[#111] lg:max-w-[62%]">
-        <p className="subtitle-2 max-w-[90%] ">
+        <p className="max-w-[90%] text-[.44rem] md:max-w-[80%] md:text-[.70rem] lg:text-[1rem] ">
           تیم رایکا همواره در حال تلاش برای پیدا کردن استعدادهای این سرزمین و
           به‌کارگیری آن‌ها به‌ صورت حضوری و دورکاری است.
           <br className="hidden lg:block" /> حتما به صفحه فرصت‌های شغلی سر بزنید

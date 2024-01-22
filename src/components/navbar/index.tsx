@@ -19,6 +19,9 @@ const Navbar: FC = () => {
   const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
   useEffect(() => {
+    if (window.scrollY > 100) {
+      setIsScrolled(true);
+    }
     const handleScroll = () => {
       if (window.scrollY > 100) {
         setIsScrolled(true);
@@ -114,7 +117,7 @@ const Navbar: FC = () => {
           width={50}
           height={50}
           alt="rayka icon"
-          className="h-[25px] w-[25px] md:h-[50px] md:w-[50px]"
+          className="h-[35px] w-[35px] md:h-[50px] md:w-[50px]"
         />
       </Link>
     </header>
