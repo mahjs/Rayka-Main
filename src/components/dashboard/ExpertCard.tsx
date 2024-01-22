@@ -34,6 +34,9 @@ const ExpertCard: FC<Props> = ({
   const [iconPath, setIconPath] = useState(
     mobile ? darkIconPath : orangeIconPath,
   );
+  const [isHoveredMobile, setIsHoveredMobile] = useState<boolean>(false);
+  const [isFocused, setIsFocused] = useState<boolean>(false);
+
   return (
     <section
       onClick={() => {
@@ -42,24 +45,29 @@ const ExpertCard: FC<Props> = ({
       }}
       onTouchStart={() => {
         setIconPath(mobile ? orangeIconPath : darkIconPath);
+        setIsHoveredMobile(true);
+      }}
+      onTouchEnd={() => {
+        setIconPath(mobile ? darkIconPath : orangeIconPath);
+        setIsHoveredMobile(false);
       }}
       onMouseOver={() => {
         setIconPath(mobile ? orangeIconPath : darkIconPath);
       }}
-      onMouseOut={() => {
+      onMouseLeave={() => {
         setIconPath(mobile ? darkIconPath : orangeIconPath);
+        setIsHoveredMobile(false);
       }}
-      onFocus={() => {
-        setIconPath(mobile ? darkIconPath : orangeIconPath);
-      }}
-      className={`group relative flex h-[130px] w-[140px] cursor-pointer flex-col flex-wrap gap-4 overflow-hidden rounded-lg bg-primary py-[1.5rem] pr-[1.2rem] text-[#232323] transition-all duration-200 hover:scale-110
+      className={`group relative flex h-[130px] w-[140px] cursor-pointer flex-col flex-wrap gap-4 overflow-hidden rounded-lg  py-[1.5rem] pr-[1.2rem] text-[#232323] transition-all duration-200 hover:scale-110
        hover:bg-[#2E2E2E] hover:text-white 
-        focus:scale-110 focus:bg-[#2E2E2E] focus:text-white
-        active:scale-110 active:bg-[#2E2E2E] active:text-white
        md:h-[240px] md:w-[260px]
         md:gap-10 md:pr-[2.2rem]
         lg:bg-[#2E2E2E] lg:text-white lg:hover:bg-primary lg:hover:text-[#232323] lg:focus:bg-primary lg:focus:text-[#232323] lg:active:bg-primary lg:active:text-[#232323] ${
-          mobile ? "" : ""
+          mobile
+            ? isHoveredMobile
+              ? "scale-110 bg-[#2E2E2E] text-white"
+              : " bg-primary text-[#232323]"
+            : ""
         }`}
     >
       <span className="md:mt-8">
