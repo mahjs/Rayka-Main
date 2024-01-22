@@ -114,7 +114,7 @@ body {
     font-size: 2.2rem;
   }
   @media screen and (max-width: 1068px) {
-    font-size: 2.0rem;
+    font-size: 2rem;
   }
   @media screen and (max-width: 768px) {
     font-size: 1.80669rem;
@@ -246,10 +246,6 @@ body {
     font-family: "KalamehRegular";
     font-size: 1rem;
   }
-  @media screen and (max-width: 568px) {
-    font-family: "KalamehRegular";
-    font-size: 0.404rem;
-  }
 }
 
 .footer-description {
@@ -259,7 +255,7 @@ body {
     width: 24rem;
   }
   @media screen and (max-width: 1000px) {
-   width: 18rem;
+    width: 18rem;
   }
 
   @media screen and (max-width: 568px) {
@@ -272,7 +268,7 @@ body {
     width: 60px;
   }
   @media screen and (max-width: 1000px) {
-   width: 45px;
+    width: 45px;
   }
 
   @media screen and (max-width: 568px) {
@@ -340,7 +336,7 @@ body {
     font-size: 1.38rem;
   }
   @media screen and (max-width: 768px) {
-    font-size: 1.30rem;
+    font-size: 1.3rem;
   }
 
   @media screen and (max-width: 658px) {
@@ -353,6 +349,11 @@ body {
   font-size: 1.8125rem;
   line-height: 150.5%;
   font-weight: 600;
+  @media screen and (max-width: 890px) {
+    font-family: "KalamehBold";
+
+    font-size: 1rem;
+  }
   @media screen and (max-width: 768px) {
     font-family: "KalamehBold";
 
@@ -361,12 +362,38 @@ body {
   @media screen and (max-width: 668px) {
     font-family: "KalamehBold";
 
-    font-size: 0.86rem;
+    font-size: 0.8rem;
   }
-  @media screen and (max-width: 380px) {
+
+  @media screen and (max-width: 374px) {
     font-family: "KalamehBold";
 
-    font-size: 0.58rem;
+    font-size: 0.6rem;
+  }
+  @media screen and (max-width: 319px) {
+    font-family: "KalamehBold";
+
+    font-size: 0.5rem;
+  }
+}
+.title-7 {
+  font-family: "KalamehRegular";
+  font-size: 1.6875rem;
+  line-height: 110.5%;
+  font-weight: 600;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.20406rem;
+  }
+  @media screen and (max-width: 374px) {
+    font-family: "KalamehBold";
+
+    font-size: 0.78rem;
+  }
+  @media screen and (max-width: 319px) {
+    font-family: "KalamehBold";
+
+    font-size: 0.5rem;
   }
 }
 

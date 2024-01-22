@@ -32,8 +32,8 @@ const ExpertDetailsCard: FC<Props> = ({
   arrayLength,
 }) => {
   return (
-    <section className="relative mx-auto flex h-[100%] w-[90%] flex-col items-center justify-center gap-5 rounded-xl p-5 pt-16 md:mt-[2rem] md:p-8 lg:mt-0 lg:flex-row">
-      <div className="relative ml-auto flex h-[140px] w-[100%] items-center gap-2 overflow-hidden rounded-xl bg-primary p-5 pt-8 md:h-[240px] md:w-[260px] md:flex-col md:items-start lg:h-[12rem] lg:min-w-[14rem]">
+    <section className="container relative mx-auto flex h-[100%] w-[90%] flex-col items-center justify-center gap-5 rounded-xl p-5 pt-16 md:mt-[2rem] md:p-8 lg:mt-0 lg:flex-row">
+      <div className=" relative ml-auto flex h-[140px] w-[100%] items-center gap-2 overflow-hidden rounded-xl bg-primary p-5 pt-8 md:h-[240px] md:w-[260px] md:flex-col md:items-start lg:h-[12rem] lg:min-w-[14rem]">
         <div>
           <Image
             src={iconPath}
