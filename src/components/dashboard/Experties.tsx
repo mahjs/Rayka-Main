@@ -104,7 +104,7 @@ const Experties = () => {
         leaveFrom="opacity-1 translate-y-0"
         leaveTo="opacity-0 translate-y-full"
       >
-        <div className="mt-[6rem] grid grid-cols-2 gap-4 lg:hidden">
+        <div className="mt-[7rem] grid grid-cols-2 gap-4 md:mt-[8rem] lg:hidden">
           {expertiesData.map((expert) => (
             <ExpertCard
               mobile

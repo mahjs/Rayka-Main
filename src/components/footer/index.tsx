@@ -16,7 +16,7 @@ const Footer = () => {
       <div className="relative mx-auto flex max-w-[1300px] justify-around gap-5 object-contain pb-[1rem] pt-[1.5rem] md:items-start md:pb-[2rem] md:pt-[3.5rem] lg:pt-[4.5rem]">
         <div className="flex max-w-[40%] flex-col gap-2 md:gap-3 lg:ml-auto">
           <Image src={RaykaIcon} alt="Rayka icon" className="footer-logo" />{" "}
-          <p className="title-4 footer-description  text-white">
+          <p className="title-6 footer-description  text-white">
             {" "}
             ما در خانواده سخت‌کوش و خستگی‌ناپذیر شرکت ماورای ابعاد رایکا، برای
             تحقق رویاهایمان می‌جنگیم؛ در کنار هم می‌سازیم و از تماشای آنچه روزی
