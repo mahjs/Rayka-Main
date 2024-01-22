@@ -2,8 +2,8 @@ import React from "react";
 
 const Address = () => {
   return (
-    <div className="flex items-center justify-center">
-      <ul className="mt-[2em] flex flex-row justify-around w-full items-center">
+    <div className="flex flex-col">
+      <ul className="-mt-8 flex w-full flex-row items-center justify-around">
         <li className="flex flex-col items-center justify-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -19,12 +19,6 @@ const Address = () => {
               stroke-linejoin="round"
             />
           </svg>
-          <h6 className="text-center text-[0.75rem] font-[800] md:text-[1.5rem]">
-            پست الکترونیکی
-          </h6>
-          <span className="text-[0.5rem] font-[400] text-[#878787] md:text-[1rem]">
-            support@raikaco.org
-          </span>
         </li>
         <li className="my-[2em] flex flex-col items-center justify-center text-center text-[1.5rem] font-[800] md:my-[0]">
           <svg
@@ -40,14 +34,8 @@ const Address = () => {
               stroke-linecap="round"
             />
           </svg>
-          <h6 className="text-center text-[0.75rem] font-[800] md:text-[1.5rem]">
-            شماره تماس
-          </h6>
-          <span className="text-[0.5rem] font-[400] text-[#878787] md:text-[1rem]">
-            12 41 3745 21+
-          </span>
         </li>
-        <li className="flex flex-col items-center justify-center text-center text-[1.5rem] font-[800]">
+        <li className="ml-3 flex flex-col items-center justify-center text-center text-[1.5rem] font-[800] md:ml-5">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-[32px] w-[32px] md:h-[75px] md:w-[75px]"
@@ -60,16 +48,36 @@ const Address = () => {
               stroke-width="2.78014"
             />
           </svg>
+        </li>
+      </ul>
+      <div className="-mt-14 flex w-full items-center  justify-around md:-mt-0">
+        <div className="flex flex-col gap-1">
+          <h6 className="text-center text-[0.75rem] font-[800] md:text-[1.5rem]">
+            پست الکترونیکی
+          </h6>
+          <span className="text-center text-[0.5rem] font-[400] text-[#878787] md:text-[1rem]">
+            support@raikaco.org
+          </span>
+        </div>
+
+        <div className="flex flex-col gap-1">
+          <h6 className="text-center text-[0.75rem] font-[800] md:text-[1.5rem]">
+            شماره تماس
+          </h6>
+
+          <span className="text-center text-[0.5rem] font-[400] text-[#878787] md:text-[1rem]">
+            12 41 3745 21+
+          </span>
+        </div>
+        <div className="mt-2 flex flex-col">
           <h6 className="text-center text-[0.75rem] font-[800] md:text-[1.5rem]">
             نشانی
           </h6>
-          <p className="text-[0.5rem] font-[400] text-[#878787] md:text-[1rem]">
-            تهران، خیابان پاسداران، پایین‌تر از اطلس مال،
-            <br />
-            نبش کوچه تنگستان سوم، پلاک ۷۴۶ واحد ۲
+          <p className="w-[6rem] text-center text-[0.5rem] font-[400] text-[#878787] md:w-[12rem] md:text-[1rem]">
+            تهران، پاسداران، نبش کوچه تنگستان سوم، پلاک 746
           </p>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
   );
 };
