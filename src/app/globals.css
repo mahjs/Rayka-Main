@@ -247,26 +247,6 @@ body {
     font-size: 1rem;
   }
 }
-.title-7 {
-  font-family: "KalamehRegular";
-  font-size: 2.35719rem;
-  line-height: 110.5%;
-  font-weight: 600;
-
-  @media screen and (max-width: 768px) {
-    font-size: 1.20406rem;
-  }
-  @media screen and (max-width: 374px) {
-    font-family: "KalamehBold";
-
-    font-size: 0.78rem;
-  }
-  @media screen and (max-width: 319px) {
-    font-family: "KalamehBold";
-
-    font-size: 0.5rem;
-  }
-}
 
 .footer-description {
   width: 28rem;
@@ -369,6 +349,11 @@ body {
   font-size: 1.8125rem;
   line-height: 150.5%;
   font-weight: 600;
+  @media screen and (max-width: 890px) {
+    font-family: "KalamehBold";
+
+    font-size: 1rem;
+  }
   @media screen and (max-width: 768px) {
     font-family: "KalamehBold";
 
@@ -384,6 +369,26 @@ body {
     font-family: "KalamehBold";
 
     font-size: 0.6rem;
+  }
+  @media screen and (max-width: 319px) {
+    font-family: "KalamehBold";
+
+    font-size: 0.5rem;
+  }
+}
+.title-7 {
+  font-family: "KalamehRegular";
+  font-size: 1.6875rem;
+  line-height: 110.5%;
+  font-weight: 600;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.20406rem;
+  }
+  @media screen and (max-width: 374px) {
+    font-family: "KalamehBold";
+
+    font-size: 0.78rem;
   }
   @media screen and (max-width: 319px) {
     font-family: "KalamehBold";

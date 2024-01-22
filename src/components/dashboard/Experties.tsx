@@ -43,7 +43,7 @@ const expertiesData = [
     id: 4,
     title: "راه‌اندازی دیتاسنتر در پاپ‌های کل کشور",
     title2: "راه‌اندازی دیتاسنتر ",
-    name: "دیتا سنتر و راه‌اندازی آن؟",
+    name: "دیتا سنتر و راه‌اندازی آن",
     desc: "دیتاسنتر، مرکزی است که در آن تجهیزات ارتباطی و رایانه‌ای مانند سرورها، سیستم‌های ذخیره‌سازی داده و کامپوننت‌های شبکه جمع‌آوری شده‌اند تا داده‌ها را پردازش، ذخیره و منتقل کنند. این مراکز برای اطمینان از دسترسی مداوم و امنیت بالای داده‌ها و خدمات اینترنتی حیاتی هستند. از سوی دیگر، نقطه حضور فیزیکی (Point of Presence - POP) مکانی است که در آن دو یا چند شبکه مختلف به یکدیگر متصل می‌شوند و کاربران می‌توانند به شبکه‌های وسیع‌تر دسترسی پیدا کنند. دیتاسنترها و POPها به‌طور مشترک زیرساخت‌های اصلی لازم برای پشتیبانی از حجم عظیم داده‌ها و ترافیک اینترنتی در سراسر جهان را فراهم می‌آورند.",
     orangeIconPath: DataOrange,
     darkIconPath: Data,
@@ -90,7 +90,7 @@ const Experties = () => {
         <p
           className={`${
             showDetails ? "hidden" : ""
-          } about-5 absolute -top-12 left-[50%] my-[4.5rem] translate-x-[-50%] whitespace-nowrap text-center text-white lg:-top-10`}
+          } about-5 absolute -top-12 left-[50%] my-20 translate-x-[-50%] whitespace-nowrap text-center text-white`}
         >
           حوضه تخصصی رایکا
         </p>
@@ -104,7 +104,7 @@ const Experties = () => {
         leaveFrom="opacity-1 translate-y-0"
         leaveTo="opacity-0 translate-y-full"
       >
-        <div className="mt-[6rem] grid grid-cols-2 gap-4 md:mt-[8rem] lg:hidden">
+        <div className="mt-[6rem] grid grid-cols-2 gap-4 lg:hidden">
           {expertiesData.map((expert) => (
             <ExpertCard
               mobile
