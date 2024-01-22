@@ -59,7 +59,7 @@ const ExpertCard: FC<Props> = ({
        md:h-[240px] md:w-[260px]
         md:gap-10 md:pr-[2.2rem]
         lg:bg-[#2E2E2E] lg:text-white lg:hover:bg-primary lg:hover:text-[#232323] lg:focus:bg-primary lg:focus:text-[#232323] lg:active:bg-primary lg:active:text-[#232323] ${
-          mobile ? "justify-self-center" : ""
+          mobile ? "" : ""
         }`}
     >
       <span className="md:mt-8">
@@ -71,7 +71,15 @@ const ExpertCard: FC<Props> = ({
           className="h-[25px] w-[25px] md:h-[50px] md:w-[50px]"
         />
       </span>
-      <p className="title text-inherit md:font-bold">{title}</p>
+      <p
+        className="text-inherit text-[.98rem] md:text-[1.5rem] md:font-bold lg:text-[1.6rem]"
+        style={{
+          fontFamily: "KalamehBold",
+          lineHeight: "130%",
+        }}
+      >
+        {title}
+      </p>
       <span
         className={`number-2 mob absolute -left-10 -top-12 text-white opacity-[.1] transition-all duration-200 group-hover:opacity-[.1] group-focus:opacity-[.1] group-active:opacity-[.1] md:-left-16 md:-top-20 md:opacity-[.1] lg:-left-[4.5rem] lg:-top-[5rem] lg:opacity-[.03]`}
       >

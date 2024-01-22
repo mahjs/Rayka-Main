@@ -184,13 +184,22 @@ body {
   font-size: 1.61744rem;
   line-height: 130.5%;
   @media screen and (max-width: 968px) {
-    font-family: "KalamehBold";
-
     font-size: 1.53rem;
   }
   @media screen and (max-width: 758px) {
     font-size: 0.97181rem;
-    font-family: "KalamehBold";
+  }
+}
+.title-detail {
+  font-family: "KalamehBold";
+  font-size: 1.61744rem;
+  line-height: 130.5%;
+
+  @media screen and (max-width: 968px) {
+    font-size: 1.53rem;
+  }
+  @media screen and (max-width: 658px) {
+    font-size: 1.52181rem;
   }
 }
 
