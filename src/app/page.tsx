@@ -88,8 +88,8 @@ export default function Home() {
       {/* Experties Content */}
       <section className="relative flex justify-center md:mb-5">
         {/* Make the backgrounds */}
-        <div className="absolute h-[24rem] w-[90%] -rotate-[2deg] rounded-lg bg-[#FEA918] md:h-[43rem] md:w-[80.1%] md:-rotate-[2deg] md:rounded-3xl lg:h-[18rem] lg:w-[90.1%] lg:-rotate-[1deg]" />
-        <div className="relative h-[24rem] w-[90%] flex-col items-center justify-center rounded-lg bg-work-plans-image bg-cover bg-no-repeat md:h-[43rem] md:w-[80%] md:rounded-3xl lg:h-[18rem] lg:w-[90%]" />
+        <div className="absolute h-[27rem] w-[90%] max-w-[1680px] -rotate-[2deg] rounded-lg bg-[#FEA918] md:h-[43rem] md:w-[80.1%] md:-rotate-[2deg] md:rounded-3xl lg:h-[18rem] lg:w-[90.1%] lg:-rotate-[1deg]" />
+        <div className="relative h-[27rem] w-[90%] max-w-[1680px] flex-col items-center justify-center rounded-lg bg-work-plans-image bg-cover bg-no-repeat md:h-[43rem] md:w-[80%] md:rounded-3xl lg:h-[18rem] lg:w-[90%]" />
         {/* Content */}
         <Experties />
       </section>
@@ -97,7 +97,7 @@ export default function Home() {
       {/* Information Content */}
       <section className="relative flex h-[20rem] w-full items-center justify-center bg-statistics-image bg-cover bg-center bg-no-repeat md:mb-[5rem] lg:mt-16">
         <div className="rounded-3x absolute bottom-0 left-0 right-0 top-0 z-10 h-full w-full" />
-        <div className="absolute z-30 grid w-full grid-cols-2 justify-evenly gap-5 md:flex ">
+        <div className="absolute z-30 grid w-full max-w-[1900px] grid-cols-2 justify-evenly gap-5 md:flex ">
           {informationData.map((info) => (
             <InfoText
               key={info.id}
@@ -109,7 +109,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="z-10 -mb-[1rem] flex items-center justify-center  md:-mb-[3rem]">
+      <div className="z-10 -mb-[1rem] flex items-center justify-center  md:-mb-[2.5rem]">
         <JoinRaykaCard />
       </div>
     </main>

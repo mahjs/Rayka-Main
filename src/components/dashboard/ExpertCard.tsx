@@ -31,24 +31,36 @@ const ExpertCard: FC<Props> = ({
   darkIconPath,
   onClick,
 }) => {
-  const [iconPath, setIconPath] = useState(orangeIconPath);
-
+  const [iconPath, setIconPath] = useState(
+    mobile ? darkIconPath : orangeIconPath,
+  );
   return (
     <section
       onClick={() => {
         // if (mobile) return;
         onClick(index - 1);
       }}
+      onTouchStart={() => {
+        setIconPath(mobile ? orangeIconPath : darkIconPath);
+      }}
       onMouseOver={() => {
-        setIconPath(darkIconPath);
+        setIconPath(mobile ? orangeIconPath : darkIconPath);
       }}
       onMouseOut={() => {
-        setIconPath(orangeIconPath);
+        setIconPath(mobile ? darkIconPath : orangeIconPath);
       }}
-      className={`group relative flex h-[l20px] w-[150px] cursor-pointer flex-col flex-wrap overflow-hidden rounded-lg bg-[#2E2E2E] py-[1.5rem] pr-[1.2rem] text-white transition-all
-       duration-200 hover:scale-110 hover:bg-primary hover:text-[#232323]  focus:scale-110 focus:bg-primary focus:text-[#232323] active:scale-110 active:bg-primary active:text-[#232323] md:h-[250px] md:w-[250px] md:gap-10 md:pr-[2.2rem] ${
-         mobile ? "justify-self-center" : ""
-       }`}
+      onFocus={() => {
+        setIconPath(mobile ? darkIconPath : orangeIconPath);
+      }}
+      className={`group relative flex h-[130px] w-[140px] cursor-pointer flex-col flex-wrap gap-4 overflow-hidden rounded-lg bg-primary py-[1.5rem] pr-[1.2rem] text-[#232323] transition-all duration-200 hover:scale-110
+       hover:bg-[#2E2E2E] hover:text-white 
+        focus:scale-110 focus:bg-[#2E2E2E] focus:text-white
+        active:scale-110 active:bg-[#2E2E2E] active:text-white
+       md:h-[240px] md:w-[260px]
+        md:gap-10 md:pr-[2.2rem]
+        lg:bg-[#2E2E2E] lg:text-white lg:hover:bg-primary lg:hover:text-[#232323] lg:focus:bg-primary lg:focus:text-[#232323] lg:active:bg-primary lg:active:text-[#232323] ${
+          mobile ? "justify-self-center" : ""
+        }`}
     >
       <span className="md:mt-8">
         <Image
@@ -61,7 +73,7 @@ const ExpertCard: FC<Props> = ({
       </span>
       <p className="title text-inherit md:font-bold">{title}</p>
       <span
-        className={`number-2 mob absolute -left-8 -top-10 text-white opacity-[.15] transition-all duration-200 group-hover:opacity-[.15] group-focus:opacity-[.15] group-active:opacity-[.15] md:-left-16 md:-top-20 md:opacity-[.15] lg:opacity-[.03]`}
+        className={`number-2 mob absolute -left-10 -top-12 text-white opacity-[.1] transition-all duration-200 group-hover:opacity-[.1] group-focus:opacity-[.1] group-active:opacity-[.1] md:-left-16 md:-top-20 md:opacity-[.1] lg:-left-[4.5rem] lg:-top-[5rem] lg:opacity-[.03]`}
       >
         {String(index).padStart(2, "0")}
       </span>
